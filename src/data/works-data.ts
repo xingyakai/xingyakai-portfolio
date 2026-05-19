@@ -4,6 +4,7 @@
 
 export interface WorkImage {
   src: string;
+  title: string;
   positivePrompt: string;
   negativePrompt: string;
 }
@@ -27,6 +28,7 @@ export const workSeries: WorkSeries[] = [
     images: [
       {
         src: '/images/liuli/2.jpg',
+        title: '鎏金碎影入清池',
         positivePrompt: `杰作，最佳质量，8K超高清分辨率，超写实摄影，极致精细，电影级光影，光线追踪，HDR，景深效果，水面焦散
 极致脸部特写，一位绝美年轻女孩沉浸在清澈水下，抬头向上凝望，空灵忧郁的神情
 白皙通透的水润肌肤，脸上布满流动的水波纹和晶莹剔透的大小气泡，皮肤表面有强烈的水光折射和反光
@@ -48,6 +50,7 @@ export const workSeries: WorkSeries[] = [
       },
       {
         src: '/images/liuli/3.jpg',
+        title: '星河溺于眼眸',
         positivePrompt: `杰作，最佳质量，8K超高清分辨率，超写实摄影，极致精细，电影级光影，光线追踪，HDR，景深效果，色散效果，全息虹彩
 极致脸部特写，一位绝美年轻女孩，抬头仰望星空，宁静空灵的神情，深邃的冰蓝色眼眸
 白皙通透的肌肤，脸上和头发上覆盖着流动的全息彩虹色水波纹和飞溅的透明水花，水花带有强烈的棱镜色散和虹彩光泽
@@ -69,6 +72,7 @@ export const workSeries: WorkSeries[] = [
       },
       {
         src: '/images/liuli/1.jpg',
+        title: '青芜浮光',
         positivePrompt: `杰作，最佳质量，8K超高清分辨率，超写实，极致精细，电影级光影，光线追踪，HDR，景深效果
 极致特写肖像，一位绝美年轻女孩沉浸在水下
 白皙通透的瓷感肌肤，带着水润光泽，脸上布满晶莹剔透的水珠和细小气泡
