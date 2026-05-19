@@ -82,8 +82,8 @@ export default function WorkDetailPage() {
         const maxDist    = window.innerWidth * 0.85;
         const progress   = Math.max(0, 1 - distance / maxDist);
 
-        // Scale + hover boost
-        const baseScale   = 0.72 + progress * 0.28;
+        // Scale + hover boost (wider range for more drama)
+        const baseScale   = 0.5 + progress * 0.5;
         const isHovered   = item.classList.contains('is-hovered');
         const targetScale = isHovered ? baseScale + 0.07 : baseScale;
         const prevScale   = item.dataset.scale ? parseFloat(item.dataset.scale) : baseScale;
@@ -193,12 +193,17 @@ export default function WorkDetailPage() {
       {/* ── Gallery ── */}
       <section className="h-scroll-section">
         <div ref={trackRef} className="h-scroll-track">
-          {tripleImages.map((img, i) => (
+          {tripleImages.map((img, i) => {
+            // Use original index so every copy gets identical size pattern
+            const origIdx      = i % series.images.length;
+            const sizeVariant  = (origIdx % 5) + 1;
+            const isLastInCopy = origIdx === series.images.length - 1;
+            return (
             <div
               key={i}
-              className={`detail-item detail-item--${(i % 5) + 1}`}
+              className={`detail-item detail-item--${sizeVariant}`}
               onClick={() => openModal(img)}
-              style={{ cursor: 'none' }}
+              style={{ cursor: 'none', ...(isLastInCopy ? { marginRight: '5vw' } : {}) }}
             >
               <img src={img.src} alt={img.title} className="detail-item-img" />
               <div className="work-item-content">
@@ -209,7 +214,8 @@ export default function WorkDetailPage() {
                 <h2 className="work-item-title">{img.title}</h2>
               </div>
             </div>
-          ))}
+            );
+          })}
         </div>
 
         <div className="gallery-progress">
