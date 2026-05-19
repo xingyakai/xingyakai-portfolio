@@ -1,0 +1,84 @@
+// ─── 作品系列数据 ──────────────────────────────────────────────
+// 每个系列对应首页一张卡片，slug 是 URL 路径
+// images 数组里每张图都有正向/负向提示词
+
+export interface WorkImage {
+  src: string;
+  positivePrompt: string;
+  negativePrompt: string;
+}
+
+export interface WorkSeries {
+  slug: string;
+  title: string;
+  tag: string;
+  coverImg: string;       // 首页封面图
+  description: string;
+  images: WorkImage[];
+}
+
+export const workSeries: WorkSeries[] = [
+  {
+    slug: 'liuli',
+    title: '琉璃之息',
+    tag: 'Digital Art',
+    coverImg: '/images/work-1.jpg',
+    description: '沉浸于水下的绝美人像，琉璃般通透的光影世界',
+    images: [
+      {
+        src: '/images/liuli/1.jpg',
+        positivePrompt: `杰作，最佳质量，8K超高清分辨率，超写实，极致精细，电影级光影，光线追踪，HDR，景深效果
+极致特写肖像，一位绝美年轻女孩沉浸在水下
+白皙通透的瓷感肌肤，带着水润光泽，脸上布满晶莹剔透的水珠和细小气泡
+惊艳的冰蓝色清澈眼眸，纤长卷翘的睫毛，饱满粉嫩的嘴唇微微张开
+深棕色湿发在水中自由漂浮，细碎发丝轻柔贴在脸颊和额头
+被漂浮的白色小雏菊（黄色花心）和纤细的绿色水草茎干环绕
+温暖的金色阳光斜射穿透水面，在她脸上形成清晰的斑驳光影
+强烈的丁达尔效应，体积光，柔和的黄金时刻光晕
+清澈的绿松石色湖水，梦幻模糊的散景背景，浅景深聚焦于她的双眼
+宁静空灵的神情，平和的目光
+超写实的皮肤毛孔，根根分明的发丝，带有光线折射和焦散效果的透明水珠
+虚幻引擎5渲染，电影级构图，柔和镜头光晕，9:16竖版比例`,
+        negativePrompt: `最差质量，低质量，普通质量，模糊，像素化，噪点多，颗粒感重
+畸形，毁容，丑陋，多余肢体，手指缺失，人体结构错误，比例失调
+斗鸡眼，眼睛不对称，面部扭曲
+文字，水印，签名，logo，用户名
+过曝，欠曝，光线生硬，色彩平淡，单色
+塑料感皮肤，卡通，动漫，3D卡通，不真实
+漂浮杂物，背景杂乱，元素重复`,
+      },
+    ],
+  },
+  {
+    slug: 'suyan',
+    title: '素颜诗',
+    tag: 'Portrait',
+    coverImg: '/images/work-2.jpg',
+    description: '返璞归真的人像美学，用光影书写素颜的诗',
+    images: [],
+  },
+  {
+    slug: 'nuanzon',
+    title: '暖棕心事',
+    tag: 'Mood',
+    coverImg: '/images/work-3.jpg',
+    description: '暖棕色调的情绪影像，那些无法言说的内心世界',
+    images: [],
+  },
+  {
+    slug: 'youhua',
+    title: '油画里的夏日',
+    tag: 'Painting',
+    coverImg: '/images/work-4.jpg',
+    description: '以AI重现油画质感，定格夏日最后的光与热',
+    images: [],
+  },
+  {
+    slug: 'jiumeng',
+    title: '旧梦',
+    tag: 'Cinematic',
+    coverImg: '/images/work-5.jpg',
+    description: '电影胶片质感的旧梦影像，时光流逝的诗意记录',
+    images: [],
+  },
+];

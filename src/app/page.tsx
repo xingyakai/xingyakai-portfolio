@@ -1,16 +1,18 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 const WORKS = [
-  { id: 1, title: '琉璃之息',    tag: 'Digital Art', img: '/images/work-1.jpg' },
-  { id: 2, title: '素颜诗',      tag: 'Portrait',    img: '/images/work-2.jpg' },
-  { id: 3, title: '暖棕心事',    tag: 'Mood',        img: '/images/work-3.jpg' },
-  { id: 4, title: '油画里的夏日', tag: 'Painting',   img: '/images/work-4.jpg' },
-  { id: 5, title: '旧梦',        tag: 'Cinematic',   img: '/images/work-5.jpg' },
+  { id: 1, title: '琉璃之息',    tag: 'Digital Art', img: '/images/work-1.jpg', slug: 'liuli'   },
+  { id: 2, title: '素颜诗',      tag: 'Portrait',    img: '/images/work-2.jpg', slug: 'suyan'   },
+  { id: 3, title: '暖棕心事',    tag: 'Mood',        img: '/images/work-3.jpg', slug: 'nuanzon' },
+  { id: 4, title: '油画里的夏日', tag: 'Painting',   img: '/images/work-4.jpg', slug: 'youhua'  },
+  { id: 5, title: '旧梦',        tag: 'Cinematic',   img: '/images/work-5.jpg', slug: 'jiumeng' },
 ];
 
 export default function Home() {
   const [loaded, setLoaded] = useState(false);
+  const router         = useRouter();
   const trackRef       = useRef<HTMLDivElement>(null);
   const currentRef     = useRef(0);
   const targetRef      = useRef(0);
@@ -204,7 +206,12 @@ export default function Home() {
 
           {/* Work items */}
           {WORKS.map((w) => (
-            <article key={w.id} className={`work-item work-item--${w.id}`}>
+            <article
+              key={w.id}
+              className={`work-item work-item--${w.id}`}
+              onClick={() => router.push(`/works/${w.slug}`)}
+              style={{ cursor: 'none' }}
+            >
               <img src={w.img} alt={w.title} className="work-item-img" loading="lazy" />
 
               {/* Bottom label */}
