@@ -44,14 +44,19 @@ export default function WorkDetailPage() {
     addHoverListeners();
 
     const tick = () => {
-      // Init: start at the middle set so we can loop both ways
+      // Init: measure sw via offsetLeft diff (exact, no float rounding)
+      // Track has images×3; second copy starts at index images.length
       if (!initialized) {
-        const sw = track.scrollWidth / 3;
-        if (sw > 0) {
-          singleWidthRef.current = sw;
-          currentRef.current = sw;
-          targetRef.current  = sw;
-          initialized = true;
+        const allItems = track.querySelectorAll<HTMLElement>('.detail-item');
+        const n = series.images.length;
+        if (allItems.length >= 2 * n && allItems[n]) {
+          const sw = allItems[n].offsetLeft - allItems[0].offsetLeft;
+          if (sw > 0) {
+            singleWidthRef.current = sw;
+            currentRef.current = sw;
+            targetRef.current  = sw;
+            initialized = true;
+          }
         }
       }
 
@@ -69,7 +74,7 @@ export default function WorkDetailPage() {
         }
       }
 
-      track.style.transform = `translateX(${-currentRef.current}px)`;
+      track.style.transform = `translate3d(${-currentRef.current}px, 0, 0)`;
 
       const vCenter = window.innerWidth / 2;
       const items   = track.querySelectorAll<HTMLElement>('.detail-item');
