@@ -13,17 +13,60 @@ export interface WorkSeries {
   slug: string;
   title: string;
   tag: string;
-  coverImg: string;       // 首页封面图
+  coverImg: string;
   description: string;
   images: WorkImage[];
 }
 
 export const workSeries: WorkSeries[] = [
+  // ── 首页五个系列 ─────────────────────────────────────────────
+  {
+    slug: 'tiffany',
+    title: '蒂芙尼蓝的盛夏',
+    tag: 'Scene',
+    coverImg: '/images/work-1.jpg',
+    description: '蒂芙尼蓝与盛夏海风，那家转角便利店是夏日的锚点',
+    images: [],
+  },
+  {
+    slug: 'rose',
+    title: '香氛里的玫瑰梦境',
+    tag: 'Product',
+    coverImg: '/images/work-2.jpg',
+    description: '奢华香氛的视觉叙事，玫瑰与光在梦境中的相遇',
+    images: [],
+  },
+  {
+    slug: 'forest',
+    title: '林间鲜意',
+    tag: 'Design',
+    coverImg: '/images/work-3.jpg',
+    description: '从山野到餐桌，以设计语言呈现自然的原始鲜活',
+    images: [],
+  },
+  {
+    slug: 'crystal',
+    title: '晶屿橙花',
+    tag: '3D Art',
+    coverImg: '/images/work-4.jpg',
+    description: '浮空的石岛上，水晶与橙花共生，静谧而超然',
+    images: [],
+  },
+  {
+    slug: 'cherry',
+    title: '丝绒上的红玛瑙',
+    tag: 'Still Life',
+    coverImg: '/images/work-5.jpg',
+    description: '丝绒光影下的静物诗意，红与柔的极致碰撞',
+    images: [],
+  },
+
+  // ── 独立系列（不在首页主导航）──────────────────────────────
   {
     slug: 'liuli',
     title: '琉璃之息',
     tag: 'Digital Art',
-    coverImg: '/images/work-1.jpg',
+    coverImg: '/images/liuli/1.jpg',
     description: '沉浸于水下的绝美人像，琉璃般通透的光影世界',
     images: [
       {
@@ -94,37 +137,5 @@ export const workSeries: WorkSeries[] = [
 漂浮杂物，背景杂乱，元素重复`,
       },
     ],
-  },
-  {
-    slug: 'suyan',
-    title: '素颜诗',
-    tag: 'Portrait',
-    coverImg: '/images/work-2.jpg',
-    description: '返璞归真的人像美学，用光影书写素颜的诗',
-    images: [],
-  },
-  {
-    slug: 'nuanzon',
-    title: '暖棕心事',
-    tag: 'Mood',
-    coverImg: '/images/work-3.jpg',
-    description: '暖棕色调的情绪影像，那些无法言说的内心世界',
-    images: [],
-  },
-  {
-    slug: 'youhua',
-    title: '油画里的夏日',
-    tag: 'Painting',
-    coverImg: '/images/work-4.jpg',
-    description: '以AI重现油画质感，定格夏日最后的光与热',
-    images: [],
-  },
-  {
-    slug: 'jiumeng',
-    title: '旧梦',
-    tag: 'Cinematic',
-    coverImg: '/images/work-5.jpg',
-    description: '电影胶片质感的旧梦影像，时光流逝的诗意记录',
-    images: [],
   },
 ];

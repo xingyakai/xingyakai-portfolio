@@ -3,11 +3,11 @@ import { useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 
 const WORKS = [
-  { id: 1, title: '琉璃之息',    tag: 'Digital Art', img: '/images/work-1.jpg', slug: 'liuli'   },
-  { id: 2, title: '素颜诗',      tag: 'Portrait',    img: '/images/work-2.jpg', slug: 'suyan'   },
-  { id: 3, title: '暖棕心事',    tag: 'Mood',        img: '/images/work-3.jpg', slug: 'nuanzon' },
-  { id: 4, title: '油画里的夏日', tag: 'Painting',   img: '/images/work-4.jpg', slug: 'youhua'  },
-  { id: 5, title: '旧梦',        tag: 'Cinematic',   img: '/images/work-5.jpg', slug: 'jiumeng' },
+  { id: 1, title: '蒂芙尼蓝的盛夏',  tag: 'Scene',     img: '/images/work-1.jpg', slug: 'tiffany' },
+  { id: 2, title: '香氛里的玫瑰梦境', tag: 'Product',   img: '/images/work-2.jpg', slug: 'rose'    },
+  { id: 3, title: '林间鲜意',         tag: 'Design',    img: '/images/work-3.jpg', slug: 'forest'  },
+  { id: 4, title: '晶屿橙花',         tag: '3D Art',    img: '/images/work-4.jpg', slug: 'crystal' },
+  { id: 5, title: '丝绒上的红玛瑙',   tag: 'Still Life',img: '/images/work-5.jpg', slug: 'cherry'  },
 ];
 
 export default function Home() {
