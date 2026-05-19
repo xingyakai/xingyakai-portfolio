@@ -61,12 +61,46 @@ export const workSeries: WorkSeries[] = [
     images: [],
   },
 
-  // ── 独立系列（不在首页主导航）──────────────────────────────
+  // ── 原始五个系列 ─────────────────────────────────────────────
+  {
+    slug: 'suyan',
+    title: '素颜诗',
+    tag: 'Portrait',
+    coverImg: '/images/work-7.jpg',
+    description: '素颜之下，诗意自生',
+    images: [],
+  },
+  {
+    slug: 'nuanzong',
+    title: '暖棕心事',
+    tag: 'Mood',
+    coverImg: '/images/work-8.jpg',
+    description: '暖棕色调里的内心独白',
+    images: [],
+  },
+  {
+    slug: 'youhua',
+    title: '油画里的夏日',
+    tag: 'Painting',
+    coverImg: '/images/work-9.jpg',
+    description: '油画质感与夏日光影的交融',
+    images: [],
+  },
+  {
+    slug: 'jiumeng',
+    title: '旧梦',
+    tag: 'Cinematic',
+    coverImg: '/images/work-10.jpg',
+    description: '电影感的旧日梦境',
+    images: [],
+  },
+
+  // ── 独立系列（有完整图集）──────────────────────────────────
   {
     slug: 'liuli',
     title: '琉璃之息',
     tag: 'Digital Art',
-    coverImg: '/images/liuli/1.jpg',
+    coverImg: '/images/work-6.jpg',
     description: '沉浸于水下的绝美人像，琉璃般通透的光影世界',
     images: [
       {
