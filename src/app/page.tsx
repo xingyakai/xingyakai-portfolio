@@ -208,7 +208,7 @@ export default function Home() {
                 return (
                   <article
                     key={`${copyIdx}-${w.id}`}
-                    className={`work-item work-item--${w.id}`}
+                    className={`work-item work-item--${((wi % 5) + 1)}`}
                     style={{ cursor: 'none', ...(isLast ? { marginRight: '5vw' } : {}) }}
                     onClick={() => router.push(`/works/${w.slug}`)}
                   >
