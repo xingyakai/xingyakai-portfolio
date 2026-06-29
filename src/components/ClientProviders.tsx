@@ -1,9 +1,5 @@
 'use client';
 
-import dynamic from 'next/dynamic';
-
-const IntroOverlay = dynamic(() => import('./IntroOverlay'), { ssr: false });
-
 export default function ClientProviders() {
-  return <IntroOverlay />;
+  return null;
 }
