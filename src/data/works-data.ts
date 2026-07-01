@@ -226,7 +226,7 @@ export const workSeries: WorkSeries[] = [
     slug: 'bantang',
     title: '半糖时光',
     tag: 'Food',
-    coverImg: '/images/bantang/dc82258fee44db922fd2999125a13820.jpg',
+    coverImg: '/images/bantang/1e7739f4445100ea6d040b31afe5bd15.jpg',
     description: '甜品与饮品的视觉盛宴，半糖半苦的美好时光',
     images: [
       { src: '/images/bantang/020b93e9b97639219279b12d9b3b4820.jpg', title: '焦糖巧克力山', positivePrompt: '一大块三角形咖啡花生酱冰淇淋派，顶部堆叠着旋转裱花奶油、金黄焦糖淋酱、巧克力碎块与巧克力豆，内里夹杂密集的巧克力脆片，底层是酥脆金棕色饼干基底；静置于洁白圆盘上，背景是大理石纹桌面；侧上方自然光勾勒出奶油光泽与酱汁流动质感，色泽浓郁诱人，食欲感极强；高端商业甜品摄影，中近景浅景深，柔和自然光，细腻质感，8K超高清', negativePrompt: NEG_FOOD },
@@ -251,7 +251,7 @@ export const workSeries: WorkSeries[] = [
     slug: 'guose',
     title: '果色漫山野',
     tag: 'Nature',
-    coverImg: '/images/guose/fad5d3794148fb6d285f68ca432ab234.jpg',
+    coverImg: '/images/guose/e0bb73218e9eb1a66675570069077817.jpg',
     description: '山野间的缤纷果色，自然馈赠的纯粹光影',
     images: [
       { src: '/images/guose/52c2582219592ab78803068eccfdb1b9.jpg', title: '紫李映绿荫', positivePrompt: '自然光下一块木板上摆放着一簇新鲜的紫红李子，果皮呈深紫红色并覆有一层天然蜡质白霜与光泽，粗壮的果柄上挂着两颗饱满果实；周围散落几片新鲜翠绿叶片，背景绿叶柔和虚化；柔和自然光勾勒果皮的圆润质感与水润光泽，色调深紫翠绿鲜活；近景微距美食摄影，浅景深，柔和自然光，细腻纹理，高饱和，8K超高清', negativePrompt: NEG_NATURE },
@@ -267,7 +267,7 @@ export const workSeries: WorkSeries[] = [
     slug: 'yanhu',
     title: '烟火入诗',
     tag: 'Food',
-    coverImg: '/images/yanhu/bce96b23654b620d543dd9164dec03f0.jpg',
+    coverImg: '/images/yanhu/652379b24002ae95fab4355a2a326ec4.jpg',
     description: '烟火气息入诗意，日常美食的视觉升华',
     images: [
       { src: '/images/yanhu/4c508a98b43a9de520099eea1a402a5f.jpg', title: '铁锅金鸡香', positivePrompt: '一口铸铁锅中烤制的金黄鸡腿，表皮酥脆焦香、油脂在高温下渗出形成诱人的琥珀光泽，搭配同烤的蒜瓣与迷迭香香草；背景是温暖虚化的木质桌面，自然光自侧上方洒落勾勒出焦香脆皮的质感；色调金黄暖棕、烟火气十足；专业商业美食摄影，近景特写浅景深，柔和自然光，细腻质感，极致食欲感，8K超高清', negativePrompt: NEG_FOOD },
@@ -298,7 +298,7 @@ export const workSeries: WorkSeries[] = [
     slug: 'shenglin',
     title: '生灵剪影',
     tag: 'Wildlife',
-    coverImg: '/images/shenglin/0c6f4a6f224b844ef3857bd2758d83a3.jpg',
+    coverImg: '/images/shenglin/1fe0c27640ca87f5dce81b6f7ec0f4de.jpg',
     description: '万物生灵的光影定格，自然与生命的深情凝视',
     images: [
       { src: '/images/shenglin/000b2ec5935e4d01f0f7778b3baf5d64.jpg', title: '蛇盘石上立', positivePrompt: '一条花纹蛇盘踞在棕色沙岩石头上昂首挺立，身体背部呈深棕色、腹部奶黄色，鳞片纹理清晰细腻，正吐信探测、姿态灵动；背景是大地色系的柔和虚化，自然光勾勒出鳞甲的光泽与立体感；色调暖棕沉稳、野性十足；近景特写爬行动物微距摄影，浅景深，柔和自然光，细腻鳞片质感，8K超高清', negativePrompt: NEG_WILDLIFE },
