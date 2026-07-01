@@ -390,21 +390,246 @@ strong Japanese healing illustration quality, medium-distance composition, soft-
     coverImg: '/images/work-2.jpg',
     description: '奢华香氛的视觉叙事，玫瑰与光在梦境中的相遇',
     images: [
-      { src: '/images/rose/0684c1932e7a95a96d875bf4948dd6c8.jpg', title: '蝶恋花田香', positivePrompt: '一只粉色透明玻璃香水瓶静置花田中央，圆润瓶身折射出温柔粉金光晕，磨砂瓶盖上停落一只翅膀半透明的白蝴蝶；周围盛放大量粉白奶油色玫瑰与雏菊，另有三只蝴蝶在空中翩然飞舞，背景是朦胧柔焦的花海草地与粉蓝天空；光线自背后穿透营造梦幻逆光与光斑，色调柔粉浪漫，玻璃质感通透；高端香氛产品摄影，微距浅景深，柔光逆光，8K超清细节', negativePrompt: NEG_PRODUCT },
-      { src: '/images/rose/09002725c20ea780a3b79ed53570c8bf.jpg', title: '暮色烈焰瓶', positivePrompt: '一只深酒红色球形玻璃香水瓶，瓶身覆盖精美金色巴洛克浮雕卷草花纹，顶盖为金色火焰造型装饰，庄重伫立海边嶙峋礁石之上；背景是紫红色壮丽落日晚霞映照在波涛汹涌的海面，远处悬崖边一位身着深红飘逸长裙的女性剪影静立；暖金逆光勾勒瓶身轮廓，色调深红鎏金奢华，玻璃与金属质感厚重；高端香水广告摄影，中景浅景深，戏剧光影，8K', negativePrompt: NEG_PRODUCT },
-      { src: '/images/rose/2466eeb64b37599200059a3c3e10d52b.jpg', title: '玫瑰烟雾殿堂', positivePrompt: '一只粉玫瑰金色多切面玻璃香水瓶巍然立于发光的水晶矿石底座上，四周弥漫飘渺白色薄雾与飞散的粉色玫瑰花瓣、白色小花；背景是金色吊灯与暗金色奢华室内装饰，烛光般的暖光自四面轻柔环绕照射，金粉微尘在空气中悬浮闪烁；色调暖金玫粉，材质晶莹奢华，光影朦胧梦幻；顶级香氛静物摄影，中景浅景深，柔和体积光，细腻质感，8K超清', negativePrompt: NEG_PRODUCT },
-      { src: '/images/rose/4daee803e0512703428e69104d8008b2.jpg', title: '椰香热带之瓶', positivePrompt: '一只金色琥珀色圆润香水瓶嵌入半剖开的椰子壳中，瓶身附着晶莹水滴，周围散落洁白鸡蛋花与透亮冰块水珠；背景是东南亚热带海岛风光，碧绿棕榈叶、金色沙滩与纯净蓝绿色海水交相辉映；充沛阳光直射投下清晰投影，色调清爽热带，琥珀玻璃通透，材质水润清凉；清新香氛产品摄影，中近景浅景深，自然硬光，高饱和，8K细节', negativePrompt: NEG_PRODUCT },
-      { src: '/images/rose/5bf564a9c9167db4b3168a2a87f7030e.jpg', title: '竹间一抹绿', positivePrompt: '一只小巧透明的绿色精华液瓶安静搁置于潮湿竹节之上，晶莹水珠沿竹身缓缓滑落，旁侧点缀几片翠绿细叶；背景是深绿色竹林在柔和侧光中的朦胧剪影，一束聚焦光柱精准打在产品上勾勒轮廓；色调沉稳清冽，绿意盎然，玻璃质感通透水润，充满东方禅意留白；高端护肤品静物摄影，微距浅景深，聚光侧逆光，宁静氛围，8K超清', negativePrompt: NEG_PRODUCT },
-      { src: '/images/rose/653de173e65005b859004636f8185958.jpg', title: '苔藓柠香方瓶', positivePrompt: '一只透明方形玻璃香水瓶端庄置于苔藓覆盖的湿润岩石上，瓶内液体清透淡绿，周围摆放对半切开的黄柠檬与青柠露出多汁果肉；整体环境被翠绿苔藓层层包裹，光线穿透玻璃瓶身折射出晶莹剔透的质感；色调清新自然，绿黄相映鲜活，材质水润通透；清新香氛产品摄影，微距浅景深，柔和自然光，细腻纹理，高饱和，8K高清', negativePrompt: NEG_PRODUCT },
-      { src: '/images/rose/6aa831eb3ac1113f285ad7f3cbdbf329.jpg', title: '荒野瀑流蓝瓶', positivePrompt: '一只深宝蓝色香水瓶被奔涌激流正面冲刷，水花四溅炸裂成动感弧线，瓶身沾满晶莹飞溅的水珠；背景是热带雨林深处茂密绿植与飞流直下的壮阔瀑布，阳光穿透弥漫水雾形成耀眼光斑；色调深蓝苍翠，充满力量感与速度感，玻璃质感冷冽，水花高速凝结；运动感香水广告摄影，中景，高速快门定格，戏剧逆光，锐利，8K超清', negativePrompt: NEG_PRODUCT },
-      { src: '/images/rose/752ab5b36f10c7a3123be70a0776098a.jpg', title: '深夜星砂之蓝', positivePrompt: '一只深夜蓝色香水瓶半沉于黑色湿润细沙之中，瓶身覆有细密水珠，周围散布暗色礁石；背景深蓝黑色空间里微小粒子如星尘般静静漂浮闪烁，光源自画面前侧打出精准的蓝色冷光勾勒瓶身；色调幽深神秘，冷蓝主调，玻璃质感深邃通透，氛围静谧高级；高端男香广告摄影，中近景浅景深，低调冷光，颗粒星尘，锐利，8K细节', negativePrompt: NEG_PRODUCT },
-      { src: '/images/rose/7b46c4a09f0336b3454dc1b8639e11ea.jpg', title: '沉木烟火琥珀', positivePrompt: '一只琥珀色透明泵头沐浴瓶横卧于苍老沉木之间，细腻白色烟雾自木缝间袅袅升腾弥漫；木质纹理粗犷厚重呈深棕色，产品标签在昏黄光线下散发温暖金色微光；色调暖棕琥珀，材质温润通透，木纹质感沧桑，充满东方沉香与乌木气息；高端个护产品摄影，中近景浅景深，低调暖光，烟雾氛围，细腻质感，8K超清', negativePrompt: NEG_PRODUCT },
-      { src: '/images/rose/95f38cf67ef6ade4f63ba5bad9fece2c.jpg', title: '暗夜焰火黑瓶', positivePrompt: '一只全黑磨砂玻璃香水瓶与一截燃烧着橙红火焰的干枯树根并置于深蓝湿润的镜面表面，周围散布晶莹水珠映出微光；金色品牌标志在纯黑瓶身上低调闪耀，火焰橙红与深蓝背景形成强烈冷暖色温对比；色调暗黑鎏金，材质磨砂哑光与火光跳动，氛围神秘炽烈；高端男香广告摄影，中景浅景深，戏剧火光，冷暖对撞，锐利，8K', negativePrompt: NEG_PRODUCT },
-      { src: '/images/rose/d079644fc128f72e344e6df3957f6e10.jpg', title: '荒原日落传说', positivePrompt: '一只深色磨砂玻璃香水瓶沉稳置于荒野礁石之上，背景是燃烧般的火红、橙、紫渐变落日天空，广阔荒野地平线延伸至无限远处；强烈暖光自背后打出清晰轮廓光勾勒瓶身，色调火橙深紫史诗磅礴；材质磨砂哑光厚重，光影强烈戏剧，充满力量与传奇感；高端香水广告摄影，中景低角度，黄金时刻逆光，大气氛围，锐利，8K超清', negativePrompt: NEG_PRODUCT },
-      { src: '/images/rose/d2879c07526b65e895db2c83a7933e90.jpg', title: '松林雾中洁净', positivePrompt: '一支绿白渐变色洁面产品软管竖立于青石板上，旁边倚靠一块粗砺小石，右侧松枝自画面边缘探入；背景弥漫薄薄青绿色烟雾，侧逆光在管身勾勒出柔和高光边缘；色调清新沉稳，绿白主调充满自然植物感，材质哑光细腻，氛围清冽洁净；护肤品静物广告摄影，中近景浅景深，柔和侧逆光，薄雾氛围，细腻质感，8K高清', negativePrompt: NEG_PRODUCT },
-      { src: '/images/rose/d28ebf1774ace80a82b7486eca6fc48c.jpg', title: '苔石香奈儿', positivePrompt: '一只经典方形透明玻璃香水瓶静置于森林苔藓覆盖的岩石上，瓶内金棕色液体在斑驳林间光线下折射出温暖光芒；四周环绕翠绿蕨类植物与点点紫色小野花，背景是光线穿透树冠洒落的梦幻光柱；色调暖金苍翠，玻璃质感晶莹，苔藓蕨叶湿润细腻，氛围静谧梦幻；高端香氛产品摄影，微距浅景深，穿透体积光，细腻纹理，8K超清', negativePrompt: NEG_PRODUCT },
-      { src: '/images/rose/ec3274f990e7d113ef9a982ddb87ad91.jpg', title: '野花丛中方瓶', positivePrompt: '一只带粉棕色皮革标签的方形玻璃香水瓶矗立于色彩斑斓的野花草地之上，周围盛放粉色、蓝色雏菊与各色小野花；整体沉浸在暖粉紫色的雾感光晕中，朦胧梦幻的焦外虚化令花田延伸感十足；色调暖粉柔紫，玻璃与皮革质感细腻，光线柔和逆透，氛围浪漫治愈；高端香氛产品摄影，微距大光圈浅景深，柔光逆光，唯美，8K高清', negativePrompt: NEG_PRODUCT },
-      { src: '/images/rose/f1a6fb3bf5cf986159705e863416f2a7.jpg', title: '玫红瀑流之境', positivePrompt: '一只玫瑰红色多切面玻璃香水瓶被瀑布水流正面冲击，水花在瓶盖处炸裂飞溅，晶莹水珠在空中高速定格；四周漂浮着粉色睡莲花朵，背景是紫红暗色调的粼粼水波纹；色调浓烈玫红，动感十足，玻璃切面折射绚烂，水花凝结晶莹；高端女香广告摄影，中景，高速快门定格，戏剧光影，色彩浓郁饱和，锐利，8K超清', negativePrompt: NEG_PRODUCT },
+      { src: '/images/rose/0684c1932e7a95a96d875bf4948dd6c8.jpg', title: '蝶恋花田香', positivePrompt: `杰作，最佳质量，8K超高清，高端香氛产品摄影，极致精细，柔光逆光，微距景深
+一只粉色透明玻璃香水瓶静置花田中央，圆润瓶身折射出温柔的粉金光晕
+磨砂瓶盖上停落一只翅膀半透明的白蝴蝶
+周围盛放大量粉白奶油色玫瑰与雏菊，另有三只蝴蝶在空中翩然飞舞
+背景是朦胧柔焦的花海草地与粉蓝天空，光线自背后穿透营造梦幻逆光与光斑
+色调柔粉浪漫，玻璃质感通透
+高端香氛产品摄影，微距浅景深，柔光逆光，细腻质感
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, high-end fragrance product photography, extremely detailed, soft backlight, macro depth of field
+a pink translucent glass perfume bottle resting at the center of a flower field, its round body refracting a gentle pink-gold glow
+a white butterfly with semi-transparent wings perched on the frosted cap
+surrounded by abundant pink-white cream roses and daisies, three more butterflies fluttering in the air
+background of dreamily soft-focused flower meadow and pink-blue sky, light streaming from behind creating a dreamy backlight and flare
+soft pink romantic tones, translucent glass texture
+high-end fragrance product photography, macro shallow depth of field, soft backlight, fine texture`, negativePrompt: NEG_PRODUCT },
+      { src: '/images/rose/09002725c20ea780a3b79ed53570c8bf.jpg', title: '暮色烈焰瓶', positivePrompt: `杰作，最佳质量，8K超高清，高端香水广告摄影，极致精细，戏剧光影，景深效果
+一只深酒红色球形玻璃香水瓶，瓶身覆盖精美金色巴洛克浮雕卷草花纹，顶盖为金色火焰造型装饰
+庄重伫立海边嶙峋礁石之上
+背景是紫红色壮丽落日晚霞映照在波涛汹涌的海面，远处悬崖边一位身着深红飘逸长裙的女性剪影静立
+暖金逆光勾勒瓶身轮廓
+色调深红鎏金奢华，玻璃与金属质感厚重
+高端香水广告摄影，中景浅景深，戏剧光影，锐利质感
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, high-end perfume advertising photography, extremely detailed, dramatic lighting, depth of field
+a deep wine-red spherical glass perfume bottle, its body covered in exquisite gold baroque scrollwork relief, the cap shaped like a golden flame
+standing solemnly atop jagged seaside reefs
+background of a magnificent purple-red sunset glow reflecting on the surging sea, the silhouette of a woman in a flowing dark-red gown standing on a distant cliff
+warm gold backlight outlining the bottle's contour
+deep-red gilded luxurious tones, heavy glass and metal texture
+high-end perfume advertising photography, medium-shot shallow depth of field, dramatic lighting, sharp texture`, negativePrompt: NEG_PRODUCT },
+      { src: '/images/rose/2466eeb64b37599200059a3c3e10d52b.jpg', title: '玫瑰烟雾殿堂', positivePrompt: `杰作，最佳质量，8K超高清，顶级香氛静物摄影，极致精细，柔和体积光，景深效果
+一只粉玫瑰金色多切面玻璃香水瓶巍然立于发光的水晶矿石底座上
+四周弥漫飘渺白色薄雾与飞散的粉色玫瑰花瓣、白色小花
+背景是金色吊灯与暗金色奢华室内装饰，烛光般的暖光自四面轻柔环绕照射
+金粉微尘在空气中悬浮闪烁
+色调暖金玫粉，材质晶莹奢华，光影朦胧梦幻
+顶级香氛静物摄影，中景浅景深，柔和体积光，细腻质感
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, top-tier fragrance still-life photography, extremely detailed, soft volumetric light, depth of field
+a pink-rose-gold multi-faceted glass perfume bottle standing majestically on a glowing crystal mineral base
+surrounded by ethereal white mist and scattered pink rose petals and small white flowers
+background of golden chandeliers and dark-gold luxurious interior decor, candle-like warm light gently encircling from all sides
+gold-dust motes floating and shimmering in the air
+warm gold rose-pink tones, crystalline luxurious materials, hazy dreamy light
+top-tier fragrance still-life photography, medium-shot shallow depth of field, soft volumetric light, fine texture`, negativePrompt: NEG_PRODUCT },
+      { src: '/images/rose/4daee803e0512703428e69104d8008b2.jpg', title: '椰香热带之瓶', positivePrompt: `杰作，最佳质量，8K超高清，清新香氛产品摄影，极致精细，自然硬光，景深效果
+一只金色琥珀色圆润香水瓶嵌入半剖开的椰子壳中，瓶身附着晶莹水滴
+周围散落洁白鸡蛋花与透亮冰块水珠
+背景是东南亚热带海岛风光，碧绿棕榈叶、金色沙滩与纯净蓝绿色海水交相辉映
+充沛阳光直射投下清晰投影
+色调清爽热带，琥珀玻璃通透，材质水润清凉
+清新香氛产品摄影，中近景浅景深，自然硬光，高饱和
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, fresh fragrance product photography, extremely detailed, hard natural light, depth of field
+a golden amber rounded perfume bottle nestled into a halved coconut shell, its body clinging with crystal droplets
+white frangipani flowers and glistening ice-cube droplets scattered around
+background of Southeast Asian tropical island scenery, emerald palm leaves, golden sand and pure blue-green water shining together
+ample direct sunlight casting crisp shadows
+fresh tropical tones, translucent amber glass, dewy cool texture
+fresh fragrance product photography, medium close-up shallow depth of field, hard natural light, high saturation`, negativePrompt: NEG_PRODUCT },
+      { src: '/images/rose/5bf564a9c9167db4b3168a2a87f7030e.jpg', title: '竹间一抹绿', positivePrompt: `杰作，最佳质量，8K超高清，高端护肤品静物摄影，极致精细，聚光侧逆光，微距景深
+一只小巧透明的绿色精华液瓶安静搁置于潮湿竹节之上，晶莹水珠沿竹身缓缓滑落
+旁侧点缀几片翠绿细叶
+背景是深绿色竹林在柔和侧光中的朦胧剪影，一束聚焦光柱精准打在产品上勾勒轮廓
+色调沉稳清冽，绿意盎然
+玻璃质感通透水润，充满东方禅意留白
+高端护肤品静物摄影，微距浅景深，聚光侧逆光，宁静氛围
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, high-end skincare still-life photography, extremely detailed, spotlight side backlight, macro depth of field
+a small translucent green serum bottle resting quietly on a damp bamboo node, crystal droplets sliding slowly down the bamboo
+a few slender emerald leaves accenting the side
+background of a deep-green bamboo grove blurred in soft side light, a focused beam of light precisely striking the product to outline it
+composed cool tones, lush greenery
+translucent dewy glass texture, full of Eastern Zen negative space
+high-end skincare still-life photography, macro shallow depth of field, spotlight side backlight, serene atmosphere`, negativePrompt: NEG_PRODUCT },
+      { src: '/images/rose/653de173e65005b859004636f8185958.jpg', title: '苔藓柠香方瓶', positivePrompt: `杰作，最佳质量，8K超高清，清新香氛产品摄影，极致精细，柔和自然光，微距景深
+一只透明方形玻璃香水瓶端庄置于苔藓覆盖的湿润岩石上，瓶内液体清透淡绿
+周围摆放对半切开的黄柠檬与青柠，露出多汁果肉
+整体环境被翠绿苔藓层层包裹，光线穿透玻璃瓶身折射出晶莹剔透的质感
+色调清新自然，绿黄相映鲜活
+材质水润通透，纹理细腻
+清新香氛产品摄影，微距浅景深，柔和自然光，高饱和
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, fresh fragrance product photography, extremely detailed, soft natural light, macro depth of field
+a clear rectangular glass perfume bottle sitting elegantly on a moss-covered damp rock, the liquid inside a clear pale green
+halved yellow lemons and limes arranged around it revealing juicy flesh
+the whole scene wrapped in layers of emerald moss, light passing through the glass bottle refracting a crystalline quality
+fresh natural tones, lively green-and-yellow interplay
+dewy translucent materials, fine texture
+fresh fragrance product photography, macro shallow depth of field, soft natural light, high saturation`, negativePrompt: NEG_PRODUCT },
+      { src: '/images/rose/6aa831eb3ac1113f285ad7f3cbdbf329.jpg', title: '荒野瀑流蓝瓶', positivePrompt: `杰作，最佳质量，8K超高清，运动感香水广告摄影，极致精细，高速快门定格，戏剧逆光
+一只深宝蓝色香水瓶被奔涌激流正面冲刷，水花四溅炸裂成动感弧线，瓶身沾满晶莹飞溅的水珠
+背景是热带雨林深处茂密绿植与飞流直下的壮阔瀑布
+阳光穿透弥漫水雾形成耀眼光斑
+色调深蓝苍翠，充满力量感与速度感
+玻璃质感冷冽，水花高速凝结
+运动感香水广告摄影，中景，高速快门定格，戏剧逆光，锐利
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, dynamic perfume advertising photography, extremely detailed, high-speed shutter freeze, dramatic backlight
+a deep sapphire perfume bottle struck head-on by a rushing torrent, water bursting into dynamic arcs, the bottle covered in glistening splashing droplets
+background of dense greenery deep in a tropical rainforest and a magnificent plunging waterfall
+sunlight piercing the drifting water mist forming dazzling flare
+deep-blue verdant tones, full of power and speed
+cold crisp glass texture, water splashes frozen at high speed
+dynamic perfume advertising photography, medium shot, high-speed shutter freeze, dramatic backlight, sharp`, negativePrompt: NEG_PRODUCT },
+      { src: '/images/rose/752ab5b36f10c7a3123be70a0776098a.jpg', title: '深夜星砂之蓝', positivePrompt: `杰作，最佳质量，8K超高清，高端男香广告摄影，极致精细，低调冷光，颗粒星尘，景深效果
+一只深夜蓝色香水瓶半沉于黑色湿润细沙之中，瓶身覆有细密水珠，周围散布暗色礁石
+背景深蓝黑色空间里微小粒子如星尘般静静漂浮闪烁
+光源自画面前侧打出精准的蓝色冷光勾勒瓶身
+色调幽深神秘，冷蓝主调
+玻璃质感深邃通透，氛围静谧高级
+高端男香广告摄影，中近景浅景深，低调冷光，颗粒星尘，锐利
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, high-end men's fragrance advertising photography, extremely detailed, low-key cool light, grainy stardust, depth of field
+a midnight-blue perfume bottle half-buried in black damp fine sand, its body covered in fine droplets, dark reefs scattered around
+background of a deep blue-black space where tiny particles float and shimmer like stardust
+the light source from the front casting precise cool blue light to outline the bottle
+deep mysterious tones, cool-blue dominant palette
+deep translucent glass texture, a serene high-end atmosphere
+high-end men's fragrance advertising photography, medium close-up shallow depth of field, low-key cool light, grainy stardust, sharp`, negativePrompt: NEG_PRODUCT },
+      { src: '/images/rose/7b46c4a09f0336b3454dc1b8639e11ea.jpg', title: '沉木烟火琥珀', positivePrompt: `杰作，最佳质量，8K超高清，高端个护产品摄影，极致精细，低调暖光，烟雾氛围，景深效果
+一只琥珀色透明泵头沐浴瓶横卧于苍老沉木之间，细腻白色烟雾自木缝间袅袅升腾弥漫
+木质纹理粗犷厚重呈深棕色，产品标签在昏黄光线下散发温暖金色微光
+色调暖棕琥珀，材质温润通透
+木纹质感沧桑，充满东方沉香与乌木气息
+氛围静谧温暖
+高端个护产品摄影，中近景浅景深，低调暖光，烟雾氛围，细腻质感
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, high-end personal-care product photography, extremely detailed, low-key warm light, smoke atmosphere, depth of field
+an amber translucent pump body-wash bottle lying among aged driftwood, fine white smoke curling and drifting up through the wood crevices
+rugged heavy dark-brown wood grain, the product label glowing warm gold in the dim light
+warm amber-brown tones, gentle translucent material
+weathered wood-grain texture, full of Eastern agarwood and ebony notes
+a serene warm atmosphere
+high-end personal-care product photography, medium close-up shallow depth of field, low-key warm light, smoke atmosphere, fine texture`, negativePrompt: NEG_PRODUCT },
+      { src: '/images/rose/95f38cf67ef6ade4f63ba5bad9fece2c.jpg', title: '暗夜焰火黑瓶', positivePrompt: `杰作，最佳质量，8K超高清，高端男香广告摄影，极致精细，戏剧火光，冷暖对撞，景深效果
+一只全黑磨砂玻璃香水瓶与一截燃烧着橙红火焰的干枯树根并置于深蓝湿润的镜面表面
+周围散布晶莹水珠映出微光
+金色品牌标志在纯黑瓶身上低调闪耀，火焰橙红与深蓝背景形成强烈冷暖色温对比
+色调暗黑鎏金，材质磨砂哑光与火光跳动
+氛围神秘炽烈
+高端男香广告摄影，中景浅景深，戏剧火光，冷暖对撞，锐利
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, high-end men's fragrance advertising photography, extremely detailed, dramatic firelight, clashing cool-warm, depth of field
+a matte-black glass perfume bottle placed beside a dead tree root burning with orange-red flames on a deep-blue wet mirror surface
+crystal droplets scattered around reflecting faint light
+the gold brand logo glinting subtly on the pure-black body, the orange-red flame contrasting strongly in color temperature with the deep-blue background
+dark gilded tones, matte frosted material against flickering firelight
+a mysterious blazing atmosphere
+high-end men's fragrance advertising photography, medium-shot shallow depth of field, dramatic firelight, clashing cool-warm, sharp`, negativePrompt: NEG_PRODUCT },
+      { src: '/images/rose/d079644fc128f72e344e6df3957f6e10.jpg', title: '荒原日落传说', positivePrompt: `杰作，最佳质量，8K超高清，高端香水广告摄影，极致精细，黄金时刻逆光，大气氛围，景深效果
+一只深色磨砂玻璃香水瓶沉稳置于荒野礁石之上
+背景是燃烧般的火红、橙、紫渐变落日天空，广阔荒野地平线延伸至无限远处
+强烈暖光自背后打出清晰轮廓光勾勒瓶身
+色调火橙深紫，史诗磅礴
+材质磨砂哑光厚重，光影强烈戏剧，充满力量与传奇感
+高端香水广告摄影，中景低角度，黄金时刻逆光，大气氛围，锐利
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, high-end perfume advertising photography, extremely detailed, golden-hour backlight, epic atmosphere, depth of field
+a dark matte-glass perfume bottle sitting steadily atop wilderness reefs
+background of a blazing fiery-red, orange and purple gradient sunset sky, the vast wilderness horizon stretching to infinity
+strong warm light from behind casting a clear rim light around the bottle
+fiery-orange deep-purple tones, epic and grand
+heavy matte material, strong dramatic lighting, full of power and legend
+high-end perfume advertising photography, medium-shot low-angle, golden-hour backlight, atmospheric, sharp`, negativePrompt: NEG_PRODUCT },
+      { src: '/images/rose/d2879c07526b65e895db2c83a7933e90.jpg', title: '松林雾中洁净', positivePrompt: `杰作，最佳质量，8K超高清，护肤品静物广告摄影，极致精细，柔和侧逆光，薄雾氛围，景深效果
+一支绿白渐变色洁面产品软管竖立于青石板上，旁边倚靠一块粗砺小石，右侧松枝自画面边缘探入
+背景弥漫薄薄青绿色烟雾，侧逆光在管身勾勒出柔和高光边缘
+色调清新沉稳，绿白主调充满自然植物感
+材质哑光细腻，氛围清冽洁净
+静谧自然
+护肤品静物广告摄影，中近景浅景深，柔和侧逆光，薄雾氛围，细腻质感
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, skincare still-life advertising photography, extremely detailed, soft side backlight, misty atmosphere, depth of field
+a green-to-white gradient cleanser tube standing on a bluestone slab, a rough small stone leaning beside it, a pine branch reaching in from the right edge
+background diffused with thin blue-green mist, side backlight tracing a soft highlight edge along the tube
+fresh composed tones, green-and-white palette full of natural botanical feel
+matte fine material, a crisp clean atmosphere
+serene and natural
+skincare still-life advertising photography, medium close-up shallow depth of field, soft side backlight, misty atmosphere, fine texture`, negativePrompt: NEG_PRODUCT },
+      { src: '/images/rose/d28ebf1774ace80a82b7486eca6fc48c.jpg', title: '苔石香奈儿', positivePrompt: `杰作，最佳质量，8K超高清，高端香氛产品摄影，极致精细，穿透体积光，微距景深
+一只经典方形透明玻璃香水瓶静置于森林苔藓覆盖的岩石上，瓶内金棕色液体在斑驳林间光线下折射出温暖光芒
+四周环绕翠绿蕨类植物与点点紫色小野花
+背景是光线穿透树冠洒落的梦幻光柱
+色调暖金苍翠，玻璃质感晶莹
+苔藓蕨叶湿润细腻，氛围静谧梦幻
+高端香氛产品摄影，微距浅景深，穿透体积光，细腻纹理
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, high-end fragrance product photography, extremely detailed, penetrating volumetric light, macro depth of field
+a classic rectangular clear-glass perfume bottle resting on a moss-covered forest rock, the golden-brown liquid inside refracting warm light in the dappled forest light
+surrounded by emerald ferns and dots of purple wildflowers
+background of dreamy light beams filtering through the tree canopy
+warm gold verdant tones, crystalline glass texture
+dewy delicate moss and fern leaves, a serene dreamy atmosphere
+high-end fragrance product photography, macro shallow depth of field, penetrating volumetric light, fine texture`, negativePrompt: NEG_PRODUCT },
+      { src: '/images/rose/ec3274f990e7d113ef9a982ddb87ad91.jpg', title: '野花丛中方瓶', positivePrompt: `杰作，最佳质量，8K超高清，高端香氛产品摄影，极致精细，柔光逆光，微距大光圈景深
+一只带粉棕色皮革标签的方形玻璃香水瓶矗立于色彩斑斓的野花草地之上
+周围盛放粉色、蓝色雏菊与各色小野花
+整体沉浸在暖粉紫色的雾感光晕中，朦胧梦幻的焦外虚化令花田延伸感十足
+色调暖粉柔紫，玻璃与皮革质感细腻
+光线柔和逆透，氛围浪漫治愈
+高端香氛产品摄影，微距大光圈浅景深，柔光逆光，唯美
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, high-end fragrance product photography, extremely detailed, soft backlight, macro wide-aperture depth of field
+a rectangular glass perfume bottle with a pink-brown leather label standing amid a colorful wildflower meadow
+blooming pink and blue daisies and assorted wildflowers around it
+the whole scene bathed in a warm pink-purple misty glow, dreamy out-of-focus blur giving the flower field great depth
+warm pink soft-purple tones, fine glass and leather texture
+soft backlit light, a romantic healing atmosphere
+high-end fragrance product photography, macro wide-aperture shallow depth of field, soft backlight, beautiful`, negativePrompt: NEG_PRODUCT },
+      { src: '/images/rose/f1a6fb3bf5cf986159705e863416f2a7.jpg', title: '玫红瀑流之境', positivePrompt: `杰作，最佳质量，8K超高清，高端女香广告摄影，极致精细，高速快门定格，戏剧光影，景深效果
+一只玫瑰红色多切面玻璃香水瓶被瀑布水流正面冲击，水花在瓶盖处炸裂飞溅，晶莹水珠在空中高速定格
+四周漂浮着粉色睡莲花朵
+背景是紫红暗色调的粼粼水波纹
+色调浓烈玫红，动感十足
+玻璃切面折射绚烂，水花凝结晶莹
+高端女香广告摄影，中景，高速快门定格，戏剧光影，色彩浓郁饱和，锐利
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, high-end women's fragrance advertising photography, extremely detailed, high-speed shutter freeze, dramatic lighting, depth of field
+a rose-red multi-faceted glass perfume bottle struck head-on by a waterfall, water bursting and splashing at the cap, crystal droplets frozen in mid-air
+pink water-lily blossoms floating around it
+background of dark purple-red rippling water
+intense rose-red tones, full of motion
+brilliant refractions through the glass facets, water splashes frozen crystalline
+high-end women's fragrance advertising photography, medium shot, high-speed shutter freeze, dramatic lighting, rich saturated colors, sharp`, negativePrompt: NEG_PRODUCT },
     ],
   },
   {
