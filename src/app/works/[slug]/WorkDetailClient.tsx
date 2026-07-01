@@ -193,8 +193,22 @@ export default function WorkDetailPage() {
 
   if (!series) return null;
 
+  const goBack = () => {
+    // 返回上一页；若无站内历史（如直接打开链接）则回作品集列表
+    if (typeof window !== 'undefined' && window.history.length > 1) {
+      router.back();
+    } else {
+      router.push('/works');
+    }
+  };
+
   return (
     <>
+      {/* ── 悬浮返回按钮（始终可见） ── */}
+      <button className="detail-back-btn" onClick={goBack}>
+        <span className="back-arrow">←</span> 返回
+      </button>
+
       {/* ── Gallery ── */}
       <section className="h-scroll-section">
         <div ref={trackRef} className="h-scroll-track">
