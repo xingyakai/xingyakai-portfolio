@@ -212,10 +212,68 @@ export const workSeries: WorkSeries[] = [
     coverImg: '/images/work-4.jpg',
     description: '浮空的石岛上，水晶与橙花共生，静谧而超然',
     images: [
-      { src: '/images/crystal/d28537a6c258a5d1c25c1f8a370f38df.jpg', title: '橙花晶屿浮', positivePrompt: '极致精细的3D艺术渲染，中性灰色纯净背景中一块悬浮的岩石碎块静静漂浮，岩石表面覆盖着湿润苔藓；上方生长出多根白色透明的石英晶柱与茂盛的橙色波斯菊，几片花瓣正飘散在空中；柔和漫射光均匀笼罩，投下自然真实的柔影，色调清新冷静，晶体通透折射，苔藓与花瓣质感细腻；超写实三维渲染，居中悬浮构图，柔光棚拍质感，微距细节，8K超高清', negativePrompt: NEG_3D },
-      { src: '/images/crystal/79fba83c3f203fb2ecb6b6640b06b862.jpg', title: '枯木紫花岛', positivePrompt: '超精细3D渲染，浅灰白色极简背景中一块巨型沉木浮岛悬空漂浮，木纹纹理粗犷沧桑；岛顶生长着浓密翠绿苔藓与盛放的紫色花卉，周围深色矿石晶体碎片静静飘散，下方留有轻柔投影强化悬浮感；柔和漫射光笼罩，色调宁静清雅，木质、苔藓与晶体质感层次分明，超写实材质表现；三维数字艺术，居中悬浮构图，棚拍柔光，微距质感，8K超高清细节', negativePrompt: NEG_3D },
-      { src: '/images/crystal/34da0c46c41f212d412e2573479c9dcd.jpg', title: '构成之漂浮', positivePrompt: '超高精度3D数字艺术，深灰色背景中一组构成主义风格的漂浮雕塑：枯木树干与金属球体、哑光月球体、透明玻璃球、白色有机形态雕塑及绿色苔藓植物共同组成复杂的悬浮结构；金属球反射温暖环境光，玻璃球折射通透，色调深沉神秘；工业冷硬材质与自然元素巧妙融合，质感对比强烈；超写实三维渲染，中心平衡构图，戏剧性布光，精密细节，8K超高清', negativePrompt: NEG_3D },
-      { src: '/images/crystal/fb9129233a0b31ec4e81f52cb3d1ce4b.jpg', title: '红花碎石舞', positivePrompt: '超高清3D超现实主义艺术，暖灰色背景与高反光镜面地板上，灰色岩石群、红色草花与菊科干花、米白色有机枯叶形态凝固成爆炸般的悬浮构成；一支红花茎自中央石块插出向上伸展，暗色石块在空中散落漂浮，每一块碎裂物细节精致；柔和定向光塑造体积，色调温暖克制，材质粗粝与花瓣柔嫩对比；三维数字艺术，动态悬浮构图，镜面反射，微距细节，8K', negativePrompt: NEG_3D },
+      { src: '/images/crystal/d28537a6c258a5d1c25c1f8a370f38df.jpg', title: '橙花晶屿浮', positivePrompt: `杰作，最佳质量，8K超高清，极致精细3D艺术渲染，超写实材质，光线追踪，全局光照，景深效果
+中性灰色纯净背景中，一块悬浮的岩石碎块静静漂浮于空中
+岩石表面覆盖着湿润的苔藓，上方生长出多根白色透明的石英晶柱
+茂盛的橙色波斯菊绽放其间，几片花瓣正飘散在空中
+柔和的漫射光均匀笼罩，投下自然真实的柔和阴影
+清新冷静的色调，晶体通透折射，苔藓与花瓣质感细腻
+居中悬浮构图，柔光棚拍质感，微距级细节，虚幻引擎5渲染
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, extremely detailed 3D art render, ultra-realistic materials, ray tracing, global illumination, depth of field
+a floating chunk of rock drifting quietly in mid-air against a clean neutral-grey background
+the rock surface covered in damp moss, with several clear white quartz crystal columns growing from the top
+vibrant orange cosmos flowers blooming among them, a few petals scattering into the air
+soft diffuse light evenly enveloping the scene, casting natural realistic soft shadows
+fresh calm tones, translucent refracting crystals, delicate moss and petal textures
+centered floating composition, soft studio-lit quality, macro-level detail, rendered in Unreal Engine 5`, negativePrompt: NEG_3D },
+      { src: '/images/crystal/79fba83c3f203fb2ecb6b6640b06b862.jpg', title: '枯木紫花岛', positivePrompt: `杰作，最佳质量，8K超高清，超精细3D渲染，超写实材质，光线追踪，全局光照，景深效果
+浅灰白色极简背景中，一块巨型沉木浮岛悬空漂浮，木纹纹理粗犷沧桑
+岛顶生长着浓密的翠绿苔藓与盛放的紫色花卉
+深色矿石晶体碎片在周围静静飘散，下方留有轻柔投影强化悬浮感
+柔和的漫射光笼罩整体，投下自然真实的柔影
+宁静清雅的色调，木质、苔藓与晶体质感层次分明
+居中悬浮构图，棚拍柔光，微距级细节，虚幻引擎5渲染
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra-detailed 3D render, ultra-realistic materials, ray tracing, global illumination, depth of field
+a massive driftwood floating island suspended in mid-air against a pale grey-white minimalist background, rugged weathered wood grain
+dense emerald moss and blooming purple flowers growing atop the island
+dark mineral crystal fragments drifting quietly around it, a soft shadow below reinforcing the floating feel
+soft diffuse light enveloping the whole, casting natural realistic soft shadows
+serene elegant tones, distinct layered textures of wood, moss and crystal
+centered floating composition, soft studio light, macro-level detail, rendered in Unreal Engine 5`, negativePrompt: NEG_3D },
+      { src: '/images/crystal/34da0c46c41f212d412e2573479c9dcd.jpg', title: '构成之漂浮', positivePrompt: `杰作，最佳质量，8K超高清，超高精度3D数字艺术，超写实材质，光线追踪，全局光照，景深效果
+深灰色背景中，一组构成主义风格的漂浮雕塑
+枯木树干与金属球体、哑光月球体、透明玻璃球、白色有机形态雕塑及绿色苔藓共同组成复杂的悬浮结构
+金属球反射着温暖的环境光，玻璃球通透折射
+深沉神秘的色调，工业冷硬材质与自然元素巧妙融合，质感对比强烈
+中心平衡构图，戏剧性布光，精密细节，虚幻引擎5渲染
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra-high-precision 3D digital art, ultra-realistic materials, ray tracing, global illumination, depth of field
+a cluster of constructivist-style floating sculptures against a dark grey background
+dead tree trunks, metal spheres, a matte moon orb, a clear glass ball, white organic-form sculptures and green moss forming a complex suspended structure
+the metal spheres reflecting warm ambient light, the glass ball refracting clearly
+deep mysterious tones, cold industrial materials fused elegantly with natural elements, strong textural contrast
+centered balanced composition, dramatic lighting, precise detail, rendered in Unreal Engine 5`, negativePrompt: NEG_3D },
+      { src: '/images/crystal/fb9129233a0b31ec4e81f52cb3d1ce4b.jpg', title: '红花碎石舞', positivePrompt: `杰作，最佳质量，8K超高清，超现实主义3D数字艺术，超写实材质，光线追踪，全局光照，景深效果
+暖灰色背景与高反光镜面地板上，灰色岩石群、红色草花与菊科干花、米白色有机枯叶凝固成爆炸般的悬浮构成
+一支红花茎自中央石块插出向上伸展
+暗色石块在空中散落漂浮，每一块碎裂物细节精致
+柔和的定向光塑造体积，镜面地板映出倒影
+温暖克制的色调，粗粝岩石与柔嫩花瓣质感对比强烈
+动态悬浮构图，镜面反射，微距级细节，虚幻引擎5渲染
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, surrealist 3D digital art, ultra-realistic materials, ray tracing, global illumination, depth of field
+grey rock clusters, red wildflowers and dried daisies, and cream organic dead leaves frozen into an explosion-like floating composition on a warm-grey background with a high-gloss mirror floor
+a red flower stem thrusting up from the central rock
+dark stones scattered and drifting in the air, every fragment finely detailed
+soft directional light shaping volume, the mirror floor casting reflections
+warm restrained tones, strong textural contrast between rough rock and tender petals
+dynamic floating composition, mirror reflection, macro-level detail, rendered in Unreal Engine 5`, negativePrompt: NEG_3D },
     ],
   },
   {
@@ -518,13 +576,118 @@ rendered in Unreal Engine 5, dark-tone cinematic composition, soft lens flare`, 
     coverImg: '/images/guose/e0bb73218e9eb1a66675570069077817.jpg',
     description: '山野间的缤纷果色，自然馈赠的纯粹光影',
     images: [
-      { src: '/images/guose/52c2582219592ab78803068eccfdb1b9.jpg', title: '紫李映绿荫', positivePrompt: '自然光下一块木板上摆放着一簇新鲜的紫红李子，果皮呈深紫红色并覆有一层天然蜡质白霜与光泽，粗壮的果柄上挂着两颗饱满果实；周围散落几片新鲜翠绿叶片，背景绿叶柔和虚化；柔和自然光勾勒果皮的圆润质感与水润光泽，色调深紫翠绿鲜活；近景微距美食摄影，浅景深，柔和自然光，细腻纹理，高饱和，8K超高清', negativePrompt: NEG_NATURE },
-      { src: '/images/guose/5430433c7e6afc11182270e8a167f0a2.jpg', title: '雨后梨挂枝', positivePrompt: '深色背景的衬托下，枝头悬挂着两枚金黄色洋梨，果皮上布满晶莹剔透、即将滴落的水珠，周围绿叶同样挂满露珠；光线自侧面打亮一颗颗水滴，形成通透的折射光效，果皮泛着湿润光泽；色调金黄翠绿、深沉对比，画面清新鲜活；微距静物美食摄影，浅景深，侧向自然光，水珠折射，细腻质感，8K超清', negativePrompt: NEG_NATURE },
-      { src: '/images/guose/8c82501aec6bdb3a159649cb093af2cf.jpg', title: '墨蓝葡挂露', positivePrompt: '葡萄架上垂挂着一串饱满的深蓝黑色葡萄，果粒圆润紧实，表面布满晶莹水珠与天然果霜，周围翠绿葡萄叶轻轻遮掩；柔和通透的光线穿透果串勾勒出圆润轮廓与湿润光泽，色调墨蓝深邃、绿意盎然；微距近景美食摄影，浅景深，柔和自然光，水珠果霜质感，细腻纹理，8K超高清', negativePrompt: NEG_NATURE },
-      { src: '/images/guose/e0bb73218e9eb1a66675570069077817.jpg', title: '绸上双樱红', positivePrompt: '淡粉色丝绸布料上并排静卧着两颗深红色车厘子，果实饱满圆润光滑，连在同一枝纤细的绿色果柄上，表面光泽莹润如宝石；柔和漫射光线均匀打亮果皮，映出细腻高光，丝绸的柔滑与果实的水润相映；色调玫粉深红优雅，质感精致；高端静物美食摄影，微距浅景深，柔和漫射光，细腻质感，8K超清', negativePrompt: NEG_NATURE },
-      { src: '/images/guose/e87a4fe57a1228a604c6fba0ef9c92fa.jpg', title: '蓝莓挂枝串', positivePrompt: '洁净的白色背景衬托下，蓝莓枝条上挂满一串串饱满的深蓝色蓝莓果实，表面覆有细腻水珠与天然果霜，翠绿叶片点缀其间；均匀柔和的光线令每颗果粒的纹理与果霜清晰可见，色调深蓝清爽、干净通透；高端静物美食摄影，微距浅景深，均匀柔光，果霜水珠质感，细腻纹理，8K超高清', negativePrompt: NEG_NATURE },
-      { src: '/images/guose/f09559072a3c9fd12ec8ffac6c75e3a0.jpg', title: '草莓垂红果', positivePrompt: '翠绿叶片之间垂挂着新鲜草莓，两颗鲜红饱满的草莓果实悬于枝头，表面细密的种子颗粒清晰可见，绿色果蒂鲜艳欲滴；背景绿色植物柔和虚化成朦胧光晕，柔光勾勒果实的水润光泽，色调红绿鲜活明快；微距近景美食摄影，大光圈浅景深，柔和自然光，细腻纹理，高饱和，8K超清', negativePrompt: NEG_NATURE },
-      { src: '/images/guose/fad5d3794148fb6d285f68ca432ab234.jpg', title: '柠枝天空黄', positivePrompt: '蔚蓝天空与蓬松白云的背景下，一根柠檬树枝上挂满三颗饱满的金黄柠檬，茂盛的翠绿叶片相衬；天空呈现从蓝到粉橙的柔和渐变，明亮通透的自然光自上方洒落，果皮泛着阳光下的鲜亮光泽；仰视角度拍摄，色调金黄湛蓝清新；微距仰拍自然美食摄影，浅景深，明媚自然光，细腻果皮质感，高饱和，8K超高清', negativePrompt: NEG_NATURE },
+      { src: '/images/guose/52c2582219592ab78803068eccfdb1b9.jpg', title: '紫李映绿荫', positivePrompt: `杰作，最佳质量，8K超高清，超写实微距摄影，极致精细，自然光，景深效果
+自然光下一块木板上摆放着一簇新鲜的紫红李子
+果皮呈深紫红色，覆有一层天然蜡质白霜与光泽，粗壮的果柄上挂着两颗饱满果实
+周围散落几片新鲜翠绿叶片，背景绿叶柔和虚化
+柔和的自然光勾勒果皮的圆润质感与水润光泽
+色调深紫翠绿、鲜活高饱和，果皮纹理细腻
+近景微距美食摄影，浅景深，柔和自然光，细腻纹理
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra-realistic macro photography, extremely detailed, natural light, depth of field
+a cluster of fresh purple-red plums arranged on a wooden board under natural light
+deep purple-red skin coated in a natural waxy bloom and sheen, two plump fruits hanging from a thick stem
+a few fresh emerald leaves scattered around, background greenery softly blurred
+soft natural light outlining the round texture and dewy sheen of the skin
+deep purple and emerald tones, vivid and highly saturated, fine skin texture
+close-up macro food photography, shallow depth of field, soft natural light, fine texture`, negativePrompt: NEG_NATURE },
+      { src: '/images/guose/5430433c7e6afc11182270e8a167f0a2.jpg', title: '雨后梨挂枝', positivePrompt: `杰作，最佳质量，8K超高清，超写实微距摄影，极致精细，自然光，景深效果
+深色背景的衬托下，枝头悬挂着两枚金黄色洋梨
+果皮上布满晶莹剔透、即将滴落的水珠，周围绿叶同样挂满露珠
+光线自侧面打亮一颗颗水滴，形成通透的折射光效
+果皮泛着湿润光泽，画面清新鲜活
+色调金黄翠绿、深沉对比，水珠折射通透
+微距静物美食摄影，浅景深，侧向自然光，水珠折射质感
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra-realistic macro photography, extremely detailed, natural light, depth of field
+two golden pears hanging from a branch against a dark background
+the skin covered in crystal-clear droplets about to fall, the surrounding leaves also beaded with dew
+side light illuminating each droplet, creating a translucent refractive glow
+the skin glistening with moisture, the scene fresh and vivid
+golden-green tones with deep contrast, translucent refracting droplets
+macro still-life food photography, shallow depth of field, side natural light, water-droplet refraction texture`, negativePrompt: NEG_NATURE },
+      { src: '/images/guose/8c82501aec6bdb3a159649cb093af2cf.jpg', title: '墨蓝葡挂露', positivePrompt: `杰作，最佳质量，8K超高清，超写实微距摄影，极致精细，自然光，景深效果
+葡萄架上垂挂着一串饱满的深蓝黑色葡萄
+果粒圆润紧实，表面布满晶莹水珠与天然果霜，周围翠绿葡萄叶轻轻遮掩
+柔和通透的光线穿透果串，勾勒出圆润轮廓与湿润光泽
+色调墨蓝深邃、绿意盎然
+果粒的水珠与果霜质感清晰细腻
+微距近景美食摄影，浅景深，柔和自然光，水珠果霜质感
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra-realistic macro photography, extremely detailed, natural light, depth of field
+a plump cluster of deep blue-black grapes hanging from a vine
+round firm berries covered in crystalline droplets and natural bloom, gently veiled by emerald vine leaves
+soft translucent light passing through the cluster, outlining round contours and a moist sheen
+deep ink-blue tones brimming with greenery
+clear fine texture of droplets and bloom on each berry
+macro close-up food photography, shallow depth of field, soft natural light, droplet and bloom texture`, negativePrompt: NEG_NATURE },
+      { src: '/images/guose/e0bb73218e9eb1a66675570069077817.jpg', title: '绸上双樱红', positivePrompt: `杰作，最佳质量，8K超高清，超写实微距摄影，极致精细，柔和漫射光，景深效果
+淡粉色丝绸布料上并排静卧着两颗深红色车厘子
+果实饱满圆润光滑，连在同一枝纤细的绿色果柄上，表面光泽莹润如宝石
+柔和的漫射光线均匀打亮果皮，映出细腻高光
+丝绸的柔滑与果实的水润相映成趣
+色调玫粉深红、优雅精致，质感高级
+高端静物美食摄影，微距浅景深，柔和漫射光，细腻质感
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra-realistic macro photography, extremely detailed, soft diffuse light, depth of field
+two deep red cherries resting side by side on pale pink silk fabric
+plump round glossy fruits joined on a single slender green stem, surfaces lustrous as gemstones
+soft diffuse light evenly illuminating the skin, revealing delicate highlights
+the smoothness of the silk echoing the dewy sheen of the fruit
+rosy-pink deep-red tones, elegant and refined, premium texture
+high-end still-life food photography, macro shallow depth of field, soft diffuse light, fine texture`, negativePrompt: NEG_NATURE },
+      { src: '/images/guose/e87a4fe57a1228a604c6fba0ef9c92fa.jpg', title: '蓝莓挂枝串', positivePrompt: `杰作，最佳质量，8K超高清，超写实微距摄影，极致精细，均匀柔光，景深效果
+洁净的白色背景衬托下，蓝莓枝条上挂满一串串饱满的深蓝色蓝莓
+表面覆有细腻水珠与天然果霜，翠绿叶片点缀其间
+均匀柔和的光线令每颗果粒的纹理与果霜清晰可见
+色调深蓝清爽、干净通透
+果霜与水珠质感极致细腻
+高端静物美食摄影，微距浅景深，均匀柔光，果霜水珠质感
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra-realistic macro photography, extremely detailed, even soft light, depth of field
+plump deep-blue blueberries hanging in clusters on branches against a clean white background
+surfaces covered in fine droplets and natural bloom, dotted with emerald leaves
+even soft light rendering the texture and bloom of every berry clearly
+fresh deep-blue tones, clean and translucent
+extremely fine texture of bloom and droplets
+high-end still-life food photography, macro shallow depth of field, even soft light, bloom and droplet texture`, negativePrompt: NEG_NATURE },
+      { src: '/images/guose/f09559072a3c9fd12ec8ffac6c75e3a0.jpg', title: '草莓垂红果', positivePrompt: `杰作，最佳质量，8K超高清，超写实微距摄影，极致精细，自然光，大光圈景深
+翠绿叶片之间垂挂着新鲜草莓，两颗鲜红饱满的果实悬于枝头
+表面细密的种子颗粒清晰可见，绿色果蒂鲜艳欲滴
+背景绿色植物柔和虚化成朦胧光晕
+柔光勾勒果实的水润光泽
+色调红绿鲜活明快、高饱和
+微距近景美食摄影，大光圈浅景深，柔和自然光，细腻纹理
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra-realistic macro photography, extremely detailed, natural light, wide-aperture depth of field
+fresh strawberries hanging among emerald leaves, two plump crimson fruits suspended from the stem
+the fine seed dots on the surface clearly visible, the green calyx vivid and lush
+background greenery softly blurred into a hazy glow
+soft light outlining the dewy sheen of the fruit
+vivid bright red-and-green tones, highly saturated
+macro close-up food photography, wide-aperture shallow depth of field, soft natural light, fine texture`, negativePrompt: NEG_NATURE },
+      { src: '/images/guose/fad5d3794148fb6d285f68ca432ab234.jpg', title: '柠枝天空黄', positivePrompt: `杰作，最佳质量，8K超高清，超写实微距摄影，极致精细，明媚自然光，景深效果
+蔚蓝天空与蓬松白云的背景下，一根柠檬树枝上挂满三颗饱满的金黄柠檬
+茂盛的翠绿叶片相衬，天空呈现从蓝到粉橙的柔和渐变
+明亮通透的自然光自上方洒落，果皮泛着阳光下的鲜亮光泽
+仰视角度拍摄，画面清新明快
+色调金黄湛蓝、清新高饱和
+微距仰拍自然美食摄影，浅景深，明媚自然光，细腻果皮质感
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra-realistic macro photography, extremely detailed, bright natural light, depth of field
+three plump golden lemons hanging from a lemon branch against a blue sky with fluffy white clouds
+lush emerald leaves as foil, the sky a soft gradient from blue to pinkish orange
+bright translucent light pouring from above, the peel glowing vividly in the sun
+shot from a low upward angle, the scene fresh and lively
+golden and azure tones, fresh and highly saturated
+low-angle macro nature food photography, shallow depth of field, bright natural light, fine peel texture`, negativePrompt: NEG_NATURE },
     ],
   },
   {
