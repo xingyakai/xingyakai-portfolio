@@ -1504,22 +1504,262 @@ cinematic golden-hour portrait, close-up shallow depth of field, backlit rim lig
     coverImg: '/images/bantang/1e7739f4445100ea6d040b31afe5bd15.jpg',
     description: '甜品与饮品的视觉盛宴，半糖半苦的美好时光',
     images: [
-      { src: '/images/bantang/020b93e9b97639219279b12d9b3b4820.jpg', title: '焦糖巧克力山', positivePrompt: '一大块三角形咖啡花生酱冰淇淋派，顶部堆叠着旋转裱花奶油、金黄焦糖淋酱、巧克力碎块与巧克力豆，内里夹杂密集的巧克力脆片，底层是酥脆金棕色饼干基底；静置于洁白圆盘上，背景是大理石纹桌面；侧上方自然光勾勒出奶油光泽与酱汁流动质感，色泽浓郁诱人，食欲感极强；高端商业甜品摄影，中近景浅景深，柔和自然光，细腻质感，8K超高清', negativePrompt: NEG_FOOD },
-      { src: '/images/bantang/0402022cbc4a58004ccef6c000554def.jpg', title: '焦糖香蕉叠叠', positivePrompt: '一座华丽的多层裸蛋糕，深棕色巧克力海绵蛋糕与奶白色奶油层交替叠放层次分明，侧面缓缓流淌着金黄色焦糖酱；顶部装饰大量裱花奶油、新鲜香蕉片与整块奥利奥饼干；柔和布光凸显奶油绵密与焦糖晶亮的质感，色调暖棕香甜；高端甜点店商业摄影，中景浅景深，柔光布光，细腻质感，诱人食欲感，8K超高清', negativePrompt: NEG_FOOD },
-      { src: '/images/bantang/0402efb8dc69d69ce16841fc77244712.jpg', title: '蓝莓脆皮春卷', positivePrompt: '几只金黄酥脆的蓝莓奶酪春卷交错堆叠于深色陶盘之中，切面露出饱满的新鲜蓝莓果粒与洁白奶酪内馅，表面轻撒糖粉；旁边散落几颗新鲜蓝莓点缀；光线自侧上方自然照射，令油炸外皮的酥脆焦香质感十足，色泽金黄诱人；高端商业美食摄影，中近景浅景深，柔和侧光，细腻质感，食欲氛围，8K超清', negativePrompt: NEG_FOOD },
-      { src: '/images/bantang/083743d542b8ab8c01ac35ee709af553.jpg', title: '双杯奶昔盛宴', positivePrompt: '两杯丰盛的香蕉奶昔盛于高脚玻璃杯中，杯口堆积着大量厚实的裱花奶油，撒有金色焦糖碎粒与巧克力碎，顶部插着新鲜香蕉切片；暖调布光透过玻璃杯映出奶昔的绵密层次与奶油光泽，色调复古香甜；复古美式甜品店商业摄影，中景浅景深，暖光布光，细腻质感，诱人食欲感，8K超高清', negativePrompt: NEG_FOOD },
-      { src: '/images/bantang/1e7739f4445100ea6d040b31afe5bd15.jpg', title: '草莓巧克力午后', positivePrompt: '一片三角形草莓巧克力慕斯蛋糕静置于洁白圆盘中，外层是厚实的深棕色可可粉外衣，内部夹着红润多汁的草莓切片，顶部放置一颗完整鲜红草莓；柔和自然光勾勒出慕斯的绵密与草莓的水润，色调清新暖意；日系咖啡馆美食摄影，中近景浅景深，柔光布光，细腻质感，温柔食欲氛围，8K超清', negativePrompt: NEG_FOOD },
-      { src: '/images/bantang/3a51b5f6891a4bc044b1c73ebe302bb4.jpg', title: '焦糖奶霜星冰', positivePrompt: '一杯星巴克风格的焦糖星冰乐盛于透明塑料大杯中，杯壁内侧流淌着旋转的焦糖酱与奶泡纹路，顶部堆满鲜奶油并淋上焦糖酱，插着白色细吸管；置于木质咖啡桌上，光线自侧面透过杯身照出琥珀色的通透层次，色调暖棕诱人；商业饮品摄影，中近景浅景深，通透侧光，细腻质感，食欲氛围，8K超高清', negativePrompt: NEG_FOOD },
-      { src: '/images/bantang/5855d406095e73cd4ea9c2a6360394f2.jpg', title: '黑森林芝士塔', positivePrompt: '一块精致的三角形黑森林芝士蛋糕截面，顶部铺满油亮的樱桃与巧克力碎屑，中间白色奶油芝士层、深色巧克力层与暗红色黑樱桃果冻交替排列，底部是金棕色饼干碎基底；斜射自然光令截面每一层次都极为分明，色泽浓郁诱人；高端商业甜品摄影，特写浅景深，斜射自然光，细腻质感，8K超清', negativePrompt: NEG_FOOD },
-      { src: '/images/bantang/733969ce50985aba1cb6cc65b63c68d6.jpg', title: '草莓奶昔玫红', positivePrompt: '一杯高挑透明玻璃杯盛装的草莓奶昔，杯内草莓果泥与奶白色旋转交融形成大理石般纹路，顶部堆满鲜奶油并撒上玫红色草莓粉，上方摆放一颗完整草莓，插着红白条纹吸管；柔和布光透出奶昔玫粉渐层与奶油光泽，色调甜美玫红；商业饮品摄影，中景浅景深，柔光布光，细腻质感，食欲氛围，8K超高清', negativePrompt: NEG_FOOD },
-      { src: '/images/bantang/86365ca4a429f7fd994ddcfe9d9f41e2.jpg', title: '苔光梦幻饮料', positivePrompt: '一罐渐变紫金色的饮料易拉罐伫立于黛绿色苔藓地面上，四周簇拥着雏菊小花与鲜嫩蔓藤，旁边摆放几颗白桃；背景是茂密深色丛林，一束神秘的聚焦光柱自上方打在产品上形成光晕，薄雾在空气中缓缓飘散；色调神秘梦幻，金属罐身泛着水珠光泽；高端饮品广告摄影，中近景浅景深，聚光体积光，薄雾氛围，8K超清', negativePrompt: NEG_FOOD },
-      { src: '/images/bantang/8add91199fdecac9c8c3ee742003ed92.jpg', title: '金箔黑巧双杯', positivePrompt: '两杯奢华甜品饮料被高举于大理石台面上方，左杯顶部是玫瑰裱花奶油配樱桃与金箔片，右杯顶部托举着一整块熔岩巧克力蛋糕并淋有浓郁巧克力酱；暖黄灯光烘托出高贵奢华的氛围，金箔与巧克力泛着诱人光泽，色调暖金浓郁；高端商业甜品摄影，中景浅景深，暖光布光，细腻质感，奢华食欲氛围，8K超高清', negativePrompt: NEG_FOOD },
-      { src: '/images/bantang/a7839ce49aeefd02476099bd9e540f8d.jpg', title: '汤汁晶亮小笼', positivePrompt: '一只橙色纸盒中整齐码放着十余只晶莹剔透的小笼包，每只顶部浇有红棕色辣酱与芝麻粒，点缀翠绿葱花；薄透的面皮隐约可见内馅汤汁，热气升腾；自然光令面皮油润晶亮，色泽红润诱人，充满中国街头美食的烟火气与鲜活质感；商业街头美食摄影，中近景浅景深，自然光，细腻质感，烟火食欲感，8K超清', negativePrompt: NEG_FOOD },
-      { src: '/images/bantang/aeedabc515f31b2fa55db90dc78d8267.jpg', title: '芒果奶盖双杯', positivePrompt: '两杯装满金橙色芒果奶昔的透明塑料大杯并排而立，顶部覆盖厚实的白色奶盖奶油，其上堆砌大量新鲜芒果丁，插着橙色吸管；洁白奶油自杯壁缓缓渗下形成流淌纹路；柔和布光透出芒果的金黄通透与奶盖的绵密，色调清新香甜；商业饮品摄影，中景浅景深，通透布光，细腻质感，食欲氛围，8K超高清', negativePrompt: NEG_FOOD },
-      { src: '/images/bantang/dc82258fee44db922fd2999125a13820.jpg', title: '巧克力焦糖王者', positivePrompt: '一整只圆形多层巧克力焦糖蛋糕，深棕色巧克力淋面自顶部缓缓垂落挂壁，侧面可见三层深色可可蛋糕与奶油黄色夹馅交替，顶部铺满玫瑰形裱花奶油、坚果碎与巧克力碎片；柔和布光凸显淋面的光泽流动与蛋糕层次，色调浓郁暖棕；高端商业甜品摄影，中景浅景深，柔光布光，细腻质感，极致诱人食欲感，8K超高清', negativePrompt: NEG_FOOD },
-      { src: '/images/bantang/de094e5e4b071051f0d00984947bbbcc.jpg', title: '坚果奶油小圆饼', positivePrompt: '六只精致的圆形夹心饼干整齐陈列于奶白色托盘之中，饼体外壳裹满金棕色的碎坚果，中间夹入丰盈的淡黄色玫瑰形裱花奶油馅；柔和均匀的布光凸显坚果的颗粒质感与奶油的绵密，色调米白高级；简约高级法式甜品商业摄影，中近景浅景深，柔光布光，细腻质感，精致食欲氛围，8K超清', negativePrompt: NEG_FOOD },
-      { src: '/images/bantang/eb61dc427f7281d7a200cc8fea80094d.jpg', title: '伯爵茶瑞士卷', positivePrompt: '一块日式风格的伯爵茶奶油瑞士卷蛋糕，茶色蛋糕胚卷裹着洁白奶油内馅，切面螺旋纹路细腻分明，顶部装饰裱花奶油、饼干、迷迭香与巧克力珍珠；柔和自然光勾勒出蛋糕胚的松软与奶油的绵密，色调温柔茶棕，充满咖啡馆下午茶的精致慢生活氛围；日系美食摄影，中近景浅景深，柔光，细腻质感，8K超清', negativePrompt: NEG_FOOD },
-      { src: '/images/bantang/fdf94e917a7d2097ff82e6fb221899de.jpg', title: '熔岩巧克力心', positivePrompt: '一只精致的圆形巧克力熔岩蛋糕置于洁白餐盘中，表面轻撒糖粉，顶部放着一大球金黄色香草冰淇淋，浓稠巧克力酱自蛋糕一侧缓缓流淌而出，上方插着翠绿新鲜薄荷叶；柔和布光凸显熔岩酱的流动光泽与冰淇淋的绵密，冷热质感对比诱人，色调暖棕；高端餐厅甜品摄影，中近景浅景深，柔光布光，细腻质感，8K超高清', negativePrompt: NEG_FOOD },
+      { src: '/images/bantang/020b93e9b97639219279b12d9b3b4820.jpg', title: '焦糖巧克力山', positivePrompt: `杰作，最佳质量，8K超高清，高端商业甜品摄影，极致精细，柔和自然光，景深效果
+一大块三角形咖啡花生酱冰淇淋派，顶部堆叠着旋转裱花奶油、金黄焦糖淋酱、巧克力碎块与巧克力豆
+内里夹杂密集的巧克力脆片，底层是酥脆金棕色饼干基底
+静置于洁白圆盘上，背景是大理石纹桌面
+侧上方自然光勾勒出奶油光泽与酱汁流动质感
+色泽浓郁诱人，食欲感极强
+高端商业甜品摄影，中近景浅景深，柔和自然光，细腻质感
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, high-end commercial dessert photography, extremely detailed, soft natural light, depth of field
+a large triangular coffee-peanut-butter ice cream pie, topped with swirled piped cream, golden caramel drizzle, chocolate chunks and chocolate chips
+dense chocolate crisps folded inside, over a crunchy golden-brown biscuit base
+resting on a clean white plate, background of a marble-textured tabletop
+natural light from the upper side outlining the cream's sheen and the flowing sauce texture
+rich enticing color, extremely appetizing
+high-end commercial dessert photography, medium close-up shallow depth of field, soft natural light, fine texture`, negativePrompt: NEG_FOOD },
+      { src: '/images/bantang/0402022cbc4a58004ccef6c000554def.jpg', title: '焦糖香蕉叠叠', positivePrompt: `杰作，最佳质量，8K超高清，高端甜点店商业摄影，极致精细，柔光布光，景深效果
+一座华丽的多层裸蛋糕，深棕色巧克力海绵蛋糕与奶白色奶油层交替叠放层次分明
+侧面缓缓流淌着金黄色焦糖酱
+顶部装饰大量裱花奶油、新鲜香蕉片与整块奥利奥饼干
+柔和布光凸显奶油绵密与焦糖晶亮的质感
+色调暖棕香甜，诱人食欲感
+高端甜点店商业摄影，中景浅景深，柔光布光，细腻质感
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, high-end patisserie commercial photography, extremely detailed, soft lighting, depth of field
+a lavish multi-layer naked cake, dark-brown chocolate sponge and cream-white frosting layers stacked in distinct alternation
+golden caramel sauce slowly dripping down the sides
+topped with abundant piped cream, fresh banana slices and whole Oreo cookies
+soft lighting highlighting the creamy softness and the glossy caramel texture
+warm brown sweet tones, appetizing
+high-end patisserie commercial photography, medium-shot shallow depth of field, soft lighting, fine texture`, negativePrompt: NEG_FOOD },
+      { src: '/images/bantang/0402efb8dc69d69ce16841fc77244712.jpg', title: '蓝莓脆皮春卷', positivePrompt: `杰作，最佳质量，8K超高清，高端商业美食摄影，极致精细，柔和侧光，景深效果
+几只金黄酥脆的蓝莓奶酪春卷交错堆叠于深色陶盘之中
+切面露出饱满的新鲜蓝莓果粒与洁白奶酪内馅，表面轻撒糖粉
+旁边散落几颗新鲜蓝莓点缀
+光线自侧上方自然照射，令油炸外皮的酥脆焦香质感十足
+色泽金黄诱人，食欲氛围浓郁
+高端商业美食摄影，中近景浅景深，柔和侧光，细腻质感
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, high-end commercial food photography, extremely detailed, soft side light, depth of field
+several golden crispy blueberry-cheese spring rolls stacked crisscross on a dark ceramic plate
+the cut ends revealing plump fresh blueberries and white cheese filling, surfaces lightly dusted with powdered sugar
+a few fresh blueberries scattered beside them
+natural light from the upper side making the fried crust look crisp and toasty
+enticing golden color, rich appetizing atmosphere
+high-end commercial food photography, medium close-up shallow depth of field, soft side light, fine texture`, negativePrompt: NEG_FOOD },
+      { src: '/images/bantang/083743d542b8ab8c01ac35ee709af553.jpg', title: '双杯奶昔盛宴', positivePrompt: `杰作，最佳质量，8K超高清，复古美式甜品店商业摄影，极致精细，暖光布光，景深效果
+两杯丰盛的香蕉奶昔盛于高脚玻璃杯中，杯口堆积着大量厚实的裱花奶油
+撒有金色焦糖碎粒与巧克力碎，顶部插着新鲜香蕉切片
+暖调布光透过玻璃杯映出奶昔的绵密层次与奶油光泽
+色调复古香甜，诱人食欲感
+质感绵密
+复古美式甜品店商业摄影，中景浅景深，暖光布光，细腻质感
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, retro American diner commercial photography, extremely detailed, warm lighting, depth of field
+two generous banana milkshakes in tall stemmed glasses, mounds of thick piped cream heaped at the rims
+sprinkled with golden caramel bits and chocolate shavings, fresh banana slices tucked on top
+warm lighting through the glasses revealing the milkshake's creamy layers and sheen
+retro sweet tones, appetizing
+creamy texture
+retro American diner commercial photography, medium-shot shallow depth of field, warm lighting, fine texture`, negativePrompt: NEG_FOOD },
+      { src: '/images/bantang/1e7739f4445100ea6d040b31afe5bd15.jpg', title: '草莓巧克力午后', positivePrompt: `杰作，最佳质量，8K超高清，日系咖啡馆美食摄影，极致精细，柔光布光，景深效果
+一片三角形草莓巧克力慕斯蛋糕静置于洁白圆盘中
+外层是厚实的深棕色可可粉外衣，内部夹着红润多汁的草莓切片，顶部放置一颗完整鲜红草莓
+柔和自然光勾勒出慕斯的绵密与草莓的水润
+色调清新暖意，温柔食欲氛围
+质感绵密水润
+日系咖啡馆美食摄影，中近景浅景深，柔光布光，细腻质感
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, Japanese-style cafe food photography, extremely detailed, soft lighting, depth of field
+a triangular slice of strawberry-chocolate mousse cake resting on a clean white plate
+a thick dark-brown cocoa-powder coating outside, juicy red strawberry slices layered within, a whole bright-red strawberry on top
+soft natural light outlining the creaminess of the mousse and the dewiness of the strawberry
+fresh warm tones, a gentle appetizing atmosphere
+creamy dewy texture
+Japanese-style cafe food photography, medium close-up shallow depth of field, soft lighting, fine texture`, negativePrompt: NEG_FOOD },
+      { src: '/images/bantang/3a51b5f6891a4bc044b1c73ebe302bb4.jpg', title: '焦糖奶霜星冰', positivePrompt: `杰作，最佳质量，8K超高清，商业饮品摄影，极致精细，通透侧光，景深效果
+一杯星巴克风格的焦糖星冰乐盛于透明塑料大杯中，杯壁内侧流淌着旋转的焦糖酱与奶泡纹路
+顶部堆满鲜奶油并淋上焦糖酱，插着白色细吸管
+置于木质咖啡桌上，光线自侧面透过杯身照出琥珀色的通透层次
+色调暖棕诱人，食欲氛围浓郁
+质感通透绵密
+商业饮品摄影，中近景浅景深，通透侧光，细腻质感
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, commercial beverage photography, extremely detailed, translucent side light, depth of field
+a Starbucks-style caramel Frappuccino in a large clear plastic cup, swirled caramel sauce and foam patterns streaming down the inner wall
+topped with heaps of whipped cream drizzled with caramel, a white thin straw inserted
+set on a wooden coffee table, side light through the cup revealing amber translucent layers
+warm brown enticing tones, a rich appetizing atmosphere
+translucent creamy texture
+commercial beverage photography, medium close-up shallow depth of field, translucent side light, fine texture`, negativePrompt: NEG_FOOD },
+      { src: '/images/bantang/5855d406095e73cd4ea9c2a6360394f2.jpg', title: '黑森林芝士塔', positivePrompt: `杰作，最佳质量，8K超高清，高端商业甜品摄影，极致精细，斜射自然光，特写景深
+一块精致的三角形黑森林芝士蛋糕截面，顶部铺满油亮的樱桃与巧克力碎屑
+中间白色奶油芝士层、深色巧克力层与暗红色黑樱桃果冻交替排列，底部是金棕色饼干碎基底
+斜射自然光令截面每一层次都极为分明
+色泽浓郁诱人
+层次分明，质感细腻
+高端商业甜品摄影，特写浅景深，斜射自然光，细腻质感
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, high-end commercial dessert photography, extremely detailed, raking natural light, close-up depth of field
+a refined triangular cross-section of Black Forest cheesecake, topped with glossy cherries and chocolate shavings
+alternating layers of white cream cheese, dark chocolate and dark-red black-cherry jelly, over a golden-brown biscuit crumb base
+raking natural light making every layer of the cross-section extremely distinct
+rich enticing color
+distinct layers, fine texture
+high-end commercial dessert photography, close-up shallow depth of field, raking natural light, fine texture`, negativePrompt: NEG_FOOD },
+      { src: '/images/bantang/733969ce50985aba1cb6cc65b63c68d6.jpg', title: '草莓奶昔玫红', positivePrompt: `杰作，最佳质量，8K超高清，商业饮品摄影，极致精细，柔光布光，景深效果
+一杯高挑透明玻璃杯盛装的草莓奶昔，杯内草莓果泥与奶白色旋转交融形成大理石般纹路
+顶部堆满鲜奶油并撒上玫红色草莓粉，上方摆放一颗完整草莓，插着红白条纹吸管
+柔和布光透出奶昔玫粉渐层与奶油光泽
+色调甜美玫红，食欲氛围浓郁
+质感绵密水润
+商业饮品摄影，中景浅景深，柔光布光，细腻质感
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, commercial beverage photography, extremely detailed, soft lighting, depth of field
+a strawberry milkshake in a tall clear glass, strawberry puree and cream-white swirling together into marble-like patterns
+topped with whipped cream dusted with rose-red strawberry powder, a whole strawberry on top, a red-and-white striped straw inserted
+soft lighting revealing the milkshake's rosy-pink gradient and creamy sheen
+sweet rose-red tones, a rich appetizing atmosphere
+creamy dewy texture
+commercial beverage photography, medium-shot shallow depth of field, soft lighting, fine texture`, negativePrompt: NEG_FOOD },
+      { src: '/images/bantang/86365ca4a429f7fd994ddcfe9d9f41e2.jpg', title: '苔光梦幻饮料', positivePrompt: `杰作，最佳质量，8K超高清，高端饮品广告摄影，极致精细，聚光体积光，薄雾氛围，景深效果
+一罐渐变紫金色的饮料易拉罐伫立于黛绿色苔藓地面上，四周簇拥着雏菊小花与鲜嫩蔓藤，旁边摆放几颗白桃
+背景是茂密深色丛林，一束神秘的聚焦光柱自上方打在产品上形成光晕
+薄雾在空气中缓缓飘散
+色调神秘梦幻，金属罐身泛着水珠光泽
+氛围神秘清冽
+高端饮品广告摄影，中近景浅景深，聚光体积光，薄雾氛围
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, high-end beverage advertising photography, extremely detailed, spotlight volumetric light, misty atmosphere, depth of field
+a purple-gold gradient beverage can standing on dark-green mossy ground, encircled by daisies and tender vines, a few white peaches placed beside it
+background of a dense dark jungle, a mysterious focused beam of light striking the product from above forming a halo
+thin mist drifting slowly through the air
+mysterious dreamy tones, the metal can glistening with droplets
+a mysterious crisp atmosphere
+high-end beverage advertising photography, medium close-up shallow depth of field, spotlight volumetric light, misty atmosphere`, negativePrompt: NEG_FOOD },
+      { src: '/images/bantang/8add91199fdecac9c8c3ee742003ed92.jpg', title: '金箔黑巧双杯', positivePrompt: `杰作，最佳质量，8K超高清，高端商业甜品摄影，极致精细，暖光布光，景深效果
+两杯奢华甜品饮料被高举于大理石台面上方
+左杯顶部是玫瑰裱花奶油配樱桃与金箔片，右杯顶部托举着一整块熔岩巧克力蛋糕并淋有浓郁巧克力酱
+暖黄灯光烘托出高贵奢华的氛围
+金箔与巧克力泛着诱人光泽，色调暖金浓郁
+奢华食欲氛围
+高端商业甜品摄影，中景浅景深，暖光布光，细腻质感
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, high-end commercial dessert photography, extremely detailed, warm lighting, depth of field
+two lavish dessert drinks held aloft above a marble countertop
+the left cup topped with rose-piped cream, cherries and gold leaf, the right cup hoisting a whole molten chocolate cake drizzled with rich chocolate sauce
+warm yellow light setting a noble luxurious mood
+gold leaf and chocolate glinting enticingly, rich warm-gold tones
+a luxurious appetizing atmosphere
+high-end commercial dessert photography, medium-shot shallow depth of field, warm lighting, fine texture`, negativePrompt: NEG_FOOD },
+      { src: '/images/bantang/a7839ce49aeefd02476099bd9e540f8d.jpg', title: '汤汁晶亮小笼', positivePrompt: `杰作，最佳质量，8K超高清，商业街头美食摄影，极致精细，自然光，景深效果
+一只橙色纸盒中整齐码放着十余只晶莹剔透的小笼包，每只顶部浇有红棕色辣酱与芝麻粒，点缀翠绿葱花
+薄透的面皮隐约可见内馅汤汁，热气升腾
+自然光令面皮油润晶亮
+色泽红润诱人，充满中国街头美食的烟火气与鲜活质感
+烟火食欲感十足
+商业街头美食摄影，中近景浅景深，自然光，细腻质感
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, commercial street-food photography, extremely detailed, natural light, depth of field
+a dozen glistening translucent xiaolongbao neatly arranged in an orange paper box, each topped with red-brown chili sauce and sesame, garnished with green scallion
+the thin translucent skins faintly revealing the soupy filling, steam rising
+natural light making the wrappers glossy and lustrous
+enticing ruddy color, full of Chinese street-food energy and lively texture
+brimming with street-food appetite
+commercial street-food photography, medium close-up shallow depth of field, natural light, fine texture`, negativePrompt: NEG_FOOD },
+      { src: '/images/bantang/aeedabc515f31b2fa55db90dc78d8267.jpg', title: '芒果奶盖双杯', positivePrompt: `杰作，最佳质量，8K超高清，商业饮品摄影，极致精细，通透布光，景深效果
+两杯装满金橙色芒果奶昔的透明塑料大杯并排而立，顶部覆盖厚实的白色奶盖奶油，其上堆砌大量新鲜芒果丁，插着橙色吸管
+洁白奶油自杯壁缓缓渗下形成流淌纹路
+柔和布光透出芒果的金黄通透与奶盖的绵密
+色调清新香甜，食欲氛围浓郁
+质感通透绵密
+商业饮品摄影，中景浅景深，通透布光，细腻质感
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, commercial beverage photography, extremely detailed, translucent lighting, depth of field
+two large clear plastic cups filled with golden-orange mango smoothie standing side by side, topped with thick white cream cheese foam heaped with fresh mango cubes, orange straws inserted
+white cream slowly dripping down the cup walls in flowing trails
+soft lighting revealing the mango's golden translucency and the creaminess of the foam
+fresh sweet tones, a rich appetizing atmosphere
+translucent creamy texture
+commercial beverage photography, medium-shot shallow depth of field, translucent lighting, fine texture`, negativePrompt: NEG_FOOD },
+      { src: '/images/bantang/dc82258fee44db922fd2999125a13820.jpg', title: '巧克力焦糖王者', positivePrompt: `杰作，最佳质量，8K超高清，高端商业甜品摄影，极致精细，柔光布光，景深效果
+一整只圆形多层巧克力焦糖蛋糕，深棕色巧克力淋面自顶部缓缓垂落挂壁
+侧面可见三层深色可可蛋糕与奶油黄色夹馅交替，顶部铺满玫瑰形裱花奶油、坚果碎与巧克力碎片
+柔和布光凸显淋面的光泽流动与蛋糕层次
+色调浓郁暖棕，极致诱人食欲感
+质感浓稠丝滑
+高端商业甜品摄影，中景浅景深，柔光布光，细腻质感
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, high-end commercial dessert photography, extremely detailed, soft lighting, depth of field
+a whole round multi-layer chocolate-caramel cake, dark-brown chocolate ganache slowly dripping down from the top
+the sides revealing three alternating layers of dark cocoa cake and cream-yellow filling, the top covered in rose-piped cream, nut crumbs and chocolate shards
+soft lighting highlighting the flowing sheen of the ganache and the cake's layers
+rich warm-brown tones, extremely enticing appetite
+thick silky texture
+high-end commercial dessert photography, medium-shot shallow depth of field, soft lighting, fine texture`, negativePrompt: NEG_FOOD },
+      { src: '/images/bantang/de094e5e4b071051f0d00984947bbbcc.jpg', title: '坚果奶油小圆饼', positivePrompt: `杰作，最佳质量，8K超高清，简约高级法式甜品商业摄影，极致精细，柔光布光，景深效果
+六只精致的圆形夹心饼干整齐陈列于奶白色托盘之中，饼体外壳裹满金棕色的碎坚果
+中间夹入丰盈的淡黄色玫瑰形裱花奶油馅
+柔和均匀的布光凸显坚果的颗粒质感与奶油的绵密
+色调米白高级，精致食欲氛围
+质感酥脆绵密
+简约高级法式甜品商业摄影，中近景浅景深，柔光布光，细腻质感
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, minimalist high-end French patisserie commercial photography, extremely detailed, soft lighting, depth of field
+six exquisite round sandwich cookies neatly arrayed on a cream-white tray, their shells coated in golden-brown chopped nuts
+generous pale-yellow rose-piped cream filling in the center
+soft even lighting highlighting the granular nut texture and the creaminess of the filling
+high-end off-white tones, a refined appetizing atmosphere
+crisp creamy texture
+minimalist high-end French patisserie commercial photography, medium close-up shallow depth of field, soft lighting, fine texture`, negativePrompt: NEG_FOOD },
+      { src: '/images/bantang/eb61dc427f7281d7a200cc8fea80094d.jpg', title: '伯爵茶瑞士卷', positivePrompt: `杰作，最佳质量，8K超高清，日系美食摄影，极致精细，柔和自然光，景深效果
+一块日式风格的伯爵茶奶油瑞士卷蛋糕，茶色蛋糕胚卷裹着洁白奶油内馅，切面螺旋纹路细腻分明
+顶部装饰裱花奶油、饼干、迷迭香与巧克力珍珠
+柔和自然光勾勒出蛋糕胚的松软与奶油的绵密
+色调温柔茶棕，充满咖啡馆下午茶的精致慢生活氛围
+质感松软绵密
+日系美食摄影，中近景浅景深，柔和自然光，细腻质感
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, Japanese-style food photography, extremely detailed, soft natural light, depth of field
+a Japanese-style Earl Grey cream Swiss roll, the tea-colored sponge wrapping white cream filling, the spiral cross-section fine and distinct
+topped with piped cream, a cookie, rosemary and chocolate pearls
+soft natural light outlining the softness of the sponge and the creaminess of the filling
+gentle tea-brown tones, full of the refined slow-living mood of a cafe afternoon tea
+soft creamy texture
+Japanese-style food photography, medium close-up shallow depth of field, soft natural light, fine texture`, negativePrompt: NEG_FOOD },
+      { src: '/images/bantang/fdf94e917a7d2097ff82e6fb221899de.jpg', title: '熔岩巧克力心', positivePrompt: `杰作，最佳质量，8K超高清，高端餐厅甜品摄影，极致精细，柔光布光，景深效果
+一只精致的圆形巧克力熔岩蛋糕置于洁白餐盘中，表面轻撒糖粉
+顶部放着一大球金黄色香草冰淇淋，浓稠巧克力酱自蛋糕一侧缓缓流淌而出，上方插着翠绿新鲜薄荷叶
+柔和布光凸显熔岩酱的流动光泽与冰淇淋的绵密
+冷热质感对比诱人，色调暖棕
+食欲氛围浓郁
+高端餐厅甜品摄影，中近景浅景深，柔光布光，细腻质感
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, high-end restaurant dessert photography, extremely detailed, soft lighting, depth of field
+an exquisite round chocolate lava cake on a clean white plate, surface lightly dusted with powdered sugar
+topped with a large scoop of golden vanilla ice cream, thick chocolate sauce slowly flowing out from one side of the cake, fresh green mint leaves on top
+soft lighting highlighting the flowing sheen of the lava sauce and the creaminess of the ice cream
+an enticing hot-and-cold texture contrast, warm brown tones
+a rich appetizing atmosphere
+high-end restaurant dessert photography, medium close-up shallow depth of field, soft lighting, fine texture`, negativePrompt: NEG_FOOD },
     ],
   },
   {
