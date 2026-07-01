@@ -458,16 +458,166 @@ rendered in Unreal Engine 5, dark-tone cinematic composition, soft lens flare`, 
     coverImg: '/images/work-7.jpg',
     description: '素颜之下，诗意自生',
     images: [
-      { src: '/images/suyan/036d5192f77c8c832b15607a1cce61e0.jpg', title: '风中回眸', positivePrompt: '东方女性户外人像，她侧身回首凝视镜头，黑色长直发被微风吹散横过脸颊；身着格纹西装外套，皮肤细腻泛着自然光泽、毫无妆感；背景是虚化的秋色绿植散景，色调温润清新；柔和自然光包裹面庞，情绪真实自然而松弛；胶片质感人像摄影，中近景大光圈浅景深，柔光散景，85mm，细腻肤质，真实自然，8K超清', negativePrompt: NEG_PORTRAIT },
-      { src: '/images/suyan/1d84af2c8af322de0959f8b6b5d21138.jpg', title: '泪眼无声', positivePrompt: '东方女性极近距离面部特写，微红的眼眶泪光盈盈，蓝灰色眼珠湿润动人，额前刘海微乱；她以手指轻托下颌，皮肤自然真实、可见细微瑕疵与纹理；色调冷白灰蓝，室内柔光自然散射勾勒面部轮廓，情绪细腻克制、含蓄动人；真实感人的素颜人像摄影，微距极浅景深，自然柔光，细腻毛孔质感，8K超高清', negativePrompt: NEG_PORTRAIT },
-      { src: '/images/suyan/349f0c34bb771daabf021c1981684904.jpg', title: '绿眸暗火', positivePrompt: '欧美女性面部特写，深邃的绿色眼瞳极具穿透力，满脸自然真实的雀斑，黑色长刘海斜遮半额；她的手指轻置于嘴唇旁，一道暖橙色光带斜切打亮面部一侧；色调以深暗底色与暖金光形成强烈反差，光影戏剧而神秘，皮肤质感真实细腻；高端暗调特写人像摄影，微距浅景深，戏剧性侧光，伦勃朗光效，8K超清', negativePrompt: NEG_PORTRAIT },
-      { src: '/images/suyan/4fb2ba828ccc708b6a493fa45abff17e.jpg', title: '清眸俯望', positivePrompt: '东方女性俯拍人像特写，女孩微微低头又向上凝视镜头，杏形的棕色眸子明亮清澈；头发随意盘起、几缕碎发散落，身着深灰色毛衣，素颜肌肤光洁自然；色调中性灰白干净，室内柔和散射光均匀铺洒，背景虚化朦胧，情绪清澈恬静；高端素颜人像摄影，俯角构图，柔光浅景深，细腻肤质，8K超高清', negativePrompt: NEG_PORTRAIT },
-      { src: '/images/suyan/66.jpg', title: '雀斑碧眸', positivePrompt: '欧美风格女性面部超近距离特写，海蓝色的眼眸清透迷人，满布雀斑的皮肤真实自然；黑色卷发蓬松飘散，粉色嘴唇微微开启；色调清冷白灰，柔和散射光温柔包裹面庞，细节精细入微，气质梦幻清冷；高端特写人像摄影，微距极浅景深，柔光棚拍，细腻毛孔与雀斑质感，8K超高清细节', negativePrompt: NEG_PORTRAIT },
-      { src: '/images/suyan/81e34898b519d5caf7e77803f72e4a69.jpg', title: '雨后凝神', positivePrompt: '东方女性超写实面部特写，细密水珠附着于脸颊与额头，黑色刘海湿透贴面；棕色眸子深邃凝视、略带忧郁，低调戏剧性侧光打亮面孔一侧；色调暗绿灰棕沉郁，皮肤纹理细腻真实、可见水珠反光，光影浓郁富有张力；超写实CGI质感人像，微距浅景深，戏剧侧光，湿润肤质，8K超高清细节', negativePrompt: NEG_PORTRAIT },
-      { src: '/images/suyan/89e89440f00945b658c53dcba30935fc.jpg', title: '素白无尘', positivePrompt: '东方女性棚拍人像，纯白背景极简构图，黑色长发自然散落双肩；她面朝正前方神情淡然，裸肩上身，皮肤自然健康、可见细微雀斑与毛孔；色调纯白与肤色相融干净通透，棚拍均匀柔光包裹全身，气质高级极简；高端极简人像摄影，正面构图，柔和棚光，细腻真实肤质，无瑕氛围，8K超高清', negativePrompt: NEG_PORTRAIT },
-      { src: '/images/suyan/b424c2f3514c6c3d315b0f7ca282f4db.jpg', title: '正面直视', positivePrompt: '欧美女性棚拍正面人像，严谨对称构图，浓密剑眉搭配绿灰色眼眸直视镜头，黑色短直发利落干净；面部点缀极浅雀斑，裸肩，皮肤真实细腻；色调米白灰高级，柔和均匀的棚光平铺面庞，气质时尚简约而笃定；超写实高端时尚人像摄影，正面对称构图，柔光棚拍，细腻肤质，8K超高清', negativePrompt: NEG_PORTRAIT },
-      { src: '/images/suyan/cfc6b3f12c97da87d43580760902b814.jpg', title: '湿发入镜', positivePrompt: '东方女性室内人像近景，半湿的黑色短发自然散落，素颜肌肤略透粉红光泽；眼神略带迷茫又温柔，唇色淡雅；色调冷绿灰并带暖肤色，自然散射的室内光柔和铺陈，画面极具生活质感与私密氛围；写实生活感人像摄影，中近景浅景深，自然柔光，细腻真实肤质，松弛情绪，8K超清', negativePrompt: NEG_PORTRAIT },
-      { src: '/images/suyan/d95452ab2c7e6eeefd3998dd801bb641.jpg', title: '暗夜玉颜', positivePrompt: '东方女性纯黑背景人像，半侧面构图，黑色长发消融于深邃黑暗之中；皮肤白皙如瓷、细腻光洁，唇色淡粉微启，神情沉静内敛；色调以极暗黑灰背景映衬白皙肤色，伦勃朗光效在面颊塑造柔和三角光，高对比戏剧氛围；高端戏剧性暗调人像摄影，半侧面构图，单点柔光，细腻瓷肌质感，8K超高清', negativePrompt: NEG_PORTRAIT },
+      { src: '/images/suyan/036d5192f77c8c832b15607a1cce61e0.jpg', title: '风中回眸', positivePrompt: `杰作，最佳质量，8K超高清，超写实，极致精细，胶片质感，柔和自然光，景深效果
+东方女性户外人像，她侧身回首凝视镜头
+黑色长直发被微风吹散横过脸颊，身着格纹西装外套
+皮肤细腻泛着自然光泽，毫无妆感，素颜清丽
+背景是虚化的秋色绿植散景，柔和自然光包裹面庞
+色调温润清新，情绪真实自然而松弛
+胶片质感人像摄影，中近景大光圈浅景深，85mm，细腻肤质
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra realistic, extremely detailed, film texture, soft natural light, depth of field
+outdoor portrait of an East Asian woman glancing back over her shoulder at the camera
+long straight black hair blown across her cheek by a breeze, wearing a plaid blazer
+delicate skin with a natural glow, completely makeup-free, fresh and bare-faced
+background of blurred autumn greenery bokeh, soft natural light wrapping her face
+warm fresh tones, a genuine natural and relaxed mood
+film-textured portrait photography, medium close-up wide-aperture shallow depth of field, 85mm, fine skin`, negativePrompt: NEG_PORTRAIT },
+      { src: '/images/suyan/1d84af2c8af322de0959f8b6b5d21138.jpg', title: '泪眼无声', positivePrompt: `杰作，最佳质量，8K超高清，超写实，极致精细，自然柔光，微距景深
+东方女性极近距离面部特写，微红的眼眶泪光盈盈
+蓝灰色眼珠湿润动人，额前刘海微乱，手指轻托下颌
+皮肤自然真实，可见细微瑕疵与纹理，毫无磨皮
+室内柔光自然散射，勾勒出面部轮廓
+色调冷白灰蓝，情绪细腻克制、含蓄动人
+真实感人的素颜人像摄影，微距极浅景深，细腻毛孔质感
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra realistic, extremely detailed, soft natural light, macro depth of field
+extreme close-up of an East Asian woman's face, reddened eye rims brimming with tears
+moist moving blue-grey irises, slightly tousled bangs, fingertips gently resting under her chin
+natural real skin with visible fine imperfections and texture, no smoothing
+soft indoor light diffusing naturally, outlining the contours of her face
+cool white-grey-blue tones, a delicate restrained and understated mood
+authentic touching bare-face portrait photography, macro ultra-shallow depth of field, fine pore texture`, negativePrompt: NEG_PORTRAIT },
+      { src: '/images/suyan/349f0c34bb771daabf021c1981684904.jpg', title: '绿眸暗火', positivePrompt: `杰作，最佳质量，8K超高清，超写实，极致精细，戏剧性侧光，微距景深
+欧美女性面部特写，深邃的绿色眼瞳极具穿透力
+满脸自然真实的雀斑，黑色长刘海斜遮半额，手指轻置于嘴唇旁
+一道暖橙色光带斜切打亮面部一侧，皮肤质感真实细腻
+深暗底色与暖金光形成强烈反差，光影戏剧而神秘
+色调暗调暖橙，情绪深邃而克制
+高端暗调特写人像摄影，微距浅景深，伦勃朗光效
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra realistic, extremely detailed, dramatic side light, macro depth of field
+close-up of a Western woman's face, deep green irises intensely piercing
+natural freckles across her face, long black bangs slanting over half her forehead, a fingertip resting by her lips
+a band of warm orange light slicing across one side of her face, real fine skin texture
+strong contrast between the deep dark base and warm gold light, dramatic mysterious lighting
+dark warm-orange tones, a deep restrained mood
+high-end low-key close-up portrait photography, macro shallow depth of field, Rembrandt lighting`, negativePrompt: NEG_PORTRAIT },
+      { src: '/images/suyan/4fb2ba828ccc708b6a493fa45abff17e.jpg', title: '清眸俯望', positivePrompt: `杰作，最佳质量，8K超高清，超写实，极致精细，柔和散射光，景深效果
+东方女性俯拍人像特写，女孩微微低头又向上凝视镜头
+杏形的棕色眸子明亮清澈，头发随意盘起、几缕碎发散落
+身着深灰色毛衣，素颜肌肤光洁自然
+室内柔和散射光均匀铺洒，背景虚化朦胧
+色调中性灰白干净，情绪清澈恬静
+高端素颜人像摄影，俯角构图，柔光浅景深，细腻肤质
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra realistic, extremely detailed, soft diffused light, depth of field
+high-angle close-up portrait of an East Asian woman, head slightly lowered yet gazing up at the camera
+bright clear almond-shaped brown eyes, hair loosely pinned up with a few loose strands
+wearing a dark grey sweater, smooth natural bare-faced skin
+even soft diffused indoor light, background softly blurred
+neutral clean grey-white tones, a clear serene mood
+high-end bare-face portrait photography, high-angle composition, soft-light shallow depth of field, fine skin`, negativePrompt: NEG_PORTRAIT },
+      { src: '/images/suyan/66.jpg', title: '雀斑碧眸', positivePrompt: `杰作，最佳质量，8K超高清，超写实，极致精细，柔和散射光，微距景深
+欧美风格女性面部超近距离特写，海蓝色的眼眸清透迷人
+满布雀斑的皮肤真实自然，黑色卷发蓬松飘散，粉色嘴唇微微开启
+柔和的散射光温柔包裹面庞，细节精细入微
+色调清冷白灰，气质梦幻清冷
+毛孔与雀斑质感极致真实
+高端特写人像摄影，微距极浅景深，柔光棚拍，细腻毛孔与雀斑质感
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra realistic, extremely detailed, soft diffused light, macro depth of field
+extreme close-up of a Western woman's face, clear enchanting sea-blue eyes
+freckle-covered skin looking real and natural, fluffy black curls drifting, pink lips slightly parted
+soft diffused light gently wrapping her face, meticulous fine detail
+cool white-grey tones, a dreamy cool aura
+extremely real pore and freckle texture
+high-end close-up portrait photography, macro ultra-shallow depth of field, soft studio light, fine pore and freckle texture`, negativePrompt: NEG_PORTRAIT },
+      { src: '/images/suyan/81e34898b519d5caf7e77803f72e4a69.jpg', title: '雨后凝神', positivePrompt: `杰作，最佳质量，8K超高清，超写实，极致精细，戏剧性侧光，微距景深
+东方女性超写实面部特写，细密水珠附着于脸颊与额头
+黑色刘海湿透贴面，棕色眸子深邃凝视、略带忧郁
+低调戏剧性的侧光打亮面孔一侧，皮肤纹理细腻真实、可见水珠反光
+色调暗绿灰棕沉郁，光影浓郁富有张力
+情绪深沉专注
+超写实CGI质感人像，微距浅景深，戏剧侧光，湿润肤质
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra realistic, extremely detailed, dramatic side light, macro depth of field
+hyper-realistic close-up of an East Asian woman's face, fine water droplets clinging to her cheeks and forehead
+soaked black bangs clinging to her face, deep brown eyes gazing intently with a hint of melancholy
+low-key dramatic side light illuminating one side of her face, fine real skin texture with visible droplet reflections
+moody dark green-grey-brown tones, rich tense lighting
+a deep focused mood
+hyper-realistic CGI-quality portrait, macro shallow depth of field, dramatic side light, dewy skin`, negativePrompt: NEG_PORTRAIT },
+      { src: '/images/suyan/89e89440f00945b658c53dcba30935fc.jpg', title: '素白无尘', positivePrompt: `杰作，最佳质量，8K超高清，超写实，极致精细，均匀棚光，景深效果
+东方女性棚拍人像，纯白背景极简构图，黑色长发自然散落双肩
+她面朝正前方神情淡然，裸肩上身
+皮肤自然健康，可见细微雀斑与毛孔，毫无磨皮
+棚拍均匀柔光包裹全身，纯白与肤色相融干净通透
+色调纯净高级，气质极简无瑕
+高端极简人像摄影，正面构图，柔和棚光，细腻真实肤质
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra realistic, extremely detailed, even studio light, depth of field
+studio portrait of an East Asian woman, minimalist composition on a pure white background, long black hair falling naturally over her shoulders
+facing straight forward with a calm expression, bare shoulders
+natural healthy skin with visible fine freckles and pores, no smoothing
+even soft studio light wrapping her whole figure, pure white blending cleanly with her skin tone
+pure high-end tones, a minimalist flawless aura
+high-end minimalist portrait photography, frontal composition, soft studio light, fine real skin`, negativePrompt: NEG_PORTRAIT },
+      { src: '/images/suyan/b424c2f3514c6c3d315b0f7ca282f4db.jpg', title: '正面直视', positivePrompt: `杰作，最佳质量，8K超高清，超写实，极致精细，均匀棚光，景深效果
+欧美女性棚拍正面人像，严谨对称构图
+浓密剑眉搭配绿灰色眼眸直视镜头，黑色短直发利落干净
+面部点缀极浅雀斑，裸肩，皮肤真实细腻
+柔和均匀的棚光平铺面庞，气质时尚简约而笃定
+色调米白灰高级，情绪冷静自信
+超写实高端时尚人像摄影，正面对称构图，柔光棚拍，细腻肤质
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra realistic, extremely detailed, even studio light, depth of field
+frontal studio portrait of a Western woman, strict symmetrical composition
+thick straight brows paired with green-grey eyes gazing at the camera, crisp short straight black hair
+faint freckles across her face, bare shoulders, real fine skin
+soft even studio light evenly lighting her face, a fashionable minimalist and self-assured aura
+high-end off-white-grey tones, a calm confident mood
+hyper-realistic high-end fashion portrait photography, frontal symmetrical composition, soft studio light, fine skin`, negativePrompt: NEG_PORTRAIT },
+      { src: '/images/suyan/cfc6b3f12c97da87d43580760902b814.jpg', title: '湿发入镜', positivePrompt: `杰作，最佳质量，8K超高清，超写实，极致精细，自然柔光，景深效果
+东方女性室内人像近景，半湿的黑色短发自然散落
+素颜肌肤略透粉红光泽，眼神略带迷茫又温柔，唇色淡雅
+自然散射的室内光柔和铺陈，画面极具生活质感与私密氛围
+色调冷绿灰并带暖肤色
+情绪松弛而私密
+写实生活感人像摄影，中近景浅景深，自然柔光，细腻真实肤质
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra realistic, extremely detailed, soft natural light, depth of field
+indoor close-up portrait of an East Asian woman, half-wet short black hair falling naturally
+bare-faced skin with a faint pink glow, a slightly dazed yet gentle gaze, subtle lip color
+soft naturally-diffused indoor light, a scene full of everyday texture and intimate atmosphere
+cool green-grey tones with warm skin tones
+a relaxed intimate mood
+realistic lifestyle portrait photography, medium close-up shallow depth of field, soft natural light, fine real skin`, negativePrompt: NEG_PORTRAIT },
+      { src: '/images/suyan/d95452ab2c7e6eeefd3998dd801bb641.jpg', title: '暗夜玉颜', positivePrompt: `杰作，最佳质量，8K超高清，超写实，极致精细，伦勃朗光效，戏剧景深
+东方女性纯黑背景人像，半侧面构图，黑色长发消融于深邃黑暗之中
+皮肤白皙如瓷、细腻光洁，唇色淡粉微启，神情沉静内敛
+伦勃朗光效在面颊塑造出柔和的三角光
+极暗黑灰背景映衬白皙肤色，高对比戏剧氛围
+色调暗调冷峻，情绪静谧内敛
+高端戏剧性暗调人像摄影，半侧面构图，单点柔光，细腻瓷肌质感
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra realistic, extremely detailed, Rembrandt lighting, dramatic depth of field
+portrait of an East Asian woman on a pure black background, three-quarter composition, long black hair dissolving into the deep darkness
+porcelain-fair smooth skin, pale pink lips slightly parted, a calm reserved expression
+Rembrandt lighting sculpting a soft triangle of light on her cheek
+the pitch-dark grey background setting off her fair skin, high-contrast dramatic atmosphere
+dark cool tones, a tranquil reserved mood
+high-end dramatic low-key portrait photography, three-quarter composition, single soft light source, fine porcelain skin`, negativePrompt: NEG_PORTRAIT },
     ],
   },
   {
@@ -477,15 +627,150 @@ rendered in Unreal Engine 5, dark-tone cinematic composition, soft lens flare`, 
     coverImg: '/images/work-8.jpg',
     description: '暖棕色调里的内心独白',
     images: [
-      { src: '/images/nuanzong/00085c84e0ce1cc48c38a29450de22ce.jpg', title: '午后倾斜', positivePrompt: '欧美女性仰拍特写，她以躺卧姿态将脸庞仰向阳光，双眼微闭慵懒享受，饱满的红棕唇色微微开启，雀斑散布面颊；深棕卷发在头顶散开铺展，强烈的自然侧光塑造出鲜明的面部轮廓与光影层次；色调暖棕金黄、阳光感十足，皮肤细腻真实，夏日慵懒情绪浓郁；超写实时尚人像摄影，仰角特写构图，自然硬光，细腻肤质，8K超高清', negativePrompt: NEG_PORTRAIT },
-      { src: '/images/nuanzong/29c422c30a90addaf97e58b9cf5fe74a.jpg', title: '逆光回首', positivePrompt: '东方女性户外逆光人像，短卷发在强烈阳光中晕出一圈金色发丝光晕，暖光自侧后方温柔包裹面孔；她身着黑色吊带，神情略带倔强与专注地回望；色调暖金棕橙，黄金时刻的光线通透而浓郁，皮肤泛着暖光光泽，电影感十足；超写实强逆光人像摄影，中近景浅景深，黄金时刻逆光，发丝透光，细腻质感，8K超清', negativePrompt: NEG_PORTRAIT },
-      { src: '/images/nuanzong/32d6796af516d32be59f0ccbe3e879cd.jpg', title: '烛光低眸', positivePrompt: '东方女性室内极近距离特写，她趴卧于桌面向镜头凝视，橙红色烛光自侧下方打亮面孔；齐平的刘海垂落，眼神幽深而神秘，背景是斑驳的老旧报纸墙面；色调深暖棕橙、低调氛围感浓郁，烛光在皮肤上跳动出温暖高光，光影神秘诱人；电影感布光人像摄影，微距浅景深，烛光侧下光，细腻肤质，戏剧氛围，8K超高清', negativePrompt: NEG_PORTRAIT },
-      { src: '/images/nuanzong/5339c540623787f9acbf6f5a4f74927b.jpg', title: '旧报墙前', positivePrompt: '东方女性复古室内人像，她靠墙站立在贴满旧报纸的背景前，暗黄色吊灯自上方投射温暖光线；长直黑发垂落，身穿白色细肩带，神情微侧、透着淡淡忧郁；色调深棕暖黄、复古感浓郁，光线柔和怀旧，皮肤质感温润细腻；港式复古胶片电影风格人像，中景浅景深，顶部暖光，颗粒质感，怀旧氛围，8K超清', negativePrompt: NEG_PORTRAIT },
-      { src: '/images/nuanzong/a303ebcb3579910d8e4c081fb4fc808e.jpg', title: '风中闭目', positivePrompt: '欧美女性户外自然人像，她微微仰头、闭眼尽情享受阳光与微风，棕色卷发蓬松在风中肆意飞扬；满布雀斑的皮肤在日落暖光下泛起点点金光，唇角松弛；色调暖棕金橙并与天蓝形成温柔对比，黄金时刻自然光通透柔和，情绪自由惬意；超写实户外人像摄影，中近景浅景深，黄金时刻侧光，发丝透光，细腻肤质，8K', negativePrompt: NEG_PORTRAIT },
-      { src: '/images/nuanzong/c44f3057f666a2c38487d7a42088e23f.jpg', title: '秋叶车窗', positivePrompt: '东方女性公交车内人像，她围着棕橙色针织围巾，窗外光线自背后强烈透入形成逆光光晕；橙红色枫叶在画面两侧点缀，她眼神仰视前方若有所思；色调暖橙棕、秋日气息浓烈，逆光在发丝与围巾边缘勾出金边，焦糖色调温暖治愈；逆光电影感人像摄影，中近景浅景深，黄金时刻逆光，散景光斑，细腻质感，8K超清', negativePrompt: NEG_PORTRAIT },
-      { src: '/images/nuanzong/dce96f7eef83d8c532eb785df56d8fb8.jpg', title: '日落微笑', positivePrompt: '欧美女性户外人像，她仰头畅快微笑露出洁白牙齿，日落余晖自侧后方勾勒出强烈金光；棕黑色长发在黄昏风中飘扬，面颊满布雀斑；色调日落金橙棕并与蓝灰天空形成对比，黄金时刻逆光让发丝通透闪耀，情绪明亮欢愉；超写实黄金时刻人像摄影，中近景浅景深，逆光轮廓光，细腻肤质，温暖氛围，8K超高清', negativePrompt: NEG_PORTRAIT },
-      { src: '/images/nuanzong/f683355589ec49a214cce562b6330e58.jpg', title: '光晕仰思', positivePrompt: '东方女性室内逆光人像，她仰头凝望斜上方，灰色围巾温柔包裹颈部；强烈的暖黄光晕自右后方射入形成柔和眩光，橙色枫叶装点画面左侧，神情游离、思绪飘向远处；色调暖棕金调，散景中浮动着朦胧光斑，光影梦幻富有诗意；电影感逆光人像摄影，中近景浅景深，暖光眩光，散景光斑，细腻质感，8K超清', negativePrompt: NEG_PORTRAIT },
-      { src: '/images/nuanzong/fc8e8456e1d0a435bc8ba51868a4acc0.jpg', title: '草莓入唇', positivePrompt: '欧美女性床头特写，她手持一颗红色草莓轻触嘴唇，蓝绿色眸子慵懒望向镜头；棕黑色卷发凌乱散落额前，雀斑清晰可见；色调以白色奶油底色衬托草莓红形成鲜明点缀对比，强烈的自然顶光洒落，皮肤水润，氛围诱人而慵懒；超写实特写人像摄影，微距浅景深，自然顶光，细腻肤质，慵懒氛围，8K超高清', negativePrompt: NEG_PORTRAIT },
+      { src: '/images/nuanzong/00085c84e0ce1cc48c38a29450de22ce.jpg', title: '午后倾斜', positivePrompt: `杰作，最佳质量，8K超高清，超写实，极致精细，自然硬光，景深效果
+欧美女性仰拍特写，她以躺卧姿态将脸庞仰向阳光
+双眼微闭慵懒享受，饱满的红棕唇色微微开启，雀斑散布面颊
+深棕卷发在头顶散开铺展，强烈的自然侧光塑造出鲜明的面部轮廓与光影层次
+色调暖棕金黄、阳光感十足，皮肤细腻真实
+夏日慵懒情绪浓郁
+超写实时尚人像摄影，仰角特写构图，自然硬光，细腻肤质
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra realistic, extremely detailed, hard natural light, depth of field
+low-angle close-up of a Western woman, lying back with her face tilted up toward the sun
+eyes half-closed in lazy enjoyment, full red-brown lips slightly parted, freckles scattered across her cheeks
+dark brown curls fanning out above her head, strong natural side light sculpting sharp facial contours and tonal layers
+warm golden-brown tones full of sunshine, fine real skin
+a strong lazy summer mood
+hyper-realistic fashion portrait photography, low-angle close-up composition, hard natural light, fine skin`, negativePrompt: NEG_PORTRAIT },
+      { src: '/images/nuanzong/29c422c30a90addaf97e58b9cf5fe74a.jpg', title: '逆光回首', positivePrompt: `杰作，最佳质量，8K超高清，超写实，极致精细，黄金时刻逆光，景深效果
+东方女性户外逆光人像，短卷发在强烈阳光中晕出一圈金色发丝光晕
+暖光自侧后方温柔包裹面孔，她身着黑色吊带，神情略带倔强与专注地回望
+黄金时刻的光线通透而浓郁，皮肤泛着暖光光泽
+色调暖金棕橙，电影感十足
+情绪倔强而专注
+超写实强逆光人像摄影，中近景浅景深，黄金时刻逆光，发丝透光
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra realistic, extremely detailed, golden-hour backlight, depth of field
+outdoor backlit portrait of an East Asian woman, short curls haloed with a golden rim of light in strong sunshine
+warm light gently wrapping her face from behind and the side, wearing a black camisole, glancing back with a hint of stubborn focus
+translucent rich golden-hour light, her skin glowing with a warm sheen
+warm gold-brown-orange tones, highly cinematic
+a stubborn focused mood
+hyper-realistic strong-backlight portrait photography, medium close-up shallow depth of field, golden-hour backlight, hair rim light`, negativePrompt: NEG_PORTRAIT },
+      { src: '/images/nuanzong/32d6796af516d32be59f0ccbe3e879cd.jpg', title: '烛光低眸', positivePrompt: `杰作，最佳质量，8K超高清，超写实，极致精细，烛光侧下光，微距景深
+东方女性室内极近距离特写，她趴卧于桌面向镜头凝视
+橙红色烛光自侧下方打亮面孔，齐平的刘海垂落，眼神幽深而神秘
+背景是斑驳的老旧报纸墙面，烛光在皮肤上跳动出温暖高光
+色调深暖棕橙、低调氛围感浓郁，光影神秘诱人
+情绪幽深神秘
+电影感布光人像摄影，微距浅景深，烛光侧下光，细腻肤质
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra realistic, extremely detailed, candlelight from below, macro depth of field
+extreme indoor close-up of an East Asian woman, lying on a table gazing at the camera
+orange-red candlelight lighting her face from the lower side, straight bangs hanging down, a deep mysterious gaze
+background of a mottled old newspaper-covered wall, candlelight flickering warm highlights across her skin
+deep warm brown-orange tones, a strong low-key atmosphere, mysterious alluring lighting
+a deep mysterious mood
+cinematic-lit portrait photography, macro shallow depth of field, candlelight from the lower side, fine skin`, negativePrompt: NEG_PORTRAIT },
+      { src: '/images/nuanzong/5339c540623787f9acbf6f5a4f74927b.jpg', title: '旧报墙前', positivePrompt: `杰作，最佳质量，8K超高清，超写实，极致精细，顶部暖光，胶片颗粒，景深效果
+东方女性复古室内人像，她靠墙站立在贴满旧报纸的背景前
+暗黄色吊灯自上方投射温暖光线，长直黑发垂落，身穿白色细肩带
+神情微侧、透着淡淡忧郁，皮肤质感温润细腻
+色调深棕暖黄、复古感浓郁，光线柔和怀旧
+情绪淡淡忧郁
+港式复古胶片电影风格人像，中景浅景深，顶部暖光，颗粒质感
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra realistic, extremely detailed, warm top light, film grain, depth of field
+retro indoor portrait of an East Asian woman, standing against a wall papered with old newspapers
+a dim yellow pendant lamp casting warm light from above, long straight black hair falling down, wearing a white spaghetti-strap top
+head slightly turned, a faint melancholy in her expression, warm delicate skin
+deep brown warm-yellow tones, a strong retro feel, soft nostalgic light
+a faintly melancholic mood
+Hong-Kong-style retro film-cinematic portrait, medium-shot shallow depth of field, warm top light, grain texture`, negativePrompt: NEG_PORTRAIT },
+      { src: '/images/nuanzong/a303ebcb3579910d8e4c081fb4fc808e.jpg', title: '风中闭目', positivePrompt: `杰作，最佳质量，8K超高清，超写实，极致精细，黄金时刻侧光，景深效果
+欧美女性户外自然人像，她微微仰头、闭眼尽情享受阳光与微风
+棕色卷发蓬松在风中肆意飞扬，满布雀斑的皮肤在日落暖光下泛起点点金光
+唇角松弛，黄金时刻自然光通透柔和
+色调暖棕金橙并与天蓝形成温柔对比
+情绪自由惬意
+超写实户外人像摄影，中近景浅景深，黄金时刻侧光，发丝透光，细腻肤质
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra realistic, extremely detailed, golden-hour side light, depth of field
+outdoor natural portrait of a Western woman, head tilted up slightly, eyes closed savoring the sun and breeze
+fluffy brown curls flying freely in the wind, freckled skin catching flecks of gold in the warm sunset light
+lips softly relaxed, translucent gentle golden-hour natural light
+warm gold-brown-orange tones in soft contrast with the sky-blue
+a free and content mood
+hyper-realistic outdoor portrait photography, medium close-up shallow depth of field, golden-hour side light, hair rim light, fine skin`, negativePrompt: NEG_PORTRAIT },
+      { src: '/images/nuanzong/c44f3057f666a2c38487d7a42088e23f.jpg', title: '秋叶车窗', positivePrompt: `杰作，最佳质量，8K超高清，超写实，极致精细，黄金时刻逆光，景深效果
+东方女性公交车内人像，她围着棕橙色针织围巾
+窗外光线自背后强烈透入形成逆光光晕，橙红色枫叶在画面两侧点缀
+她眼神仰视前方若有所思，逆光在发丝与围巾边缘勾出金边
+色调暖橙棕、秋日气息浓烈，焦糖色调温暖治愈
+情绪若有所思
+逆光电影感人像摄影，中近景浅景深，黄金时刻逆光，散景光斑
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra realistic, extremely detailed, golden-hour backlight, depth of field
+portrait of an East Asian woman inside a bus, wrapped in a brown-orange knit scarf
+strong light pouring in from behind through the window forming a backlit halo, orange-red maple leaves accenting both sides of the frame
+gazing up ahead lost in thought, backlight tracing gold rims along her hair and scarf edges
+warm orange-brown tones full of autumn, caramel tones warm and healing
+a wistful thoughtful mood
+backlit cinematic portrait photography, medium close-up shallow depth of field, golden-hour backlight, bokeh light spots`, negativePrompt: NEG_PORTRAIT },
+      { src: '/images/nuanzong/dce96f7eef83d8c532eb785df56d8fb8.jpg', title: '日落微笑', positivePrompt: `杰作，最佳质量，8K超高清，超写实，极致精细，黄金时刻逆光，景深效果
+欧美女性户外人像，她仰头畅快微笑露出洁白牙齿
+日落余晖自侧后方勾勒出强烈金光，棕黑色长发在黄昏风中飘扬，面颊满布雀斑
+黄金时刻逆光让发丝通透闪耀，皮肤泛着暖光
+色调日落金橙棕并与蓝灰天空形成对比
+情绪明亮欢愉
+超写实黄金时刻人像摄影，中近景浅景深，逆光轮廓光，细腻肤质，温暖氛围
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra realistic, extremely detailed, golden-hour backlight, depth of field
+outdoor portrait of a Western woman, head tilted up in a carefree smile revealing white teeth
+sunset glow tracing strong gold light from behind and the side, dark brown long hair flying in the dusk wind, cheeks covered in freckles
+golden-hour backlight making her hair glow translucent, her skin bathed in warm light
+sunset gold-orange-brown tones contrasting with the grey-blue sky
+a bright joyful mood
+hyper-realistic golden-hour portrait photography, medium close-up shallow depth of field, backlit rim light, fine skin, warm atmosphere`, negativePrompt: NEG_PORTRAIT },
+      { src: '/images/nuanzong/f683355589ec49a214cce562b6330e58.jpg', title: '光晕仰思', positivePrompt: `杰作，最佳质量，8K超高清，超写实，极致精细，暖光眩光，景深效果
+东方女性室内逆光人像，她仰头凝望斜上方，灰色围巾温柔包裹颈部
+强烈的暖黄光晕自右后方射入形成柔和眩光，橙色枫叶装点画面左侧
+神情游离、思绪飘向远处，散景中浮动着朦胧光斑
+色调暖棕金调，光影梦幻富有诗意
+情绪游离飘远
+电影感逆光人像摄影，中近景浅景深，暖光眩光，散景光斑
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra realistic, extremely detailed, warm glow flare, depth of field
+indoor backlit portrait of an East Asian woman, head tilted up gazing to the upper side, a grey scarf gently wrapping her neck
+a strong warm-yellow glow streaming in from the upper right forming a soft flare, orange maple leaves accenting the left of the frame
+a distant drifting gaze, hazy light spots floating in the bokeh
+warm brown-gold tones, dreamy poetic lighting
+a distant drifting mood
+cinematic backlit portrait photography, medium close-up shallow depth of field, warm glow flare, bokeh light spots`, negativePrompt: NEG_PORTRAIT },
+      { src: '/images/nuanzong/fc8e8456e1d0a435bc8ba51868a4acc0.jpg', title: '草莓入唇', positivePrompt: `杰作，最佳质量，8K超高清，超写实，极致精细，自然顶光，微距景深
+欧美女性床头特写，她手持一颗红色草莓轻触嘴唇，蓝绿色眸子慵懒望向镜头
+棕黑色卷发凌乱散落额前，雀斑清晰可见
+强烈的自然顶光洒落，皮肤水润，白色奶油底色衬托草莓红形成鲜明点缀对比
+色调奶白点缀草莓红，氛围诱人而慵懒
+情绪慵懒诱人
+超写实特写人像摄影，微距浅景深，自然顶光，细腻肤质
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra realistic, extremely detailed, natural top light, macro depth of field
+bedside close-up of a Western woman, holding a red strawberry lightly touching her lips, blue-green eyes gazing lazily at the camera
+messy dark brown curls falling over her forehead, freckles clearly visible
+strong natural top light pouring down, dewy skin, a cream-white base setting off the strawberry red in sharp accent contrast
+creamy-white tones accented with strawberry red, an alluring lazy atmosphere
+a lazy alluring mood
+hyper-realistic close-up portrait photography, macro shallow depth of field, natural top light, fine skin`, negativePrompt: NEG_PORTRAIT },
     ],
   },
   {
