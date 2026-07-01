@@ -2536,42 +2536,582 @@ professional food photography, close-up shallow depth of field, soft natural lig
     coverImg: '/images/shenglin/1fe0c27640ca87f5dce81b6f7ec0f4de.jpg',
     description: '万物生灵的光影定格，自然与生命的深情凝视',
     images: [
-      { src: '/images/shenglin/000b2ec5935e4d01f0f7778b3baf5d64.jpg', title: '蛇盘石上立', positivePrompt: '一条花纹蛇盘踞在棕色沙岩石头上昂首挺立，身体背部呈深棕色、腹部奶黄色，鳞片纹理清晰细腻，正吐信探测、姿态灵动；背景是大地色系的柔和虚化，自然光勾勒出鳞甲的光泽与立体感；色调暖棕沉稳、野性十足；近景特写爬行动物微距摄影，浅景深，柔和自然光，细腻鳞片质感，8K超高清', negativePrompt: NEG_WILDLIFE },
-      { src: '/images/shenglin/0c6f4a6f224b844ef3857bd2758d83a3.jpg', title: '夕阳双鹤舞', positivePrompt: '湿地夕阳的背景下两只丹顶鹤优雅并立，一轮橙红圆日映衬天际，粉紫色渐变的天空倒映在平静水面；鹤颈修长优雅，红顶白羽对比分明，水中倒影波光粼粼，芦苇随风轻摇；色调暖橙粉紫、宁静唯美，光影诗意；黄金时刻野生动物摄影，中景浅景深，逆光剪影层次，倒影氛围，细腻羽毛质感，8K超清', negativePrompt: NEG_WILDLIFE },
-      { src: '/images/shenglin/170e9c53e2b3974c5d157cb7a8284820.jpg', title: '猫狮豹同框', positivePrompt: '非洲草原日落时分，一只橘猫与一头雄狮、一只猎豹并排站立仿佛在合影自拍；背景是悠闲吃草的斑马群，天空洒满橙金色的光线；三只大小不一的猫科动物神态各异、妙趣横生，毛发在暖光下泛着光泽；色调暖金、氛围诙谐生动；写实风格野生动物摄影，中景浅景深，黄金时刻逆光，细腻毛发质感，8K超高清', negativePrompt: NEG_WILDLIFE },
-      { src: '/images/shenglin/1fe0c27640ca87f5dce81b6f7ec0f4de.jpg', title: '三猫叠罗汉', positivePrompt: '灰色背景上三只不同毛色的猫咪上下叠罗汉般堆放，自上而下分别是银灰猫、深灰猫与橘猫，绿眼、琥珀眼各具神态；它们表情庄重地凝视镜头，毛发纹理细腻蓬松；均匀柔光凸显每只猫的毛色层次与眼神，色调灰调温柔高级；棚拍宠物肖像摄影，中景浅景深，柔光布光，细腻毛发质感，8K超清', negativePrompt: NEG_WILDLIFE },
-      { src: '/images/shenglin/24a97b64876d78cc4f4b5b17c9635563.jpg', title: '虎猫共嬉戏', positivePrompt: '蓝天白云下的翠绿草地上，一只虎斑猫仰头大笑、颈上挂着金色铃铛，一头大老虎俯下头贴近猫咪，神态亲昵仿佛在自拍合影；背景草原开阔清新，阳光明媚；两只大小悬殊的猫科动物毛发在日光下泛光，色调明快鲜活、氛围诙谐温馨；写实风格动物摄影，中景浅景深，明媚自然光，细腻毛发质感，8K超高清', negativePrompt: NEG_WILDLIFE },
-      { src: '/images/shenglin/2d2b8991b88b8bf10d10a65d273f91c8.jpg', title: '绒羊微笑望', positivePrompt: '秋日草地背景中一只白色绵羊的正面近景特写，厚实卷曲的羊毛雪白蓬松，粉色耳朵轻轻竖起，表情温柔仿佛在微笑，眼神清澈纯真；背景是柔和虚化的绿色草地与树木，柔光凸显羊毛的蓬松质感与暖意；色调清新自然、治愈温柔；野生动物肖像摄影，近景浅景深，柔和自然光，细腻毛发质感，8K超清', negativePrompt: NEG_WILDLIFE },
-      { src: '/images/shenglin/2e2e03d739288603f3ad9a8a8c31e8c2.jpg', title: '蜜蜂标本展', positivePrompt: '洁净纯白背景上俯拍的蜜蜂标本摄影，蜜蜂背面展翅平铺，黄黑相间的绒毛纹理清晰，半透明的翅膜脉络精细分明，触角对称伸展，六条纤细的腿分明可辨；均匀无影光凸显每一处生物细节，色调明快、科学而精致；博物学标本微距摄影，俯拍浅景深，均匀柔光，极致细节，昆虫质感，8K超高清', negativePrompt: NEG_WILDLIFE },
-      { src: '/images/shenglin/2ff9d20bcb425b26ff968f9e5d0a3d33.jpg', title: '蜗牛攀青苔', positivePrompt: '雨后湿润的树干上一只蜗牛正缓缓攀爬，棕色螺旋外壳的纹路精细，触角轻探；背景是绿色苔藓与柔和虚化的植物，浅景深突出主体；自然柔光令壳面与湿润的黏液泛起微光，色调翠绿棕黄、清新湿润；近景特写微距摄影，大光圈浅景深，柔和自然光，细腻壳纹质感，8K超清', negativePrompt: NEG_WILDLIFE },
-      { src: '/images/shenglin/303769ea9e3fb4da4722431828e5d183.jpg', title: '瓢虫展翅飞', positivePrompt: '一片绿色叶片上，一只七星瓢虫展翅欲飞，橙红色鞘翅张开、隐现出透明的内翅，黑色斑点对称分布；黄金时刻的暖光自背后透射，营造出温暖的光晕效果，叶片脉络清晰；色调橙红翠绿、通透明亮，画面充满生命力；昆虫微距摄影，极浅景深，黄金时刻逆光，光晕氛围，细腻翅膜质感，8K超高清', negativePrompt: NEG_WILDLIFE },
-      { src: '/images/shenglin/33061546a662525df38ede7f0c63a39b.jpg', title: '熊猫爬树枝', positivePrompt: '翠绿竹林背景中一只小熊猫幼崽抱着树干努力攀爬，黑白毛色对比鲜明，圆脸憨态可掬，乌溜溜的眼神灵动，爪子用力抓握树干；背景竹叶绿意盎然、柔和虚化，柔光凸显幼崽绒毛的蓬松质感；色调黑白翠绿、萌趣治愈；野生动物摄影，中近景浅景深，柔和自然光，细腻毛发质感，8K超清', negativePrompt: NEG_WILDLIFE },
-      { src: '/images/shenglin/344949b20b1536c806ba71df7102e0b1.jpg', title: '雄鹰傲枝立', positivePrompt: '绿叶背景中，一只白头海雕傲然站立在木桩上，洁白的头羽与棕色的身体羽毛对比分明，黄色的钩嘴锐利有神，黄色利爪紧紧攫住木桩，侧身微转、神态威猛；柔光勾勒羽毛的层次与质感，背景翠绿虚化衬托主体；色调棕白翠绿、威严大气；野生动物肖像摄影，中景浅景深，柔和自然光，细腻羽毛质感，8K超高清', negativePrompt: NEG_WILDLIFE },
-      { src: '/images/shenglin/406e013bb92a507f2f4a85d07ac0acf9.jpg', title: '赤狐凝眸深', positivePrompt: '深色背景中一只红狐狸的正面特写肖像，橙红色浓密的毛发蓬松柔软，黑色耳尖对称挺立，琥珀色的眼睛深邃地凝视镜头，白色下颌绒毛与橙色毛色形成鲜明对比；低调布光凸显毛发的层次与眼神的灵性，色调橙红深沉、神秘迷人；野生动物肖像摄影，特写浅景深，戏剧性布光，细腻毛发质感，8K超清', negativePrompt: NEG_WILDLIFE },
-      { src: '/images/shenglin/435076a149824eaf83e691e2b55ea53a.jpg', title: '浣熊凑近来', positivePrompt: '蓝天树林的背景下，一只浣熊张开双臂好奇地向镜头靠近，黑色眼罩花纹分明，灰棕色毛发蓬松，黑色的眼睛闪亮而充满好奇；宽角镜头近距离拍摄夸张了它探近的姿态，柔光凸显绒毛质感与灵动神情；色调灰棕清新、俏皮生动；野生动物广角摄影，近景浅景深，自然光，细腻毛发质感，8K超高清', negativePrompt: NEG_WILDLIFE },
-      { src: '/images/shenglin/5226bc6ac219074cfaad5fd939c9fcbe.jpg', title: '长颈鹿晴立', positivePrompt: '蓝天晴日的背景下，一只长颈鹿全身直立、侧面优雅展示，棕白色的网状斑纹清晰分明，脖颈修长高挑，神态沉静优雅；背景是清爽的蓝天与翠绿树木，明亮自然光凸显斑纹肌理与从容气质；色调蓝绿清爽、明快辽阔；野生动物摄影，全身中景浅景深，明媚自然光，细腻斑纹质感，8K超清', negativePrompt: NEG_WILDLIFE },
-      { src: '/images/shenglin/5647a4650aeda7816933d5887b31d82e.jpg', title: '竹林胖熊坐', positivePrompt: '翠绿竹林中一只大熊猫席地而坐，黑白毛色对比鲜明，圆胖憨厚的体型惹人喜爱，眼神若有所思地望向远处；竹叶背景柔和虚化，地面苔藓青翠，柔光凸显熊猫绒毛的蓬松与竹林的清新；色调黑白翠绿、悠然治愈；野生动物摄影，中景浅景深，柔和自然光，细腻毛发质感，8K超高清', negativePrompt: NEG_WILDLIFE },
-      { src: '/images/shenglin/6c42bce19fbb4fe118dc68125a1f3a11.jpg', title: '水中犬探头', positivePrompt: '水下视角拍摄一只边境牧羊犬向镜头游来，张嘴露出舌头，晶莹水泡环绕四周，绿色水体透明通透；光线在水中折射形成美丽的光晕，宽角鱼眼效果夸张了它探近的动感；毛发在水中飘散，色调清透蓝绿、灵动欢快；创意水下宠物摄影，广角浅景深，水下折射光，气泡氛围，细腻质感，8K超清', negativePrompt: NEG_WILDLIFE },
-      { src: '/images/shenglin/72c795a59aa9f119dd3efe8f7b29d388.jpg', title: '水獭游蓝波', positivePrompt: '清澈的蓝色水中一只水獭正游向镜头，棕色皮毛湿润贴身，圆脸大眼睛憨态可掬，纤细的胡须清晰可见；水面波纹与晶莹气泡环绕四周，光线在水中折射出通透光晕；色调清透蓝绿、灵动可爱；高清水下野生动物摄影，中近景浅景深，水下折射光，气泡氛围，细腻毛发质感，8K超高清', negativePrompt: NEG_WILDLIFE },
-      { src: '/images/shenglin/8d24888c3d4365114039b7c0f85deff4.jpg', title: '刺猬欢笑草', positivePrompt: '翠绿草地上一只刺猬仰头大笑，三只小爪欢快张开，棕色的尖刺与柔软的腹部绒毛形成质感对比，嘴巴张开露出小牙、神态憨趣可爱；背景绿草与三叶草柔和虚化，柔光凸显尖刺与绒毛的细节；色调翠绿棕黄、萌趣治愈；野生动物摄影，近景浅景深，柔和自然光，细腻质感，8K超清', negativePrompt: NEG_WILDLIFE },
-      { src: '/images/shenglin/8ddeb40ec51625aad859ee3c67870f82.jpg', title: '四犬低头圈', positivePrompt: '四只不同品种的狗狗围成一圈一同低头向下张望，采用从下方向上仰拍的独特视角；斑点狗、边境牧羊犬、拉布拉多猎犬等犬种都伸着舌头，表情好奇；洁净的白色背景干净简洁，均匀柔光凸显每只狗的毛色与神态；色调明快清爽、诙谐生动；创意宠物摄影，仰拍广角构图，柔光布光，细腻毛发质感，8K超高清', negativePrompt: NEG_WILDLIFE },
-      { src: '/images/shenglin/93f6f0a9682db6f726243059f57f307e.jpg', title: '幼羊初立野', positivePrompt: '荒野背景中一只纯白的幼羊直立正视镜头，卷曲的细绒白毛蓬松可爱，粉色耳朵轻轻竖起，双腿腕部有对称的黑色斑点，眼神清澈纯真；柔和自然光凸显绒毛的蓬松质感，背景荒野柔和虚化衬托主体；色调纯白大地色、纯真治愈；野生动物肖像摄影，中近景浅景深，柔和自然光，细腻毛发质感，8K超清', negativePrompt: NEG_WILDLIFE },
-      { src: '/images/shenglin/947db7197a6e30459e763aecc6d1b605.jpg', title: '白犬仰天笑', positivePrompt: '蓝天绿树的背景下，一只白色萨摩耶仰头吐舌欢笑，蓬松雪白的毛发光洁柔顺，棕黑色的眼睛明亮有神；宽角低视角仰拍夸张了它的憨态，背景建筑与天空清晰，阳光明媚；毛发在日光下泛着光泽，色调洁白清新、欢快治愈；宠物广角摄影，低角度仰拍，明媚自然光，细腻毛发质感，8K超高清', negativePrompt: NEG_WILDLIFE },
-      { src: '/images/shenglin/991a05e8816767ce04debc030afa91ec.jpg', title: '狮猫暮色亲', positivePrompt: '非洲草原黄昏的金色光线中，一头雄狮与一只虎斑猫面对面亲密依偎，狮子张嘴微笑，猫咪以绿色眼眸温柔凝视；金色光晕环绕两者，背景是非洲树木剪影与橙色天空；毛发在暖光下透出金边，色调暖金橙红、温情动人；黄金时刻野生动物摄影，中近景浅景深，逆光光晕，细腻毛发质感，8K超清', negativePrompt: NEG_WILDLIFE },
-      { src: '/images/shenglin/a765b9ec22b7533fdf9a0b02f1df0ace.jpg', title: '雨中母雀巢', positivePrompt: '细雨之中，一只小鸟站在苔藓枝头，叼着一片绿叶如撑伞般为巢中雏鸟遮风挡雨；鸟巢里三只幼鸟蜷缩取暖，绿叶撑开如天然雨伞；背景是野花草地的柔和虚化，柔光与雨丝营造温情氛围；色调翠绿湿润、温暖动人；野生动物纪实摄影，近景浅景深，柔和自然光，雨丝氛围，细腻羽毛质感，8K超高清', negativePrompt: NEG_WILDLIFE },
-      { src: '/images/shenglin/ab8e80a87115aac937be63efa25b1299.jpg', title: '水豚溪边坐', positivePrompt: '清澈溪流的石头旁，一只水豚静静坐立、凝视远方，棕黄色的粗糙毛发厚实，圆润敦实的体型憨态可掬；背景是秋色树木与波光粼粼的溪流，黄金时刻温暖的斜阳洒落；毛发在暖光下泛着金边，色调暖棕金黄、宁静治愈；黄金时刻野生动物摄影，中景浅景深，斜射暖光，细腻毛发质感，8K超清', negativePrompt: NEG_WILDLIFE },
-      { src: '/images/shenglin/b623de1fd0df3f8d57de0cd853e21ff8.jpg', title: '小狗扑天际', positivePrompt: '蓝天白云之中，一只柯基犬从下方飞扑向镜头，张嘴大笑露出舌头，前爪向前伸展，耳朵在风中飘扬；鱼眼宽角低仰拍夸张了它扑近的动感与四肢舒展，背景蓝天白云、阳光明媚；毛发蓬松泛光，色调明快清新、欢快灵动；创意宠物广角摄影，鱼眼低仰拍，明媚自然光，动感构图，细腻毛发质感，8K超高清', negativePrompt: NEG_WILDLIFE },
-      { src: '/images/shenglin/bbe26a897b027c8d6fd7e9b43c930a63.jpg', title: '母子鹿亲吻', positivePrompt: '非洲草原的蓝天白云下，一只长颈鹿母亲低头亲吻幼崽的额头，母子情深；棕白色的斑纹纹路清晰细腻，幼崽仰头依偎在母亲身旁；背景高草与树木自然虚化，柔和自然光凸显斑纹肌理与温情瞬间；色调暖棕蓝绿、温馨动人；野生动物纪实摄影，中景浅景深，柔和自然光，细腻斑纹质感，8K超清', negativePrompt: NEG_WILDLIFE },
-      { src: '/images/shenglin/c1b31a38c2ee70939f22c9a1766ccb9f.jpg', title: '棕熊倚树笑', positivePrompt: '森林深处，一头大棕熊靠着粗壮的树干仰头大笑，张嘴的表情欢快憨趣，棕色厚实的毛发质感粗犷，爪子随意搭在树干上；背景是柔和虚化的绿色森林，柔光凸显毛发的层次与蓬松；色调棕绿深沉、诙谐生动；野生动物摄影，中景浅景深，柔和自然光，细腻毛发质感，8K超高清', negativePrompt: NEG_WILDLIFE },
-      { src: '/images/shenglin/c8a1fa66c9a9c815fe3a3631159db027.jpg', title: '骏马奔花田', positivePrompt: '开满黄花的草地上，一匹栗色骏马全力奔腾，鬃毛与尾巴在风中飘扬，肌肉线条优美有力，额头点缀一抹白色；背景是虚化的绿树与蓝天白云，自然光自侧面打亮马身，凸显皮毛的光泽与奔跑的动感；色调栗棕金黄、蓝绿清爽，充满力量与自由；动物运动摄影，中景浅景深，侧向自然光，动感构图，细腻皮毛质感，8K超清', negativePrompt: NEG_WILDLIFE },
-      { src: '/images/shenglin/ccb228c721732919dbd31d98c07269ed.jpg', title: '柴犬浮水眠', positivePrompt: '清澈的蓝绿色泳池水中，一只柴犬仰躺漂浮、闭眼享受惬意时光，橙白色的毛发湿润贴身；周围水波轻轻荡漾形成粼粼光纹，从上方俯拍，水面折射出清透的光晕；色调清透蓝绿、慵懒治愈，画面松弛惬意；创意宠物水上摄影，俯拍浅景深，水面折射光，光纹氛围，细腻毛发质感，8K超高清', negativePrompt: NEG_WILDLIFE },
-      { src: '/images/shenglin/d6bdc4182b2a9889593ad77030b96c26.jpg', title: '花丛懒猫卧', positivePrompt: '黄昏金色光线下，草坪上的白色雏菊花丛中一只虎斑猫慵懒侧卧，仰头以绿色眼眸凝视镜头；白绿相间的雏菊在猫咪周围盛开，背景绿植与房屋柔和虚化；黄金时刻的暖光为猫毛镀上金边，色调暖金翠绿、悠然治愈；黄金时刻宠物摄影，近景浅景深，逆光暖光，散景光斑，细腻毛发质感，8K超清', negativePrompt: NEG_WILDLIFE },
-      { src: '/images/shenglin/dccfcc2a853ad076aa7af3aa930ef834.jpg', title: '变色龙绿枝', positivePrompt: '一根枝干上攀爬着一只色彩鲜艳的变色龙，蓝绿色的条纹身体斑斓夺目，圆形可转动的眼睛呈棕红色，卷曲的尾巴螺旋收紧，四爪紧紧攫握树干；柔和自然光凸显鳞片的颗粒质感与斑斓色彩，背景绿意柔和虚化；色调蓝绿翠丽、异域灵动；爬行动物微距摄影，近景浅景深，柔和自然光，细腻鳞片质感，8K超高清', negativePrompt: NEG_WILDLIFE },
-      { src: '/images/shenglin/de756ba402d7be1f1e72c62100c38a72.jpg', title: '水獭坐石望', positivePrompt: '溪流中的苔藓石头上，一只水獭端正坐立，棕色的皮毛光亮，圆脸表情专注，黑色的眼睛机警有神，胡须向两侧伸展；背景是潺潺溪流与绿叶秋色的柔和虚化，柔光凸显湿润皮毛的光泽与灵动神情；色调棕绿暖调、自然生动；野生动物摄影，中近景浅景深，柔和自然光，细腻毛发质感，8K超清', negativePrompt: NEG_WILDLIFE },
-      { src: '/images/shenglin/e120f9b27b1c2b7ddf5796e7d6816198.jpg', title: '水豚晨光照', positivePrompt: '清晨的金色光线中，一只水豚站在水边的苔藓石块上侧身仰望，棕黄色的粗糙毛发厚实，圆润的体型敦实可爱；背景是秋日树木与波光闪耀的河流，晨光为毛发镀上一层温暖金边；色调暖金棕黄、宁静诗意；黄金时刻野生动物摄影，中景浅景深，晨间逆光，光晕氛围，细腻毛发质感，8K超高清', negativePrompt: NEG_WILDLIFE },
-      { src: '/images/shenglin/e4dfab22d5d27c7c302a1833e49195e7.jpg', title: '翠鸟破浪出', positivePrompt: '清澈的水面上，一只翠鸟破水跃出的瞬间被定格，蓝绿色的翅膀舒展，水花四溅呈皇冠形状，晶莹的水珠向四周飞散；背景是水面与树木的柔和虚化，高速摄影凝固了这一动感瞬间，羽毛湿润泛光；色调蓝绿通透、灵动迅捷；高速野生动物摄影，中景浅景深，高速快门定格，水花氛围，细腻羽毛质感，8K超清', negativePrompt: NEG_WILDLIFE },
-      { src: '/images/shenglin/ef8eb12b3d4df9f3225db2e3ef3a8903.jpg', title: '鸮目凝远方', positivePrompt: '木栅栏上站立的一只猫头鹰的正面肖像，棕红色与白色相间的斑纹羽毛层次丰富，金黄色的大圆眼睛犀利地凝视前方，灰色的弯钩喙锐利，羽毛丰满蓬松；柔光凸显羽毛的纹理层次与眼神的锐利，背景柔和虚化衬托主体；色调棕红金黄、威严深邃；野生动物肖像摄影，特写浅景深，柔和自然光，细腻羽毛质感，8K超高清', negativePrompt: NEG_WILDLIFE },
-      { src: '/images/shenglin/fdf9ba20b7211cabd24cbb00600ac4fd.jpg', title: '雪绒犬奔跑', positivePrompt: '蓝天白云下户外奔跑的一只白色比熊犬，蓬松雪白的卷毛柔软可爱，圆脸配一双黑色的大眼睛，张嘴吐舌、兴奋十足，前爪正大步迈出；低视角广角仰拍夸张了它奔跑的动感与四肢舒展，背景蓝天白云、阳光明媚；毛发泛光，色调洁白清新、欢快灵动；宠物运动摄影，低角度广角仰拍，明媚自然光，动感构图，细腻毛发质感，8K超清', negativePrompt: NEG_WILDLIFE },
+      { src: '/images/shenglin/000b2ec5935e4d01f0f7778b3baf5d64.jpg', title: '蛇盘石上立', positivePrompt: `杰作，最佳质量，8K超高清，爬行动物微距摄影，极致精细，柔和自然光，景深效果
+一条花纹蛇盘踞在棕色沙岩石头上昂首挺立，身体背部呈深棕色、腹部奶黄色
+鳞片纹理清晰细腻，正吐信探测、姿态灵动
+背景是大地色系的柔和虚化，自然光勾勒出鳞甲的光泽与立体感
+色调暖棕沉稳、野性十足
+细腻鳞片质感
+近景特写爬行动物微距摄影，浅景深，柔和自然光
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, reptile macro photography, extremely detailed, soft natural light, depth of field
+a patterned snake coiled atop a brown sandstone rock, head raised high, its back deep brown and belly cream-yellow
+clear fine scale texture, tongue flicking out to sense, a lively poise
+background of softly blurred earth tones, natural light outlining the sheen and dimensionality of the scales
+composed warm-brown tones, full of wildness
+fine scale texture
+close-up reptile macro photography, shallow depth of field, soft natural light`, negativePrompt: NEG_WILDLIFE },
+      { src: '/images/shenglin/0c6f4a6f224b844ef3857bd2758d83a3.jpg', title: '夕阳双鹤舞', positivePrompt: `杰作，最佳质量，8K超高清，黄金时刻野生动物摄影，极致精细，逆光剪影层次，倒影氛围
+湿地夕阳的背景下两只丹顶鹤优雅并立，一轮橙红圆日映衬天际
+粉紫色渐变的天空倒映在平静水面
+鹤颈修长优雅，红顶白羽对比分明，水中倒影波光粼粼，芦苇随风轻摇
+色调暖橙粉紫、宁静唯美，光影诗意
+细腻羽毛质感
+黄金时刻野生动物摄影，中景浅景深，逆光剪影层次，倒影氛围
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, golden-hour wildlife photography, extremely detailed, backlit silhouette layering, reflection atmosphere
+two red-crowned cranes standing elegantly against a wetland sunset, an orange-red disk of sun setting off the horizon
+a pink-purple gradient sky mirrored on the calm water
+slender graceful necks, red crowns and white plumage in clear contrast, shimmering reflections in the water, reeds swaying in the breeze
+warm orange pink-purple tones, serene and beautiful, poetic light
+fine feather texture
+golden-hour wildlife photography, medium-shot shallow depth of field, backlit silhouette layering, reflection atmosphere`, negativePrompt: NEG_WILDLIFE },
+      { src: '/images/shenglin/170e9c53e2b3974c5d157cb7a8284820.jpg', title: '猫狮豹同框', positivePrompt: `杰作，最佳质量，8K超高清，写实风格野生动物摄影，极致精细，黄金时刻逆光，景深效果
+非洲草原日落时分，一只橘猫与一头雄狮、一只猎豹并排站立仿佛在合影自拍
+背景是悠闲吃草的斑马群，天空洒满橙金色的光线
+三只大小不一的猫科动物神态各异、妙趣横生，毛发在暖光下泛着光泽
+色调暖金、氛围诙谐生动
+细腻毛发质感
+写实风格野生动物摄影，中景浅景深，黄金时刻逆光
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, realistic wildlife photography, extremely detailed, golden-hour backlight, depth of field
+at sunset on the African savanna, an orange cat, a lion and a leopard standing side by side as if taking a group selfie
+background of a herd of zebras grazing leisurely, the sky washed in orange-gold light
+the three felines of different sizes each with distinct expressions, delightfully amusing, fur glowing in the warm light
+warm gold tones, a witty lively mood
+fine fur texture
+realistic wildlife photography, medium-shot shallow depth of field, golden-hour backlight`, negativePrompt: NEG_WILDLIFE },
+      { src: '/images/shenglin/1fe0c27640ca87f5dce81b6f7ec0f4de.jpg', title: '三猫叠罗汉', positivePrompt: `杰作，最佳质量，8K超高清，棚拍宠物肖像摄影，极致精细，柔光布光，景深效果
+灰色背景上三只不同毛色的猫咪上下叠罗汉般堆放，自上而下分别是银灰猫、深灰猫与橘猫，绿眼、琥珀眼各具神态
+它们表情庄重地凝视镜头，毛发纹理细腻蓬松
+均匀柔光凸显每只猫的毛色层次与眼神
+色调灰调温柔高级
+细腻毛发质感
+棚拍宠物肖像摄影，中景浅景深，柔光布光
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, studio pet portrait photography, extremely detailed, soft lighting, depth of field
+three cats of different coats stacked one atop another on a grey background, from top to bottom a silver-grey cat, a dark-grey cat and an orange cat, with green and amber eyes each expressive
+they gaze solemnly at the camera, fine fluffy fur texture
+even soft light highlighting each cat's coat layers and eyes
+gentle high-end grey tones
+fine fur texture
+studio pet portrait photography, medium-shot shallow depth of field, soft lighting`, negativePrompt: NEG_WILDLIFE },
+      { src: '/images/shenglin/24a97b64876d78cc4f4b5b17c9635563.jpg', title: '虎猫共嬉戏', positivePrompt: `杰作，最佳质量，8K超高清，写实风格动物摄影，极致精细，明媚自然光，景深效果
+蓝天白云下的翠绿草地上，一只虎斑猫仰头大笑、颈上挂着金色铃铛，一头大老虎俯下头贴近猫咪，神态亲昵仿佛在自拍合影
+背景草原开阔清新，阳光明媚
+两只大小悬殊的猫科动物毛发在日光下泛光
+色调明快鲜活、氛围诙谐温馨
+细腻毛发质感
+写实风格动物摄影，中景浅景深，明媚自然光
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, realistic animal photography, extremely detailed, bright natural light, depth of field
+on green grass under a blue sky, a tabby cat laughing with its head up wearing a golden bell, a big tiger lowering its head close to the cat, affectionate as if taking a selfie together
+background of open fresh grassland, bright sunshine
+the two wildly different-sized felines' fur glowing in the daylight
+bright lively tones, a witty warm mood
+fine fur texture
+realistic animal photography, medium-shot shallow depth of field, bright natural light`, negativePrompt: NEG_WILDLIFE },
+      { src: '/images/shenglin/2d2b8991b88b8bf10d10a65d273f91c8.jpg', title: '绒羊微笑望', positivePrompt: `杰作，最佳质量，8K超高清，野生动物肖像摄影，极致精细，柔和自然光，景深效果
+秋日草地背景中一只白色绵羊的正面近景特写，厚实卷曲的羊毛雪白蓬松
+粉色耳朵轻轻竖起，表情温柔仿佛在微笑，眼神清澈纯真
+背景是柔和虚化的绿色草地与树木，柔光凸显羊毛的蓬松质感与暖意
+色调清新自然、治愈温柔
+细腻毛发质感
+野生动物肖像摄影，近景浅景深，柔和自然光
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, wildlife portrait photography, extremely detailed, soft natural light, depth of field
+a frontal close-up of a white sheep against an autumn meadow, thick curly wool snowy and fluffy
+pink ears gently pricked up, a gentle expression as if smiling, clear innocent eyes
+background of softly blurred green grass and trees, soft light highlighting the fluffiness and warmth of the wool
+fresh natural tones, healing and gentle
+fine fur texture
+wildlife portrait photography, close-up shallow depth of field, soft natural light`, negativePrompt: NEG_WILDLIFE },
+      { src: '/images/shenglin/2e2e03d739288603f3ad9a8a8c31e8c2.jpg', title: '蜜蜂标本展', positivePrompt: `杰作，最佳质量，8K超高清，博物学标本微距摄影，极致精细，均匀柔光，极致细节
+洁净纯白背景上俯拍的蜜蜂标本摄影，蜜蜂背面展翅平铺，黄黑相间的绒毛纹理清晰
+半透明的翅膜脉络精细分明，触角对称伸展，六条纤细的腿分明可辨
+均匀无影光凸显每一处生物细节
+色调明快、科学而精致
+昆虫质感极致
+博物学标本微距摄影，俯拍浅景深，均匀柔光，极致细节
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, natural-history specimen macro photography, extremely detailed, even soft light, extreme detail
+an overhead specimen shot of a bee on a clean pure-white background, the bee laid flat wings spread from the back, yellow-and-black fuzz texture clear
+the translucent wing membranes finely veined, antennae symmetrically extended, six slender legs distinctly discernible
+even shadowless light highlighting every biological detail
+bright tones, scientific and refined
+ultimate insect texture
+natural-history specimen macro photography, overhead shallow depth of field, even soft light, extreme detail`, negativePrompt: NEG_WILDLIFE },
+      { src: '/images/shenglin/2ff9d20bcb425b26ff968f9e5d0a3d33.jpg', title: '蜗牛攀青苔', positivePrompt: `杰作，最佳质量，8K超高清，近景特写微距摄影，极致精细，柔和自然光，大光圈景深
+雨后湿润的树干上一只蜗牛正缓缓攀爬，棕色螺旋外壳的纹路精细，触角轻探
+背景是绿色苔藓与柔和虚化的植物，浅景深突出主体
+自然柔光令壳面与湿润的黏液泛起微光
+色调翠绿棕黄、清新湿润
+细腻壳纹质感
+近景特写微距摄影，大光圈浅景深，柔和自然光
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, close-up macro photography, extremely detailed, soft natural light, wide-aperture depth of field
+a snail slowly climbing a rain-dampened tree trunk, the fine grooves of its brown spiral shell, antennae gently probing
+background of green moss and softly blurred plants, shallow depth of field isolating the subject
+soft natural light making the shell surface and moist slime shimmer faintly
+emerald brown-yellow tones, fresh and moist
+fine shell-grain texture
+close-up macro photography, wide-aperture shallow depth of field, soft natural light`, negativePrompt: NEG_WILDLIFE },
+      { src: '/images/shenglin/303769ea9e3fb4da4722431828e5d183.jpg', title: '瓢虫展翅飞', positivePrompt: `杰作，最佳质量，8K超高清，昆虫微距摄影，极致精细，黄金时刻逆光，光晕氛围
+一片绿色叶片上，一只七星瓢虫展翅欲飞，橙红色鞘翅张开、隐现出透明的内翅，黑色斑点对称分布
+黄金时刻的暖光自背后透射，营造出温暖的光晕效果，叶片脉络清晰
+色调橙红翠绿、通透明亮
+画面充满生命力
+细腻翅膜质感
+昆虫微距摄影，极浅景深，黄金时刻逆光，光晕氛围
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, insect macro photography, extremely detailed, golden-hour backlight, glow atmosphere
+on a green leaf, a seven-spot ladybug about to take flight, its orange-red elytra opening to reveal the transparent inner wings, black spots symmetrically arranged
+warm golden-hour light transmitting from behind, creating a warm glow effect, the leaf veins clear
+orange-red and emerald tones, translucent and bright
+a frame full of vitality
+fine wing-membrane texture
+insect macro photography, ultra-shallow depth of field, golden-hour backlight, glow atmosphere`, negativePrompt: NEG_WILDLIFE },
+      { src: '/images/shenglin/33061546a662525df38ede7f0c63a39b.jpg', title: '熊猫爬树枝', positivePrompt: `杰作，最佳质量，8K超高清，野生动物摄影，极致精细，柔和自然光，景深效果
+翠绿竹林背景中一只小熊猫幼崽抱着树干努力攀爬，黑白毛色对比鲜明
+圆脸憨态可掬，乌溜溜的眼神灵动，爪子用力抓握树干
+背景竹叶绿意盎然、柔和虚化，柔光凸显幼崽绒毛的蓬松质感
+色调黑白翠绿、萌趣治愈
+细腻毛发质感
+野生动物摄影，中近景浅景深，柔和自然光
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, wildlife photography, extremely detailed, soft natural light, depth of field
+a giant panda cub clinging to and climbing a tree trunk against a green bamboo grove, striking black-and-white coat contrast
+a round endearing face, lively dark eyes, paws gripping the trunk hard
+lush softly-blurred bamboo leaves behind, soft light highlighting the fluffiness of the cub's fur
+black-white and emerald tones, cute and healing
+fine fur texture
+wildlife photography, medium close-up shallow depth of field, soft natural light`, negativePrompt: NEG_WILDLIFE },
+      { src: '/images/shenglin/344949b20b1536c806ba71df7102e0b1.jpg', title: '雄鹰傲枝立', positivePrompt: `杰作，最佳质量，8K超高清，野生动物肖像摄影，极致精细，柔和自然光，景深效果
+绿叶背景中，一只白头海雕傲然站立在木桩上，洁白的头羽与棕色的身体羽毛对比分明
+黄色的钩嘴锐利有神，黄色利爪紧紧攫住木桩，侧身微转、神态威猛
+柔光勾勒羽毛的层次与质感，背景翠绿虚化衬托主体
+色调棕白翠绿、威严大气
+细腻羽毛质感
+野生动物肖像摄影，中景浅景深，柔和自然光
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, wildlife portrait photography, extremely detailed, soft natural light, depth of field
+against green foliage, a bald eagle standing proudly on a wooden post, white head feathers in clear contrast with the brown body plumage
+a sharp piercing yellow hooked beak, yellow talons gripping the post firmly, turned slightly with a fierce bearing
+soft light outlining the layers and texture of the feathers, the emerald blurred background setting off the subject
+brown-white and emerald tones, majestic and grand
+fine feather texture
+wildlife portrait photography, medium-shot shallow depth of field, soft natural light`, negativePrompt: NEG_WILDLIFE },
+      { src: '/images/shenglin/406e013bb92a507f2f4a85d07ac0acf9.jpg', title: '赤狐凝眸深', positivePrompt: `杰作，最佳质量，8K超高清，野生动物肖像摄影，极致精细，戏剧性布光，特写景深
+深色背景中一只红狐狸的正面特写肖像，橙红色浓密的毛发蓬松柔软
+黑色耳尖对称挺立，琥珀色的眼睛深邃地凝视镜头，白色下颌绒毛与橙色毛色形成鲜明对比
+低调布光凸显毛发的层次与眼神的灵性
+色调橙红深沉、神秘迷人
+细腻毛发质感
+野生动物肖像摄影，特写浅景深，戏剧性布光
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, wildlife portrait photography, extremely detailed, dramatic lighting, close-up depth of field
+a frontal close-up portrait of a red fox against a dark background, dense orange-red fur soft and fluffy
+black ear tips symmetrically pricked, deep amber eyes gazing at the camera, white chin fur contrasting sharply with the orange coat
+low-key lighting highlighting the layers of fur and the spirit in its eyes
+deep orange-red tones, mysterious and captivating
+fine fur texture
+wildlife portrait photography, close-up shallow depth of field, dramatic lighting`, negativePrompt: NEG_WILDLIFE },
+      { src: '/images/shenglin/435076a149824eaf83e691e2b55ea53a.jpg', title: '浣熊凑近来', positivePrompt: `杰作，最佳质量，8K超高清，野生动物广角摄影，极致精细，自然光，景深效果
+蓝天树林的背景下，一只浣熊张开双臂好奇地向镜头靠近，黑色眼罩花纹分明
+灰棕色毛发蓬松，黑色的眼睛闪亮而充满好奇
+宽角镜头近距离拍摄夸张了它探近的姿态，柔光凸显绒毛质感与灵动神情
+色调灰棕清新、俏皮生动
+细腻毛发质感
+野生动物广角摄影，近景浅景深，自然光
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, wildlife wide-angle photography, extremely detailed, natural light, depth of field
+against a backdrop of blue sky and woods, a raccoon spreading its arms and leaning curiously toward the camera, its black mask pattern distinct
+fluffy grey-brown fur, black eyes bright and full of curiosity
+a wide-angle close shot exaggerating its leaning-in pose, soft light highlighting the fur texture and lively expression
+fresh grey-brown tones, playful and lively
+fine fur texture
+wildlife wide-angle photography, close-up shallow depth of field, natural light`, negativePrompt: NEG_WILDLIFE },
+      { src: '/images/shenglin/5226bc6ac219074cfaad5fd939c9fcbe.jpg', title: '长颈鹿晴立', positivePrompt: `杰作，最佳质量，8K超高清，野生动物摄影，极致精细，明媚自然光，全身景深
+蓝天晴日的背景下，一只长颈鹿全身直立、侧面优雅展示，棕白色的网状斑纹清晰分明
+脖颈修长高挑，神态沉静优雅
+背景是清爽的蓝天与翠绿树木，明亮自然光凸显斑纹肌理与从容气质
+色调蓝绿清爽、明快辽阔
+细腻斑纹质感
+野生动物摄影，全身中景浅景深，明媚自然光
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, wildlife photography, extremely detailed, bright natural light, full-body depth of field
+against a clear blue sky, a giraffe standing full-length in elegant profile, its brown-and-white reticulated pattern crisp and distinct
+a long lofty neck, a calm graceful bearing
+background of fresh blue sky and green trees, bright natural light highlighting the pattern texture and composed elegance
+fresh blue-green tones, bright and expansive
+fine pattern texture
+wildlife photography, full-body medium-shot shallow depth of field, bright natural light`, negativePrompt: NEG_WILDLIFE },
+      { src: '/images/shenglin/5647a4650aeda7816933d5887b31d82e.jpg', title: '竹林胖熊坐', positivePrompt: `杰作，最佳质量，8K超高清，野生动物摄影，极致精细，柔和自然光，景深效果
+翠绿竹林中一只大熊猫席地而坐，黑白毛色对比鲜明，圆胖憨厚的体型惹人喜爱
+眼神若有所思地望向远处
+竹叶背景柔和虚化，地面苔藓青翠，柔光凸显熊猫绒毛的蓬松与竹林的清新
+色调黑白翠绿、悠然治愈
+细腻毛发质感
+野生动物摄影，中景浅景深，柔和自然光
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, wildlife photography, extremely detailed, soft natural light, depth of field
+a giant panda sitting on the ground in a green bamboo grove, striking black-and-white coat contrast, a round chubby endearing build
+gazing pensively into the distance
+softly blurred bamboo-leaf background, green moss on the ground, soft light highlighting the panda's fluffy fur and the freshness of the grove
+black-white and emerald tones, leisurely and healing
+fine fur texture
+wildlife photography, medium-shot shallow depth of field, soft natural light`, negativePrompt: NEG_WILDLIFE },
+      { src: '/images/shenglin/6c42bce19fbb4fe118dc68125a1f3a11.jpg', title: '水中犬探头', positivePrompt: `杰作，最佳质量，8K超高清，创意水下宠物摄影，极致精细，水下折射光，气泡氛围，景深效果
+水下视角拍摄一只边境牧羊犬向镜头游来，张嘴露出舌头，晶莹水泡环绕四周，绿色水体透明通透
+光线在水中折射形成美丽的光晕，宽角鱼眼效果夸张了它探近的动感
+毛发在水中飘散
+色调清透蓝绿、灵动欢快
+细腻质感
+创意水下宠物摄影，广角浅景深，水下折射光，气泡氛围
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, creative underwater pet photography, extremely detailed, underwater refraction light, bubble atmosphere, depth of field
+shot from an underwater angle, a border collie swimming toward the camera, mouth open tongue out, crystal bubbles encircling it, the green water clear and translucent
+light refracting in the water into a beautiful halo, a wide fisheye effect exaggerating its lunging motion
+its fur drifting in the water
+clear blue-green tones, lively and joyful
+fine texture
+creative underwater pet photography, wide-angle shallow depth of field, underwater refraction light, bubble atmosphere`, negativePrompt: NEG_WILDLIFE },
+      { src: '/images/shenglin/72c795a59aa9f119dd3efe8f7b29d388.jpg', title: '水獭游蓝波', positivePrompt: `杰作，最佳质量，8K超高清，高清水下野生动物摄影，极致精细，水下折射光，气泡氛围，景深效果
+清澈的蓝色水中一只水獭正游向镜头，棕色皮毛湿润贴身，圆脸大眼睛憨态可掬，纤细的胡须清晰可见
+水面波纹与晶莹气泡环绕四周，光线在水中折射出通透光晕
+色调清透蓝绿、灵动可爱
+细腻毛发质感
+憨态可掬
+高清水下野生动物摄影，中近景浅景深，水下折射光，气泡氛围
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, HD underwater wildlife photography, extremely detailed, underwater refraction light, bubble atmosphere, depth of field
+an otter swimming toward the camera in clear blue water, wet brown fur clinging to its body, a round big-eyed endearing face, fine whiskers clearly visible
+surface ripples and crystal bubbles encircling it, light refracting into a translucent halo underwater
+clear blue-green tones, lively and cute
+fine fur texture
+endearing and adorable
+HD underwater wildlife photography, medium close-up shallow depth of field, underwater refraction light, bubble atmosphere`, negativePrompt: NEG_WILDLIFE },
+      { src: '/images/shenglin/8d24888c3d4365114039b7c0f85deff4.jpg', title: '刺猬欢笑草', positivePrompt: `杰作，最佳质量，8K超高清，野生动物摄影，极致精细，柔和自然光，景深效果
+翠绿草地上一只刺猬仰头大笑，三只小爪欢快张开，棕色的尖刺与柔软的腹部绒毛形成质感对比
+嘴巴张开露出小牙、神态憨趣可爱
+背景绿草与三叶草柔和虚化，柔光凸显尖刺与绒毛的细节
+色调翠绿棕黄、萌趣治愈
+细腻质感
+野生动物摄影，近景浅景深，柔和自然光
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, wildlife photography, extremely detailed, soft natural light, depth of field
+a hedgehog on green grass laughing with its head up, three little paws splayed happily, its brown spines contrasting in texture with the soft belly fur
+mouth open showing little teeth, an endearingly cute expression
+softly blurred green grass and clover behind, soft light highlighting the detail of the spines and fur
+emerald brown-yellow tones, cute and healing
+fine texture
+wildlife photography, close-up shallow depth of field, soft natural light`, negativePrompt: NEG_WILDLIFE },
+      { src: '/images/shenglin/8ddeb40ec51625aad859ee3c67870f82.jpg', title: '四犬低头圈', positivePrompt: `杰作，最佳质量，8K超高清，创意宠物摄影，极致精细，柔光布光，仰拍广角景深
+四只不同品种的狗狗围成一圈一同低头向下张望，采用从下方向上仰拍的独特视角
+斑点狗、边境牧羊犬、拉布拉多猎犬等犬种都伸着舌头，表情好奇
+洁净的白色背景干净简洁，均匀柔光凸显每只狗的毛色与神态
+色调明快清爽、诙谐生动
+细腻毛发质感
+创意宠物摄影，仰拍广角构图，柔光布光
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, creative pet photography, extremely detailed, soft lighting, low-angle wide-angle depth of field
+four dogs of different breeds forming a circle and all peering down together, shot from a unique low upward angle
+a dalmatian, border collie, labrador and others all with tongues out, curious expressions
+a clean simple white background, even soft light highlighting each dog's coat and expression
+bright fresh tones, witty and lively
+fine fur texture
+creative pet photography, low-angle wide-angle composition, soft lighting`, negativePrompt: NEG_WILDLIFE },
+      { src: '/images/shenglin/93f6f0a9682db6f726243059f57f307e.jpg', title: '幼羊初立野', positivePrompt: `杰作，最佳质量，8K超高清，野生动物肖像摄影，极致精细，柔和自然光，景深效果
+荒野背景中一只纯白的幼羊直立正视镜头，卷曲的细绒白毛蓬松可爱
+粉色耳朵轻轻竖起，双腿腕部有对称的黑色斑点，眼神清澈纯真
+柔和自然光凸显绒毛的蓬松质感，背景荒野柔和虚化衬托主体
+色调纯白大地色、纯真治愈
+细腻毛发质感
+野生动物肖像摄影，中近景浅景深，柔和自然光
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, wildlife portrait photography, extremely detailed, soft natural light, depth of field
+a pure-white lamb standing upright facing the camera against a wilderness background, curly fine fluffy white wool
+pink ears gently pricked, symmetrical black spots on its ankles, clear innocent eyes
+soft natural light highlighting the fluffiness of the wool, the softly blurred wilderness background setting off the subject
+pure white and earth tones, innocent and healing
+fine fur texture
+wildlife portrait photography, medium close-up shallow depth of field, soft natural light`, negativePrompt: NEG_WILDLIFE },
+      { src: '/images/shenglin/947db7197a6e30459e763aecc6d1b605.jpg', title: '白犬仰天笑', positivePrompt: `杰作，最佳质量，8K超高清，宠物广角摄影，极致精细，明媚自然光，低角度景深
+蓝天绿树的背景下，一只白色萨摩耶仰头吐舌欢笑，蓬松雪白的毛发光洁柔顺
+棕黑色的眼睛明亮有神，宽角低视角仰拍夸张了它的憨态
+背景建筑与天空清晰，阳光明媚，毛发在日光下泛着光泽
+色调洁白清新、欢快治愈
+细腻毛发质感
+宠物广角摄影，低角度仰拍，明媚自然光
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, pet wide-angle photography, extremely detailed, bright natural light, low-angle depth of field
+against a backdrop of blue sky and green trees, a white Samoyed laughing with head up and tongue out, fluffy snowy fur glossy and smooth
+bright dark eyes, a wide low-angle shot exaggerating its endearing look
+background buildings and sky clear, bright sunshine, fur glowing in the daylight
+snowy fresh tones, joyful and healing
+fine fur texture
+pet wide-angle photography, low-angle upward shot, bright natural light`, negativePrompt: NEG_WILDLIFE },
+      { src: '/images/shenglin/991a05e8816767ce04debc030afa91ec.jpg', title: '狮猫暮色亲', positivePrompt: `杰作，最佳质量，8K超高清，黄金时刻野生动物摄影，极致精细，逆光光晕，景深效果
+非洲草原黄昏的金色光线中，一头雄狮与一只虎斑猫面对面亲密依偎，狮子张嘴微笑，猫咪以绿色眼眸温柔凝视
+金色光晕环绕两者，背景是非洲树木剪影与橙色天空
+毛发在暖光下透出金边
+色调暖金橙红、温情动人
+细腻毛发质感
+黄金时刻野生动物摄影，中近景浅景深，逆光光晕
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, golden-hour wildlife photography, extremely detailed, backlit glow, depth of field
+in the golden dusk light of the African savanna, a lion and a tabby cat nuzzling affectionately face to face, the lion smiling with open mouth, the cat gazing gently with green eyes
+a golden halo encircling them, background of African tree silhouettes and orange sky
+their fur rimmed with gold in the warm light
+warm gold-orange-red tones, tender and moving
+fine fur texture
+golden-hour wildlife photography, medium close-up shallow depth of field, backlit glow`, negativePrompt: NEG_WILDLIFE },
+      { src: '/images/shenglin/a765b9ec22b7533fdf9a0b02f1df0ace.jpg', title: '雨中母雀巢', positivePrompt: `杰作，最佳质量，8K超高清，野生动物纪实摄影，极致精细，柔和自然光，雨丝氛围，景深效果
+细雨之中，一只小鸟站在苔藓枝头，叼着一片绿叶如撑伞般为巢中雏鸟遮风挡雨
+鸟巢里三只幼鸟蜷缩取暖，绿叶撑开如天然雨伞
+背景是野花草地的柔和虚化，柔光与雨丝营造温情氛围
+色调翠绿湿润、温暖动人
+细腻羽毛质感
+野生动物纪实摄影，近景浅景深，柔和自然光，雨丝氛围
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, wildlife documentary photography, extremely detailed, soft natural light, rain-streak atmosphere, depth of field
+in a fine rain, a small bird standing on a mossy branch, holding a green leaf up like an umbrella to shelter the nestlings from wind and rain
+three chicks huddling for warmth in the nest, the leaf spread open like a natural umbrella
+background of softly blurred wildflower meadow, soft light and rain streaks creating a tender mood
+moist emerald tones, warm and moving
+fine feather texture
+wildlife documentary photography, close-up shallow depth of field, soft natural light, rain-streak atmosphere`, negativePrompt: NEG_WILDLIFE },
+      { src: '/images/shenglin/ab8e80a87115aac937be63efa25b1299.jpg', title: '水豚溪边坐', positivePrompt: `杰作，最佳质量，8K超高清，黄金时刻野生动物摄影，极致精细，斜射暖光，景深效果
+清澈溪流的石头旁，一只水豚静静坐立、凝视远方，棕黄色的粗糙毛发厚实，圆润敦实的体型憨态可掬
+背景是秋色树木与波光粼粼的溪流，黄金时刻温暖的斜阳洒落
+毛发在暖光下泛着金边
+色调暖棕金黄、宁静治愈
+细腻毛发质感
+黄金时刻野生动物摄影，中景浅景深，斜射暖光
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, golden-hour wildlife photography, extremely detailed, raking warm light, depth of field
+beside a clear stream's rocks, a capybara sitting quietly gazing into the distance, thick coarse brown-yellow fur, a round stocky endearing build
+background of autumn-colored trees and a shimmering stream, warm raking golden-hour sun pouring down
+its fur rimmed with gold in the warm light
+warm brown-golden tones, serene and healing
+fine fur texture
+golden-hour wildlife photography, medium-shot shallow depth of field, raking warm light`, negativePrompt: NEG_WILDLIFE },
+      { src: '/images/shenglin/b623de1fd0df3f8d57de0cd853e21ff8.jpg', title: '小狗扑天际', positivePrompt: `杰作，最佳质量，8K超高清，创意宠物广角摄影，极致精细，明媚自然光，动感构图
+蓝天白云之中，一只柯基犬从下方飞扑向镜头，张嘴大笑露出舌头，前爪向前伸展，耳朵在风中飘扬
+鱼眼宽角低仰拍夸张了它扑近的动感与四肢舒展
+背景蓝天白云、阳光明媚，毛发蓬松泛光
+色调明快清新、欢快灵动
+细腻毛发质感
+创意宠物广角摄影，鱼眼低仰拍，明媚自然光，动感构图
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, creative pet wide-angle photography, extremely detailed, bright natural light, dynamic composition
+amid blue sky and white clouds, a corgi lunging up toward the camera from below, mouth open in a laugh with tongue out, front paws stretched forward, ears flying in the wind
+a fisheye wide low-angle shot exaggerating its lunging motion and outstretched limbs
+background of blue sky and white clouds, bright sunshine, fluffy glowing fur
+bright fresh tones, joyful and lively
+fine fur texture
+creative pet wide-angle photography, fisheye low-angle shot, bright natural light, dynamic composition`, negativePrompt: NEG_WILDLIFE },
+      { src: '/images/shenglin/bbe26a897b027c8d6fd7e9b43c930a63.jpg', title: '母子鹿亲吻', positivePrompt: `杰作，最佳质量，8K超高清，野生动物纪实摄影，极致精细，柔和自然光，景深效果
+非洲草原的蓝天白云下，一只长颈鹿母亲低头亲吻幼崽的额头，母子情深
+棕白色的斑纹纹路清晰细腻，幼崽仰头依偎在母亲身旁
+背景高草与树木自然虚化，柔和自然光凸显斑纹肌理与温情瞬间
+色调暖棕蓝绿、温馨动人
+细腻斑纹质感
+野生动物纪实摄影，中景浅景深，柔和自然光
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, wildlife documentary photography, extremely detailed, soft natural light, depth of field
+under the blue sky of the African savanna, a mother giraffe lowering her head to kiss her calf's forehead, deep maternal affection
+the brown-white pattern crisp and fine, the calf nuzzling up beside her
+background of tall grass and trees naturally blurred, soft natural light highlighting the pattern texture and the tender moment
+warm brown blue-green tones, heartwarming and moving
+fine pattern texture
+wildlife documentary photography, medium-shot shallow depth of field, soft natural light`, negativePrompt: NEG_WILDLIFE },
+      { src: '/images/shenglin/c1b31a38c2ee70939f22c9a1766ccb9f.jpg', title: '棕熊倚树笑', positivePrompt: `杰作，最佳质量，8K超高清，野生动物摄影，极致精细，柔和自然光，景深效果
+森林深处，一头大棕熊靠着粗壮的树干仰头大笑，张嘴的表情欢快憨趣，棕色厚实的毛发质感粗犷
+爪子随意搭在树干上
+背景是柔和虚化的绿色森林，柔光凸显毛发的层次与蓬松
+色调棕绿深沉、诙谐生动
+细腻毛发质感
+野生动物摄影，中景浅景深，柔和自然光
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, wildlife photography, extremely detailed, soft natural light, depth of field
+deep in the forest, a big brown bear leaning against a thick tree trunk laughing with its head up, a joyful endearing open-mouthed expression, thick rugged brown fur texture
+its paw resting casually on the trunk
+background of softly blurred green forest, soft light highlighting the layers and fluffiness of the fur
+deep brown-green tones, witty and lively
+fine fur texture
+wildlife photography, medium-shot shallow depth of field, soft natural light`, negativePrompt: NEG_WILDLIFE },
+      { src: '/images/shenglin/c8a1fa66c9a9c815fe3a3631159db027.jpg', title: '骏马奔花田', positivePrompt: `杰作，最佳质量，8K超高清，动物运动摄影，极致精细，侧向自然光，动感构图
+开满黄花的草地上，一匹栗色骏马全力奔腾，鬃毛与尾巴在风中飘扬，肌肉线条优美有力，额头点缀一抹白色
+背景是虚化的绿树与蓝天白云，自然光自侧面打亮马身，凸显皮毛的光泽与奔跑的动感
+色调栗棕金黄、蓝绿清爽
+充满力量与自由
+细腻皮毛质感
+动物运动摄影，中景浅景深，侧向自然光，动感构图
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, animal action photography, extremely detailed, side natural light, dynamic composition
+on a meadow full of yellow flowers, a chestnut horse galloping at full speed, mane and tail flying in the wind, beautiful powerful muscle lines, a white blaze on its forehead
+background of blurred green trees and blue sky with white clouds, natural light from the side lighting its body, highlighting the sheen of its coat and the dynamism of the run
+chestnut-brown golden and fresh blue-green tones
+full of power and freedom
+fine coat texture
+animal action photography, medium-shot shallow depth of field, side natural light, dynamic composition`, negativePrompt: NEG_WILDLIFE },
+      { src: '/images/shenglin/ccb228c721732919dbd31d98c07269ed.jpg', title: '柴犬浮水眠', positivePrompt: `杰作，最佳质量，8K超高清，创意宠物水上摄影，极致精细，水面折射光，光纹氛围，俯拍景深
+清澈的蓝绿色泳池水中，一只柴犬仰躺漂浮、闭眼享受惬意时光，橙白色的毛发湿润贴身
+周围水波轻轻荡漾形成粼粼光纹，从上方俯拍，水面折射出清透的光晕
+色调清透蓝绿、慵懒治愈，画面松弛惬意
+细腻毛发质感
+惬意松弛
+创意宠物水上摄影，俯拍浅景深，水面折射光，光纹氛围
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, creative pet water photography, extremely detailed, water-surface refraction light, light-ripple atmosphere, overhead depth of field
+in clear blue-green pool water, a Shiba Inu floating on its back with eyes closed enjoying a blissful moment, wet orange-white fur clinging to its body
+water gently rippling around it into shimmering light patterns, shot from above, the surface refracting a clear halo
+clear blue-green tones, lazy and healing, a relaxed contented scene
+fine fur texture
+contented and relaxed
+creative pet water photography, overhead shallow depth of field, water-surface refraction light, light-ripple atmosphere`, negativePrompt: NEG_WILDLIFE },
+      { src: '/images/shenglin/d6bdc4182b2a9889593ad77030b96c26.jpg', title: '花丛懒猫卧', positivePrompt: `杰作，最佳质量，8K超高清，黄金时刻宠物摄影，极致精细，逆光暖光，散景光斑，景深效果
+黄昏金色光线下，草坪上的白色雏菊花丛中一只虎斑猫慵懒侧卧，仰头以绿色眼眸凝视镜头
+白绿相间的雏菊在猫咪周围盛开，背景绿植与房屋柔和虚化
+黄金时刻的暖光为猫毛镀上金边
+色调暖金翠绿、悠然治愈
+细腻毛发质感
+黄金时刻宠物摄影，近景浅景深，逆光暖光，散景光斑
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, golden-hour pet photography, extremely detailed, backlit warm light, bokeh spots, depth of field
+in the golden dusk light, a tabby cat lounging on its side amid white daisies on a lawn, head lifted gazing at the camera with green eyes
+white-and-green daisies blooming around the cat, background greenery and houses softly blurred
+golden-hour warm light rimming the cat's fur with gold
+warm gold and emerald tones, leisurely and healing
+fine fur texture
+golden-hour pet photography, close-up shallow depth of field, backlit warm light, bokeh spots`, negativePrompt: NEG_WILDLIFE },
+      { src: '/images/shenglin/dccfcc2a853ad076aa7af3aa930ef834.jpg', title: '变色龙绿枝', positivePrompt: `杰作，最佳质量，8K超高清，爬行动物微距摄影，极致精细，柔和自然光，景深效果
+一根枝干上攀爬着一只色彩鲜艳的变色龙，蓝绿色的条纹身体斑斓夺目，圆形可转动的眼睛呈棕红色
+卷曲的尾巴螺旋收紧，四爪紧紧攫握树干
+柔和自然光凸显鳞片的颗粒质感与斑斓色彩，背景绿意柔和虚化
+色调蓝绿翠丽、异域灵动
+细腻鳞片质感
+爬行动物微距摄影，近景浅景深，柔和自然光
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, reptile macro photography, extremely detailed, soft natural light, depth of field
+a vividly colored chameleon climbing a branch, its blue-green striped body dazzling, round swiveling eyes in brown-red
+its curled tail coiled tight, four claws gripping the branch firmly
+soft natural light highlighting the granular texture of the scales and the vivid colors, background greenery softly blurred
+lustrous blue-green tones, exotic and lively
+fine scale texture
+reptile macro photography, close-up shallow depth of field, soft natural light`, negativePrompt: NEG_WILDLIFE },
+      { src: '/images/shenglin/de756ba402d7be1f1e72c62100c38a72.jpg', title: '水獭坐石望', positivePrompt: `杰作，最佳质量，8K超高清，野生动物摄影，极致精细，柔和自然光，景深效果
+溪流中的苔藓石头上，一只水獭端正坐立，棕色的皮毛光亮，圆脸表情专注，黑色的眼睛机警有神，胡须向两侧伸展
+背景是潺潺溪流与绿叶秋色的柔和虚化
+柔光凸显湿润皮毛的光泽与灵动神情
+色调棕绿暖调、自然生动
+细腻毛发质感
+野生动物摄影，中近景浅景深，柔和自然光
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, wildlife photography, extremely detailed, soft natural light, depth of field
+on a mossy rock in a stream, an otter sitting upright, glossy brown fur, a round focused face, alert bright black eyes, whiskers extending to both sides
+background of a babbling stream and autumn foliage softly blurred
+soft light highlighting the sheen of the wet fur and the lively expression
+warm brown-green tones, natural and vivid
+fine fur texture
+wildlife photography, medium close-up shallow depth of field, soft natural light`, negativePrompt: NEG_WILDLIFE },
+      { src: '/images/shenglin/e120f9b27b1c2b7ddf5796e7d6816198.jpg', title: '水豚晨光照', positivePrompt: `杰作，最佳质量，8K超高清，黄金时刻野生动物摄影，极致精细，晨间逆光，光晕氛围，景深效果
+清晨的金色光线中，一只水豚站在水边的苔藓石块上侧身仰望，棕黄色的粗糙毛发厚实，圆润的体型敦实可爱
+背景是秋日树木与波光闪耀的河流，晨光为毛发镀上一层温暖金边
+色调暖金棕黄、宁静诗意
+细腻毛发质感
+宁静诗意
+黄金时刻野生动物摄影，中景浅景深，晨间逆光，光晕氛围
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, golden-hour wildlife photography, extremely detailed, morning backlight, glow atmosphere, depth of field
+in the golden morning light, a capybara standing on a mossy rock by the water gazing up sideways, thick coarse brown-yellow fur, a round stocky adorable build
+background of autumn trees and a shimmering river, morning light rimming its fur with warm gold
+warm gold brown-yellow tones, serene and poetic
+fine fur texture
+serene and poetic
+golden-hour wildlife photography, medium-shot shallow depth of field, morning backlight, glow atmosphere`, negativePrompt: NEG_WILDLIFE },
+      { src: '/images/shenglin/e4dfab22d5d27c7c302a1833e49195e7.jpg', title: '翠鸟破浪出', positivePrompt: `杰作，最佳质量，8K超高清，高速野生动物摄影，极致精细，高速快门定格，水花氛围，景深效果
+清澈的水面上，一只翠鸟破水跃出的瞬间被定格，蓝绿色的翅膀舒展，水花四溅呈皇冠形状，晶莹的水珠向四周飞散
+背景是水面与树木的柔和虚化，高速摄影凝固了这一动感瞬间，羽毛湿润泛光
+色调蓝绿通透、灵动迅捷
+细腻羽毛质感
+灵动迅捷
+高速野生动物摄影，中景浅景深，高速快门定格，水花氛围
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, high-speed wildlife photography, extremely detailed, high-speed shutter freeze, splash atmosphere, depth of field
+on a clear water surface, the instant a kingfisher bursts up out of the water is frozen, blue-green wings spread, water splashing in a crown shape, crystal droplets flying in all directions
+background of water and trees softly blurred, high-speed photography freezing this dynamic instant, wet glistening feathers
+translucent blue-green tones, agile and swift
+fine feather texture
+agile and swift
+high-speed wildlife photography, medium-shot shallow depth of field, high-speed shutter freeze, splash atmosphere`, negativePrompt: NEG_WILDLIFE },
+      { src: '/images/shenglin/ef8eb12b3d4df9f3225db2e3ef3a8903.jpg', title: '鸮目凝远方', positivePrompt: `杰作，最佳质量，8K超高清，野生动物肖像摄影，极致精细，柔和自然光，特写景深
+木栅栏上站立的一只猫头鹰的正面肖像，棕红色与白色相间的斑纹羽毛层次丰富，金黄色的大圆眼睛犀利地凝视前方
+灰色的弯钩喙锐利，羽毛丰满蓬松
+柔光凸显羽毛的纹理层次与眼神的锐利，背景柔和虚化衬托主体
+色调棕红金黄、威严深邃
+细腻羽毛质感
+野生动物肖像摄影，特写浅景深，柔和自然光
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, wildlife portrait photography, extremely detailed, soft natural light, close-up depth of field
+a frontal portrait of an owl standing on a wooden fence, richly layered brown-red-and-white patterned plumage, large golden-yellow round eyes gazing sharply ahead
+a sharp grey hooked beak, full fluffy feathers
+soft light highlighting the feather texture layers and the sharpness of the gaze, background softly blurred to set off the subject
+brown-red golden tones, majestic and profound
+fine feather texture
+wildlife portrait photography, close-up shallow depth of field, soft natural light`, negativePrompt: NEG_WILDLIFE },
+      { src: '/images/shenglin/fdf9ba20b7211cabd24cbb00600ac4fd.jpg', title: '雪绒犬奔跑', positivePrompt: `杰作，最佳质量，8K超高清，宠物运动摄影，极致精细，明媚自然光，动感构图
+蓝天白云下户外奔跑的一只白色比熊犬，蓬松雪白的卷毛柔软可爱，圆脸配一双黑色的大眼睛，张嘴吐舌、兴奋十足，前爪正大步迈出
+低视角广角仰拍夸张了它奔跑的动感与四肢舒展
+背景蓝天白云、阳光明媚，毛发泛光
+色调洁白清新、欢快灵动
+细腻毛发质感
+宠物运动摄影，低角度广角仰拍，明媚自然光，动感构图
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, pet action photography, extremely detailed, bright natural light, dynamic composition
+a white Bichon Frise running outdoors under a blue sky, fluffy snowy curls soft and cute, a round face with big black eyes, mouth open tongue out full of excitement, front paws striding out
+a low wide-angle upward shot exaggerating its running motion and outstretched limbs
+background of blue sky and white clouds, bright sunshine, glowing fur
+snowy fresh tones, joyful and lively
+fine fur texture
+pet action photography, low-angle wide-angle upward shot, bright natural light, dynamic composition`, negativePrompt: NEG_WILDLIFE },
     ],
   },
 ];
