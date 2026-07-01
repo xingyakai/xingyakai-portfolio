@@ -157,20 +157,230 @@ export const workSeries: WorkSeries[] = [
     coverImg: '/images/work-1.jpg',
     description: '蒂芙尼蓝与盛夏海风，那家转角便利店是夏日的锚点',
     images: [
-      { src: '/images/tiffany/0357e4bea72162acfeae85a387e0f376.jpg', title: '柠檬巷深处', positivePrompt: '意大利南部阿马尔菲海岸古老石板街巷向纵深延伸，一道厚重拱形石门洞掩映在枝繁叶茂的柠檬树下，金黄饱满的柠檬垂挂枝头触手可及；街边错落摆放赤陶花盆与盛放的黄色野花，斑驳石灰墙上悬挂复古锻铁灯笼，翠绿木质百叶窗点缀暖黄立面之间；正午阳光穿透叶隙洒下斑驳跳动光斑，暖金色调饱和通透，弥漫地中海慵懒午后气息；超高清写实摄影，35mm定焦，浅景深，自然光，层次丰富，8K细节', negativePrompt: NEG_SCENE },
-      { src: '/images/tiffany/229b5fc8942d064dc7da12ea336358f7.jpg', title: '爱琴海晨曦', positivePrompt: '希腊爱琴海沿岸小镇黄昏景致，白墙蓝顶建筑沿蜿蜒海湾层叠排列，金色沙滩缓缓延伸至平静如镜的海面；前景一丛盛放的粉红色三角梅簇拥着斑驳木制路牌，橄榄树纤细枝条自画面上方垂落形成天然画框；暖橙色晚霞将天空与海面浸染成玫瑰金色调，光线柔和浪漫，色温温暖；风光摄影，广角构图，逆光层次，高动态范围，唯美通透，8K超清', negativePrompt: NEG_SCENE },
-      { src: '/images/tiffany/486d103927daa4963d6f761fe0be7747.jpg', title: '白墙帆影间', positivePrompt: '地中海沿岸村庄鹅卵石坡道蜿蜒向海延伸，两侧洁白石灰墙上攀爬着艳丽玫红色九重葛繁花如瀑；深宝蓝色海面上静静点缀两艘白色帆船，屋顶铺设橙红色陶瓦在阳光下泛光，翠绿藤蔓自墙缝间探出；明媚阳光直射营造强烈明暗对比，天空湛蓝通透纯净，色彩清爽鲜明；旅行风光摄影，纵深透视构图，自然硬光，质感锐利，8K高清', negativePrompt: NEG_SCENE },
-      { src: '/images/tiffany/5e665e836a9f6ace6fd6588c5fe12332.jpg', title: '蓝门向海开', positivePrompt: '希腊小岛洁白民居夹道形成的狭长巷道，尽头豁然敞开是无垠湛蓝爱琴海；蔚蓝色木门与窗框点缀在洁白粗粝的石灰墙上，墙面悬挂红色与粉色盆花，远处海中隐现小岛柔和轮廓；正午阳光直射墙面形成强烈明暗对比与硬朗投影，蓝白主色清爽明亮，色彩饱和通透；建筑风光摄影，对称纵深构图，自然强光，极简质感，锐利高清，8K细节', negativePrompt: NEG_SCENE },
-      { src: '/images/tiffany/684880e14c509cca4b34271525d7e060.jpg', title: '海岸公路尽头', positivePrompt: '中国东南沿海小镇一条笔直公路径直向海延伸没入海天交界，两侧矗立红黄蓝相间的彩色民居楼房错落有致；远处碧蓝大海中零星岩礁耸立，天空布满蓬松洁白的积云，海水明亮通透呈蒂芙尼蓝；公路中央黄色虚线强力引导视线直抵尽头，正午顶光明亮，色彩鲜艳饱和，画面通透干净；风光摄影，一点透视构图，广角，自然光，清新明快，8K超清', negativePrompt: NEG_SCENE },
-      { src: '/images/tiffany/706c63f0835da5688bebfd0a8549e264.jpg', title: '海边便利店', positivePrompt: '一栋两层蒂芙尼蓝色小建筑静静伫立海边街道转角，门前摆放红色自动贩卖机与丛丛绿植盆栽，两棵高挑椰子树分立两侧随风轻摇；背景堆积如山、蓬松壮观的巨型积雨云与深邃蓝天，远处可见一线碧蓝海面；暖阳斜照，色彩清新明快，蓝白对比强烈；浓郁日系治愈插画风格，中远景构图，柔和光影，通透明亮，细腻质感，高清8K', negativePrompt: NEG_SCENE },
-      { src: '/images/tiffany/8ace1c6542fc222757ed2f4e439ba64e.jpg', title: '柠黄小筑', positivePrompt: '一栋洁白现代两层小楼，鲜亮柠檬黄色拱形大门与窗框点亮整体立面，门口精致绿植错落摆放；二楼露台撑起草绿色遮阳伞，一旁橙色果树繁花满枝，石板地面呈不规则拼花图案；柔和日光均匀铺洒，黄白主色清新简约，兼具地中海风情，色彩明快干净；超精细写实3D渲染，正面平视构图，柔和环境光，材质细腻，边缘锐利，8K超高清', negativePrompt: NEG_SCENE },
-      { src: '/images/tiffany/9f786df8ff4f3552bae9b369bc53c0c3.jpg', title: '海堤暮色长', positivePrompt: '欧洲滨海小城砖石人行步道悠然延伸向远方，左侧洁白古典建筑外墙攀爬着茂密常青藤，路旁复古木质长椅前摆放红花盆栽；铸铁路灯在渐深暮色中次第亮起暖光，右侧锻铁栏杆外波涛轻拍嶙峋礁石；压境乌云间透出温暖金色余晖，色调暖橙深沉，光影戏剧；胶片风光摄影，纵深引导线构图，黄金时刻逆光，颗粒质感，氛围浓郁，8K', negativePrompt: NEG_SCENE },
-      { src: '/images/tiffany/ad29ed1f874bb7e540da5f7e409bf107.jpg', title: '珊瑚咖啡屋', positivePrompt: '一栋欧式风情珊瑚粉色两层转角咖啡馆，外墙爬满浓密翠绿藤蔓，红白条纹遮阳篷下木质窗格散发复古气息；翠绿色拱形木门与锻铁灯笼相映成趣，门口摆放花盆与手写黑板菜单；暖阳柔和斜照，珊瑚粉与墨绿撞色梦幻温暖，色调浪漫治愈；超精细写实渲染，街角斜角构图，柔和暖光，材质细腻真实，浅景深，氛围唯美，8K超清', negativePrompt: NEG_SCENE },
-      { src: '/images/tiffany/d9b4981a0ac9a7552940752264795d78.jpg', title: '猫与紫花石阶', positivePrompt: '希腊小岛石板小径蜿蜒向下通往碧蓝海湾，石砌矮墙上错落摆放各色赤陶花盆；道路右侧一棵盛放紫红色九重葛华盖如伞繁花垂落，小径上两只慵懒花猫信步闲坐凝望；远处可见小码头与系泊的彩色渔船，正午阳光通透，色彩鲜明饱和，蓝紫撞色明快；旅行纪实摄影，俯视纵深构图，自然光，生活气息浓郁，锐利清晰，8K高清', negativePrompt: NEG_SCENE },
-      { src: '/images/tiffany/db4c45402d32b61452b1074eee342a36.jpg', title: '蓝车与柠檬海', positivePrompt: '意大利阿马尔菲海岸观景台，一辆复古蒂芙尼蓝色Vespa踏板摩托车斜靠石砌矮墙旁，车篮中摆满新鲜金黄柠檬；旁侧柠檬树枝垂落饱满果实，背景是层次分明的蔚蓝地中海与崖壁上层叠错落的彩色建筑群；午后阳光充足柔和，暖调通透，蓝黄撞色清新复古；旅行生活方式摄影，中景浅景深，自然侧光，质感细腻，色彩饱满，8K超清', negativePrompt: NEG_SCENE },
-      { src: '/images/tiffany/ddc692bad473169170024073c07f5e69.jpg', title: '海风咖啡露台', positivePrompt: '地中海风情滨海露台餐厅，鲜艳柠檬黄色外墙搭配湛蓝拱门，藤编桌椅临海而设静候海风；空中悬挂装饰指路牌指向远方，背景是无边蔚蓝海面与点点白帆；盛放的粉红色花卉自建筑边缘恣意溢出，午后强烈阳光将整个场景浸染成温暖金色调，色彩明快撞色；旅行风光摄影，开阔中景构图，自然逆光，通透唯美，细腻质感，8K', negativePrompt: NEG_SCENE },
-      { src: '/images/tiffany/f98dbb665eff607833b4fd9246da5088.jpg', title: '柠檬树下对饮', positivePrompt: '克罗地亚风情石砌露台，两把质朴木椅围坐于小圆桌旁，桌上摆放盛满柠檬水的玻璃杯与新鲜黄柠檬；头顶一棵满载金黄果实的柠檬树撑起天然凉荫，蓝色木质百叶窗点缀洁白粗粝石墙；背景两艘白色帆船静泊于深邃蓝色海面，正午柔光通透，暖黄与湛蓝清爽撞色，画面静谧惬意；生活方式摄影，中景浅景深，自然光，质感细腻，8K超清', negativePrompt: NEG_SCENE },
-      { src: '/images/tiffany/fdf73bc3374cee2447994020effa3eb5.jpg', title: '云涌海边小铺', positivePrompt: '日系风格海边街角小商店，蓝色与粉色混搭的两层建筑温柔可爱，门前摆满层叠绿植与露天木质桌椅；天空被巨型蓬松积雨云团壮阔占据，远处可见一线碧蓝大海，椰子树在海风中轻轻摇曳；柔和暖阳斜照，色彩清新治愈，蓝粉白通透明亮；强烈日本治愈系插画质感，中远景构图，柔光氛围，细腻通透，唯美宁静，高清8K', negativePrompt: NEG_SCENE },
+      { src: '/images/tiffany/0357e4bea72162acfeae85a387e0f376.jpg', title: '柠檬巷深处', positivePrompt: `杰作，最佳质量，8K超高清，超写实摄影，极致精细，自然光，35mm定焦，景深效果
+意大利南部阿马尔菲海岸古老的石板街巷向纵深延伸
+一道厚重的拱形石门洞掩映在枝繁叶茂的柠檬树下，金黄饱满的柠檬垂挂枝头触手可及
+街边错落摆放赤陶花盆与盛放的黄色野花，斑驳石灰墙上悬挂复古锻铁灯笼，翠绿木质百叶窗点缀暖黄立面
+正午阳光穿透叶隙洒下斑驳跳动的光斑
+暖金色调饱和通透，弥漫地中海慵懒午后气息
+超高清写实摄影，纵深构图，浅景深，层次丰富
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra-realistic photography, extremely detailed, natural light, 35mm prime lens, depth of field
+an ancient stone-paved alley on Italy's southern Amalfi Coast receding into the distance
+a heavy arched stone doorway nestled beneath a lush lemon tree, plump golden lemons hanging within reach
+terracotta pots and blooming yellow wildflowers scattered along the street, vintage wrought-iron lanterns on the mottled limewash walls, emerald wooden shutters accenting the warm-yellow facade
+midday sun filtering through the leaves casting dappled dancing light
+warm golden saturated translucent tones, brimming with a lazy Mediterranean afternoon
+ultra-HD realistic photography, deep-perspective composition, shallow depth of field, rich layering`, negativePrompt: NEG_SCENE },
+      { src: '/images/tiffany/229b5fc8942d064dc7da12ea336358f7.jpg', title: '爱琴海晨曦', positivePrompt: `杰作，最佳质量，8K超高清，超写实风光摄影，极致精细，逆光，高动态范围，景深效果
+希腊爱琴海沿岸小镇的黄昏景致，白墙蓝顶建筑沿蜿蜒海湾层叠排列
+金色沙滩缓缓延伸至平静如镜的海面
+前景一丛盛放的粉红色三角梅簇拥着斑驳木制路牌，橄榄树纤细枝条自画面上方垂落形成天然画框
+暖橙色晚霞将天空与海面浸染成玫瑰金色调
+光线柔和浪漫，色温温暖唯美通透
+风光摄影，广角构图，逆光层次，高动态范围
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra-realistic landscape photography, extremely detailed, backlight, high dynamic range, depth of field
+dusk over a Greek Aegean coastal town, white-walled blue-domed buildings cascading along a winding bay
+a golden beach stretching gently to a mirror-calm sea
+foreground of blooming pink bougainvillea framing a weathered wooden signpost, slender olive branches drooping from above as a natural frame
+warm orange sunset dyeing sky and sea into rose-gold tones
+soft romantic light, warm color temperature, beautifully translucent
+landscape photography, wide-angle composition, backlit layering, high dynamic range`, negativePrompt: NEG_SCENE },
+      { src: '/images/tiffany/486d103927daa4963d6f761fe0be7747.jpg', title: '白墙帆影间', positivePrompt: `杰作，最佳质量，8K超高清，超写实旅行风光摄影，极致精细，自然硬光，景深效果
+地中海沿岸村庄的鹅卵石坡道蜿蜒向海延伸
+两侧洁白石灰墙上攀爬着艳丽玫红色九重葛繁花如瀑
+深宝蓝色海面上静静点缀两艘白色帆船，屋顶铺设橙红色陶瓦在阳光下泛光，翠绿藤蔓自墙缝间探出
+明媚阳光直射营造强烈明暗对比
+天空湛蓝通透纯净，色彩清爽鲜明
+旅行风光摄影，纵深透视构图，自然硬光，质感锐利
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra-realistic travel landscape photography, extremely detailed, hard natural light, depth of field
+a cobblestone slope in a Mediterranean coastal village winding down toward the sea
+brilliant magenta bougainvillea cascading like a waterfall over the white limewash walls on both sides
+two white sailboats resting on the deep sapphire sea, orange-red terracotta roof tiles glowing in the sun, emerald vines peeking from the wall cracks
+bright direct sunlight creating strong light-and-shadow contrast
+a pure translucent azure sky, fresh vivid colors
+travel landscape photography, deep-perspective composition, hard natural light, sharp texture`, negativePrompt: NEG_SCENE },
+      { src: '/images/tiffany/5e665e836a9f6ace6fd6588c5fe12332.jpg', title: '蓝门向海开', positivePrompt: `杰作，最佳质量，8K超高清，超写实建筑风光摄影，极致精细，自然强光，景深效果
+希腊小岛洁白民居夹道形成的狭长巷道，尽头豁然敞开是无垠湛蓝的爱琴海
+蔚蓝色木门与窗框点缀在洁白粗粝的石灰墙上，墙面悬挂红色与粉色盆花
+远处海中隐现小岛的柔和轮廓
+正午阳光直射墙面形成强烈明暗对比与硬朗投影
+蓝白主色清爽明亮，色彩饱和通透
+建筑风光摄影，对称纵深构图，自然强光，极简质感，锐利高清
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra-realistic architectural landscape photography, extremely detailed, strong natural light, depth of field
+a narrow alley formed by white houses on a Greek island, opening at its end onto the boundless azure Aegean Sea
+azure wooden doors and window frames accenting the white rough limewash walls, red and pink potted flowers hung on the walls
+the soft silhouette of an island faintly visible on the distant sea
+midday sun striking the walls, forming strong contrast and crisp shadows
+blue-and-white main palette, fresh and bright, saturated and translucent
+architectural landscape photography, symmetrical deep-perspective composition, strong natural light, minimalist texture, sharp HD`, negativePrompt: NEG_SCENE },
+      { src: '/images/tiffany/684880e14c509cca4b34271525d7e060.jpg', title: '海岸公路尽头', positivePrompt: `杰作，最佳质量，8K超高清，超写实风光摄影，极致精细，自然光，广角，景深效果
+中国东南沿海小镇一条笔直公路径直向海延伸，没入海天交界
+两侧矗立红黄蓝相间的彩色民居楼房错落有致
+远处碧蓝大海中零星岩礁耸立，天空布满蓬松洁白的积云，海水明亮通透呈蒂芙尼蓝
+公路中央黄色虚线强力引导视线直抵尽头
+正午顶光明亮，色彩鲜艳饱和，画面通透干净
+风光摄影，一点透视构图，广角，自然光，清新明快
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra-realistic landscape photography, extremely detailed, natural light, wide angle, depth of field
+a straight road in a coastal town of southeast China running toward the sea, vanishing at the horizon
+colorful red-yellow-blue houses standing in pleasing disorder on both sides
+scattered rock reefs rising from the azure sea in the distance, the sky full of fluffy white cumulus, the water a bright translucent Tiffany blue
+the yellow dashed center line powerfully leading the eye straight to the vanishing point
+bright midday overhead light, vivid saturated colors, a clean translucent frame
+landscape photography, one-point perspective composition, wide angle, natural light, fresh and lively`, negativePrompt: NEG_SCENE },
+      { src: '/images/tiffany/706c63f0835da5688bebfd0a8549e264.jpg', title: '海边便利店', positivePrompt: `杰作，最佳质量，8K超高清，浓郁日系治愈插画风格，极致精细，柔和光影，景深效果
+一栋两层蒂芙尼蓝色小建筑静静伫立海边街道转角
+门前摆放红色自动贩卖机与丛丛绿植盆栽，两棵高挑椰子树分立两侧随风轻摇
+背景堆积如山、蓬松壮观的巨型积雨云与深邃蓝天，远处可见一线碧蓝海面
+暖阳斜照，色彩清新明快
+蓝白对比强烈，画面通透明亮
+浓郁日系治愈插画风格，中远景构图，柔和光影，细腻质感
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, rich Japanese healing illustration style, extremely detailed, soft light and shadow, depth of field
+a two-story Tiffany-blue building standing quietly at a corner of a seaside street
+a red vending machine and clusters of potted greenery out front, two tall coconut palms swaying on either side
+background of towering fluffy magnificent cumulonimbus clouds and deep blue sky, a strip of azure sea in the distance
+warm sun slanting in, fresh lively colors
+strong blue-and-white contrast, a bright translucent frame
+rich Japanese healing illustration style, medium-distance composition, soft light and shadow, fine texture`, negativePrompt: NEG_SCENE },
+      { src: '/images/tiffany/8ace1c6542fc222757ed2f4e439ba64e.jpg', title: '柠黄小筑', positivePrompt: `杰作，最佳质量，8K超高清，超精细写实3D渲染，极致精细，柔和环境光，景深效果
+一栋洁白现代两层小楼，鲜亮柠檬黄色拱形大门与窗框点亮整体立面
+门口精致绿植错落摆放，二楼露台撑起草绿色遮阳伞
+一旁橙色果树繁花满枝，石板地面呈不规则拼花图案
+柔和日光均匀铺洒，黄白主色清新简约
+兼具地中海风情，色彩明快干净
+超精细写实3D渲染，正面平视构图，柔和环境光，材质细腻，边缘锐利
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra-detailed photorealistic 3D render, extremely detailed, soft ambient light, depth of field
+a clean modern two-story house, bright lemon-yellow arched door and window frames lighting up the whole facade
+elegant potted plants arranged by the entrance, a grass-green parasol on the second-floor terrace
+an orange fruit tree in full bloom beside it, the stone-paved ground in an irregular mosaic pattern
+soft daylight spreading evenly, yellow-and-white palette fresh and minimal
+carrying a Mediterranean flavor, bright clean colors
+ultra-detailed photorealistic 3D render, frontal eye-level composition, soft ambient light, fine materials, sharp edges`, negativePrompt: NEG_SCENE },
+      { src: '/images/tiffany/9f786df8ff4f3552bae9b369bc53c0c3.jpg', title: '海堤暮色长', positivePrompt: `杰作，最佳质量，8K超高清，胶片风光摄影，极致精细，黄金时刻逆光，颗粒质感，景深效果
+欧洲滨海小城砖石人行步道悠然延伸向远方
+左侧洁白古典建筑外墙攀爬着茂密常青藤，路旁复古木质长椅前摆放红花盆栽
+铸铁路灯在渐深暮色中次第亮起暖光，右侧锻铁栏杆外波涛轻拍嶙峋礁石
+压境乌云间透出温暖金色余晖
+色调暖橙深沉，光影戏剧，氛围浓郁
+胶片风光摄影，纵深引导线构图，黄金时刻逆光，颗粒质感
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, film landscape photography, extremely detailed, golden-hour backlight, grain texture, depth of field
+a brick-and-stone promenade in a European coastal town extending leisurely into the distance
+dense ivy climbing the white classical building on the left, red potted flowers before a vintage wooden bench
+cast-iron street lamps lighting up warm one by one in the deepening dusk, waves lapping jagged reefs beyond the wrought-iron railing on the right
+warm golden afterglow breaking through the looming dark clouds
+deep warm-orange tones, dramatic lighting, rich atmosphere
+film landscape photography, deep leading-line composition, golden-hour backlight, grain texture`, negativePrompt: NEG_SCENE },
+      { src: '/images/tiffany/ad29ed1f874bb7e540da5f7e409bf107.jpg', title: '珊瑚咖啡屋', positivePrompt: `杰作，最佳质量，8K超高清，超精细写实渲染，极致精细，柔和暖光，景深效果
+一栋欧式风情珊瑚粉色两层转角咖啡馆，外墙爬满浓密翠绿藤蔓
+红白条纹遮阳篷下木质窗格散发复古气息
+翠绿色拱形木门与锻铁灯笼相映成趣，门口摆放花盆与手写黑板菜单
+暖阳柔和斜照，珊瑚粉与墨绿撞色梦幻温暖
+色调浪漫治愈，氛围唯美
+超精细写实渲染，街角斜角构图，柔和暖光，材质细腻真实，浅景深
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra-detailed photorealistic render, extremely detailed, soft warm light, depth of field
+a European-style coral-pink two-story corner cafe, its walls draped in dense emerald vines
+wooden window panes beneath a red-and-white striped awning exuding a vintage feel
+an emerald arched wooden door playing off a wrought-iron lantern, flower pots and a handwritten chalkboard menu by the entrance
+warm sun slanting softly in, coral pink clashing dreamily with deep green
+romantic healing tones, a beautiful atmosphere
+ultra-detailed photorealistic render, corner oblique composition, soft warm light, fine realistic materials, shallow depth of field`, negativePrompt: NEG_SCENE },
+      { src: '/images/tiffany/d9b4981a0ac9a7552940752264795d78.jpg', title: '猫与紫花石阶', positivePrompt: `杰作，最佳质量，8K超高清，超写实旅行纪实摄影，极致精细，自然光，景深效果
+希腊小岛石板小径蜿蜒向下通往碧蓝海湾，石砌矮墙上错落摆放各色赤陶花盆
+道路右侧一棵盛放紫红色九重葛华盖如伞、繁花垂落
+小径上两只慵懒花猫信步闲坐凝望，远处可见小码头与系泊的彩色渔船
+正午阳光通透，色彩鲜明饱和
+蓝紫撞色明快，生活气息浓郁
+旅行纪实摄影，俯视纵深构图，自然光，锐利清晰
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra-realistic travel documentary photography, extremely detailed, natural light, depth of field
+a stone path on a Greek island winding down to an azure bay, terracotta pots of all colors scattered on the low stone wall
+a magenta bougainvillea on the right spreading like a canopy, blossoms cascading down
+two lazy tabby cats sauntering and sitting on the path gazing off, a small pier and moored colorful fishing boats in the distance
+translucent midday sun, vivid saturated colors
+lively blue-purple clash, rich everyday atmosphere
+travel documentary photography, high-angle deep composition, natural light, sharp and clear`, negativePrompt: NEG_SCENE },
+      { src: '/images/tiffany/db4c45402d32b61452b1074eee342a36.jpg', title: '蓝车与柠檬海', positivePrompt: `杰作，最佳质量，8K超高清，超写实旅行生活方式摄影，极致精细，自然侧光，景深效果
+意大利阿马尔菲海岸观景台，一辆复古蒂芙尼蓝色Vespa踏板摩托车斜靠石砌矮墙旁
+车篮中摆满新鲜金黄柠檬，旁侧柠檬树枝垂落饱满果实
+背景是层次分明的蔚蓝地中海与崖壁上层叠错落的彩色建筑群
+午后阳光充足柔和，暖调通透
+蓝黄撞色清新复古，色彩饱满
+旅行生活方式摄影，中景浅景深，自然侧光，质感细腻
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra-realistic travel lifestyle photography, extremely detailed, natural side light, depth of field
+an Amalfi Coast overlook in Italy, a vintage Tiffany-blue Vespa scooter leaning against a low stone wall
+its front basket piled with fresh golden lemons, a lemon branch beside it hanging with plump fruit
+background of the layered azure Mediterranean and colorful buildings stacked along the cliffside
+ample soft afternoon sunlight, warm translucent tones
+fresh retro blue-and-yellow clash, full saturated colors
+travel lifestyle photography, medium-shot shallow depth of field, natural side light, fine texture`, negativePrompt: NEG_SCENE },
+      { src: '/images/tiffany/ddc692bad473169170024073c07f5e69.jpg', title: '海风咖啡露台', positivePrompt: `杰作，最佳质量，8K超高清，超写实旅行风光摄影，极致精细，自然逆光，景深效果
+地中海风情滨海露台餐厅，鲜艳柠檬黄色外墙搭配湛蓝拱门，藤编桌椅临海而设静候海风
+空中悬挂装饰指路牌指向远方，背景是无边蔚蓝海面与点点白帆
+盛放的粉红色花卉自建筑边缘恣意溢出
+午后强烈阳光将整个场景浸染成温暖金色调
+色彩明快撞色，通透唯美
+旅行风光摄影，开阔中景构图，自然逆光，细腻质感
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra-realistic travel landscape photography, extremely detailed, natural backlight, depth of field
+a Mediterranean-style seaside terrace restaurant, bright lemon-yellow walls paired with azure arches, rattan tables and chairs set by the sea awaiting the breeze
+decorative signposts hanging overhead pointing off into the distance, background of the boundless azure sea dotted with white sails
+blooming pink flowers spilling freely from the building's edges
+strong afternoon sun dyeing the whole scene in warm golden tones
+bright clashing colors, translucent and beautiful
+travel landscape photography, open medium-shot composition, natural backlight, fine texture`, negativePrompt: NEG_SCENE },
+      { src: '/images/tiffany/f98dbb665eff607833b4fd9246da5088.jpg', title: '柠檬树下对饮', positivePrompt: `杰作，最佳质量，8K超高清，超写实生活方式摄影，极致精细，自然光，景深效果
+克罗地亚风情石砌露台，两把质朴木椅围坐于小圆桌旁
+桌上摆放盛满柠檬水的玻璃杯与新鲜黄柠檬
+头顶一棵满载金黄果实的柠檬树撑起天然凉荫，蓝色木质百叶窗点缀洁白粗粝石墙
+背景两艘白色帆船静泊于深邃蓝色海面
+正午柔光通透，暖黄与湛蓝清爽撞色，画面静谧惬意
+生活方式摄影，中景浅景深，自然光，质感细腻
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra-realistic lifestyle photography, extremely detailed, natural light, depth of field
+a Croatian-style stone terrace, two rustic wooden chairs around a small round table
+glasses of lemonade and fresh yellow lemons on the table
+a lemon tree laden with golden fruit overhead providing natural shade, blue wooden shutters accenting the white rough stone wall
+background of two white sailboats moored on the deep blue sea
+translucent soft midday light, a fresh clash of warm yellow and azure, a quiet contented scene
+lifestyle photography, medium-shot shallow depth of field, natural light, fine texture`, negativePrompt: NEG_SCENE },
+      { src: '/images/tiffany/fdf73bc3374cee2447994020effa3eb5.jpg', title: '云涌海边小铺', positivePrompt: `杰作，最佳质量，8K超高清，强烈日本治愈系插画质感，极致精细，柔光氛围，景深效果
+日系风格海边街角小商店，蓝色与粉色混搭的两层建筑温柔可爱
+门前摆满层叠绿植与露天木质桌椅
+天空被巨型蓬松积雨云团壮阔占据，远处可见一线碧蓝大海，椰子树在海风中轻轻摇曳
+柔和暖阳斜照，色彩清新治愈
+蓝粉白通透明亮，唯美宁静
+强烈日本治愈系插画质感，中远景构图，柔光氛围，细腻通透
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, strong Japanese healing illustration quality, extremely detailed, soft-light atmosphere, depth of field
+a Japanese-style seaside corner shop, a gentle lovable two-story building mixing blue and pink
+tiers of potted plants and open-air wooden tables and chairs out front
+the sky filled with towering fluffy cumulonimbus clouds, a strip of azure sea in the distance, coconut palms swaying gently in the sea breeze
+warm sun slanting softly in, fresh healing colors
+blue-pink-white translucent and bright, beautiful and serene
+strong Japanese healing illustration quality, medium-distance composition, soft-light atmosphere, fine and translucent`, negativePrompt: NEG_SCENE },
     ],
   },
   {
