@@ -25,7 +25,17 @@ const NEG_PORTRAIT = `最差质量，低质量，普通质量，模糊，失焦�
 文字，水印，签名，logo，用户名，边框
 过曝死白，欠曝死黑，光线生硬，色彩平淡，单色，色彩溢出
 卡通，动漫，3D卡通，插画风，强烈AI感，不真实
-背景杂乱，漂浮杂物，元素重复，重影`;
+背景杂乱，漂浮杂物，元素重复，重影
+
+─── English ───
+worst quality, low quality, normal quality, blurry, out of focus, pixelated, heavy noise, grainy, over-sharpened
+deformed, disfigured, ugly, extra limbs, missing fingers, extra fingers, fused fingers, bad anatomy, bad proportions, elongated neck
+cross-eyed, asymmetric eyes, distorted pupils, distorted face, misplaced features, crooked face, malformed teeth, dull lifeless eyes
+plastic-looking skin, waxy texture, oily reflections, over-smoothed skin, unnatural blemishes, cheap heavy makeup
+text, watermark, signature, logo, username, border
+blown-out highlights, crushed blacks, harsh lighting, flat colors, monochrome, color bleeding
+cartoon, anime, 3D cartoon, illustration style, strong AI look, unrealistic
+cluttered background, floating debris, duplicated elements, ghosting`;
 // 美食（甜品 / 正餐 / 饮品）
 const NEG_FOOD = `最差质量，低质量，普通质量，模糊，失焦，像素化，噪点多，颗粒感重
 塑料感食物，假模型质感，硅胶质感，蜡质假感，油腻反光过度，颜色发灰暗淡
@@ -33,7 +43,16 @@ const NEG_FOOD = `最差质量，低质量，普通质量，模糊，失焦，�
 畸形餐具，摆盘杂乱，汤汁浑浊，酱料结块，比例失调，构图失衡
 文字，水印，签名，logo，用户名，边框
 过曝死白，欠曝死黑，光线生硬，色彩失真，单色
-卡通，动漫，插画风，强烈AI感，不真实，元素重复`;
+卡通，动漫，插画风，强烈AI感，不真实，元素重复
+
+─── English ───
+worst quality, low quality, normal quality, blurry, out of focus, pixelated, heavy noise, grainy
+plastic-looking food, fake model texture, silicone texture, waxy fake look, excessive greasy reflections, dull greyish colors
+spoiled food, moldy, shriveled, burnt, flies, foreign objects, hair strands, dirty background, fingers in frame
+deformed tableware, messy plating, cloudy broth, clumpy sauce, bad proportions, unbalanced composition
+text, watermark, signature, logo, username, border
+blown-out highlights, crushed blacks, harsh lighting, distorted colors, monochrome
+cartoon, anime, illustration style, strong AI look, unrealistic, duplicated elements`;
 // 香氛产品 / 静物
 const NEG_PRODUCT = `最差质量，低质量，普通质量，模糊，失焦，像素化，噪点多，颗粒感重
 塑料廉价感，瓶身畸形，瓶盖歪斜，标签错乱，文字乱码，比例失调
@@ -41,28 +60,61 @@ const NEG_PRODUCT = `最差质量，低质量，普通质量，模糊，失焦�
 背景杂乱，构图失衡，多余物体，元素重复
 文字，水印，签名，logo，用户名，边框
 过曝死白，欠曝死黑，光线生硬，色彩平淡，单色
-卡通，动漫，插画风，劣质渲染，强烈AI感，不真实`;
+卡通，动漫，插画风，劣质渲染，强烈AI感，不真实
+
+─── English ───
+worst quality, low quality, normal quality, blurry, out of focus, pixelated, heavy noise, grainy
+cheap plastic look, deformed bottle, crooked cap, garbled label, gibberish text, bad proportions
+blown-out reflections, fingerprints, scratches, bubble defects, muddy colors, dirt
+cluttered background, unbalanced composition, extra objects, duplicated elements
+text, watermark, signature, logo, username, border
+blown-out highlights, crushed blacks, harsh lighting, flat colors, monochrome
+cartoon, anime, illustration style, poor rendering, strong AI look, unrealistic`;
 // 3D 数字艺术
 const NEG_3D = `最差质量，低质量，普通质量，模糊，噪点多，颗粒感重，锯齿边缘
 多边形穿模，破面，模型破洞，贴图错误，法线错误，UV拉伸，渲染噪点
 塑料廉价感，色彩断层，透视错误，2D平面感，脏污，比例失调，构图失衡
 文字，水印，签名，logo，用户名，边框
 过曝死白，欠曝死黑，光线生硬，色彩平淡，单色
-卡通，动漫，插画风，劣质渲染，强烈AI感，不真实，元素重复`;
+卡通，动漫，插画风，劣质渲染，强烈AI感，不真实，元素重复
+
+─── English ───
+worst quality, low quality, normal quality, blurry, heavy noise, grainy, jagged edges
+polygon clipping, broken faces, mesh holes, texture errors, normal map errors, UV stretching, render noise
+cheap plastic look, color banding, wrong perspective, flat 2D look, dirt, bad proportions, unbalanced composition
+text, watermark, signature, logo, username, border
+blown-out highlights, crushed blacks, harsh lighting, flat colors, monochrome
+cartoon, anime, illustration style, poor rendering, strong AI look, unrealistic, duplicated elements`;
 // 场景 / 建筑 / 海滨
 const NEG_SCENE = `最差质量，低质量，普通质量，模糊，失焦，像素化，噪点多，颗粒感重
 畸变，透视错误，建筑变形，墙体倾斜，线条扭曲，比例失调，构图失衡
 天空死白，云层脏乱，色彩浑浊，杂乱电线，多余人物，路面污渍，脏污
 文字，水印，签名，logo，用户名，边框
 过曝死白，欠曝死黑，光线生硬，色彩平淡，单色
-卡通，动漫，插画风，劣质渲染，强烈AI感，不真实，鬼影，重影，元素重复`;
+卡通，动漫，插画风，劣质渲染，强烈AI感，不真实，鬼影，重影，元素重复
+
+─── English ───
+worst quality, low quality, normal quality, blurry, out of focus, pixelated, heavy noise, grainy
+distortion, wrong perspective, warped buildings, tilted walls, twisted lines, bad proportions, unbalanced composition
+blown-out sky, messy clouds, muddy colors, tangled wires, extra people, road stains, dirt
+text, watermark, signature, logo, username, border
+blown-out highlights, crushed blacks, harsh lighting, flat colors, monochrome
+cartoon, anime, illustration style, poor rendering, strong AI look, unrealistic, ghosting, double image, duplicated elements`;
 // 自然果物 / 微距
 const NEG_NATURE = `最差质量，低质量，普通质量，模糊，失焦，像素化，噪点多，颗粒感重
 果实腐烂，虫蛀，霉斑病害，干瘪褶皱，塑料假果质感，蜡质假感，色彩失真
 背景杂乱，构图失衡，多余物体，元素重复，比例失调
 文字，水印，签名，logo，用户名，边框
 过曝死白，欠曝死黑，光线生硬，色彩平淡，单色，色彩溢出
-卡通，动漫，插画风，强烈AI感，不真实`;
+卡通，动漫，插画风，强烈AI感，不真实
+
+─── English ───
+worst quality, low quality, normal quality, blurry, out of focus, pixelated, heavy noise, grainy
+rotten fruit, worm holes, mold and disease spots, shriveled wrinkles, plastic fake fruit texture, waxy fake look, distorted colors
+cluttered background, unbalanced composition, extra objects, duplicated elements, bad proportions
+text, watermark, signature, logo, username, border
+blown-out highlights, crushed blacks, harsh lighting, flat colors, monochrome, color bleeding
+cartoon, anime, illustration style, strong AI look, unrealistic`;
 // 野生动物 / 宠物
 const NEG_WILDLIFE = `最差质量，低质量，普通质量，模糊，失焦，像素化，噪点多，颗粒感重
 动物畸形，多余肢体，缺腿，多头，融合怪，解剖结构错误，比例失调
@@ -70,14 +122,31 @@ const NEG_WILDLIFE = `最差质量，低质量，普通质量，模糊，失焦�
 背景杂乱，漂浮杂物，元素重复，重影
 文字，水印，签名，logo，用户名，边框
 过曝死白，欠曝死黑，光线生硬，色彩平淡，单色
-卡通，动漫，插画风，强烈AI感，不真实`;
+卡通，动漫，插画风，强烈AI感，不真实
+
+─── English ───
+worst quality, low quality, normal quality, blurry, out of focus, pixelated, heavy noise, grainy
+deformed animal, extra limbs, missing legs, multiple heads, fused creature, bad anatomy, bad proportions
+dull lifeless eyes, distorted pupils, matted messy fur, plastic look, stiff taxidermy look
+cluttered background, floating debris, duplicated elements, ghosting
+text, watermark, signature, logo, username, border
+blown-out highlights, crushed blacks, harsh lighting, flat colors, monochrome
+cartoon, anime, illustration style, strong AI look, unrealistic`;
 // 油画 / 绘画风
 const NEG_PAINTING = `最差质量，低质量，普通质量，模糊，噪点多，颗粒感重
 笔触脏乱，色彩浑浊发灰，画面平板呆滞，颜料堆积生硬，构图失衡，比例失调
 面部畸形，五官错位，多余肢体，手部畸形，缺指，多指
 照片写实感（与油画风冲突），数码平滑感，3D卡通，强烈AI感
 文字，水印，签名，logo，用户名，边框
-过曝死白，欠曝死黑，光线生硬，色彩平淡，单色，脏污，元素重复`;
+过曝死白，欠曝死黑，光线生硬，色彩平淡，单色，脏污，元素重复
+
+─── English ───
+worst quality, low quality, normal quality, blurry, heavy noise, grainy
+messy brushwork, muddy greyish colors, flat dull image, stiff paint buildup, unbalanced composition, bad proportions
+deformed face, misplaced features, extra limbs, deformed hands, missing fingers, extra fingers
+photorealism (conflicts with oil-painting style), digital smoothness, 3D cartoon, strong AI look
+text, watermark, signature, logo, username, border
+blown-out highlights, crushed blacks, harsh lighting, flat colors, monochrome, dirt, duplicated elements`;
 
 export const workSeries: WorkSeries[] = [
   // ── 首页系列 ─────────────────────────────────────────────────
@@ -177,7 +246,21 @@ export const workSeries: WorkSeries[] = [
 清澈的碧绿色湖水，梦幻模糊的散景背景，浅景深聚焦于她的双眸
 宁静空灵的神情，平和松弛的目光
 超写实的皮肤毛孔，根根分明的发丝，带有光线折射和焦散效果的透明水珠
-虚幻引擎5渲染，电影级构图，柔和镜头光晕`, negativePrompt: NEG_PORTRAIT },
+虚幻引擎5渲染，电影级构图，柔和镜头光晕
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra realistic, extremely detailed, cinematic lighting, ray tracing, HDR, depth of field
+extreme close-up portrait, a stunningly beautiful East Asian girl submerged in clear emerald-green lake water
+fair translucent porcelain skin with a dewy sheen, cheeks and forehead covered in crystalline water droplets and tiny bubbles
+clear bright eyes half-open, long curled eyelashes, full rosy lips slightly parted
+dark brown wet hair drifting freely underwater, fine strands gently clinging to her cheeks and forehead
+surrounded by floating emerald water-plant stems and soft green leaves
+warm golden sunlight streaming through the water surface, casting crisp dappled ripples across her face
+strong Tyndall effect, volumetric light, soft golden-hour glow
+clear emerald lake water, dreamy blurred bokeh background, shallow depth of field focused on her eyes
+serene ethereal expression, calm relaxed gaze
+hyper-realistic skin pores, individually defined hair strands, transparent water droplets with light refraction and caustics
+rendered in Unreal Engine 5, cinematic composition, soft lens flare`, negativePrompt: NEG_PORTRAIT },
       { src: '/images/liuli/308857b8de9b203096942a9860ad253e.jpg', title: '深海仰望', positivePrompt: `杰作，最佳质量，8K超高清分辨率，超写实，极致精细，电影级光影，光线追踪，HDR，景深效果
 极致特写肖像，一位绝美少女的侧脸浸于深蓝海水中，仰视上方的光源
 白皙温润的肌肤，泛着水下的清凉光泽，缀满细小晶莹的气泡
@@ -189,7 +272,21 @@ export const workSeries: WorkSeries[] = [
 深邃的蔚蓝色海水，梦幻虚化的散景，浅景深聚焦于双眸
 宁静空灵的神情，向上仰望的平和目光
 超写实的皮肤质感，根根分明的发丝，带光线折射的透明气泡
-虚幻引擎5渲染，仰角电影级构图，柔和镜头光晕`, negativePrompt: NEG_PORTRAIT },
+虚幻引擎5渲染，仰角电影级构图，柔和镜头光晕
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra realistic, extremely detailed, cinematic lighting, ray tracing, HDR, depth of field
+extreme close-up portrait, the profile of a stunning girl submerged in deep blue sea water, gazing up toward the light above
+fair dewy skin with a cool underwater sheen, covered in tiny crystalline bubbles
+striking clear azure-blue eyes, long eyelashes, full lips slightly parted
+soft curls drifting freely in the water, strands unfurling with the current
+orange petals and glistening bubbles floating slowly in the deep blue water
+warm light refracting down from the surface, casting dazzling rippling patterns across her face
+strong Tyndall effect, volumetric light, bold cool-warm contrast of deep blue and warm orange
+deep azure sea water, dreamy blurred bokeh, shallow depth of field focused on her eyes
+serene ethereal expression, a calm upward gaze
+hyper-realistic skin texture, individually defined hair strands, transparent bubbles with light refraction
+rendered in Unreal Engine 5, low-angle cinematic composition, soft lens flare`, negativePrompt: NEG_PORTRAIT },
       { src: '/images/liuli/3cbd11522f6e496d7daad90c02f97ac4.jpg', title: '雏菊漂梦', positivePrompt: `杰作，最佳质量，8K超高清分辨率，超写实，极致精细，电影级光影，光线追踪，HDR，景深效果
 极致特写肖像，一位绝美少女的面孔浸于浅蓝色清水之中
 白皙通透的瓷感肌肤，泛着水润光泽，缀满晶莹剔透的水珠
@@ -201,7 +298,21 @@ export const workSeries: WorkSeries[] = [
 清冷的蓝绿色湖水，粉白花影点缀，梦幻散景，浅景深聚焦双眸
 纯净空灵的神情，平和的目光
 超写实的皮肤毛孔，根根分明的发丝，带光线折射的透明水珠
-虚幻引擎5渲染，融合二次元插画质感的电影级构图，柔和镜头光晕`, negativePrompt: NEG_PORTRAIT },
+虚幻引擎5渲染，融合二次元插画质感的电影级构图，柔和镜头光晕
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra realistic, extremely detailed, cinematic lighting, ray tracing, HDR, depth of field
+extreme close-up portrait, a stunning girl's face submerged in pale blue clear water
+fair translucent porcelain skin with a dewy sheen, covered in crystalline water droplets
+clear vivid blue-grey eyes, long eyelashes, rosy lips slightly parted
+wet bangs gently clinging to her forehead, fine strands drifting in the water
+surrounded by floating white daisies (yellow centers) and slender green water-plant stems
+soft light filtering through the water surface, blooming dreamy hazy highlights across her face
+gentle Tyndall effect, volumetric light, cool translucent glow
+cool blue-green water, accents of pink-white blossoms, dreamy bokeh, shallow depth of field on her eyes
+pure ethereal expression, a calm gaze
+hyper-realistic skin pores, individually defined hair strands, transparent water droplets with refraction
+rendered in Unreal Engine 5, cinematic composition blending anime illustration quality, soft lens flare`, negativePrompt: NEG_PORTRAIT },
       { src: '/images/liuli/3cfbf7feae86c42841ba1607dfb5d3c6.jpg', title: '蝶梦沉眠', positivePrompt: `杰作，最佳质量，8K超高清分辨率，超写实，极致精细，电影级光影，光线追踪，HDR，景深效果
 极致特写肖像，一位绝美少女闭眸静静沉浸在深色水中
 白皙肌肤泛着淡淡金属光泽质感，缀满晶莹剔透的气泡
@@ -213,7 +324,21 @@ export const workSeries: WorkSeries[] = [
 深邃的暗色水体，深蓝、霓虹紫、橘粉交织，梦幻散景，浅景深
 静谧沉眠的神情，安详平和的气息
 超写实的皮肤质感，根根分明的发丝，晶莹剔透上升的气泡
-虚幻引擎5渲染，超现实奇幻电影级构图，柔和镜头光晕`, negativePrompt: NEG_PORTRAIT },
+虚幻引擎5渲染，超现实奇幻电影级构图，柔和镜头光晕
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra realistic, extremely detailed, cinematic lighting, ray tracing, HDR, depth of field
+extreme close-up portrait, a stunning girl with eyes closed, quietly submerged in dark water
+fair skin with a faint metallic sheen, covered in crystalline bubbles
+closed eyes, long eyelashes, full lips slightly parted, a serene expression
+soft hair drifting and unfurling freely in the dark water
+several glowing neon butterflies fluttering and floating around her
+water-surface light refracting into dazzling neon blue-purple beams
+strong Tyndall effect, volumetric light, surreal fantasy glow
+deep dark water body, deep blue, neon purple and coral-pink, dreamy bokeh, shallow depth of field
+tranquil sleeping expression, a peaceful serene aura
+hyper-realistic skin texture, individually defined hair strands, crystalline bubbles rising
+rendered in Unreal Engine 5, surreal fantasy cinematic composition, soft lens flare`, negativePrompt: NEG_PORTRAIT },
       { src: '/images/liuli/447aefd0f939d224dd36319cb75fb09b.jpg', title: '虹光倾城', positivePrompt: `杰作，最佳质量，8K超高清分辨率，超写实，极致精细，电影级光影，光线追踪，HDR，景深效果
 极致特写肖像，一位绝美少女的面孔直视镜头
 白皙通透的肌肤泛着水润光泽，覆盖着绚烂的彩虹折射光斑
@@ -225,7 +350,21 @@ export const workSeries: WorkSeries[] = [
 柔和虚化的散景背景，浅景深牢牢聚焦于那双绿眸
 迷离动人的神情，深邃的目光
 超写实的皮肤毛孔，根根分明的发丝，棱镜般的彩虹折射光斑
-虚幻引擎5渲染，极致特写电影级构图，柔和镜头光晕`, negativePrompt: NEG_PORTRAIT },
+虚幻引擎5渲染，极致特写电影级构图，柔和镜头光晕
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra realistic, extremely detailed, cinematic lighting, ray tracing, HDR, depth of field
+extreme close-up portrait, a stunning girl's face gazing straight at the camera
+fair translucent skin with a dewy sheen, covered in dazzling rainbow refraction light spots
+a pair of mesmerizing clear green eyes, long eyelashes, full lips
+wet curls scattered messily, fine strands clinging to her cheeks
+orange, yellow, gold and blue prismatic light tracing dreamlike patterns across her skin
+warm sunlight forming a strong Tyndall effect and rainbow caustics
+volumetric light, warm gold-orange main tone accented with dreamy rainbow iridescence
+softly blurred bokeh background, shallow depth of field locked on those green eyes
+alluring dreamy expression, a deep gaze
+hyper-realistic skin pores, individually defined hair strands, prismatic rainbow refraction spots
+rendered in Unreal Engine 5, extreme close-up cinematic composition, soft lens flare`, negativePrompt: NEG_PORTRAIT },
       { src: '/images/liuli/eb9bbdd1fffa3c9fe3e65154c79e7103.jpg', title: '泡影浮光', positivePrompt: `杰作，最佳质量，8K超高清分辨率，超写实，极致精细，电影级光影，光线追踪，HDR，景深效果
 极致特写肖像，一位绝美棕发少女的面孔浸于暗色水中
 细腻真实的肌肤泛着水下微光，缀满晶莹的水珠
@@ -237,7 +376,21 @@ export const workSeries: WorkSeries[] = [
 深沉的暗色水体，朦胧诗意的散景，浅景深聚焦双眸
 空灵迷离的神情，飘远的目光
 超写实的皮肤质感，根根分明的发丝，带焦散光效的透明气泡
-虚幻引擎5渲染，暗调电影级构图，柔和镜头光晕`, negativePrompt: NEG_PORTRAIT },
+虚幻引擎5渲染，暗调电影级构图，柔和镜头光晕
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra realistic, extremely detailed, cinematic lighting, ray tracing, HDR, depth of field
+extreme close-up portrait, a stunning brown-haired girl's face submerged in dark water
+delicate realistic skin glowing faintly underwater, covered in crystalline water droplets
+ethereal slightly dreamy eyes, long eyelashes, full lips slightly parted
+reddish-brown hair spreading slowly with the current, fine strands brushing her cheeks
+transparent bubbles of varying sizes floating around, reflecting orange-red light spots
+water-surface refraction casting white rippling light gently across her face
+gentle Tyndall effect, volumetric light, dark tones accented with warm orange highlights
+deep dark water body, hazy poetic bokeh, shallow depth of field focused on her eyes
+ethereal dreamy expression, a distant gaze
+hyper-realistic skin texture, individually defined hair strands, transparent bubbles with caustic light
+rendered in Unreal Engine 5, dark-tone cinematic composition, soft lens flare`, negativePrompt: NEG_PORTRAIT },
     ],
   },
   {
