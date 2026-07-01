@@ -1215,25 +1215,310 @@ hyper-realistic close-up portrait photography, macro shallow depth of field, nat
     coverImg: '/images/work-9.jpg',
     description: '油画质感与夏日光影的交融',
     images: [
-      { src: '/images/youhua/244a1116d07cf62092e94ccabc49c216.jpg', title: '沉梦映世界', positivePrompt: '古典油画风格人物肖像，一位深色短发少女侧卧沉睡，身着白色金绣华服；背景与衣物巧妙融合成色彩斑斓的世界地图轮廓，以赭石、群青、橙黄、奶白多色厚涂笔触层层堆叠构成；光线自左上方倾泻而下形成柔和侧光，整体氛围静谧梦幻，色彩浓郁厚重；强烈古典油画质感，厚涂笔触肌理，调色刀塑形，暖调布光，博物馆级油画质感，高清', negativePrompt: NEG_PAINTING },
-      { src: '/images/youhua/7cf648bdbfac642477ec73724766b052.jpg', title: '糖果泡泡梦', positivePrompt: '超现实油画风格人物，金发少女仰头闭眼，手持一片橙色水果送入口中；她头顶涌现出大量彩色糖果、橙瓣、浆果等缤纷果物，汇聚成一个个透明泡泡球形，天空是纯净的蔚蓝色；笔触粗犷豪放、颜料堆叠，夏日气息浓烈，色彩甜美饱和；充满甜蜜狂想的超现实油画美感，厚涂笔触，明快布光，肌理丰富，表现主义油画质感，高清', negativePrompt: NEG_PAINTING },
-      { src: '/images/youhua/834420a2c0c97a9a05bf42be37947e38.jpg', title: '古寺裙裾飞', positivePrompt: '油画风格人物场景，金发少女身着粉白玫瑰花卉印花的飘逸长裙，裙摆在风中大幅飞扬；背景是精雕细刻的东南亚风格白色佛塔庙宇阶梯，建筑装饰华美繁复；笔触厚重斑斓、颜料饱满，色调以粉、红、白、金为主，充满异域旅途的浪漫气息；古典与异域交融的油画质感，厚涂笔触肌理，明媚自然光，色彩浓郁，博物馆级油画，高清', negativePrompt: NEG_PAINTING },
-      { src: '/images/youhua/88c0a6a298c117ec3dd18778749da30e.jpg', title: '烈焰金箔颜', positivePrompt: '油画风格近景人物特写，蓝眼金发少女正脸凝视，面颊上散布着金箔碎片与红白条纹织物般的笔触交错覆盖；金色斑点点缀面部，笔触浓烈奔放，调色刀肌理感极其强烈；色彩对比激烈冲撞，画面充满张力，具有强烈表现主义油画风格；厚涂调色刀油画质感，特写构图，戏剧布光，颜料堆叠肌理，浓烈色彩，博物馆级油画', negativePrompt: NEG_PAINTING },
-      { src: '/images/youhua/9397db605b78ed71fbeadcf00261688e.jpg', title: '瓢虫与蛋糕', positivePrompt: '油画风格童趣近景，卷发蓝眼女孩的面部特写出现在画面上方，目光好奇地注视着一只鲜艳红色瓢虫，瓢虫正停在一块草莓奶油蛋糕切片上；蛋糕奶油质感柔腻，草莓饱满鲜红，笔触厚重灵动、颜料丰盈；充满夏日午后慵懒甜蜜的氛围，色彩温暖明快；厚涂油画质感，近景构图，柔和自然光，笔触肌理丰富，甜美油画风，高清', negativePrompt: NEG_PAINTING },
-      { src: '/images/youhua/95b4fc8dae70d0cde19a78b86f2e4549.jpg', title: '彩泡相拥时', positivePrompt: '油画风格人物与宠物，深发少女低头温柔怀抱一只淡黄色巴哥犬，周身环绕着大量晶莹透明的彩色肥皂泡；背景以洋红、橙黄、紫罗兰等浓艳色彩大笔触平铺；整体色彩饱和度极高，笔触奔放厚实，充满夏日欢愉与无忧无虑的表现力；表现主义厚涂油画质感，中景构图，明快布光，颜料肌理丰富，浓烈色彩，博物馆级油画', negativePrompt: NEG_PAINTING },
-      { src: '/images/youhua/9a86c5186e3bd877b1a5713401c92341.jpg', title: '水晶球听音', positivePrompt: '超现实油画风格人物，肤色温暖的少女戴着金色镶宝石的耳机头饰，侧身俯身凝神，轻轻靠近一个精致金座水晶球；球内封着一只翩然起舞的小企鹅，整体氛围如梦似幻，金色与蓝色相互映衬；笔触细腻厚重，色彩华丽，具有梦境般的浓郁油画质感；华丽超现实油画，中近景构图，柔和梦幻布光，颜料肌理，古典油画质感，高清', negativePrompt: NEG_PAINTING },
-      { src: '/images/youhua/9bce7fb52109c5d40ceddcb1a1bd24af.jpg', title: '蜂蜜入颜来', positivePrompt: '油画风格极近景人物特写，少女的面部侧颊占据画面大半，一只硕大的金黄蜜蜂停伫在蜂巢蜡质结构之上，金色蜜珠滴垂在耳侧；背景以蔚蓝天空色调铺陈，金橙、群青、桃粉色彩交织，光线明媚通透；笔触厚重灵动，呈现夏日蜜意盎然的超现实诗境；超现实厚涂油画质感，极近景构图，明媚自然光，颜料肌理丰富，浓郁色彩，高清', negativePrompt: NEG_PAINTING },
-      { src: '/images/youhua/9c33831ffd88657c4e0ae17c503c2a04.jpg', title: '黄野与斑马', positivePrompt: '油画风格人物与动物，深发少女身着彩色碎花宽袖长衫盘腿侧坐，身旁一匹以鲜明蓝白相间条纹描绘的斑马低首相伴；背景是饱和的纯黄色，整体笔触厚实浓郁、颜料堆叠，色彩对比强烈跳跃；充满夏日明艳张扬的生命力，画面装饰感十足；表现主义厚涂油画质感，中景构图，均匀明快布光，笔触肌理丰富，高饱和色彩，博物馆级油画', negativePrompt: NEG_PAINTING },
-      { src: '/images/youhua/9d7e89e330ec4d66a549d2ace8ed257a.jpg', title: '玫瑰斑马群', positivePrompt: '超现实油画风格人物场景，少女身着黑色金绣华服立于画面中央，仰首闭目，四周簇拥着多匹身披金色条纹的白斑马；背景由漫天粉红色花朵铺满，整体以粉、金、黑、白构成浓烈对比；厚涂笔触肌理丰富，颜料饱满堆叠，营造出华美瑰丽的夏日奇境；华丽超现实厚涂油画，中景对称构图，戏剧布光，颜料肌理，浓郁色彩，博物馆级油画', negativePrompt: NEG_PAINTING },
-      { src: '/images/youhua/9de7618bae5fe35bbaa8a204c4e7ff30.jpg', title: '粉殿裙影舞', positivePrompt: '油画风格人物场景，一位纤细女子背对观者，身着粉橙色印花飘逸长袍，裙裾被风扬起大幅展开，并映射在光洁地面形成倒影；背景是金碧辉煌的东南亚白色神殿廊柱，色调以粉、橙、金、白为主；笔触流动婉转、颜料轻盈，画面优雅唯美；古典油画质感，中景纵深构图，柔和自然光，笔触肌理，浪漫色彩，博物馆级油画，高清', negativePrompt: NEG_PAINTING },
-      { src: '/images/youhua/a1aaa41814ff9bf26a853c8967fbc4d4.jpg', title: '巨果映仙城', positivePrompt: '超现实油画风格风景，画面中央耸立一颗被咬过的巨大红苹果，如山丘般宏伟；其身后隐现白色穹顶宫殿建筑群，粉色小鸟自苹果处四散飞起，一位身着橙红长裙的女子渺小地立于平静水面之上，天空湛蓝；笔触厚重、色彩浓郁，充满夏日奇幻的叙事感；超现实厚涂油画，广角远景构图，明媚自然光，颜料肌理丰富，史诗色彩，博物馆级油画', negativePrompt: NEG_PAINTING },
-      { src: '/images/youhua/a5ddf98725a0406aac4ae5e7acf4e76a.jpg', title: '花田问水镜', positivePrompt: '油画风格场景，金发少女身着白衬衫与砖红色长裙，俯身跪在繁花盛开的花圃之中；她的手指轻触一只圆形铜盘中的水面，水波荡漾映出天空与少女的倒影，四周雏菊、橙花、紫花密密铺满；笔触灵动鲜活、颜料饱满，色彩明媚层叠；印象派厚涂油画质感，中景构图，柔和自然光，笔触肌理丰富，鲜活色彩，博物馆级油画，高清', negativePrompt: NEG_PAINTING },
-      { src: '/images/youhua/aa1dc98198b4e429018f7f8e392c6c9f.jpg', title: '雏菊湿发颜', positivePrompt: '油画风格近景人物特写，深发少女正面凝视，湿润的发丝散乱交织着白色雏菊与橙色野花蔓延至四周；面部雀斑清晰可见，双唇微启呈橙粉色，光线柔和均匀铺洒；笔触厚重灵动、颜料丰盈，散发出夏日少女纯净自然的气息；厚涂油画质感，近景构图，柔和自然光，笔触肌理丰富，清新色彩，博物馆级油画质感，高清', negativePrompt: NEG_PAINTING },
-      { src: '/images/youhua/b320d77d696028726f7336278359dce6.jpg', title: '金饰护心间', positivePrompt: '超现实油画风格人物，身着金绣白瓷华服的东方少女低首沉思，双手托起一颗透明心形玻璃容器，内藏跳动的人心与金枝花朵；背景漫铺粉色绣球花团，金饰耳环颈链华贵精美；笔触细腻厚重、颜料层叠，充满古典宫廷与当代超现实交融的华美氛围；华丽超现实油画质感，中近景构图，柔和戏剧布光，颜料肌理，浓郁色彩，博物馆级油画', negativePrompt: NEG_PAINTING },
-      { src: '/images/youhua/b360e98b3ec57e934d0ed4c4c94b5f70.jpg', title: '草莓虫儿语', positivePrompt: '超现实油画风格极近景，少女仰面，面颊与颈部占据画面上方，画面下方铺满晶莹欲滴的草莓、奶油与红色浆果果冻；一只鲜艳红色瓢虫伫立其间，光线自侧方照射形成温暖通透的高光；整体以粉、红、奶白为主色，笔触厚重、颜料丰盈甜腻；甜美超现实厚涂油画，极近景构图，温暖侧光，颜料肌理丰富，浓郁色彩，博物馆级油画', negativePrompt: NEG_PAINTING },
-      { src: '/images/youhua/bb61b9a858e6cee6f4cdcd34135fe3b3.jpg', title: '繁花化人形', positivePrompt: '超现实油画风格人物，一个侧立的男性人形由千朵繁花与金色饰物构建而成，花朵有白、红、橙、粉各色，金箔碎片散布全身；背景是湛蓝天空与白云，整体如一尊花束雕塑般宏伟；笔触厚重绚烂、颜料层层堆叠，金碧辉煌与花朵烂漫交融；华丽超现实厚涂油画，中景构图，明媚自然光，颜料肌理丰富，金色与花色浓郁，博物馆级油画', negativePrompt: NEG_PAINTING },
-      { src: '/images/youhua/bf16bc99730d290ec8699a304a1b74d5.jpg', title: '噤声犬吻间', positivePrompt: '油画风格近景人物与动物，金发女子的侧脸以金箔与玫瑰红厚涂描绘，右手食指轻竖唇前作噤声姿态；一只淡黄色猎犬自左侧凑近嗅触她的指尖，背景以灰白为底衬托；金红玫瑰色系在人物身上形成浓郁装饰感，笔触如调色刀般奔放厚实；表现主义厚涂油画质感，近景构图，柔和布光，调色刀肌理，浓烈装饰色彩，博物馆级油画', negativePrompt: NEG_PAINTING },
-      { src: '/images/youhua/e7e28d9948b323d4e5a673aa3bd73e1b.jpg', title: '金苹果一口', positivePrompt: '油画风格人物特写，短发少女仰首张口，双唇轻触一颗被单手高举的纯金色苹果；她身着金橙彩绘宽袖华服，色调以金黄、玫红及彩色点缀为主，背景是浅灰白；笔触粗豪奔放，金色颜料层层堆叠出强烈肌理，画面华丽夺目；表现主义厚涂油画质感，特写构图，戏剧布光，调色刀颜料肌理，金色浓郁，博物馆级油画质感，高清', negativePrompt: NEG_PAINTING },
+      { src: '/images/youhua/244a1116d07cf62092e94ccabc49c216.jpg', title: '沉梦映世界', positivePrompt: `杰作，最佳质量，8K超高清，古典油画风格，厚涂笔触，调色刀肌理，博物馆级油画质感
+古典油画风格人物肖像，一位深色短发少女侧卧沉睡，身着白色金绣华服
+背景与衣物巧妙融合成色彩斑斓的世界地图轮廓
+以赭石、群青、橙黄、奶白多色厚涂笔触层层堆叠构成
+光线自左上方倾泻而下形成柔和侧光
+整体氛围静谧梦幻，色彩浓郁厚重
+强烈古典油画质感，厚涂笔触肌理，调色刀塑形，暖调布光
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, classical oil painting style, impasto brushwork, palette-knife texture, museum-grade oil painting quality
+a classical oil-painting portrait, a dark short-haired girl lying asleep on her side, dressed in a white gold-embroidered gown
+the background and her clothing merging cleverly into the colorful outline of a world map
+built from layered impasto strokes of ochre, ultramarine, orange-yellow and cream
+light pouring from the upper left forming soft side light
+a serene dreamy atmosphere overall, rich heavy colors
+strong classical oil-painting quality, impasto brush texture, palette-knife shaping, warm-toned lighting`, negativePrompt: NEG_PAINTING },
+      { src: '/images/youhua/7cf648bdbfac642477ec73724766b052.jpg', title: '糖果泡泡梦', positivePrompt: `杰作，最佳质量，8K超高清，超现实油画风格，厚涂笔触，表现主义油画质感，博物馆级
+超现实油画风格人物，金发少女仰头闭眼，手持一片橙色水果送入口中
+她头顶涌现出大量彩色糖果、橙瓣、浆果等缤纷果物，汇聚成一个个透明泡泡球形
+天空是纯净的蔚蓝色
+笔触粗犷豪放、颜料堆叠，夏日气息浓烈
+色彩甜美饱和，充满甜蜜狂想
+超现实厚涂油画，明快布光，肌理丰富，表现主义油画质感
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, surreal oil painting style, impasto brushwork, expressionist oil quality, museum-grade
+a surreal oil-painting figure, a blonde girl tilting her head back with eyes closed, holding a slice of orange fruit to her mouth
+above her head a burst of colorful candy, orange segments and berries gathering into transparent bubble spheres
+the sky a pure azure blue
+bold rugged brushwork with piled paint, an intense summer feel
+sweet saturated colors, full of sweet fantasy
+surreal impasto oil painting, bright lighting, rich texture, expressionist oil quality`, negativePrompt: NEG_PAINTING },
+      { src: '/images/youhua/834420a2c0c97a9a05bf42be37947e38.jpg', title: '古寺裙裾飞', positivePrompt: `杰作，最佳质量，8K超高清，古典与异域交融的油画质感，厚涂笔触肌理，博物馆级油画
+油画风格人物场景，金发少女身着粉白玫瑰花卉印花的飘逸长裙，裙摆在风中大幅飞扬
+背景是精雕细刻的东南亚风格白色佛塔庙宇阶梯，建筑装饰华美繁复
+笔触厚重斑斓、颜料饱满
+色调以粉、红、白、金为主，充满异域旅途的浪漫气息
+明媚自然光，色彩浓郁
+古典与异域交融的油画质感，厚涂笔触肌理，明媚自然光
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, oil painting quality fusing classical and exotic, impasto brush texture, museum-grade oil painting
+an oil-painting figure scene, a blonde girl in a flowing dress printed with pink-white roses, her skirt billowing dramatically in the wind
+background of finely carved Southeast-Asian-style white pagoda temple steps, ornate elaborate architectural decoration
+heavy vivid brushwork with full paint
+palette dominated by pink, red, white and gold, full of exotic-journey romance
+bright natural light, rich colors
+oil painting quality fusing classical and exotic, impasto brush texture, bright natural light`, negativePrompt: NEG_PAINTING },
+      { src: '/images/youhua/88c0a6a298c117ec3dd18778749da30e.jpg', title: '烈焰金箔颜', positivePrompt: `杰作，最佳质量，8K超高清，表现主义厚涂调色刀油画质感，戏剧布光，博物馆级油画
+油画风格近景人物特写，蓝眼金发少女正脸凝视，面颊上散布着金箔碎片与红白条纹织物般的笔触交错覆盖
+金色斑点点缀面部
+笔触浓烈奔放，调色刀肌理感极其强烈
+色彩对比激烈冲撞，画面充满张力
+具有强烈表现主义油画风格
+厚涂调色刀油画质感，特写构图，戏剧布光，颜料堆叠肌理
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, expressionist impasto palette-knife oil quality, dramatic lighting, museum-grade oil painting
+a close-up oil-painting portrait, a blue-eyed blonde girl gazing frontally, her cheeks covered by interlacing gold-leaf fragments and red-white striped fabric-like strokes
+gold flecks dotting her face
+intense unrestrained brushwork, extremely strong palette-knife texture
+fierce clashing color contrast, a frame full of tension
+a strongly expressionist oil-painting style
+impasto palette-knife oil quality, close-up composition, dramatic lighting, piled-paint texture`, negativePrompt: NEG_PAINTING },
+      { src: '/images/youhua/9397db605b78ed71fbeadcf00261688e.jpg', title: '瓢虫与蛋糕', positivePrompt: `杰作，最佳质量，8K超高清，厚涂油画质感，甜美油画风，柔和自然光，博物馆级
+油画风格童趣近景，卷发蓝眼女孩的面部特写出现在画面上方，目光好奇地注视着一只鲜艳红色瓢虫
+瓢虫正停在一块草莓奶油蛋糕切片上
+蛋糕奶油质感柔腻，草莓饱满鲜红
+笔触厚重灵动、颜料丰盈，充满夏日午后慵懒甜蜜的氛围
+色彩温暖明快
+厚涂油画质感，近景构图，柔和自然光，笔触肌理丰富
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, impasto oil quality, sweet painterly style, soft natural light, museum-grade
+a whimsical close-up oil painting, a curly-haired blue-eyed girl's face appearing at the top of the frame, gazing curiously at a bright red ladybug
+the ladybug perched on a slice of strawberry cream cake
+the cake cream soft and smooth, the strawberries plump and bright red
+heavy lively brushwork with abundant paint, full of a lazy sweet summer-afternoon mood
+warm bright colors
+impasto oil quality, close-up composition, soft natural light, rich brush texture`, negativePrompt: NEG_PAINTING },
+      { src: '/images/youhua/95b4fc8dae70d0cde19a78b86f2e4549.jpg', title: '彩泡相拥时', positivePrompt: `杰作，最佳质量，8K超高清，表现主义厚涂油画质感，明快布光，博物馆级油画
+油画风格人物与宠物，深发少女低头温柔怀抱一只淡黄色巴哥犬，周身环绕着大量晶莹透明的彩色肥皂泡
+背景以洋红、橙黄、紫罗兰等浓艳色彩大笔触平铺
+整体色彩饱和度极高，笔触奔放厚实
+充满夏日欢愉与无忧无虑的表现力
+色彩浓烈跳跃
+表现主义厚涂油画质感，中景构图，明快布光，颜料肌理丰富
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, expressionist impasto oil quality, bright lighting, museum-grade oil painting
+an oil-painting figure and pet, a dark-haired girl lowering her head to tenderly cradle a pale-yellow pug, surrounded by many crystalline transparent colorful soap bubbles
+background laid flat in bold strokes of magenta, orange-yellow and violet
+extremely high overall saturation, bold heavy brushwork
+full of carefree joyful summer expressiveness
+intense leaping colors
+expressionist impasto oil quality, medium-shot composition, bright lighting, rich paint texture`, negativePrompt: NEG_PAINTING },
+      { src: '/images/youhua/9a86c5186e3bd877b1a5713401c92341.jpg', title: '水晶球听音', positivePrompt: `杰作，最佳质量，8K超高清，华丽超现实油画，古典油画质感，柔和梦幻布光
+超现实油画风格人物，肤色温暖的少女戴着金色镶宝石的耳机头饰，侧身俯身凝神，轻轻靠近一个精致金座水晶球
+球内封着一只翩然起舞的小企鹅
+整体氛围如梦似幻，金色与蓝色相互映衬
+笔触细腻厚重，色彩华丽
+具有梦境般的浓郁油画质感
+华丽超现实油画，中近景构图，柔和梦幻布光，颜料肌理
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ornate surreal oil painting, classical oil quality, soft dreamy lighting
+a surreal oil-painting figure, a warm-skinned girl wearing a gold gem-set headphone headpiece, leaning and bending forward intently toward an exquisite gold-based crystal ball
+inside the ball a little penguin dancing gracefully
+a dreamlike atmosphere overall, gold and blue setting each other off
+delicate heavy brushwork, gorgeous colors
+a rich dreamlike oil-painting quality
+ornate surreal oil painting, medium close-up composition, soft dreamy lighting, paint texture`, negativePrompt: NEG_PAINTING },
+      { src: '/images/youhua/9bce7fb52109c5d40ceddcb1a1bd24af.jpg', title: '蜂蜜入颜来', positivePrompt: `杰作，最佳质量，8K超高清，超现实厚涂油画质感，明媚自然光，博物馆级油画
+油画风格极近景人物特写，少女的面部侧颊占据画面大半，一只硕大的金黄蜜蜂停伫在蜂巢蜡质结构之上
+金色蜜珠滴垂在耳侧
+背景以蔚蓝天空色调铺陈，金橙、群青、桃粉色彩交织，光线明媚通透
+笔触厚重灵动
+呈现夏日蜜意盎然的超现实诗境
+超现实厚涂油画质感，极近景构图，明媚自然光，颜料肌理丰富
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, surreal impasto oil quality, bright natural light, museum-grade oil painting
+an extreme close-up oil painting, the girl's side cheek filling most of the frame, a huge golden bee perched on a waxy honeycomb structure
+a golden honey drop hanging by her ear
+background laid in azure sky tones, gold-orange, ultramarine and peach-pink interweaving, bright translucent light
+heavy lively brushwork
+presenting a surreal poetic realm brimming with summer honey
+surreal impasto oil quality, extreme close-up composition, bright natural light, rich paint texture`, negativePrompt: NEG_PAINTING },
+      { src: '/images/youhua/9c33831ffd88657c4e0ae17c503c2a04.jpg', title: '黄野与斑马', positivePrompt: `杰作，最佳质量，8K超高清，表现主义厚涂油画质感，均匀明快布光，博物馆级油画
+油画风格人物与动物，深发少女身着彩色碎花宽袖长衫盘腿侧坐，身旁一匹以鲜明蓝白相间条纹描绘的斑马低首相伴
+背景是饱和的纯黄色
+整体笔触厚实浓郁、颜料堆叠，色彩对比强烈跳跃
+充满夏日明艳张扬的生命力
+画面装饰感十足
+表现主义厚涂油画质感，中景构图，均匀明快布光，笔触肌理丰富
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, expressionist impasto oil quality, even bright lighting, museum-grade oil painting
+an oil-painting figure and animal, a dark-haired girl in a colorful floral wide-sleeved robe sitting cross-legged, a zebra rendered in vivid blue-and-white stripes lowering its head beside her
+background of saturated pure yellow
+heavy rich brushwork with piled paint overall, strong leaping color contrast
+full of vivid flamboyant summer vitality
+a strongly decorative frame
+expressionist impasto oil quality, medium-shot composition, even bright lighting, rich brush texture`, negativePrompt: NEG_PAINTING },
+      { src: '/images/youhua/9d7e89e330ec4d66a549d2ace8ed257a.jpg', title: '玫瑰斑马群', positivePrompt: `杰作，最佳质量，8K超高清，华丽超现实厚涂油画，戏剧布光，博物馆级油画
+超现实油画风格人物场景，少女身着黑色金绣华服立于画面中央，仰首闭目，四周簇拥着多匹身披金色条纹的白斑马
+背景由漫天粉红色花朵铺满
+整体以粉、金、黑、白构成浓烈对比
+厚涂笔触肌理丰富，颜料饱满堆叠
+营造出华美瑰丽的夏日奇境
+华丽超现实厚涂油画，中景对称构图，戏剧布光，颜料肌理
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ornate surreal impasto oil painting, dramatic lighting, museum-grade oil painting
+a surreal oil-painting scene, a girl in a black gold-embroidered gown standing at the center, head lifted and eyes closed, surrounded by white zebras draped in golden stripes
+background covered in a sky of pink flowers
+strong contrast of pink, gold, black and white overall
+rich impasto brush texture, full piled paint
+creating a gorgeous magnificent summer wonderland
+ornate surreal impasto oil painting, symmetrical medium-shot composition, dramatic lighting, paint texture`, negativePrompt: NEG_PAINTING },
+      { src: '/images/youhua/9de7618bae5fe35bbaa8a204c4e7ff30.jpg', title: '粉殿裙影舞', positivePrompt: `杰作，最佳质量，8K超高清，古典油画质感，厚涂笔触肌理，柔和自然光，博物馆级油画
+油画风格人物场景，一位纤细女子背对观者，身着粉橙色印花飘逸长袍，裙裾被风扬起大幅展开，并映射在光洁地面形成倒影
+背景是金碧辉煌的东南亚白色神殿廊柱
+色调以粉、橙、金、白为主
+笔触流动婉转、颜料轻盈，画面优雅唯美
+浪漫色彩
+古典油画质感，中景纵深构图，柔和自然光，笔触肌理
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, classical oil quality, impasto brush texture, soft natural light, museum-grade oil painting
+an oil-painting figure scene, a slender woman with her back to the viewer, in a flowing pink-orange printed robe, her skirt lifted wide open by the wind and mirrored in reflection on the polished floor
+background of a resplendent Southeast-Asian white temple colonnade
+palette dominated by pink, orange, gold and white
+flowing graceful brushwork with light paint, an elegant beautiful frame
+romantic colors
+classical oil quality, medium-shot deep composition, soft natural light, brush texture`, negativePrompt: NEG_PAINTING },
+      { src: '/images/youhua/a1aaa41814ff9bf26a853c8967fbc4d4.jpg', title: '巨果映仙城', positivePrompt: `杰作，最佳质量，8K超高清，超现实厚涂油画，明媚自然光，史诗色彩，博物馆级油画
+超现实油画风格风景，画面中央耸立一颗被咬过的巨大红苹果，如山丘般宏伟
+其身后隐现白色穹顶宫殿建筑群，粉色小鸟自苹果处四散飞起
+一位身着橙红长裙的女子渺小地立于平静水面之上，天空湛蓝
+笔触厚重、色彩浓郁
+充满夏日奇幻的叙事感
+超现实厚涂油画，广角远景构图，明媚自然光，颜料肌理丰富
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, surreal impasto oil painting, bright natural light, epic colors, museum-grade oil painting
+a surreal oil-painting landscape, a giant bitten red apple towering at the center, majestic as a hill
+a white-domed palace complex faintly appearing behind it, pink birds scattering off from the apple
+a woman in an orange-red gown standing tiny upon a calm water surface, the sky azure
+heavy brushwork, rich colors
+full of fantastical summer narrative
+surreal impasto oil painting, wide-angle distant composition, bright natural light, rich paint texture`, negativePrompt: NEG_PAINTING },
+      { src: '/images/youhua/a5ddf98725a0406aac4ae5e7acf4e76a.jpg', title: '花田问水镜', positivePrompt: `杰作，最佳质量，8K超高清，印象派厚涂油画质感，柔和自然光，博物馆级油画
+油画风格场景，金发少女身着白衬衫与砖红色长裙，俯身跪在繁花盛开的花圃之中
+她的手指轻触一只圆形铜盘中的水面，水波荡漾映出天空与少女的倒影
+四周雏菊、橙花、紫花密密铺满
+笔触灵动鲜活、颜料饱满，色彩明媚层叠
+鲜活色彩
+印象派厚涂油画质感，中景构图，柔和自然光，笔触肌理丰富
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, impressionist impasto oil quality, soft natural light, museum-grade oil painting
+an oil-painting scene, a blonde girl in a white shirt and brick-red skirt kneeling forward amid a garden in full bloom
+her fingers lightly touching the water in a round bronze basin, ripples reflecting the sky and the girl
+daisies, orange blossoms and purple flowers densely carpeting all around
+lively vivid brushwork with full paint, bright layered colors
+vivid colors
+impressionist impasto oil quality, medium-shot composition, soft natural light, rich brush texture`, negativePrompt: NEG_PAINTING },
+      { src: '/images/youhua/aa1dc98198b4e429018f7f8e392c6c9f.jpg', title: '雏菊湿发颜', positivePrompt: `杰作，最佳质量，8K超高清，厚涂油画质感，柔和自然光，清新色彩，博物馆级油画
+油画风格近景人物特写，深发少女正面凝视，湿润的发丝散乱交织着白色雏菊与橙色野花蔓延至四周
+面部雀斑清晰可见，双唇微启呈橙粉色
+光线柔和均匀铺洒
+笔触厚重灵动、颜料丰盈
+散发出夏日少女纯净自然的气息
+厚涂油画质感，近景构图，柔和自然光，笔触肌理丰富
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, impasto oil quality, soft natural light, fresh colors, museum-grade oil painting
+a close-up oil-painting portrait, a dark-haired girl gazing frontally, her damp hair scattered and interwoven with white daisies and orange wildflowers spreading all around
+freckles clearly visible on her face, lips slightly parted in orange-pink
+soft even light spreading over her
+heavy lively brushwork with abundant paint
+radiating the pure natural air of a summer girl
+impasto oil quality, close-up composition, soft natural light, rich brush texture`, negativePrompt: NEG_PAINTING },
+      { src: '/images/youhua/b320d77d696028726f7336278359dce6.jpg', title: '金饰护心间', positivePrompt: `杰作，最佳质量，8K超高清，华丽超现实油画质感，柔和戏剧布光，博物馆级油画
+超现实油画风格人物，身着金绣白瓷华服的东方少女低首沉思，双手托起一颗透明心形玻璃容器，内藏跳动的人心与金枝花朵
+背景漫铺粉色绣球花团
+金饰耳环颈链华贵精美
+笔触细腻厚重、颜料层叠
+充满古典宫廷与当代超现实交融的华美氛围
+华丽超现实油画质感，中近景构图，柔和戏剧布光，颜料肌理
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ornate surreal oil quality, soft dramatic lighting, museum-grade oil painting
+a surreal oil-painting figure, an East Asian girl in a gold-embroidered white-porcelain gown lowering her head in thought, holding up a transparent heart-shaped glass vessel containing a beating human heart and golden flowering branches
+background spread with pink hydrangea clusters
+lavish exquisite gold earrings and necklace
+delicate heavy brushwork with layered paint
+full of a gorgeous fusion of classical court and contemporary surrealism
+ornate surreal oil quality, medium close-up composition, soft dramatic lighting, paint texture`, negativePrompt: NEG_PAINTING },
+      { src: '/images/youhua/b360e98b3ec57e934d0ed4c4c94b5f70.jpg', title: '草莓虫儿语', positivePrompt: `杰作，最佳质量，8K超高清，甜美超现实厚涂油画，温暖侧光，博物馆级油画
+超现实油画风格极近景，少女仰面，面颊与颈部占据画面上方，画面下方铺满晶莹欲滴的草莓、奶油与红色浆果果冻
+一只鲜艳红色瓢虫伫立其间
+光线自侧方照射形成温暖通透的高光
+整体以粉、红、奶白为主色，笔触厚重、颜料丰盈甜腻
+甜美诱人
+甜美超现实厚涂油画，极近景构图，温暖侧光，颜料肌理丰富
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, sweet surreal impasto oil painting, warm side light, museum-grade oil painting
+an extreme close-up surreal oil painting, the girl's upturned face, cheek and neck filling the upper frame, the lower frame carpeted with glistening strawberries, cream and red berry jelly
+a bright red ladybug standing among them
+side light forming warm translucent highlights
+palette dominated by pink, red and cream, heavy brushwork with abundant sweet paint
+sweet and enticing
+sweet surreal impasto oil painting, extreme close-up composition, warm side light, rich paint texture`, negativePrompt: NEG_PAINTING },
+      { src: '/images/youhua/bb61b9a858e6cee6f4cdcd34135fe3b3.jpg', title: '繁花化人形', positivePrompt: `杰作，最佳质量，8K超高清，华丽超现实厚涂油画，明媚自然光，博物馆级油画
+超现实油画风格人物，一个侧立的男性人形由千朵繁花与金色饰物构建而成，花朵有白、红、橙、粉各色，金箔碎片散布全身
+背景是湛蓝天空与白云
+整体如一尊花束雕塑般宏伟
+笔触厚重绚烂、颜料层层堆叠，金碧辉煌与花朵烂漫交融
+金色与花色浓郁
+华丽超现实厚涂油画，中景构图，明媚自然光，颜料肌理丰富
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ornate surreal impasto oil painting, bright natural light, museum-grade oil painting
+a surreal oil-painting figure, a male form standing in profile built from a thousand blossoms and golden ornaments, flowers in white, red, orange and pink, gold-leaf fragments scattered over the whole body
+background of azure sky and white clouds
+majestic overall like a bouquet sculpture
+heavy brilliant brushwork with layered paint, resplendent gold fusing with flowering profusion
+rich gold and floral colors
+ornate surreal impasto oil painting, medium-shot composition, bright natural light, rich paint texture`, negativePrompt: NEG_PAINTING },
+      { src: '/images/youhua/bf16bc99730d290ec8699a304a1b74d5.jpg', title: '噤声犬吻间', positivePrompt: `杰作，最佳质量，8K超高清，表现主义厚涂油画质感，调色刀肌理，博物馆级油画
+油画风格近景人物与动物，金发女子的侧脸以金箔与玫瑰红厚涂描绘，右手食指轻竖唇前作噤声姿态
+一只淡黄色猎犬自左侧凑近嗅触她的指尖，背景以灰白为底衬托
+金红玫瑰色系在人物身上形成浓郁装饰感
+笔触如调色刀般奔放厚实
+浓烈装饰色彩
+表现主义厚涂油画质感，近景构图，柔和布光，调色刀肌理
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, expressionist impasto oil quality, palette-knife texture, museum-grade oil painting
+a close-up oil-painting figure and animal, a blonde woman's profile rendered in impasto gold leaf and rose red, her right index finger raised to her lips in a hush gesture
+a pale-yellow hound leaning in from the left to sniff her fingertip, background set off in grey-white
+the gold-red-rose palette forming a strong decorative feel on the figure
+brushwork bold and heavy like a palette knife
+intense decorative colors
+expressionist impasto oil quality, close-up composition, soft lighting, palette-knife texture`, negativePrompt: NEG_PAINTING },
+      { src: '/images/youhua/e7e28d9948b323d4e5a673aa3bd73e1b.jpg', title: '金苹果一口', positivePrompt: `杰作，最佳质量，8K超高清，表现主义厚涂油画质感，戏剧布光，博物馆级油画
+油画风格人物特写，短发少女仰首张口，双唇轻触一颗被单手高举的纯金色苹果
+她身着金橙彩绘宽袖华服，色调以金黄、玫红及彩色点缀为主，背景是浅灰白
+笔触粗豪奔放，金色颜料层层堆叠出强烈肌理
+画面华丽夺目
+金色浓郁
+表现主义厚涂油画质感，特写构图，戏剧布光，调色刀颜料肌理
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, expressionist impasto oil quality, dramatic lighting, museum-grade oil painting
+a close-up oil-painting portrait, a short-haired girl tilting her head up with mouth open, her lips lightly touching a pure gold apple held aloft in one hand
+she wears a gold-orange painted wide-sleeved gown, palette dominated by golden-yellow, rose-red and colorful accents, background pale grey-white
+bold rugged brushwork, gold paint layered into strong texture
+a gorgeous dazzling frame
+rich gold
+expressionist impasto oil quality, close-up composition, dramatic lighting, palette-knife paint texture`, negativePrompt: NEG_PAINTING },
     ],
   },
   {
