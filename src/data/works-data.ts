@@ -808,23 +808,256 @@ hyper-realistic close-up portrait photography, macro shallow depth of field, nat
     coverImg: '/images/work-10.jpg',
     description: '电影感的旧日梦境',
     images: [
-      { src: '/images/jiumeng/02aa408f3dbad1ae0ec817140976d74a.jpg', title: '风中回眸', positivePrompt: '黄昏逆光人像摄影，背景是暗调的绿色丘陵，一位女子侧身回望，栗色长发被风吹散飘扬；金色夕阳的侧逆光勾勒出发丝轮廓，面部半明半暗呈现立体层次；她身着米白色宽松衬衫，深邃眼神透出忧郁气质，色调暗调大地色系温润；胶片质感电影感人像，中近景浅景深，黄金时刻侧逆光，颗粒质感，发丝透光，8K超清', negativePrompt: NEG_PORTRAIT },
-      { src: '/images/jiumeng/2fac851e876fbfe9782674e011caf2c1.jpg', title: '暮光车站', positivePrompt: '日系街头人像摄影，一位亚洲年轻女性的特写，短发配刘海，围着米色针织围巾，双手捧起围巾望向镜头；她眼神清澈而略带忧愁，暖橘色的侧光柔和照亮面颊；背景虚化的人群与街道车灯晕成橙色光斑，色调温暖橙棕怀旧；电影感街头人像，中近景大光圈浅景深，暖调侧光，散景光晕，胶片质感，8K超清', negativePrompt: NEG_PORTRAIT },
-      { src: '/images/jiumeng/3c52e4169f22f352d00706522f631b9f.jpg', title: '百叶窗晨光', positivePrompt: '室内人像特写摄影，一位亚洲女性的面部，短卷发，微微仰头；温暖的金色阳光透过百叶窗投下一道道条纹光影打在脸上，镜头光晕与散景光斑环绕四周；她眼神迷离若有所思，嘴唇微启，色调金黄橙暖慵懒；电影感室内人像，特写浅景深，百叶窗条纹光，镜头光晕，细腻肤质，温暖氛围，8K超高清', negativePrompt: NEG_PORTRAIT },
-      { src: '/images/jiumeng/4468ac007c058f47bb63b7249cdf1939.jpg', title: '街巷过客', positivePrompt: '欧洲街拍人像，金棕色长发在风中飞扬，女子侧身回头望向镜头；城市街道背景模糊虚化，金色侧光打亮发丝，画面带有轻微运动模糊营造动感；她身着棕褐色大衣，色调复古暖棕，胶片质感强烈，情绪疏离而灵动；电影感街头抓拍人像，中景浅景深，动态模糊，黄金时刻侧光，颗粒质感，8K超清', negativePrompt: NEG_PORTRAIT },
-      { src: '/images/jiumeng/46206070346a20921dc8ec48f94108c5.jpg', title: '人潮孤光', positivePrompt: '城市街头人像摄影，欧洲女性半身像，棕红色长发随风披散，身着黑色上衣，直视镜头表情沉静略带疏离；背景是虚化的人群与城市光晕，金色逆光自后方洒落形成清晰轮廓光；色调暖棕深沉，氛围孤独而诗意，胶片质感浓郁；电影感街头人像，半身中景浅景深，逆光轮廓光，散景光晕，颗粒质感，8K超清', negativePrompt: NEG_PORTRAIT },
-      { src: '/images/jiumeng/48d71822c4acd518824808e762769cc1.jpg', title: '列车上的少女', positivePrompt: '日系青春写真，一位亚洲少女坐在列车车厢内，身着黑色校服，手持一台老式DV摄像机仰望镜头；长发因风微微散落，窗外光线透入均匀照亮清透面颊，眼神纯真好奇；色调清新自然带一丝复古，氛围青春文艺；俯角构图电影感人像，中近景浅景深，自然窗光，胶片质感，通透肤质，8K超清', negativePrompt: NEG_PORTRAIT },
-      { src: '/images/jiumeng/4f38ba28ea275abf4817646bc467a89a.jpg', title: '草野仰天', positivePrompt: '黄昏逆光风景人像，一位女子身着白裙站立于高高的草丛之中，侧身仰头，发丝随风飞扬；身形轮廓化作暗色剪影，背景金黄草野与蓝天白云形成强烈对比；夕阳光晕弥漫整个画面，色调暖金通透，氛围自由辽阔；电影感风光人像，低角度仰拍，黄金时刻逆光，剪影轮廓光，光晕氛围，8K超高清', negativePrompt: NEG_PORTRAIT },
-      { src: '/images/jiumeng/558c651a0e65440b5b08cf187cf61681.jpg', title: '窗边烛光', positivePrompt: '室内光影人像，一位亚洲女性的侧脸特写，短发挽成发髻，身着白色上衣，手持一朵白色小花靠近唇边；强烈的暖黄光源自侧方打亮花朵与面颊，形成戏剧性明暗对比；背景是蓝灰冷调，与暖光构成鲜明冷暖反差，氛围静谧诗意；电影感戏剧布光人像，侧脸特写浅景深，暖光侧光，冷暖对比，细腻肤质，8K超清', negativePrompt: NEG_PORTRAIT },
-      { src: '/images/jiumeng/80db04cbd423ec62ff2447d433715abc.jpg', title: '寒风温柔', positivePrompt: '冬日户外人像摄影，一位亚洲女性仰头微闭双眼，发丝在寒风中凌乱飞扬；她围着围巾、穿着大衣，金色侧光打亮面部与发丝，暖橙色与背景深色树影形成对比；色调复古暖棕，胶片颗粒质感浓郁，情绪温柔松弛；电影感冬日人像，中近景浅景深，黄金时刻侧光，发丝透光，颗粒质感，8K超清', negativePrompt: NEG_PORTRAIT },
-      { src: '/images/jiumeng/8fc1b6f46f3c8910bb0e245e099c7d95.jpg', title: '阳光仰首', positivePrompt: '胶片人像摄影，一位女子侧脸仰望天空，栗色长发在光线中透出金色通透感；背景绿色树荫晕成柔美散景光斑，暖光强烈打亮面颊与发丝，她嘴唇微张、双眼轻闭，情绪自由恣意；色调温暖通透，胶片质感浓郁；电影感自然光人像，侧脸仰角构图，黄金时刻逆光，散景光斑，颗粒质感，8K超高清', negativePrompt: NEG_PORTRAIT },
-      { src: '/images/jiumeng/9da5170979307b41b0dbc859f752796c.jpg', title: '烛火殿堂', positivePrompt: '欧洲古典风格人像摄影，女性特写，金棕色长卷发随风扬起，身着浅色亮片礼服；橙金色强侧光打亮面部形成戏剧性光影，背景是虚化的古典建筑柱廊；她眼神深邃迷人，气质高贵神圣，色调暖金奢华，光影浓郁戏剧；电影感古典人像，特写浅景深，戏剧性侧光，柱廊散景，细腻肤质，8K超清', negativePrompt: NEG_PORTRAIT },
-      { src: '/images/jiumeng/a303ebcb3579910d8e4c081fb4fc808e.jpg', title: '闭眼感受阳光', positivePrompt: '黄金时刻户外人像，欧美女性特写，深棕色卷发蓬松飞扬，雀斑清晰可见；她双眼微闭、嘴角上扬，仰头尽情享受阳光；色调温暖金橙，浅蓝天空背景形成对比，逆光让发丝根根透光，情绪明亮惬意；电影感黄金时刻人像，特写浅景深，逆光轮廓光，发丝透光，细腻肤质，温暖氛围，8K超高清', negativePrompt: NEG_PORTRAIT },
-      { src: '/images/jiumeng/ae19095dc4d7f1cd6ae121bcaf620c02.jpg', title: '散光晶莹', positivePrompt: '梦幻室内艺术人像，一位亚洲女性的半身像，短黑发，身着透明水晶质感的薄纱上衣；阳光透过窗户折射出无数水晶散光点，如繁星般洒落全身，面部光斑与彩色折射交织；她神情若有所思地仰望，色调梦幻通透，光影绚烂诗意；艺术感室内人像，半身中景浅景深，水晶折射散光，柔和自然光，细腻质感，8K超清', negativePrompt: NEG_PORTRAIT },
-      { src: '/images/jiumeng/e4b776609066f16ba8d116dd06046b90.jpg', title: '花树绿眸', positivePrompt: '明亮户外人像摄影，欧洲女性半身像，金棕色波浪长发，清澈的绿色眼睛，皮肤上有自然雀斑；白色花树与翠绿枝叶环绕形成天然花框构图，温暖金色侧光打亮面部与发丝；色调明媚清新，绿白暖金相映，氛围唯美自然；电影感户外人像，半身中景浅景深，黄金时刻侧光，花枝前景框架，细腻肤质，8K超高清', negativePrompt: NEG_PORTRAIT },
-      { src: '/images/jiumeng/f2f20c2dd35983199121a332e504deb4.jpg', title: '霓光心事', positivePrompt: '室内暗调彩光人像摄影，欧美女性特写，短黑发卷曲蓬乱，身着白色细肩带，端坐于床上双手抱膝望向镜头；她表情忧郁迷离，背景以冷蓝色调渲染整体氛围，面部的暖橙光与冷蓝环境形成强烈冷暖对比；色调暗调霓虹，光影迷离电影感十足；暗调彩光人像，中近景浅景深，冷暖撞色布光，细腻肤质，情绪氛围，8K超清', negativePrompt: NEG_PORTRAIT },
-      { src: '/images/jiumeng/f3723fb1c43187b372249ec167c74de0.jpg', title: '光影低诉', positivePrompt: '暗调室内人像摄影，欧洲女性半侧脸，短黑发，身着黑色高领毛衣，一手托住下巴；柔和的窗光自侧方照亮面颊，色调暗绿与暖黄交融；她皮肤质感细腻，表情淡然中带着悠远思绪，光影含蓄戏剧；电影感暗调人像，半侧脸特写浅景深，柔和窗侧光，低调布光，细腻肤质，情绪氛围，8K超高清', negativePrompt: NEG_PORTRAIT },
-      { src: '/images/jiumeng/ff5f245f4595c6f28cb6db7ac53f2e6b.jpg', title: '草野夕光', positivePrompt: '黄金时刻户外人像摄影，亚洲女性特写，凌乱短发，身着条纹针织外套；背景逆光草地与夕阳形成强烈光晕，发丝被光线打亮透出通透感；她眼神直视镜头，沉静而有力，色调暖橙金黄，氛围温暖辽阔；电影感黄金时刻人像，特写浅景深，逆光轮廓光，草野散景光晕，发丝透光，颗粒质感，8K超清', negativePrompt: NEG_PORTRAIT },
+      { src: '/images/jiumeng/02aa408f3dbad1ae0ec817140976d74a.jpg', title: '风中回眸', positivePrompt: `杰作，最佳质量，8K超高清，超写实，极致精细，胶片质感，黄金时刻侧逆光，景深效果
+黄昏逆光人像，背景是暗调的绿色丘陵，一位女子侧身回望
+栗色长发被风吹散飘扬，金色夕阳的侧逆光勾勒出发丝轮廓
+面部半明半暗呈现立体层次，她身着米白色宽松衬衫
+深邃眼神透出忧郁气质，色调暗调大地色系温润
+情绪深邃忧郁
+胶片质感电影感人像，中近景浅景深，颗粒质感，发丝透光
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra realistic, extremely detailed, film texture, golden-hour rim backlight, depth of field
+dusk backlit portrait, background of dark-toned green hills, a woman glancing back over her shoulder
+chestnut long hair blown loose in the wind, golden sunset rim light outlining her strands
+her face half-lit half-shadowed with dimensional depth, wearing a loose off-white shirt
+a deep gaze carrying a melancholic aura, warm dark earth-tone palette
+a deep melancholic mood
+film-textured cinematic portrait, medium close-up shallow depth of field, grain texture, hair rim light`, negativePrompt: NEG_PORTRAIT },
+      { src: '/images/jiumeng/2fac851e876fbfe9782674e011caf2c1.jpg', title: '暮光车站', positivePrompt: `杰作，最佳质量，8K超高清，超写实，极致精细，胶片质感，暖调侧光，景深效果
+日系街头人像，一位亚洲年轻女性的特写，短发配刘海，围着米色针织围巾
+双手捧起围巾望向镜头，眼神清澈而略带忧愁
+暖橘色的侧光柔和照亮面颊，背景虚化的人群与街道车灯晕成橙色光斑
+色调温暖橙棕怀旧，情绪清澈忧愁
+电影感街头人像，中近景大光圈浅景深，散景光晕，胶片质感
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra realistic, extremely detailed, film texture, warm side light, depth of field
+Japanese-style street portrait, close-up of a young Asian woman, short hair with bangs, wrapped in a beige knit scarf
+holding the scarf up with both hands, gazing at the camera with clear yet faintly sorrowful eyes
+warm orange side light softly illuminating her cheek, the blurred crowd and street car lights melting into orange bokeh
+warm nostalgic orange-brown tones, a clear sorrowful mood
+cinematic street portrait, medium close-up wide-aperture shallow depth of field, bokeh glow, film texture`, negativePrompt: NEG_PORTRAIT },
+      { src: '/images/jiumeng/3c52e4169f22f352d00706522f631b9f.jpg', title: '百叶窗晨光', positivePrompt: `杰作，最佳质量，8K超高清，超写实，极致精细，百叶窗条纹光，镜头光晕，景深效果
+室内人像特写，一位亚洲女性的面部，短卷发，微微仰头
+温暖的金色阳光透过百叶窗投下一道道条纹光影打在脸上
+镜头光晕与散景光斑环绕四周，她眼神迷离若有所思，嘴唇微启
+色调金黄橙暖慵懒，情绪迷离出神
+电影感室内人像，特写浅景深，百叶窗条纹光，细腻肤质，温暖氛围
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra realistic, extremely detailed, venetian-blind stripe light, lens flare, depth of field
+indoor close-up portrait, an Asian woman's face, short curls, head tilted up slightly
+warm golden sunlight through venetian blinds casting bands of striped light across her face
+lens flare and bokeh spots surrounding her, a dreamy pensive gaze, lips slightly parted
+warm golden-orange lazy tones, a dreamy far-off mood
+cinematic indoor portrait, close-up shallow depth of field, venetian-blind stripe light, fine skin, warm atmosphere`, negativePrompt: NEG_PORTRAIT },
+      { src: '/images/jiumeng/4468ac007c058f47bb63b7249cdf1939.jpg', title: '街巷过客', positivePrompt: `杰作，最佳质量，8K超高清，超写实，极致精细，胶片质感，黄金时刻侧光，动态模糊
+欧洲街拍人像，金棕色长发在风中飞扬，女子侧身回头望向镜头
+城市街道背景模糊虚化，金色侧光打亮发丝，画面带有轻微运动模糊营造动感
+她身着棕褐色大衣，情绪疏离而灵动
+色调复古暖棕，胶片质感强烈
+电影感街头抓拍人像，中景浅景深，动态模糊，黄金时刻侧光，颗粒质感
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra realistic, extremely detailed, film texture, golden-hour side light, motion blur
+European street portrait, golden-brown long hair flying in the wind, a woman turning back to face the camera
+city street background blurred, golden side light catching her strands, slight motion blur adding dynamism
+wearing a tan coat, an aloof yet lively mood
+retro warm-brown tones, strong film texture
+cinematic street candid portrait, medium-shot shallow depth of field, motion blur, golden-hour side light, grain texture`, negativePrompt: NEG_PORTRAIT },
+      { src: '/images/jiumeng/46206070346a20921dc8ec48f94108c5.jpg', title: '人潮孤光', positivePrompt: `杰作，最佳质量，8K超高清，超写实，极致精细，胶片质感，逆光轮廓光，景深效果
+城市街头人像，欧洲女性半身像，棕红色长发随风披散，身着黑色上衣
+直视镜头，表情沉静略带疏离，背景是虚化的人群与城市光晕
+金色逆光自后方洒落形成清晰轮廓光，色调暖棕深沉
+氛围孤独而诗意，情绪沉静疏离
+电影感街头人像，半身中景浅景深，逆光轮廓光，散景光晕，颗粒质感
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra realistic, extremely detailed, film texture, backlit rim light, depth of field
+urban street portrait, half-body of a European woman, red-brown long hair loose in the wind, wearing a black top
+gazing straight at the camera with a calm slightly aloof expression, background of blurred crowd and city glow
+golden backlight from behind forming a clear rim light, deep warm-brown tones
+a lonely poetic atmosphere, a calm aloof mood
+cinematic street portrait, half-body medium-shot shallow depth of field, backlit rim light, bokeh glow, grain texture`, negativePrompt: NEG_PORTRAIT },
+      { src: '/images/jiumeng/48d71822c4acd518824808e762769cc1.jpg', title: '列车上的少女', positivePrompt: `杰作，最佳质量，8K超高清，超写实，极致精细，自然窗光，胶片质感，景深效果
+日系青春写真，一位亚洲少女坐在列车车厢内，身着黑色校服
+手持一台老式DV摄像机仰望镜头，长发因风微微散落
+窗外光线透入均匀照亮清透面颊，眼神纯真好奇
+色调清新自然带一丝复古，氛围青春文艺
+俯角构图电影感人像，中近景浅景深，自然窗光，通透肤质
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra realistic, extremely detailed, natural window light, film texture, depth of field
+Japanese-style youth portrait, an Asian girl sitting in a train carriage, wearing a black school uniform
+holding an old DV camcorder and looking up at the camera, long hair slightly loosened by the breeze
+window light streaming in evenly illuminating her clear cheeks, an innocent curious gaze
+fresh natural tones with a hint of retro, a youthful artistic atmosphere
+high-angle cinematic portrait, medium close-up shallow depth of field, natural window light, translucent skin`, negativePrompt: NEG_PORTRAIT },
+      { src: '/images/jiumeng/4f38ba28ea275abf4817646bc467a89a.jpg', title: '草野仰天', positivePrompt: `杰作，最佳质量，8K超高清，超写实，极致精细，黄金时刻逆光，剪影轮廓光，景深效果
+黄昏逆光风景人像，一位女子身着白裙站立于高高的草丛之中，侧身仰头，发丝随风飞扬
+身形轮廓化作暗色剪影，背景金黄草野与蓝天白云形成强烈对比
+夕阳光晕弥漫整个画面，色调暖金通透
+氛围自由辽阔，情绪畅快自由
+电影感风光人像，低角度仰拍，黄金时刻逆光，剪影轮廓光，光晕氛围
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra realistic, extremely detailed, golden-hour backlight, silhouette rim light, depth of field
+dusk backlit scenic portrait, a woman in a white dress standing amid tall grass, turned sideways with head tilted up, hair flying in the wind
+her figure reduced to a dark silhouette, background of golden grassland contrasting strongly with blue sky and white clouds
+sunset glow flooding the whole frame, warm golden translucent tones
+a free expansive atmosphere, a joyful liberated mood
+cinematic scenic portrait, low-angle upward shot, golden-hour backlight, silhouette rim light, glowing atmosphere`, negativePrompt: NEG_PORTRAIT },
+      { src: '/images/jiumeng/558c651a0e65440b5b08cf187cf61681.jpg', title: '窗边烛光', positivePrompt: `杰作，最佳质量，8K超高清，超写实，极致精细，暖光侧光，冷暖对比，景深效果
+室内光影人像，一位亚洲女性的侧脸特写，短发挽成发髻，身着白色上衣，手持一朵白色小花靠近唇边
+强烈的暖黄光源自侧方打亮花朵与面颊，形成戏剧性明暗对比
+背景是蓝灰冷调，与暖光构成鲜明冷暖反差
+氛围静谧诗意，情绪沉静
+电影感戏剧布光人像，侧脸特写浅景深，暖光侧光，冷暖对比，细腻肤质
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra realistic, extremely detailed, warm side light, cool-warm contrast, depth of field
+indoor chiaroscuro portrait, profile close-up of an Asian woman, short hair in a bun, wearing a white top, holding a small white flower near her lips
+strong warm-yellow light from the side illuminating the flower and cheek, creating dramatic light-and-shadow contrast
+a cool blue-grey background forming a striking cool-warm contrast with the warm light
+a quiet poetic atmosphere, a calm mood
+cinematic dramatic-lit portrait, profile close-up shallow depth of field, warm side light, cool-warm contrast, fine skin`, negativePrompt: NEG_PORTRAIT },
+      { src: '/images/jiumeng/80db04cbd423ec62ff2447d433715abc.jpg', title: '寒风温柔', positivePrompt: `杰作，最佳质量，8K超高清，超写实，极致精细，黄金时刻侧光，胶片颗粒，景深效果
+冬日户外人像，一位亚洲女性仰头微闭双眼，发丝在寒风中凌乱飞扬
+她围着围巾、穿着大衣，金色侧光打亮面部与发丝
+暖橙色与背景深色树影形成对比，色调复古暖棕
+情绪温柔松弛，胶片颗粒质感浓郁
+电影感冬日人像，中近景浅景深，黄金时刻侧光，发丝透光，颗粒质感
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra realistic, extremely detailed, golden-hour side light, film grain, depth of field
+winter outdoor portrait, an Asian woman tilting her head up with eyes half-closed, hair flying messily in the cold wind
+wrapped in a scarf and coat, golden side light illuminating her face and strands
+warm orange contrasting with the dark tree shadows behind, retro warm-brown tones
+a gentle relaxed mood, rich film grain texture
+cinematic winter portrait, medium close-up shallow depth of field, golden-hour side light, hair rim light, grain texture`, negativePrompt: NEG_PORTRAIT },
+      { src: '/images/jiumeng/8fc1b6f46f3c8910bb0e245e099c7d95.jpg', title: '阳光仰首', positivePrompt: `杰作，最佳质量，8K超高清，超写实，极致精细，胶片质感，黄金时刻逆光，景深效果
+胶片人像，一位女子侧脸仰望天空，栗色长发在光线中透出金色通透感
+背景绿色树荫晕成柔美散景光斑，暖光强烈打亮面颊与发丝
+她嘴唇微张、双眼轻闭，情绪自由恣意
+色调温暖通透，胶片质感浓郁
+情绪自由恣意
+电影感自然光人像，侧脸仰角构图，黄金时刻逆光，散景光斑，颗粒质感
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra realistic, extremely detailed, film texture, golden-hour backlight, depth of field
+film portrait, a woman in profile gazing up at the sky, chestnut long hair glowing translucent gold in the light
+background green foliage melting into soft bokeh spots, warm light strongly illuminating her cheek and strands
+lips slightly parted, eyes gently closed, a free unrestrained mood
+warm translucent tones, rich film texture
+a free unrestrained mood
+cinematic natural-light portrait, profile upward-angle composition, golden-hour backlight, bokeh spots, grain texture`, negativePrompt: NEG_PORTRAIT },
+      { src: '/images/jiumeng/9da5170979307b41b0dbc859f752796c.jpg', title: '烛火殿堂', positivePrompt: `杰作，最佳质量，8K超高清，超写实，极致精细，戏剧性侧光，景深效果
+欧洲古典风格人像，女性特写，金棕色长卷发随风扬起，身着浅色亮片礼服
+橙金色强侧光打亮面部形成戏剧性光影，背景是虚化的古典建筑柱廊
+她眼神深邃迷人，气质高贵神圣
+色调暖金奢华，光影浓郁戏剧
+情绪高贵深邃
+电影感古典人像，特写浅景深，戏剧性侧光，柱廊散景，细腻肤质
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra realistic, extremely detailed, dramatic side light, depth of field
+European classical-style portrait, close-up of a woman, golden-brown long curls lifting in the wind, wearing a pale sequined gown
+strong orange-gold side light illuminating her face into dramatic chiaroscuro, background of blurred classical colonnades
+a deep enchanting gaze, a noble sacred aura
+warm gold luxurious tones, rich dramatic lighting
+a noble profound mood
+cinematic classical portrait, close-up shallow depth of field, dramatic side light, colonnade bokeh, fine skin`, negativePrompt: NEG_PORTRAIT },
+      { src: '/images/jiumeng/a303ebcb3579910d8e4c081fb4fc808e.jpg', title: '闭眼感受阳光', positivePrompt: `杰作，最佳质量，8K超高清，超写实，极致精细，逆光轮廓光，景深效果
+黄金时刻户外人像，欧美女性特写，深棕色卷发蓬松飞扬，雀斑清晰可见
+她双眼微闭、嘴角上扬，仰头尽情享受阳光
+逆光让发丝根根透光，浅蓝天空背景形成对比
+色调温暖金橙，情绪明亮惬意
+氛围温暖治愈
+电影感黄金时刻人像，特写浅景深，逆光轮廓光，发丝透光，细腻肤质
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra realistic, extremely detailed, backlit rim light, depth of field
+golden-hour outdoor portrait, close-up of a Western woman, fluffy dark-brown curls flying, freckles clearly visible
+eyes half-closed, corners of her mouth lifted, head tilted up savoring the sun
+backlight making each strand glow, a pale blue sky background for contrast
+warm golden-orange tones, a bright content mood
+a warm healing atmosphere
+cinematic golden-hour portrait, close-up shallow depth of field, backlit rim light, hair rim light, fine skin`, negativePrompt: NEG_PORTRAIT },
+      { src: '/images/jiumeng/ae19095dc4d7f1cd6ae121bcaf620c02.jpg', title: '散光晶莹', positivePrompt: `杰作，最佳质量，8K超高清，超写实，极致精细，水晶折射散光，柔和自然光，景深效果
+梦幻室内艺术人像，一位亚洲女性的半身像，短黑发，身着透明水晶质感的薄纱上衣
+阳光透过窗户折射出无数水晶散光点，如繁星般洒落全身，面部光斑与彩色折射交织
+她神情若有所思地仰望，色调梦幻通透
+光影绚烂诗意，情绪出神沉思
+艺术感室内人像，半身中景浅景深，水晶折射散光，柔和自然光，细腻质感
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra realistic, extremely detailed, crystal refraction sparkle, soft natural light, depth of field
+dreamy indoor art portrait, half-body of an Asian woman, short black hair, wearing a sheer crystalline-textured gauze top
+sunlight refracting through the window into countless crystal sparkle spots scattering over her like stars, facial light spots interweaving with colored refraction
+gazing up in thought, dreamy translucent tones
+gorgeous poetic light and shadow, an entranced contemplative mood
+artistic indoor portrait, half-body medium-shot shallow depth of field, crystal refraction sparkle, soft natural light, fine texture`, negativePrompt: NEG_PORTRAIT },
+      { src: '/images/jiumeng/e4b776609066f16ba8d116dd06046b90.jpg', title: '花树绿眸', positivePrompt: `杰作，最佳质量，8K超高清，超写实，极致精细，黄金时刻侧光，景深效果
+明亮户外人像，欧洲女性半身像，金棕色波浪长发，清澈的绿色眼睛，皮肤上有自然雀斑
+白色花树与翠绿枝叶环绕形成天然花框构图，温暖金色侧光打亮面部与发丝
+色调明媚清新，绿白暖金相映
+氛围唯美自然，情绪明媚
+电影感户外人像，半身中景浅景深，黄金时刻侧光，花枝前景框架，细腻肤质
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra realistic, extremely detailed, golden-hour side light, depth of field
+bright outdoor portrait, half-body of a European woman, golden-brown wavy long hair, clear green eyes, natural freckles on her skin
+a white flowering tree and emerald foliage encircling her as a natural floral frame, warm golden side light on her face and hair
+bright fresh tones, green-white and warm gold complementing each other
+a beautiful natural atmosphere, a radiant mood
+cinematic outdoor portrait, half-body medium-shot shallow depth of field, golden-hour side light, floral foreground framing, fine skin`, negativePrompt: NEG_PORTRAIT },
+      { src: '/images/jiumeng/f2f20c2dd35983199121a332e504deb4.jpg', title: '霓光心事', positivePrompt: `杰作，最佳质量，8K超高清，超写实，极致精细，冷暖撞色布光，景深效果
+室内暗调彩光人像，欧美女性特写，短黑发卷曲蓬乱，身着白色细肩带，端坐于床上双手抱膝望向镜头
+她表情忧郁迷离，背景以冷蓝色调渲染整体氛围
+面部的暖橙光与冷蓝环境形成强烈冷暖对比
+色调暗调霓虹，光影迷离电影感十足
+情绪忧郁迷离
+暗调彩光人像，中近景浅景深，冷暖撞色布光，细腻肤质
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra realistic, extremely detailed, clashing cool-warm lighting, depth of field
+indoor low-key colored-light portrait, close-up of a Western woman, messy short black curls, wearing a white camisole, sitting on a bed hugging her knees, gazing at the camera
+a melancholic dreamy expression, the background rendered in cool blue tones setting the whole mood
+warm orange light on her face contrasting strongly with the cool blue environment
+low-key neon tones, hazy cinematic light and shadow
+a melancholic dreamy mood
+low-key colored-light portrait, medium close-up shallow depth of field, clashing cool-warm lighting, fine skin`, negativePrompt: NEG_PORTRAIT },
+      { src: '/images/jiumeng/f3723fb1c43187b372249ec167c74de0.jpg', title: '光影低诉', positivePrompt: `杰作，最佳质量，8K超高清，超写实，极致精细，柔和窗侧光，低调布光，景深效果
+暗调室内人像，欧洲女性半侧脸，短黑发，身着黑色高领毛衣，一手托住下巴
+柔和的窗光自侧方照亮面颊，色调暗绿与暖黄交融
+她皮肤质感细腻，表情淡然中带着悠远思绪
+光影含蓄戏剧，情绪淡然悠远
+电影感暗调人像，半侧脸特写浅景深，柔和窗侧光，低调布光，细腻肤质
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra realistic, extremely detailed, soft window side light, low-key lighting, depth of field
+low-key indoor portrait, three-quarter view of a European woman, short black hair, wearing a black turtleneck, one hand resting under her chin
+soft window light illuminating her cheek from the side, dark green and warm yellow tones blending
+fine skin texture, a calm expression carrying distant thoughts
+understated dramatic lighting, a calm faraway mood
+cinematic low-key portrait, three-quarter close-up shallow depth of field, soft window side light, low-key lighting, fine skin`, negativePrompt: NEG_PORTRAIT },
+      { src: '/images/jiumeng/ff5f245f4595c6f28cb6db7ac53f2e6b.jpg', title: '草野夕光', positivePrompt: `杰作，最佳质量，8K超高清，超写实，极致精细，逆光轮廓光，颗粒质感，景深效果
+黄金时刻户外人像，亚洲女性特写，凌乱短发，身着条纹针织外套
+背景逆光草地与夕阳形成强烈光晕，发丝被光线打亮透出通透感
+她眼神直视镜头，沉静而有力
+色调暖橙金黄，氛围温暖辽阔
+情绪沉静有力
+电影感黄金时刻人像，特写浅景深，逆光轮廓光，草野散景光晕，发丝透光，颗粒质感
+
+─── English ───
+masterpiece, best quality, 8K ultra HD, ultra realistic, extremely detailed, backlit rim light, grain texture, depth of field
+golden-hour outdoor portrait, close-up of an Asian woman, messy short hair, wearing a striped knit cardigan
+background of backlit grassland and setting sun forming a strong halo, her strands lit translucent by the light
+gazing straight at the camera, calm and strong
+warm orange-golden tones, a warm expansive atmosphere
+a calm powerful mood
+cinematic golden-hour portrait, close-up shallow depth of field, backlit rim light, grassland bokeh glow, hair rim light, grain texture`, negativePrompt: NEG_PORTRAIT },
     ],
   },
 
