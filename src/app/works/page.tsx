@@ -1,6 +1,9 @@
-import { works } from "@/data/content";
+import Link from "next/link";
+import { workSeries } from "@/data/works-data";
 
-const allCategories = ["全部", ...Array.from(new Set(works.map((w) => w.category)))];
+// 只展示已有图片的系列（跳过空系列如 forest / cherry）
+const series = workSeries.filter((s) => s.images.length > 0);
+const allCategories = ["全部", ...Array.from(new Set(series.map((s) => s.tag)))];
 
 export default function WorksPage() {
   return (
@@ -20,18 +23,15 @@ export default function WorksPage() {
         ))}
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {works.map((work) => (
-          <div key={work.title} className="group cursor-pointer">
-            <div className={`w-full h-64 rounded-2xl overflow-hidden mb-4 transition-transform duration-300 group-hover:-translate-y-2 group-hover:shadow-2xl`}>
-              {work.image ? (
-                <img src={work.image} alt={work.title} className="w-full h-full object-cover" />
-              ) : (
-                <div className={`w-full h-full bg-gradient-to-br ${work.color}`} />
-              )}
+        {series.map((s) => (
+          <Link key={s.slug} href={`/works/${s.slug}`} className="group cursor-pointer">
+            <div className="w-full h-64 rounded-2xl overflow-hidden mb-4 transition-transform duration-300 group-hover:-translate-y-2 group-hover:shadow-2xl">
+              <img src={s.coverImg} alt={s.title} className="w-full h-full object-cover" />
             </div>
-            <h3 className="font-semibold text-lg mb-1">{work.title}</h3>
-            <p className="text-sm text-neutral-400">{work.desc}</p>
-          </div>
+            <p className="text-xs tracking-widest text-neutral-400 uppercase mb-1">{s.tag}</p>
+            <h3 className="font-semibold text-lg mb-1">{s.title}</h3>
+            <p className="text-sm text-neutral-400">{s.description}</p>
+          </Link>
         ))}
       </div>
     </div>
