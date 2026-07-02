@@ -203,7 +203,7 @@ export default function WorkDetailPage() {
   };
 
   return (
-    <>
+    <div className="work-detail">
       {/* ── 悬浮返回按钮（始终可见） ── */}
       <button className="detail-back-btn" onClick={goBack}>
         <span className="back-arrow">←</span> 返回
@@ -222,7 +222,7 @@ export default function WorkDetailPage() {
               key={i}
               className={`detail-item detail-item--${sizeVariant}`}
               onClick={() => openModal(img)}
-              style={{ cursor: 'none', ...(isLastInCopy ? { marginRight: '5vw' } : {}) }}
+              style={{ cursor: 'pointer', ...(isLastInCopy ? { marginRight: '5vw' } : {}) }}
             >
               <img src={img.src} alt={img.title} className="detail-item-img" />
               <div className="work-item-content">
@@ -255,7 +255,7 @@ export default function WorkDetailPage() {
           <p className="about-body">{series.description}</p>
           <button
             className="about-cta"
-            style={{ background: 'none', border: 'none', fontFamily: 'inherit', cursor: 'none' }}
+            style={{ background: 'none', border: 'none', fontFamily: 'inherit', cursor: 'pointer' }}
             onClick={() => router.push('/')}
           >
             ← 返回首页
@@ -310,6 +310,6 @@ export default function WorkDetailPage() {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 }
