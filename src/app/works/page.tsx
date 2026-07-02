@@ -1,27 +1,67 @@
-import Link from "next/link";
+'use client';
+
+import { useEffect, useRef, useState } from "react";
+import { useRouter } from "next/navigation";
 import { workSeries } from "@/data/works-data";
 
 // 只展示已有图片的系列（跳过空系列如 forest / cherry）
 const series = workSeries.filter((s) => s.images.length > 0);
 const total = String(series.length).padStart(2, "0");
+const totalWorks = series.reduce((n, s) => n + s.images.length, 0);
 
 export default function WorksPage() {
+  const router = useRouter();
+  const rootRef = useRef<HTMLElement>(null);
+  const [exiting, setExiting] = useState(false);
+
+  // 首屏进场 + 滚动进场：进入视口即 .in
+  useEffect(() => {
+    const root = rootRef.current;
+    if (!root) return;
+    const els = Array.from(root.querySelectorAll<HTMLElement>(".sc-reveal"));
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add("in");
+            io.unobserve(e.target);
+          }
+        });
+      },
+      { threshold: 0.12, root }
+    );
+    els.forEach((el) => io.observe(el));
+    return () => io.disconnect();
+  }, []);
+
+  // 点击转场：藏青色板扫上来 → 再跳转
+  const go = (href: string) => (e: React.MouseEvent) => {
+    e.preventDefault();
+    if (exiting) return;
+    setExiting(true);
+    setTimeout(() => router.push(href), 620);
+  };
+
   return (
-    <main className="showcase">
+    <main className="showcase" ref={rootRef}>
+      <div className={`sc-transition${exiting ? " active" : ""}`}>
+        <span>Entering</span>
+      </div>
+
       <div className="showcase-inner">
         {/* top bar */}
-        <div className="sc-topbar">
+        <div className="sc-topbar sc-reveal">
           <span><span className="dot">●</span> XINGYAKAI — AI VISUAL WORK</span>
           <span>{total} SERIES</span>
         </div>
 
         {/* hero */}
         <header className="sc-hero">
-          <p className="sc-kicker">Selected Work / 精选作品</p>
-          <h1 className="sc-title">
+          <p className="sc-kicker sc-reveal">Selected Work / 精选作品</p>
+          <h1 className="sc-title sc-reveal" style={{ transitionDelay: "0.06s" }}>
             WORK<br />SHOW<em>CASE</em>
           </h1>
-          <p className="sc-lead">
+          <p className="sc-lead sc-reveal" style={{ transitionDelay: "0.14s" }}>
             AI 创作与视觉设计的实践探索 —— 每一个系列都是技术与美学的融合，附完整中英双语提示词。
           </p>
         </header>
@@ -29,7 +69,13 @@ export default function WorksPage() {
         {/* grid */}
         <section className="sc-grid">
           {series.map((s, i) => (
-            <Link key={s.slug} href={`/works/${s.slug}`} className="sc-card">
+            <a
+              key={s.slug}
+              href={`/works/${s.slug}`}
+              onClick={go(`/works/${s.slug}`)}
+              className="sc-card sc-reveal"
+              style={{ transitionDelay: `${(i % 3) * 0.08}s` }}
+            >
               <div className="sc-card-media">
                 <span className="sc-card-index">{String(i + 1).padStart(2, "0")}</span>
                 <span className="sc-card-go">↗</span>
@@ -40,14 +86,14 @@ export default function WorksPage() {
                 <span className="sc-card-tag">{s.tag}</span>
               </div>
               <p className="sc-card-desc">{s.description}</p>
-            </Link>
+            </a>
           ))}
         </section>
 
         {/* footer */}
-        <footer className="sc-foot">
+        <footer className="sc-foot sc-reveal">
           <span>© {new Date().getFullYear()} XINGYAKAI</span>
-          <span>{series.reduce((n, s) => n + s.images.length, 0)} WORKS · SCROLL TO EXPLORE</span>
+          <span>{totalWorks} WORKS · SCROLL TO EXPLORE</span>
         </footer>
       </div>
     </main>
