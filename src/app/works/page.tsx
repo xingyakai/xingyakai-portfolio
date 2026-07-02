@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { workSeries } from "@/data/works-data";
+import { asset } from "@/lib/asset";
 
 // 只展示已有图片的系列（跳过空系列如 forest / cherry）
 const series = workSeries.filter((s) => s.images.length > 0);
@@ -80,7 +81,7 @@ export default function WorksPage() {
               <div className="sc-card-media">
                 <span className="sc-card-index">{String(i + 1).padStart(2, "0")}</span>
                 <span className="sc-card-go">↗</span>
-                <img src={s.coverImg} alt={s.title} loading="lazy" />
+                <img src={asset(s.coverImg)} alt={s.title} loading="lazy" />
               </div>
               <div className="sc-card-foot">
                 <h2 className="sc-card-name">{s.title}</h2>

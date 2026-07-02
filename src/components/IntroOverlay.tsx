@@ -1,5 +1,6 @@
 'use client';
 import { useState, useEffect } from 'react';
+import { asset } from '@/lib/asset';
 
 export default function IntroOverlay() {
   const [visible, setVisible] = useState(true);
@@ -24,7 +25,7 @@ export default function IntroOverlay() {
       }}
     >
       <video
-        src="/intro.mp4"
+        src={asset("/intro.mp4")}
         autoPlay
         muted
         loop

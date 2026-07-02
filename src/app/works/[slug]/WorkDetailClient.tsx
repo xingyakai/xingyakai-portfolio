@@ -2,6 +2,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import { workSeries, WorkImage } from '@/data/works-data';
+import { asset } from '@/lib/asset';
 
 export default function WorkDetailPage() {
   const params  = useParams();
@@ -224,7 +225,7 @@ export default function WorkDetailPage() {
               onClick={() => openModal(img)}
               style={{ cursor: 'pointer', ...(isLastInCopy ? { marginRight: '5vw' } : {}) }}
             >
-              <img src={img.src} alt={img.title} className="detail-item-img" />
+              <img src={asset(img.src)} alt={img.title} className="detail-item-img" />
               <div className="work-item-content">
                 <div className="work-item-tag">
                   <span className="work-dot" />
@@ -278,7 +279,7 @@ export default function WorkDetailPage() {
             onClick={e => e.stopPropagation()}
           >
             <div className="prompt-modal-img-wrap">
-              <img src={selected.src} alt={selected.title} className="prompt-modal-img" />
+              <img src={asset(selected.src)} alt={selected.title} className="prompt-modal-img" />
             </div>
             <div className="prompt-modal-content">
               <div className="prompt-modal-top">

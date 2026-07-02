@@ -1,31 +1,6 @@
-/* ─── Fonts (matched to noomoagency / meech213 shell) ────────────── */
-@font-face {
-  font-family: 'DrukMedium';
-  src: url('/fonts/DrukMedium.otf') format('opentype');
-  font-weight: 500; font-style: normal; font-display: swap;
-}
-@font-face {
-  font-family: 'IBM Plex Mono';
-  src: url('/fonts/IBMPlexMono-Medium.ttf') format('truetype');
-  font-weight: 500; font-style: normal; font-display: swap;
-}
-@font-face {
-  font-family: 'OpenSauce';
-  src: url('/fonts/OpenSauceOne-Regular.ttf') format('truetype');
-  font-weight: 400; font-style: normal; font-display: swap;
-}
-@font-face {
-  font-family: 'OpenSauce';
-  src: url('/fonts/OpenSauceOne-SemiBold.ttf') format('truetype');
-  font-weight: 600; font-style: normal; font-display: swap;
-}
-@font-face {
-  font-family: 'OpenSauceBlack';
-  src: url('/fonts/OpenSauceSans-Black.ttf') format('truetype');
-  font-weight: 900; font-style: normal; font-display: swap;
-}
-
 /* ─── Design tokens ──────────────────────────────────────────────── */
+/* fonts loaded via next/font/local in layout.tsx (basePath-safe):
+   --font-druk / --font-plex / --font-sauce */
 :root {
   --c-black:   #000000;
   --c-ink:     #0b0b0b;
@@ -36,9 +11,9 @@
   --c-navy:    #1c234a;   /* deep navy */
   --c-indigo:  #1c1f70;
   --c-tint:    #edf4ff;   /* near-white blue tint */
-  --font-display: 'DrukMedium', 'Arial Narrow', sans-serif;
-  --font-mono:    'IBM Plex Mono', ui-monospace, monospace;
-  --font-body:    'OpenSauce', -apple-system, sans-serif;
+  --font-display: var(--font-druk), 'Arial Narrow', sans-serif;
+  --font-mono:    var(--font-plex), ui-monospace, monospace;
+  --font-body:    var(--font-sauce), -apple-system, sans-serif;
 }
 
 /* ─── Reset ──────────────────────────────────────────────────── */

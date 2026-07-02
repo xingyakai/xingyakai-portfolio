@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { workSeries } from '@/data/works-data';
+import { asset } from '@/lib/asset';
 
 // 轮播直接由作品系列数据生成，只展示已有图片的系列（跳过空系列如 forest / cherry）
 const WORKS = workSeries
@@ -205,7 +206,7 @@ export default function Home() {
                     style={{ cursor: 'none', ...(isLast ? { marginRight: '5vw' } : {}) }}
                     onClick={() => router.push(`/works/${w.slug}`)}
                   >
-                    <img src={w.img} alt={w.title} className="work-item-img" loading="lazy" />
+                    <img src={asset(w.img)} alt={w.title} className="work-item-img" loading="lazy" />
                     <div className="work-item-content">
                       <div className="work-item-tag">
                         <span className="work-dot" />

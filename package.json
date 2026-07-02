@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "NEXT_PUBLIC_BASE_PATH=/work next build && NEXT_PUBLIC_BASE_PATH=/work node scripts/assemble-combined.mjs",
+    "build:standalone": "next build",
     "start": "next start",
     "lint": "eslint"
   },

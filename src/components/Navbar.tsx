@@ -1,5 +1,6 @@
 'use client';
 import { useState, useEffect, useRef } from 'react';
+import { asset } from '@/lib/asset';
 
 const MENU_LINKS = [
   { label: 'Work',           href: '#work' },
@@ -63,7 +64,7 @@ export default function Navbar() {
       {/* Nav bar */}
       <nav className="nav">
         <div className="nav-left">
-          <img src="/logo.jpeg" alt="YXK" className="nav-logo-img" />
+          <img src={asset("/logo.jpeg")} alt="YXK" className="nav-logo-img" />
           <a href="#work"  className="nav-link">Work</a>
           <a href="#about" className="nav-link">About</a>
         </div>
@@ -79,7 +80,7 @@ export default function Navbar() {
       {/* Full-screen menu overlay */}
       <div className={`menu-overlay${menuOpen ? ' open' : ''}`}>
         <div className="menu-overlay-top">
-          <img src="/logo.jpeg" alt="YXK" className="nav-logo-img" />
+          <img src={asset("/logo.jpeg")} alt="YXK" className="nav-logo-img" />
           <button className="menu-close-btn" onClick={() => setMenuOpen(false)}>
             Close
           </button>
