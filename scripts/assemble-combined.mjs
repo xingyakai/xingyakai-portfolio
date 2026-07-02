@@ -37,23 +37,27 @@ for (const entry of readdirSync(SHELL)) {
   cpSync(join(SHELL, entry), join(OUT, entry), { recursive: true });
 }
 
-// 3) patch SHOWCASE href in the shell homepage + force a hard navigation
-//    (Nuxt SPA would otherwise client-route /work/works/ into its own 404;
-//     a capture-phase handler beats Nuxt's click handler and does a real load)
-const FORCE_NAV = `<script>document.addEventListener("click",function(e){var a=e.target&&e.target.closest&&e.target.closest('a[href*="/work/works"]');if(a){e.preventDefault();e.stopPropagation();window.location.href="/work/works/";}},true);</script>`;
+// 3) 把「WORK SHOWCASE」圆形按钮劫持到 /work/works/。
+//    该按钮实际包在 <a href="/contact" class="send"> 里（不是 /work 链接），
+//    且由 Nuxt SPA 接管点击 —— 按“钮内文字”匹配、capture 阶段抢先拦截 + 强制硬跳转。
+const FORCE_NAV = [
+  "<script>(function(){",
+  "function hit(t){var a=t&&t.closest&&t.closest('a');",
+  "if(a&&/WORK\\s*SHOWCASE/i.test((a.textContent||'').replace(/\\s+/g,' ')))return a;return null;}",
+  "document.addEventListener('click',function(e){if(hit(e.target)){",
+  "e.preventDefault();e.stopImmediatePropagation();e.stopPropagation();",
+  "window.location.href='/work/works/';}},true);",
+  "})();</script>",
+].join("");
 const indexPath = join(OUT, "index.html");
 if (existsSync(indexPath)) {
   let html = readFileSync(indexPath, "utf8");
-  const before = html;
-  html = html.replaceAll('href="/work"', 'href="/work/works/"');
-  if (!html.includes("/work/works")) {
-    console.warn('[assemble] 警告：未在 index.html 找到 href="/work"，SHOWCASE 未改。');
+  if (!/WORK<br>\s*SHOWCASE|WORK\s*SHOWCASE/i.test(html)) {
+    console.warn("[assemble] 警告：未在 index.html 找到 WORK SHOWCASE 按钮文字。");
   }
   html = html.replace("</body>", `${FORCE_NAV}</body>`);
-  if (html !== before) {
-    writeFileSync(indexPath, html);
-    console.log("[assemble] SHOWCASE href → /work/works/ (+ 强制硬跳转脚本)");
-  }
+  writeFileSync(indexPath, html);
+  console.log("[assemble] 注入 SHOWCASE 按钮劫持脚本 → /work/works/");
 }
 
 console.log("[assemble] 组合完成：外壳在根，作品集在 /work。");
