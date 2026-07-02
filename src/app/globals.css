@@ -1075,20 +1075,43 @@ a { color: inherit; text-decoration: none; }
 /* ── Showcase motion: intro + scroll reveal + page transition ── */
 .sc-reveal {
   opacity: 0;
-  transform: translateY(42px);
-  transition: opacity 0.9s cubic-bezier(0.16,1,0.3,1),
-              transform 0.9s cubic-bezier(0.16,1,0.3,1);
+  transform: translateY(90px);
+  transition: opacity 1.5s cubic-bezier(0.19,1,0.22,1),
+              transform 1.5s cubic-bezier(0.19,1,0.22,1);
   will-change: opacity, transform;
 }
 .sc-reveal.in { opacity: 1; transform: none; }
+
+/* cards travel further + settle with a slight scale for more weight */
+.sc-card.sc-reveal { transform: translateY(110px) scale(0.965); }
+.sc-card.sc-reveal.in { transform: none; }
+/* the cover image drifts in from an over-scale (ken-burns settle) */
+.sc-card.sc-reveal .sc-card-media img {
+  transform: scale(1.22);
+  transition: transform 1.7s cubic-bezier(0.19,1,0.22,1);
+}
+.sc-card.sc-reveal.in .sc-card-media img { transform: scale(1.02); }
+.sc-card.sc-reveal.in:hover .sc-card-media img { transform: scale(1.09); transition-duration: 0.9s; }
+
+/* big headline reveals line-by-line from behind a mask */
+.sc-title.sc-reveal { opacity: 1; transform: none; }
+.sc-title .sc-line { display: block; overflow: hidden; padding-bottom: 0.06em; }
+.sc-title .sc-line > span {
+  display: block;
+  transform: translateY(118%);
+  transition: transform 1.25s cubic-bezier(0.76,0,0.24,1);
+}
+.sc-title.in .sc-line > span { transform: translateY(0); }
+.sc-title.in .sc-line:nth-child(1) > span { transition-delay: 0.15s; }
+.sc-title.in .sc-line:nth-child(2) > span { transition-delay: 0.30s; }
 
 .sc-transition {
   position: fixed;
   inset: 0;
   z-index: 600;
   background: var(--c-navy);
-  transform: translateY(100%);
-  transition: transform 0.62s cubic-bezier(0.76,0,0.24,1);
+  transform: translateY(101%);
+  transition: transform 0.85s cubic-bezier(0.83,0,0.17,1);
   display: grid;
   place-items: center;
   pointer-events: none;
@@ -1096,17 +1119,18 @@ a { color: inherit; text-decoration: none; }
 .sc-transition.active { transform: translateY(0); }
 .sc-transition span {
   font-family: var(--font-mono);
-  letter-spacing: 0.34em;
+  letter-spacing: 0.4em;
   text-transform: uppercase;
   color: #fff;
-  font-size: 0.78rem;
+  font-size: 0.9rem;
   opacity: 0;
-  transform: translateY(8px);
-  transition: opacity 0.4s ease 0.22s, transform 0.4s ease 0.22s;
+  transform: translateY(22px);
+  transition: opacity 0.55s ease 0.32s, transform 0.7s cubic-bezier(0.19,1,0.22,1) 0.32s;
 }
 .sc-transition.active span { opacity: 1; transform: translateY(0); }
 
 @media (prefers-reduced-motion: reduce) {
-  .sc-reveal { opacity: 1; transform: none; transition: none; }
+  .sc-reveal, .sc-card.sc-reveal, .sc-card.sc-reveal .sc-card-media img,
+  .sc-title .sc-line > span { opacity: 1; transform: none; transition: none; }
   .sc-transition { display: none; }
 }

@@ -39,7 +39,7 @@ export default function WorksPage() {
     e.preventDefault();
     if (exiting) return;
     setExiting(true);
-    setTimeout(() => router.push(href), 620);
+    setTimeout(() => router.push(href), 950);
   };
 
   return (
@@ -57,11 +57,12 @@ export default function WorksPage() {
 
         {/* hero */}
         <header className="sc-hero">
-          <p className="sc-kicker sc-reveal">Selected Work / 精选作品</p>
-          <h1 className="sc-title sc-reveal" style={{ transitionDelay: "0.06s" }}>
-            WORK<br />SHOW<em>CASE</em>
+          <p className="sc-kicker sc-reveal" style={{ transitionDelay: "0.1s" }}>Selected Work / 精选作品</p>
+          <h1 className="sc-title sc-reveal">
+            <span className="sc-line"><span>WORK</span></span>
+            <span className="sc-line"><span>SHOW<em>CASE</em></span></span>
           </h1>
-          <p className="sc-lead sc-reveal" style={{ transitionDelay: "0.14s" }}>
+          <p className="sc-lead sc-reveal" style={{ transitionDelay: "0.5s" }}>
             AI 创作与视觉设计的实践探索 —— 每一个系列都是技术与美学的融合，附完整中英双语提示词。
           </p>
         </header>
@@ -74,7 +75,7 @@ export default function WorksPage() {
               href={`/works/${s.slug}`}
               onClick={go(`/works/${s.slug}`)}
               className="sc-card sc-reveal"
-              style={{ transitionDelay: `${(i % 3) * 0.08}s` }}
+              style={{ transitionDelay: `${(i % 3) * 0.13}s` }}
             >
               <div className="sc-card-media">
                 <span className="sc-card-index">{String(i + 1).padStart(2, "0")}</span>
