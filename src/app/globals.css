@@ -1,3 +1,46 @@
+/* ─── Fonts (matched to noomoagency / meech213 shell) ────────────── */
+@font-face {
+  font-family: 'DrukMedium';
+  src: url('/fonts/DrukMedium.otf') format('opentype');
+  font-weight: 500; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('/fonts/IBMPlexMono-Medium.ttf') format('truetype');
+  font-weight: 500; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'OpenSauce';
+  src: url('/fonts/OpenSauceOne-Regular.ttf') format('truetype');
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'OpenSauce';
+  src: url('/fonts/OpenSauceOne-SemiBold.ttf') format('truetype');
+  font-weight: 600; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'OpenSauceBlack';
+  src: url('/fonts/OpenSauceSans-Black.ttf') format('truetype');
+  font-weight: 900; font-style: normal; font-display: swap;
+}
+
+/* ─── Design tokens ──────────────────────────────────────────────── */
+:root {
+  --c-black:   #000000;
+  --c-ink:     #0b0b0b;
+  --c-white:   #ffffff;
+  --c-mist:    #d3d5e7;   /* pale lavender-grey */
+  --c-peri:    #96bbff;   /* periwinkle accent */
+  --c-peri-2:  #b4cbf5;
+  --c-navy:    #1c234a;   /* deep navy */
+  --c-indigo:  #1c1f70;
+  --c-tint:    #edf4ff;   /* near-white blue tint */
+  --font-display: 'DrukMedium', 'Arial Narrow', sans-serif;
+  --font-mono:    'IBM Plex Mono', ui-monospace, monospace;
+  --font-body:    'OpenSauce', -apple-system, sans-serif;
+}
+
 /* ─── Reset ──────────────────────────────────────────────────── */
 *, *::before, *::after {
   margin: 0;
@@ -831,3 +874,197 @@ a { color: inherit; text-decoration: none; }
   }
   .about-section { grid-template-columns: 1fr; gap: 3rem; padding: 5rem 1.5rem; }
 }
+
+/* ═══════════════════════════════════════════════════════════════════
+   SHOWCASE — works listing restyled to noomoagency / meech213 language
+   ═══════════════════════════════════════════════════════════════════ */
+.showcase {
+  position: fixed;
+  inset: 0;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: var(--c-black);
+  color: var(--c-white);
+  font-family: var(--font-body);
+  scrollbar-width: none;
+}
+.showcase::-webkit-scrollbar { display: none; }
+
+.showcase-inner {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 9vh 6vw 12vh;
+}
+
+/* ── Header ── */
+.sc-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--c-mist);
+  padding-bottom: 3.5vh;
+}
+.sc-topbar .dot { color: var(--c-peri); }
+
+.sc-hero {
+  border-top: 1px solid rgba(255,255,255,0.14);
+  padding-top: 3vh;
+  margin-bottom: 7vh;
+}
+.sc-kicker {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--c-peri);
+  margin-bottom: 1.4rem;
+  display: flex; align-items: center; gap: 0.7rem;
+}
+.sc-kicker::before {
+  content: ''; width: 26px; height: 1px; background: var(--c-peri);
+}
+.sc-title {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(3.2rem, 11vw, 12rem);
+  line-height: 0.86;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+.sc-title em {
+  font-style: normal;
+  color: var(--c-black);
+  -webkit-text-stroke: 1.4px var(--c-mist);
+}
+.sc-lead {
+  margin-top: 2.4rem;
+  max-width: 40ch;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.62);
+}
+
+/* ── Grid ── */
+.sc-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4vh 2.2vw;
+}
+.sc-card {
+  display: block;
+  cursor: none;
+  border-top: 1px solid rgba(255,255,255,0.12);
+  padding-top: 1.4rem;
+}
+.sc-card-media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: #101018;
+  border-radius: 2px;
+}
+.sc-card-media img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  filter: grayscale(0.35) brightness(0.82);
+  transform: scale(1.02);
+  transition: transform 0.9s cubic-bezier(0.16,1,0.3,1),
+              filter 0.9s cubic-bezier(0.16,1,0.3,1);
+}
+.sc-card:hover .sc-card-media img {
+  transform: scale(1.08);
+  filter: grayscale(0) brightness(1);
+}
+.sc-card-index {
+  position: absolute;
+  top: 1rem; left: 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: var(--c-white);
+  mix-blend-mode: difference;
+  z-index: 2;
+}
+.sc-card-go {
+  position: absolute;
+  bottom: 1rem; right: 1rem;
+  width: 2.6rem; height: 2.6rem;
+  border-radius: 50%;
+  background: var(--c-peri);
+  color: var(--c-black);
+  display: grid; place-items: center;
+  font-size: 1rem;
+  opacity: 0;
+  transform: translateY(10px) rotate(-30deg);
+  transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.16,1,0.3,1);
+  z-index: 2;
+}
+.sc-card:hover .sc-card-go { opacity: 1; transform: translateY(0) rotate(0); }
+
+.sc-card-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.1rem 0.1rem 0;
+}
+.sc-card-name {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(1.2rem, 1.9vw, 1.9rem);
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  transition: color 0.4s ease;
+}
+.sc-card:hover .sc-card-name { color: var(--c-peri); }
+.sc-card-tag {
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--c-mist);
+  white-space: nowrap;
+  padding-top: 0.35rem;
+}
+.sc-card-desc {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  line-height: 1.55;
+  color: rgba(255,255,255,0.5);
+  padding: 0.7rem 0.1rem 0;
+}
+
+/* ── Footer strip ── */
+.sc-foot {
+  margin-top: 9vh;
+  border-top: 1px solid rgba(255,255,255,0.14);
+  padding-top: 2.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--c-mist);
+}
+
+@media (max-width: 991px) {
+  .sc-grid { grid-template-columns: repeat(2, 1fr); }
+  .showcase-inner { padding: 8vh 6vw 12vh; }
+}
+@media (max-width: 640px) {
+  .sc-grid { grid-template-columns: 1fr; }
+  .sc-topbar { font-size: 0.62rem; }
+}
+
+/* showcase listing uses a normal pointer (no custom cursor on this route) */
+.showcase, .showcase * { cursor: auto; }
+.showcase .sc-card, .showcase a { cursor: pointer; }
