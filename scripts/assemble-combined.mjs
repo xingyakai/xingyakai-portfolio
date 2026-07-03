@@ -45,19 +45,21 @@ for (const entry of readdirSync(SHELL)) {
 //  B) 点击/按下落在 a.send 圆圈范围内 → 抢先跳转
 //  C) 兜底：若刚在按钮上按下、随后发生 history.pushState 客户端导航 → 重定向
 // 附 [SC] 控制台日志便于诊断。
-// Noomo 点 SHOWCASE 是在原地渲染 contact 组件（URL 不变），push 跳转后返回会被
-// bfcache 恢复成 contact 那一屏。所以必须“拦住点击事件本身”，让 contact 根本不渲染，
-// 首页保持首页状态，再整页跳作品集 → 返回恢复的是首页而非 contact。
+// 点 SHOWCASE 不跳走，而是在外壳上盖一个全屏 iframe 浮层加载作品集；外壳原地不动。
+// 作品集里点“返回”→ postMessage('sc-close') → 移除浮层 → 秒回 showcase。彻底避开
+// Noomo 的 contact 渲染 / bfcache / 重播 START 等所有问题。
 const FORCE_NAV = [
   "<script>(function(){",
-  "var done=false,TARGET='/work/works/';",
+  "var open=false,TARGET='/work/works/';",
   "function log(){try{console.log.apply(console,['[SC]'].concat([].slice.call(arguments)));}catch(e){}}",
   "function scEl(){var a=document.querySelector('a.send');if(a)return a.querySelector('.circle')||a;return null;}",
   "function inSC(x,y){var el=scEl();if(!el||x==null)return false;var r=el.getBoundingClientRect();if(r.width<2||r.height<2)return false;return x>=r.left&&x<=r.right&&y>=r.top&&y<=r.bottom;}",
-  // 对落在圆圈内的每个事件都拦截(阻止 Noomo 渲染 contact)，导航只做一次
-  "function block(e){if(e.clientX==null)return;if(inSC(e.clientX,e.clientY)){if(e.preventDefault)e.preventDefault();if(e.stopImmediatePropagation)e.stopImmediatePropagation();if(e.stopPropagation)e.stopPropagation();if(!done){done=true;log('showcase hit @'+e.type+' -> portfolio (blocked shell)');window.location.href=TARGET;}}}",
+  "function openP(){if(open||document.getElementById('__scf'))return;open=true;var f=document.createElement('iframe');f.id='__scf';f.src=TARGET;f.setAttribute('allow','autoplay; clipboard-write');f.style.cssText='position:fixed;inset:0;width:100vw;height:100vh;border:0;margin:0;z-index:2147483647;background:#eef3fd;';(document.body||document.documentElement).appendChild(f);document.documentElement.style.overflow='hidden';if(document.body)document.body.style.overflow='hidden';log('portfolio iframe opened');}",
+  "function closeP(){var f=document.getElementById('__scf');if(f)f.remove();document.documentElement.style.overflow='';if(document.body)document.body.style.overflow='';open=false;log('portfolio closed');}",
+  "window.addEventListener('message',function(e){if(e&&e.data==='sc-close')closeP();},false);",
+  "function block(e){if(e.clientX==null)return;if(inSC(e.clientX,e.clientY)){if(e.preventDefault)e.preventDefault();if(e.stopImmediatePropagation)e.stopImmediatePropagation();if(e.stopPropagation)e.stopPropagation();log('showcase hit @'+e.type+' -> open overlay');openP();}}",
   "['pointerdown','mousedown','pointerup','mouseup','click','auxclick'].forEach(function(t){window.addEventListener(t,block,true);document.addEventListener(t,block,true);});",
-  "log('interceptor active v4 (block+nav)');",
+  "log('interceptor active v5 (iframe overlay)');",
   "})();</script>",
 ].join("");
 const indexPath = join(OUT, "index.html");

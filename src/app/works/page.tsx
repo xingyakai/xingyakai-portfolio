@@ -43,9 +43,13 @@ export default function WorksPage() {
     setTimeout(() => router.push(href), 950);
   };
 
-  // 返回：回到上一页（外壳里点 SHOWCASE 的位置），而不是跳回外壳首页
+  // 返回：若作为浮层内嵌在外壳里(iframe)，通知外壳关闭浮层 → 秒回 showcase；
+  // 否则(独立访问)回上一页或站根。
   const backToShell = () => {
-    if (typeof window !== "undefined" && window.history.length > 1) {
+    if (typeof window === "undefined") return;
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage("sc-close", "*");
+    } else if (window.history.length > 1) {
       window.history.back();
     } else {
       window.location.href = "/";
