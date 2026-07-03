@@ -40,13 +40,19 @@ for (const entry of readdirSync(SHELL)) {
 // 3) 把「WORK SHOWCASE」圆形按钮劫持到 /work/works/。
 //    该按钮实际包在 <a href="/contact" class="send"> 里（不是 /work 链接），
 //    且由 Nuxt SPA 接管点击 —— 按“钮内文字”匹配、capture 阶段抢先拦截 + 强制硬跳转。
+// Noomo 用自定义指针系统，可能在 pointerdown/up 触发导航并吞掉原生 click，
+// 所以对多种事件都在 window+document 捕获阶段拦截，谁先命中谁跳转。
 const FORCE_NAV = [
-  "<script>(function(){",
-  "function hit(t){var a=t&&t.closest&&t.closest('a');",
-  "if(a&&/WORK\\s*SHOWCASE/i.test((a.textContent||'').replace(/\\s+/g,' ')))return a;return null;}",
-  "document.addEventListener('click',function(e){if(hit(e.target)){",
-  "e.preventDefault();e.stopImmediatePropagation();e.stopPropagation();",
-  "window.location.href='/work/works/';}},true);",
+  "<script>(function(){var done=false;",
+  "function isSC(t){if(!t||!t.closest)return false;",
+  "var a=t.closest('a');if(a&&/WORK\\s*SHOWCASE/i.test((a.textContent||'').replace(/\\s+/g,' ')))return true;",
+  "var c=t.closest('.circle,.send');if(c&&/WORK\\s*SHOWCASE/i.test((c.textContent||'').replace(/\\s+/g,' ')))return true;",
+  "return false;}",
+  "function h(e){if(done)return;if(isSC(e.target)){done=true;",
+  "if(e.preventDefault)e.preventDefault();if(e.stopImmediatePropagation)e.stopImmediatePropagation();if(e.stopPropagation)e.stopPropagation();",
+  "window.location.href='/work/works/';}}",
+  "['pointerdown','mousedown','pointerup','mouseup','click'].forEach(function(t){",
+  "document.addEventListener(t,h,true);window.addEventListener(t,h,true);});",
   "})();</script>",
 ].join("");
 const indexPath = join(OUT, "index.html");
