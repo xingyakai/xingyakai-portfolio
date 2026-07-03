@@ -52,9 +52,11 @@ const FORCE_NAV = [
   "function scEl(){var a=document.querySelector('a.send');if(a)return a.querySelector('.circle')||a;return null;}",
   "function inSC(x,y){var el=scEl();if(!el||x==null)return false;var r=el.getBoundingClientRect();if(r.width<2||r.height<2)return false;return x>=r.left&&x<=r.right&&y>=r.top&&y<=r.bottom;}",
   "function go(why){if(done)return;done=true;log('redirect via',why);window.location.href=TARGET;}",
-  "function press(e){if(done||e.clientX==null)return;if(inSC(e.clientX,e.clientY)){pressT=Date.now();log('press in showcase @'+e.type);if(e.preventDefault)e.preventDefault();if(e.stopImmediatePropagation)e.stopImmediatePropagation();if(e.stopPropagation)e.stopPropagation();go('press@'+e.type);}}",
-  "['pointerdown','mousedown','pointerup','mouseup','click'].forEach(function(t){window.addEventListener(t,press,true);document.addEventListener(t,press,true);});",
-  "function wrap(name){var o=history[name];if(!o||o.__scw)return;var f=function(s,t,u){if(!done&&Date.now()-pressT<1600){go(name+' '+u);return;}return o.apply(this,arguments);};f.__scw=1;history[name]=f;}",
+  // 命中 SHOWCASE 时，对每一个相关事件都拦截(preventDefault+stop)，阻止 Noomo 跳到 /contact；导航只做一次
+  "function press(e){if(e.clientX==null)return;if(inSC(e.clientX,e.clientY)){pressT=Date.now();if(e.preventDefault)e.preventDefault();if(e.stopImmediatePropagation)e.stopImmediatePropagation();if(e.stopPropagation)e.stopPropagation();if(!done){log('press in showcase @'+e.type);go('press@'+e.type);}}}",
+  "['pointerdown','mousedown','pointerup','mouseup','click','auxclick'].forEach(function(t){window.addEventListener(t,press,true);document.addEventListener(t,press,true);});",
+  // 兜底：万一 Noomo 仍触发客户端导航，用 replace 覆盖当前历史项，避免 /contact 残留在历史里
+  "function wrap(name){var o=history[name];if(!o||o.__scw)return;var f=function(s,t,u){if(Date.now()-pressT<2000){log(name+' intercepted',u);if(!done){done=true;window.location.replace(TARGET);}return;}return o.apply(this,arguments);};f.__scw=1;history[name]=f;}",
   "wrap('pushState');wrap('replaceState');",
   "log('interceptor active (a.send, translate-proof)');",
   "})();</script>",
