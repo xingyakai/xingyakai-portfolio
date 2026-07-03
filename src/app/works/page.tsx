@@ -43,6 +43,11 @@ export default function WorksPage() {
     setTimeout(() => router.push(href), 950);
   };
 
+  // 返回 noomoagency 外壳首页（站根，绕过 basePath 的硬跳转）
+  const backToShell = () => {
+    window.location.href = "/";
+  };
+
   return (
     <main className="showcase" ref={rootRef}>
       <div className={`sc-transition${exiting ? " active" : ""}`}>
@@ -52,7 +57,12 @@ export default function WorksPage() {
       <div className="showcase-inner">
         {/* top bar */}
         <div className="sc-topbar sc-reveal">
-          <span><span className="dot">●</span> XINGYAKAI — AI VISUAL WORK</span>
+          <span className="sc-topbar-left">
+            <button className="sc-back" onClick={backToShell}>
+              <span className="sc-back-arrow">←</span> 返回主站
+            </button>
+            <span className="sc-brand"><span className="dot">●</span> XINGYAKAI — AI VISUAL WORK</span>
+          </span>
           <span>{total} SERIES</span>
         </div>
 

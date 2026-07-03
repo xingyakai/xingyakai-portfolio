@@ -1232,3 +1232,23 @@ a { color: inherit; text-decoration: none; }
   background: var(--c-navy);
   border-color: var(--c-navy);
 }
+
+/* showcase top-bar back-to-shell button */
+.sc-topbar-left { display: flex; align-items: center; gap: 1.4rem; flex-wrap: wrap; }
+.sc-back {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--c-navy);
+  background: rgba(247,250,255,0.65);
+  border: 1px solid rgba(28,35,74,0.28);
+  border-radius: 999px;
+  padding: 0.5rem 1.05rem;
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+.sc-back:hover { background: var(--c-navy); color: #fff; border-color: var(--c-navy); transform: translateX(-2px); }
+.sc-back-arrow { font-size: 0.9rem; line-height: 1; }
+@media (max-width: 640px) { .sc-brand { display: none; } }
