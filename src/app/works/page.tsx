@@ -43,9 +43,13 @@ export default function WorksPage() {
     setTimeout(() => router.push(href), 950);
   };
 
-  // 返回 noomoagency 外壳首页（站根，绕过 basePath 的硬跳转）
+  // 返回：回到上一页（外壳里点 SHOWCASE 的位置），而不是跳回外壳首页
   const backToShell = () => {
-    window.location.href = "/";
+    if (typeof window !== "undefined" && window.history.length > 1) {
+      window.history.back();
+    } else {
+      window.location.href = "/";
+    }
   };
 
   return (
@@ -59,7 +63,7 @@ export default function WorksPage() {
         <div className="sc-topbar sc-reveal">
           <span className="sc-topbar-left">
             <button className="sc-back" onClick={backToShell}>
-              <span className="sc-back-arrow">←</span> 返回主站
+              <span className="sc-back-arrow">←</span> 返回
             </button>
             <span className="sc-brand"><span className="dot">●</span> XINGYAKAI — AI VISUAL WORK</span>
           </span>
