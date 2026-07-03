@@ -57,7 +57,7 @@ const FORCE_NAV = [
   "function openP(){if(open||document.getElementById('__scf'))return;open=true;var f=document.createElement('iframe');f.id='__scf';f.src=TARGET;f.setAttribute('allow','autoplay; clipboard-write');f.style.cssText='position:fixed;inset:0;width:100vw;height:100vh;border:0;margin:0;z-index:2147483647;background:#eef3fd;';(document.body||document.documentElement).appendChild(f);document.documentElement.style.overflow='hidden';if(document.body)document.body.style.overflow='hidden';log('portfolio iframe opened');}",
   "function closeP(){var f=document.getElementById('__scf');if(f)f.remove();document.documentElement.style.overflow='';if(document.body)document.body.style.overflow='';open=false;log('portfolio closed');}",
   "window.addEventListener('message',function(e){if(e&&e.data==='sc-close')closeP();},false);",
-  "function block(e){if(e.clientX==null)return;if(inSC(e.clientX,e.clientY)){if(e.preventDefault)e.preventDefault();if(e.stopImmediatePropagation)e.stopImmediatePropagation();if(e.stopPropagation)e.stopPropagation();log('showcase hit @'+e.type+' -> open overlay');openP();}}",
+  "function block(e){var a=(e.target&&e.target.closest)?e.target.closest('a.send'):null;if(!a&&e.clientX!=null&&inSC(e.clientX,e.clientY))a=scEl();if(!a)return;if(e.preventDefault)e.preventDefault();if(e.stopImmediatePropagation)e.stopImmediatePropagation();if(e.stopPropagation)e.stopPropagation();log('showcase hit @'+e.type+' -> open overlay');openP();}",
   "['pointerdown','mousedown','pointerup','mouseup','click','auxclick'].forEach(function(t){window.addEventListener(t,block,true);document.addEventListener(t,block,true);});",
   "log('interceptor active v5 (iframe overlay)');",
   "})();</script>",
