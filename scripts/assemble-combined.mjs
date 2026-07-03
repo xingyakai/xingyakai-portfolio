@@ -40,21 +40,27 @@ for (const entry of readdirSync(SHELL)) {
 // 3) 把「WORK SHOWCASE」圆形按钮劫持到 /work/works/。
 //    该按钮实际包在 <a href="/contact" class="send"> 里（不是 /work 链接），
 //    且由 Nuxt SPA 接管点击 —— 按“钮内文字”匹配、capture 阶段抢先拦截 + 强制硬跳转。
-// Noomo 用 #smooth-wrapper 平滑滚动 + 自定义指针系统，点击可能被覆盖层/canvas 吞掉，
-// 且导航走 Nuxt 客户端路由。所以用「坐标命中检测」：只要指针落在 WORK SHOWCASE 圆圈
-// 的屏幕范围内，就在 window+document 捕获阶段抢先跳转（多事件兜底 + 目标匹配兜底）。
+// 双保险拦截 WORK SHOWCASE：
+//  A) 记录最后指针坐标（即使被覆盖层吞，pointer 事件仍先经 window 捕获到达这里）
+//  B) 直接命中：点击坐标落在 SHOWCASE 圆圈内 → 抢先跳转
+//  C) 兜底：monkey-patch history.pushState/replaceState —— 只要发生客户端导航、
+//     且最后指针在圆圈内，就重定向到作品集（无需知道目标路径）
+// 附 [SC] 控制台日志，便于线上诊断。
 const FORCE_NAV = [
-  "<script>(function(){var done=false;",
-  "function scEl(){var q=document.querySelectorAll('.circle,.inner-circle,a.send,a');",
-  "for(var i=0;i<q.length;i++){if(/WORK\\s*SHOWCASE/i.test((q[i].textContent||'').replace(/\\s+/g,' ')))return q[i];}return null;}",
-  "function fire(e){done=true;if(e&&e.preventDefault)e.preventDefault();if(e&&e.stopImmediatePropagation)e.stopImmediatePropagation();if(e&&e.stopPropagation)e.stopPropagation();window.location.href='/work/works/';}",
-  "function h(e){if(done)return;var el=scEl();if(!el)return;",
-  "var t=e.target;if(t&&t.closest&&(t.closest('a.send')||t.closest('.circle'))){var m=t.closest('a.send')||t.closest('.circle');if(/WORK\\s*SHOWCASE/i.test((m.textContent||'').replace(/\\s+/g,' ')))return fire(e);}",
-  "var r=el.getBoundingClientRect();if(r.width<2||r.height<2)return;",
-  "var x=e.clientX,y=e.clientY;if(x==null)return;",
-  "if(x>=r.left&&x<=r.right&&y>=r.top&&y<=r.bottom)return fire(e);}",
-  "['pointerdown','mousedown','pointerup','mouseup','click'].forEach(function(t){",
-  "document.addEventListener(t,h,true);window.addEventListener(t,h,true);});",
+  "<script>(function(){",
+  "var lx=-1,ly=-1,done=false;var TARGET='/work/works/';",
+  "function log(){try{console.log.apply(console,['[SC]'].concat([].slice.call(arguments)));}catch(e){}}",
+  "function scRect(){var q=document.querySelectorAll('.circle,.inner-circle,a.send');",
+  "for(var i=0;i<q.length;i++){if(/WORK\\s*SHOWCASE/i.test((q[i].textContent||'').replace(/\\s+/g,' '))){var r=q[i].getBoundingClientRect();if(r.width>2&&r.height>2)return r;}}return null;}",
+  "function inSC(){var r=scRect();if(!r)return false;return lx>=r.left&&lx<=r.right&&ly>=r.top&&ly<=r.bottom;}",
+  "function goPortfolio(why){if(done)return;done=true;log('redirect via',why);window.location.href=TARGET;}",
+  "function rec(e){if(e&&e.clientX!=null){lx=e.clientX;ly=e.clientY;}}",
+  "function hit(e){rec(e);if(done)return;if(inSC()){if(e&&e.preventDefault)e.preventDefault();if(e&&e.stopImmediatePropagation)e.stopImmediatePropagation();if(e&&e.stopPropagation)e.stopPropagation();goPortfolio('click@'+e.type);}}",
+  "['pointermove','mousemove','pointerover'].forEach(function(t){window.addEventListener(t,rec,true);document.addEventListener(t,rec,true);});",
+  "['pointerdown','mousedown','pointerup','mouseup','click'].forEach(function(t){window.addEventListener(t,hit,true);document.addEventListener(t,hit,true);});",
+  "function wrap(name){var o=history[name];if(!o||o.__scw)return;var f=function(s,t,u){if(!done&&inSC()){goPortfolio(name+' '+u);return;}return o.apply(this,arguments);};f.__scw=1;history[name]=f;}",
+  "wrap('pushState');wrap('replaceState');",
+  "log('interceptor active');",
   "})();</script>",
 ].join("");
 const indexPath = join(OUT, "index.html");
