@@ -45,22 +45,19 @@ for (const entry of readdirSync(SHELL)) {
 //  B) 点击/按下落在 a.send 圆圈范围内 → 抢先跳转
 //  C) 兜底：若刚在按钮上按下、随后发生 history.pushState 客户端导航 → 重定向
 // 附 [SC] 控制台日志便于诊断。
+// Noomo 点 SHOWCASE 是在原地渲染 contact 组件（URL 不变），push 跳转后返回会被
+// bfcache 恢复成 contact 那一屏。所以必须“拦住点击事件本身”，让 contact 根本不渲染，
+// 首页保持首页状态，再整页跳作品集 → 返回恢复的是首页而非 contact。
 const FORCE_NAV = [
   "<script>(function(){",
-  "var done=false,pressT=0,TARGET='/work/works/';",
+  "var done=false,TARGET='/work/works/';",
   "function log(){try{console.log.apply(console,['[SC]'].concat([].slice.call(arguments)));}catch(e){}}",
   "function scEl(){var a=document.querySelector('a.send');if(a)return a.querySelector('.circle')||a;return null;}",
   "function inSC(x,y){var el=scEl();if(!el||x==null)return false;var r=el.getBoundingClientRect();if(r.width<2||r.height<2)return false;return x>=r.left&&x<=r.right&&y>=r.top&&y<=r.bottom;}",
-  "function go(replace,why){if(done)return;done=true;log('redirect',why,replace?'(replace)':'(push)');if(replace)window.location.replace(TARGET);else window.location.href=TARGET;}",
-  // 只记录“最近在按钮上按下/点了”，不拦事件、不阻止 Noomo 自己跳
-  "function rec(e){if(e.clientX!=null&&inSC(e.clientX,e.clientY)){pressT=Date.now();log('press recorded @'+e.type);}}",
-  "['pointerdown','mousedown','pointerup','click'].forEach(function(t){window.addEventListener(t,rec,true);document.addEventListener(t,rec,true);});",
-  // 主机制：Noomo 客户端导航(pushState 到 /contact)后，若刚点过按钮，就用 replace 把这个历史项换成作品集 → 历史保持[首页,作品集]
-  "function wrap(name){var o=history[name];if(!o||o.__scw)return;var f=function(s,t,u){var r=o.apply(this,arguments);if(!done&&Date.now()-pressT<2500){go(true,name+' '+u);}return r;};f.__scw=1;history[name]=f;}",
-  "wrap('pushState');wrap('replaceState');",
-  // 兜底：点了按钮但 Noomo 没走 pushState(比如整页跳)，400ms 后仍在原地就 push 过去(保留首页在历史里)
-  "window.addEventListener('click',function(e){if(inSC(e.clientX,e.clientY)){var p=location.pathname;setTimeout(function(){if(!done&&location.pathname===p){go(false,'click-fallback');}},400);}},true);",
-  "log('interceptor active v2 (replace-on-nav)');",
+  // 对落在圆圈内的每个事件都拦截(阻止 Noomo 渲染 contact)，导航只做一次
+  "function block(e){if(e.clientX==null)return;if(inSC(e.clientX,e.clientY)){if(e.preventDefault)e.preventDefault();if(e.stopImmediatePropagation)e.stopImmediatePropagation();if(e.stopPropagation)e.stopPropagation();if(!done){done=true;log('showcase hit @'+e.type+' -> portfolio (blocked shell)');window.location.href=TARGET;}}}",
+  "['pointerdown','mousedown','pointerup','mouseup','click','auxclick'].forEach(function(t){window.addEventListener(t,block,true);document.addEventListener(t,block,true);});",
+  "log('interceptor active v4 (block+nav)');",
   "})();</script>",
 ].join("");
 const indexPath = join(OUT, "index.html");
