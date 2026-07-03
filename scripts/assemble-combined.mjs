@@ -40,17 +40,19 @@ for (const entry of readdirSync(SHELL)) {
 // 3) 把「WORK SHOWCASE」圆形按钮劫持到 /work/works/。
 //    该按钮实际包在 <a href="/contact" class="send"> 里（不是 /work 链接），
 //    且由 Nuxt SPA 接管点击 —— 按“钮内文字”匹配、capture 阶段抢先拦截 + 强制硬跳转。
-// Noomo 用自定义指针系统，可能在 pointerdown/up 触发导航并吞掉原生 click，
-// 所以对多种事件都在 window+document 捕获阶段拦截，谁先命中谁跳转。
+// Noomo 用 #smooth-wrapper 平滑滚动 + 自定义指针系统，点击可能被覆盖层/canvas 吞掉，
+// 且导航走 Nuxt 客户端路由。所以用「坐标命中检测」：只要指针落在 WORK SHOWCASE 圆圈
+// 的屏幕范围内，就在 window+document 捕获阶段抢先跳转（多事件兜底 + 目标匹配兜底）。
 const FORCE_NAV = [
   "<script>(function(){var done=false;",
-  "function isSC(t){if(!t||!t.closest)return false;",
-  "var a=t.closest('a');if(a&&/WORK\\s*SHOWCASE/i.test((a.textContent||'').replace(/\\s+/g,' ')))return true;",
-  "var c=t.closest('.circle,.send');if(c&&/WORK\\s*SHOWCASE/i.test((c.textContent||'').replace(/\\s+/g,' ')))return true;",
-  "return false;}",
-  "function h(e){if(done)return;if(isSC(e.target)){done=true;",
-  "if(e.preventDefault)e.preventDefault();if(e.stopImmediatePropagation)e.stopImmediatePropagation();if(e.stopPropagation)e.stopPropagation();",
-  "window.location.href='/work/works/';}}",
+  "function scEl(){var q=document.querySelectorAll('.circle,.inner-circle,a.send,a');",
+  "for(var i=0;i<q.length;i++){if(/WORK\\s*SHOWCASE/i.test((q[i].textContent||'').replace(/\\s+/g,' ')))return q[i];}return null;}",
+  "function fire(e){done=true;if(e&&e.preventDefault)e.preventDefault();if(e&&e.stopImmediatePropagation)e.stopImmediatePropagation();if(e&&e.stopPropagation)e.stopPropagation();window.location.href='/work/works/';}",
+  "function h(e){if(done)return;var el=scEl();if(!el)return;",
+  "var t=e.target;if(t&&t.closest&&(t.closest('a.send')||t.closest('.circle'))){var m=t.closest('a.send')||t.closest('.circle');if(/WORK\\s*SHOWCASE/i.test((m.textContent||'').replace(/\\s+/g,' ')))return fire(e);}",
+  "var r=el.getBoundingClientRect();if(r.width<2||r.height<2)return;",
+  "var x=e.clientX,y=e.clientY;if(x==null)return;",
+  "if(x>=r.left&&x<=r.right&&y>=r.top&&y<=r.bottom)return fire(e);}",
   "['pointerdown','mousedown','pointerup','mouseup','click'].forEach(function(t){",
   "document.addEventListener(t,h,true);window.addEventListener(t,h,true);});",
   "})();</script>",
