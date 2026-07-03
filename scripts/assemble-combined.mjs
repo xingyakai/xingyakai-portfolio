@@ -51,14 +51,16 @@ const FORCE_NAV = [
   "function log(){try{console.log.apply(console,['[SC]'].concat([].slice.call(arguments)));}catch(e){}}",
   "function scEl(){var a=document.querySelector('a.send');if(a)return a.querySelector('.circle')||a;return null;}",
   "function inSC(x,y){var el=scEl();if(!el||x==null)return false;var r=el.getBoundingClientRect();if(r.width<2||r.height<2)return false;return x>=r.left&&x<=r.right&&y>=r.top&&y<=r.bottom;}",
-  "function go(why){if(done)return;done=true;log('redirect via',why);window.location.href=TARGET;}",
-  // 命中 SHOWCASE 时，对每一个相关事件都拦截(preventDefault+stop)，阻止 Noomo 跳到 /contact；导航只做一次
-  "function press(e){if(e.clientX==null)return;if(inSC(e.clientX,e.clientY)){pressT=Date.now();if(e.preventDefault)e.preventDefault();if(e.stopImmediatePropagation)e.stopImmediatePropagation();if(e.stopPropagation)e.stopPropagation();if(!done){log('press in showcase @'+e.type);go('press@'+e.type);}}}",
-  "['pointerdown','mousedown','pointerup','mouseup','click','auxclick'].forEach(function(t){window.addEventListener(t,press,true);document.addEventListener(t,press,true);});",
-  // 兜底：万一 Noomo 仍触发客户端导航，用 replace 覆盖当前历史项，避免 /contact 残留在历史里
-  "function wrap(name){var o=history[name];if(!o||o.__scw)return;var f=function(s,t,u){if(Date.now()-pressT<2000){log(name+' intercepted',u);if(!done){done=true;window.location.replace(TARGET);}return;}return o.apply(this,arguments);};f.__scw=1;history[name]=f;}",
+  "function go(replace,why){if(done)return;done=true;log('redirect',why,replace?'(replace)':'(push)');if(replace)window.location.replace(TARGET);else window.location.href=TARGET;}",
+  // 只记录“最近在按钮上按下/点了”，不拦事件、不阻止 Noomo 自己跳
+  "function rec(e){if(e.clientX!=null&&inSC(e.clientX,e.clientY)){pressT=Date.now();log('press recorded @'+e.type);}}",
+  "['pointerdown','mousedown','pointerup','click'].forEach(function(t){window.addEventListener(t,rec,true);document.addEventListener(t,rec,true);});",
+  // 主机制：Noomo 客户端导航(pushState 到 /contact)后，若刚点过按钮，就用 replace 把这个历史项换成作品集 → 历史保持[首页,作品集]
+  "function wrap(name){var o=history[name];if(!o||o.__scw)return;var f=function(s,t,u){var r=o.apply(this,arguments);if(!done&&Date.now()-pressT<2500){go(true,name+' '+u);}return r;};f.__scw=1;history[name]=f;}",
   "wrap('pushState');wrap('replaceState');",
-  "log('interceptor active (a.send, translate-proof)');",
+  // 兜底：点了按钮但 Noomo 没走 pushState(比如整页跳)，400ms 后仍在原地就 push 过去(保留首页在历史里)
+  "window.addEventListener('click',function(e){if(inSC(e.clientX,e.clientY)){var p=location.pathname;setTimeout(function(){if(!done&&location.pathname===p){go(false,'click-fallback');}},400);}},true);",
+  "log('interceptor active v2 (replace-on-nav)');",
   "})();</script>",
 ].join("");
 const indexPath = join(OUT, "index.html");
