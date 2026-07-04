@@ -77,6 +77,12 @@ export default function WorkDetailPage() {
       const m = /^#?([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$/i.exec(h.trim());
       return m ? { r: parseInt(m[1], 16), g: parseInt(m[2], 16), b: parseInt(m[3], 16) } : null;
     };
+    // 轻度提饱和：整图平均色偏灰，拉开与灰度的距离让颜色更“读得出”（不改亮度、不变重）
+    const clamp = (x: number) => (x < 0 ? 0 : x > 255 ? 255 : x);
+    const saturate = (c: [number, number, number], f: number): [number, number, number] => {
+      const l = 0.299 * c[0] + 0.587 * c[1] + 0.114 * c[2];
+      return [clamp(l + (c[0] - l) * f), clamp(l + (c[1] - l) * f), clamp(l + (c[2] - l) * f)];
+    };
 
     // Hover listeners
     const addHoverListeners = () => {
@@ -171,8 +177,9 @@ export default function WorkDetailPage() {
       // 背景：当前居中图的主色 → 平滑过渡 → --art-bg（染色公式在 CSS 里，此处只给源色）
       if (rootEl && series.images.length > 0) {
         const realIdx = closestIdx % series.images.length;
-        const col = colorCache.current.get(asset(series.images[realIdx].src));
-        if (col) {
+        const raw = colorCache.current.get(asset(series.images[realIdx].src));
+        if (raw) {
+          const col = saturate(raw, 1.35);
           if (bR < 0) {
             const p = hexToRgb(getComputedStyle(rootEl).getPropertyValue('--accent'));
             if (p) { bR = p.r; bG = p.g; bB = p.b; }
