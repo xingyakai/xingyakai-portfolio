@@ -1113,17 +1113,24 @@ a { color: inherit; text-decoration: none; }
 /* ═══════════════════════════════════════════════════════════════════
    WORK DETAIL — light noomoagency / meech213 theme (scoped)
    ═══════════════════════════════════════════════════════════════════ */
-.work-detail { animation: wdIn 0.8s ease both; }
+.work-detail {
+  /* 主题色由组件按类别注入；此处为兜底默认 */
+  --accent: #96bbff;
+  --accent-ink: #1c234a;
+  animation: wdIn 0.8s ease both;
+}
 @keyframes wdIn { from { opacity: 0; } to { opacity: 1; } }
+/* 图注圆点随类别主色 */
+.work-detail .work-dot { background: var(--accent); }
 .work-detail, .work-detail * { cursor: auto; }
 .work-detail .detail-item, .work-detail a, .work-detail button { cursor: pointer; }
 
-/* gallery background → shell's light periwinkle gradient */
+/* gallery background → 按类别主色淡染的浅色渐变 */
 .work-detail .h-scroll-section {
   background:
-    linear-gradient(0deg, #b4cbf5, #f7faff),
-    linear-gradient(0deg, #96bbff, #edf4ff),
-    linear-gradient(0deg, #b4cbf5, #fff 111.72%);
+    linear-gradient(0deg,
+      color-mix(in srgb, var(--accent) 24%, #ffffff),
+      color-mix(in srgb, var(--accent) 8%, #ffffff));
 }
 /* image captions: mono tag + display title, kept legible over photos */
 .work-detail .work-item-title {
@@ -1138,24 +1145,26 @@ a { color: inherit; text-decoration: none; }
   text-shadow: 0 1px 10px rgba(0,0,0,0.5);
 }
 
-/* counter + progress → navy */
+/* counter + progress → 主色 */
 .work-detail .gallery-counter {
   font-family: var(--font-mono);
-  color: var(--c-navy);
-  opacity: 0.85;
+  color: var(--accent-ink);
+  opacity: 0.9;
 }
-.work-detail .gallery-progress { background: rgba(28,35,74,0.14); }
-.work-detail .gallery-progress-fill { background: var(--c-navy); }
+.work-detail .gallery-progress { background: color-mix(in srgb, var(--accent) 20%, transparent); }
+.work-detail .gallery-progress-fill { background: var(--accent); }
 
-/* bottom info bar → light */
+/* bottom info bar → 主色淡染 */
 .work-detail .about-section {
   background:
-    linear-gradient(0deg, #eef3fd, #f7faff);
-  border-top: 1px solid rgba(28,35,74,0.16);
+    linear-gradient(0deg,
+      color-mix(in srgb, var(--accent) 15%, #ffffff),
+      color-mix(in srgb, var(--accent) 5%, #ffffff));
+  border-top: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
 }
 .work-detail .about-label {
   font-family: var(--font-mono);
-  color: var(--c-indigo);
+  color: var(--accent-ink);
   opacity: 1;
 }
 .work-detail .about-big {
@@ -1165,29 +1174,30 @@ a { color: inherit; text-decoration: none; }
 .work-detail .about-body { color: #4f5472; opacity: 1; }
 .work-detail .about-cta {
   font-family: var(--font-mono);
-  color: var(--c-navy);
+  color: var(--accent-ink);
   opacity: 1;
-  border-bottom-color: rgba(28,35,74,0.35);
+  border-bottom-color: color-mix(in srgb, var(--accent) 45%, transparent);
 }
-.work-detail .about-cta:hover { border-bottom-color: var(--c-navy); }
+.work-detail .about-cta:hover { border-bottom-color: var(--accent-ink); }
 .work-detail .footer {
   font-family: var(--font-mono);
-  color: var(--c-navy);
-  opacity: 0.7;
-  border-top-color: rgba(28,35,74,0.12);
+  color: var(--accent-ink);
+  opacity: 0.8;
+  border-top-color: color-mix(in srgb, var(--accent) 22%, transparent);
 }
 
-/* floating back button → light/navy */
+/* floating back button → 主色 */
 .work-detail .detail-back-btn {
   font-family: var(--font-mono);
-  color: var(--c-navy);
-  background: rgba(247,250,255,0.7);
-  border: 1px solid rgba(28,35,74,0.28);
+  color: var(--accent-ink);
+  background: color-mix(in srgb, var(--accent) 16%, #ffffff);
+  border: 1px solid color-mix(in srgb, var(--accent) 42%, transparent);
+  opacity: 1;
 }
 .work-detail .detail-back-btn:hover {
   color: #fff;
-  background: var(--c-navy);
-  border-color: var(--c-navy);
+  background: var(--accent-ink);
+  border-color: var(--accent-ink);
 }
 
 /* ── Prompt modal → light noomoagency ── */
@@ -1207,14 +1217,14 @@ a { color: inherit; text-decoration: none; }
   color: #14152b;
 }
 .work-detail .prompt-modal-close { color: rgba(28,35,74,0.45); }
-.work-detail .prompt-modal-close:hover { color: var(--c-navy); }
+.work-detail .prompt-modal-close:hover { color: var(--accent-ink); }
 .work-detail .prompt-tabs { border-bottom-color: rgba(28,35,74,0.14); }
 .work-detail .prompt-tab {
   font-family: var(--font-mono);
   color: rgba(28,35,74,0.42);
 }
-.work-detail .prompt-tab::after { background: var(--c-navy); }
-.work-detail .prompt-tab.active { color: var(--c-navy); }
+.work-detail .prompt-tab::after { background: var(--accent); }
+.work-detail .prompt-tab.active { color: var(--accent-ink); }
 .work-detail .prompt-text {
   font-family: var(--font-body);
   font-weight: 400;
@@ -1224,13 +1234,13 @@ a { color: inherit; text-decoration: none; }
 }
 .work-detail .prompt-copy-btn {
   font-family: var(--font-mono);
-  color: var(--c-navy);
-  border: 1px solid rgba(28,35,74,0.3);
+  color: var(--accent-ink);
+  border: 1px solid color-mix(in srgb, var(--accent) 40%, transparent);
 }
 .work-detail .prompt-copy-btn:hover {
   color: #fff;
-  background: var(--c-navy);
-  border-color: var(--c-navy);
+  background: var(--accent-ink);
+  border-color: var(--accent-ink);
 }
 
 /* showcase top-bar back-to-shell button */

@@ -4,29 +4,11 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { workSeries } from '@/data/works-data';
 import { asset } from '@/lib/asset';
+import { accentOf } from '@/data/accents';
 
 // 只展示有图片的系列
 const series = workSeries.filter((s) => s.images.length > 0);
 const total = series.length;
-
-// 每个类别的主题色（随图片风格切换）。ink = 卡片上的深色文字
-type Accent = { c: string; ink: string };
-const ACCENTS: Record<string, Accent> = {
-  tiffany:  { c: '#5ec4bd', ink: '#0d2b28' },
-  rose:     { c: '#c76f89', ink: '#2c0f19' },
-  crystal:  { c: '#e2823f', ink: '#2b1204' },
-  liuli:    { c: '#3ea3c9', ink: '#05222f' },
-  suyan:    { c: '#cf9c86', ink: '#2b170f' },
-  nuanzong: { c: '#b1774b', ink: '#241205' },
-  youhua:   { c: '#d7a63a', ink: '#2a1d03' },
-  jiumeng:  { c: '#b0895a', ink: '#241505' },
-  bantang:  { c: '#e0956f', ink: '#2c1206' },
-  guose:    { c: '#86a24f', ink: '#16210a' },
-  yanhu:    { c: '#cf6f43', ink: '#2a1105' },
-  shenglin: { c: '#b98a52', ink: '#241604' },
-};
-const FALLBACK: Accent = { c: '#96bbff', ink: '#0b1030' };
-const accentOf = (slug: string) => ACCENTS[slug] ?? FALLBACK;
 
 // 左=封面(coverImg)，右=用户挑选的某张（1-based，对应 works-data 里 images 的序号）
 const RIGHT_PICK: Record<string, number> = {
@@ -88,6 +70,19 @@ export default function WorksPage() {
   useEffect(() => {
     curRef.current = cur;
   }, [cur]);
+  // 从详情返回时，回到进入前所在的类别
+  useEffect(() => {
+    try {
+      const last = sessionStorage.getItem('sc-lastCat');
+      if (last) {
+        const i = series.findIndex((s) => s.slug === last);
+        if (i > 0) {
+          curRef.current = i;
+          setCur(i);
+        }
+      }
+    } catch {}
+  }, []);
   useEffect(() => {
     const t = requestAnimationFrame(() => setReady(true));
     return () => cancelAnimationFrame(t);
@@ -155,6 +150,9 @@ export default function WorksPage() {
   const enter = useCallback(() => {
     if (leaving) return;
     const target = series[curRef.current];
+    try {
+      sessionStorage.setItem('sc-lastCat', target.slug);
+    } catch {}
     setLeaving(true);
     window.setTimeout(() => router.push(`/works/${target.slug}`), 720);
   }, [leaving, router]);

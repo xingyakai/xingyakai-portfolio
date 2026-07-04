@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import { workSeries, WorkImage } from '@/data/works-data';
 import { asset } from '@/lib/asset';
+import { accentOf } from '@/data/accents';
 
 export default function WorkDetailPage() {
   const params  = useParams();
@@ -194,8 +195,10 @@ export default function WorkDetailPage() {
 
   if (!series) return null;
 
+  const accent = accentOf(slug);
+
   const goBack = () => {
-    // 返回上一页；若无站内历史（如直接打开链接）则回作品集列表
+    // 回到作品集类别选择（滑块）。优先用历史（保留原类别位置），否则直接去 /works
     if (typeof window !== 'undefined' && window.history.length > 1) {
       router.back();
     } else {
@@ -204,10 +207,16 @@ export default function WorkDetailPage() {
   };
 
   return (
-    <div className="work-detail">
-      {/* ── 悬浮返回按钮（始终可见） ── */}
+    <div
+      className="work-detail"
+      style={{
+        ['--accent' as string]: accent.c,
+        ['--accent-ink' as string]: accent.ink,
+      }}
+    >
+      {/* ── 悬浮返回按钮（始终可见）→ 回到类别选择 ── */}
       <button className="detail-back-btn" onClick={goBack}>
-        <span className="back-arrow">←</span> 返回
+        <span className="back-arrow">←</span> 返回作品集
       </button>
 
       {/* ── Gallery ── */}
