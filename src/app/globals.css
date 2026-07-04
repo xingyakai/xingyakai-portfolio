@@ -1524,3 +1524,40 @@ body:has(.mx-viewer) .nav,
 body:has(.mx-viewer) .cursor,
 body:has(.work-detail) .nav,
 body:has(.work-detail) .cursor { display: none !important; }
+
+/* ── ② 大胆版预览（详情页 URL 加 ?bold=1）：饱满同色深底 + 文字自适应 ── */
+.work-detail[data-bold] .h-scroll-section {
+  background:
+    linear-gradient(0deg,
+      color-mix(in srgb, var(--art-bg) 92%, #101012),
+      color-mix(in srgb, var(--art-bg) 74%, #101012));
+}
+.work-detail[data-bold] .about-section {
+  background:
+    linear-gradient(0deg,
+      color-mix(in srgb, var(--art-bg) 88%, #101012),
+      color-mix(in srgb, var(--art-bg) 70%, #101012));
+  border-top: 1px solid color-mix(in srgb, var(--art-fg) 22%, transparent);
+}
+.work-detail[data-bold] .about-label,
+.work-detail[data-bold] .about-big,
+.work-detail[data-bold] .about-body,
+.work-detail[data-bold] .about-cta,
+.work-detail[data-bold] .footer,
+.work-detail[data-bold] .gallery-counter,
+.work-detail[data-bold] .detail-back-btn {
+  color: var(--art-fg, #fff) !important;
+}
+.work-detail[data-bold] .detail-back-btn {
+  border-color: color-mix(in srgb, var(--art-fg) 50%, transparent);
+  background: color-mix(in srgb, var(--art-fg) 10%, transparent);
+}
+.work-detail[data-bold] .about-cta {
+  border-bottom-color: color-mix(in srgb, var(--art-fg) 50%, transparent);
+}
+.work-detail[data-bold] .gallery-progress {
+  background: color-mix(in srgb, var(--art-fg) 18%, transparent);
+}
+.work-detail[data-bold] .gallery-progress-fill {
+  background: var(--art-fg);
+}

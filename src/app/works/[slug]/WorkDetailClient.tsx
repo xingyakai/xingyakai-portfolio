@@ -14,6 +14,11 @@ export default function WorkDetailPage() {
   const [selected, setSelected]         = useState<WorkImage | null>(null);
   const [promptTab, setPromptTab]       = useState<'positive' | 'negative'>('positive');
   const [modalVisible, setModalVisible] = useState(false);
+  // 大胆版预览：URL 带 ?bold=1 时启用（默认仍是克制版）
+  const [bold, setBold] = useState(false);
+  useEffect(() => {
+    setBold(new URLSearchParams(window.location.search).get('bold') === '1');
+  }, []);
 
   const trackRef        = useRef<HTMLDivElement>(null);
   const currentRef      = useRef(0);
@@ -155,6 +160,16 @@ export default function WorkDetailPage() {
           img.style.filter = `brightness(${lerp(currentB, targetB, 0.12)})`;
         }
 
+        // B: 同色柔光 —— 从每张图向四周晕出它自己的主色，越居中越强
+        const gcol = colorCache.current.get(asset(series.images[i % series.images.length].src));
+        if (gcol) {
+          const [gr, gg, gb] = saturate(gcol, 1.5);
+          const a = (0.10 + progress * 0.5).toFixed(2);
+          const blur = Math.round(30 + progress * 60);
+          const spread = Math.round(progress * 14);
+          item.style.boxShadow = `0 0 ${blur}px ${spread}px rgba(${Math.round(gr)}, ${Math.round(gg)}, ${Math.round(gb)}, ${a})`;
+        }
+
         if (distance < closestDist) { closestDist = distance; closestIdx = i; }
       });
 
@@ -189,6 +204,9 @@ export default function WorkDetailPage() {
           bG = lerp(bG, col[1], 0.08);
           bB = lerp(bB, col[2], 0.08);
           rootEl.style.setProperty('--art-bg', `rgb(${Math.round(bR)}, ${Math.round(bG)}, ${Math.round(bB)})`);
+          // 大胆版用：按主色亮度决定文字黑/白
+          const L = 0.299 * bR + 0.587 * bG + 0.114 * bB;
+          rootEl.style.setProperty('--art-fg', L > 148 ? '#181818' : '#ffffff');
         }
       }
 
@@ -275,6 +293,7 @@ export default function WorkDetailPage() {
   return (
     <div
       className="work-detail"
+      data-bold={bold || undefined}
       style={{
         ['--accent' as string]: accent.c,
         ['--accent-ink' as string]: accent.ink,
