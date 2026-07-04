@@ -1117,6 +1117,8 @@ a { color: inherit; text-decoration: none; }
   /* 主题色由组件按类别注入；此处为兜底默认 */
   --accent: #96bbff;
   --accent-ink: #1c234a;
+  /* 动态背景源色：默认=类别色；组件按当前居中的图片主色每帧更新 */
+  --art-bg: var(--accent);
   animation: wdIn 0.8s ease both;
 }
 @keyframes wdIn { from { opacity: 0; } to { opacity: 1; } }
@@ -1129,8 +1131,8 @@ a { color: inherit; text-decoration: none; }
 .work-detail .h-scroll-section {
   background:
     linear-gradient(0deg,
-      color-mix(in srgb, var(--accent) 24%, #ffffff),
-      color-mix(in srgb, var(--accent) 8%, #ffffff));
+      color-mix(in srgb, var(--art-bg) 24%, #ffffff),
+      color-mix(in srgb, var(--art-bg) 8%, #ffffff));
 }
 /* image captions: mono tag + display title, kept legible over photos */
 .work-detail .work-item-title {
@@ -1158,8 +1160,8 @@ a { color: inherit; text-decoration: none; }
 .work-detail .about-section {
   background:
     linear-gradient(0deg,
-      color-mix(in srgb, var(--accent) 15%, #ffffff),
-      color-mix(in srgb, var(--accent) 5%, #ffffff));
+      color-mix(in srgb, var(--art-bg) 15%, #ffffff),
+      color-mix(in srgb, var(--art-bg) 5%, #ffffff));
   border-top: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
 }
 .work-detail .about-label {

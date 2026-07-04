@@ -21,11 +21,45 @@ export default function WorkDetailPage() {
   const singleWidthRef  = useRef(0);
   const progressFillRef = useRef<HTMLDivElement>(null);
   const counterRef      = useRef<HTMLDivElement>(null);
+  // 每张图的主色缓存（src → [r,g,b]），用于背景随图动态变化
+  const colorCache      = useRef<Map<string, [number, number, number]>>(new Map());
 
   // Render images 3× for seamless infinite loop
   const tripleImages = series && series.images.length > 0
     ? [...series.images, ...series.images, ...series.images]
     : [];
+
+  // ── 提取每张图的主色（缩到 12×12 取平均，同源无跨域，算一次缓存）──
+  useEffect(() => {
+    if (!series || series.images.length === 0) return;
+    const canvas = document.createElement('canvas');
+    canvas.width = 12; canvas.height = 12;
+    const ctx = canvas.getContext('2d', { willReadFrequently: true });
+    if (!ctx) return;
+    let cancelled = false;
+    series.images.forEach((im) => {
+      const src = asset(im.src);
+      if (colorCache.current.has(src)) return;
+      const img = new Image();
+      img.decoding = 'async';
+      img.onload = () => {
+        if (cancelled) return;
+        try {
+          ctx.clearRect(0, 0, 12, 12);
+          ctx.drawImage(img, 0, 0, 12, 12);
+          const d = ctx.getImageData(0, 0, 12, 12).data;
+          let r = 0, g = 0, b = 0, n = 0;
+          for (let i = 0; i < d.length; i += 4) {
+            if (d[i + 3] < 8) continue;
+            r += d[i]; g += d[i + 1]; b += d[i + 2]; n++;
+          }
+          if (n > 0) colorCache.current.set(src, [r / n, g / n, b / n]);
+        } catch { /* 跨域/解码失败则跳过，背景回退类别色 */ }
+      };
+      img.src = src;
+    });
+    return () => { cancelled = true; };
+  }, [series]);
 
   // ── Scroll engine with infinite loop ────────────────────────
   useEffect(() => {
@@ -35,6 +69,14 @@ export default function WorkDetailPage() {
     let raf: number;
     let initialized = false;
     const lerp = (a: number, b: number, t: number) => a + (b - a) * t;
+
+    // 背景随当前图主色平滑变化
+    const rootEl = track.closest('.work-detail') as HTMLElement | null;
+    let bR = -1, bG = -1, bB = -1;
+    const hexToRgb = (h: string) => {
+      const m = /^#?([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$/i.exec(h.trim());
+      return m ? { r: parseInt(m[1], 16), g: parseInt(m[2], 16), b: parseInt(m[3], 16) } : null;
+    };
 
     // Hover listeners
     const addHoverListeners = () => {
@@ -124,6 +166,23 @@ export default function WorkDetailPage() {
         const n       = String(realIdx + 1).padStart(2, '0');
         const total   = String(series.images.length).padStart(2, '0');
         counterRef.current.textContent = `${n} / ${total}`;
+      }
+
+      // 背景：当前居中图的主色 → 平滑过渡 → --art-bg（染色公式在 CSS 里，此处只给源色）
+      if (rootEl && series.images.length > 0) {
+        const realIdx = closestIdx % series.images.length;
+        const col = colorCache.current.get(asset(series.images[realIdx].src));
+        if (col) {
+          if (bR < 0) {
+            const p = hexToRgb(getComputedStyle(rootEl).getPropertyValue('--accent'));
+            if (p) { bR = p.r; bG = p.g; bB = p.b; }
+            else { bR = col[0]; bG = col[1]; bB = col[2]; }
+          }
+          bR = lerp(bR, col[0], 0.08);
+          bG = lerp(bG, col[1], 0.08);
+          bB = lerp(bB, col[2], 0.08);
+          rootEl.style.setProperty('--art-bg', `rgb(${Math.round(bR)}, ${Math.round(bG)}, ${Math.round(bB)})`);
+        }
       }
 
       raf = requestAnimationFrame(tick);
