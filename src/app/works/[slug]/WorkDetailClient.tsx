@@ -14,10 +14,10 @@ export default function WorkDetailPage() {
   const [selected, setSelected]         = useState<WorkImage | null>(null);
   const [promptTab, setPromptTab]       = useState<'positive' | 'negative'>('positive');
   const [modalVisible, setModalVisible] = useState(false);
-  // 大胆版预览：URL 带 ?bold=1 时启用（默认仍是克制版）
-  const [bold, setBold] = useState(false);
+  // 大胆版为默认；URL 带 ?bold=0 可回看克制版
+  const [bold, setBold] = useState(true);
   useEffect(() => {
-    setBold(new URLSearchParams(window.location.search).get('bold') === '1');
+    setBold(new URLSearchParams(window.location.search).get('bold') !== '0');
   }, []);
 
   const trackRef        = useRef<HTMLDivElement>(null);

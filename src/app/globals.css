@@ -1547,6 +1547,7 @@ body:has(.work-detail) .cursor { display: none !important; }
 .work-detail[data-bold] .gallery-counter,
 .work-detail[data-bold] .detail-back-btn {
   color: var(--art-fg, #fff) !important;
+  transition: color 0.35s ease;
 }
 .work-detail[data-bold] .detail-back-btn {
   border-color: color-mix(in srgb, var(--art-fg) 50%, transparent);
