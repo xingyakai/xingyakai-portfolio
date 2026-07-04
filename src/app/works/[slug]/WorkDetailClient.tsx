@@ -179,7 +179,7 @@ export default function WorkDetailPage() {
         const realIdx = closestIdx % series.images.length;
         const raw = colorCache.current.get(asset(series.images[realIdx].src));
         if (raw) {
-          const col = saturate(raw, 1.35);
+          const col = saturate(raw, 1.5);
           if (bR < 0) {
             const p = hexToRgb(getComputedStyle(rootEl).getPropertyValue('--accent'));
             if (p) { bR = p.r; bG = p.g; bB = p.b; }

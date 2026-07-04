@@ -1131,8 +1131,8 @@ a { color: inherit; text-decoration: none; }
 .work-detail .h-scroll-section {
   background:
     linear-gradient(0deg,
-      color-mix(in srgb, var(--art-bg) 38%, #ffffff),
-      color-mix(in srgb, var(--art-bg) 18%, #ffffff));
+      color-mix(in srgb, var(--art-bg) 55%, #ffffff),
+      color-mix(in srgb, var(--art-bg) 32%, #ffffff));
 }
 /* image captions: mono tag + display title, kept legible over photos */
 .work-detail .work-item-title {
@@ -1160,8 +1160,8 @@ a { color: inherit; text-decoration: none; }
 .work-detail .about-section {
   background:
     linear-gradient(0deg,
-      color-mix(in srgb, var(--art-bg) 26%, #ffffff),
-      color-mix(in srgb, var(--art-bg) 12%, #ffffff));
+      color-mix(in srgb, var(--art-bg) 42%, #ffffff),
+      color-mix(in srgb, var(--art-bg) 24%, #ffffff));
   border-top: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
 }
 .work-detail .about-label {
