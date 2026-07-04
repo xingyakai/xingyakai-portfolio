@@ -384,9 +384,9 @@ a { color: inherit; text-decoration: none; }
 /* Floating back button (detail page) */
 .detail-back-btn {
   position: fixed;
-  top: 1.6rem;
-  left: 2rem;
-  z-index: 500;
+  top: 1.1rem;
+  left: 1.6rem;
+  z-index: 1000;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -1519,4 +1519,6 @@ a { color: inherit; text-decoration: none; }
 
 /* showcase 路由：隐藏全站导航与自定义光标，保持沉浸 */
 body:has(.mx-viewer) .nav,
-body:has(.mx-viewer) .cursor { display: none !important; }
+body:has(.mx-viewer) .cursor,
+body:has(.work-detail) .nav,
+body:has(.work-detail) .cursor { display: none !important; }

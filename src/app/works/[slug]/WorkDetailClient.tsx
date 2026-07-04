@@ -266,9 +266,9 @@ export default function WorkDetailPage() {
           <button
             className="about-cta"
             style={{ background: 'none', border: 'none', fontFamily: 'inherit', cursor: 'pointer' }}
-            onClick={() => router.push('/')}
+            onClick={goBack}
           >
-            ← 返回首页
+            ← 返回作品集
           </button>
         </div>
         <footer className="footer" style={{ position: 'absolute', bottom: 0, left: 0, right: 0 }}>
